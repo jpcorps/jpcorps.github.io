@@ -31,3 +31,6 @@ hasCJKLanguage = true
   name = "검색"
   url = "/search/"
   weight = 20
+
+# 가장 아래에 추가하는 예시 (어떤 [섹션]에도 속하지 않도록)
+timeout = "10m"
