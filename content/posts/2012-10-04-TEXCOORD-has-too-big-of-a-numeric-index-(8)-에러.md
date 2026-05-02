@@ -1,5 +1,5 @@
 ---
-title: ""TEXCOORD" has too big of a numeric index (8) 에러"
+title: "\"TEXCOORD\" has too big of a numeric index (8) 에러"
 date: 2012-10-04T17:31:51Z
 draft: false
 ---

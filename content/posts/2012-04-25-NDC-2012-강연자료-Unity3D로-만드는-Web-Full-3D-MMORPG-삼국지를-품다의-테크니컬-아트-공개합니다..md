@@ -1,5 +1,5 @@
 ---
-title: "NDC 2012 강연자료 "Unity3D로 만드는 Web Full 3D MMORPG"-삼국지를 품다의 테크니컬 아트 공개합니다."
+title: "NDC 2012 강연자료 \"Unity3D로 만드는 Web Full 3D MMORPG\"-삼국지를 품다의 테크니컬 아트 공개합니다."
 date: 2012-04-25T23:53:16Z
 draft: false
 ---
