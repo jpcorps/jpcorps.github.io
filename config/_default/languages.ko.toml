@@ -1,10 +1,10 @@
 disabled = false
-locale = "ko"
-label = "Korean"
 weight = 1
 title = "대충 살아가는 게임개발자"
 
 [params]
+  locale = "ko"
+  label = "Korean"
   displayName = "KO"
   isoCode = "en"
   rtl = false
