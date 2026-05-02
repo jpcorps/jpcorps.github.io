@@ -1,10 +1,9 @@
-[ko]
 languageCode = "ko-kr"
 languageName = "Korean"
 weight = 1
 title = "대충 살아가는 게임개발자"
 
-[ko.params]
+[params]
   locale = "ko-kr"
   label = "한국어"
   displayName = "KO"
