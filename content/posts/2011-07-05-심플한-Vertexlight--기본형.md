@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "심플한 Vertexlight : 기본형"
-date: 2011-07-05 10:04:40
-categories: [이글루스 백업, "2011-07"]
+date: 2011-07-05T10:04:40Z
+draft: false
 ---
 
-{% raw %}
 내장되어있는 버텍스 라이트 쉐이더는 이것저것 많이도 고려하길래 , 그냥 암 생각 없는 기초버전의 Vertexlight 쉐이더 기본형이 필요해서 제작해 봤음. 핵심은 Vertexshader에서 ShadeVertexLights 함수로 계산되는 부분인데, 이 부분을 UnityCG.cginc 에서 파고 들어가보니 아래와 같이 나온다.   
   
-**float3 ShadeVertexLights (float4 vertex, float3 normal)  
+float3 ShadeVertexLights (float4 vertex, float3 normal)  
 {  
  float3 viewpos = mul (UNITY\_MATRIX\_MV, vertex).xyz;  
  float3 viewN = mul ((float3x3)UNITY\_MATRIX\_IT\_MV, normal);  
@@ -23,7 +21,9 @@ categories: [이글루스 백업, "2011-07"]
  }  
  #endif  
  return lightColor;  
-}**이것은 즉 버텍스 라이트를 4개까지만 계산하고 그 이상은 SH 라이트로 넘기는 그 부분 같은데 (넘기는 부분은 안나와서.. 그냥 무시하는걸지도..?) 어쨌건 건드리지 않고 일단 그냥 쓰기로 했음.   
+}  
+  
+이것은 즉 버텍스 라이트를 4개까지만 계산하고 그 이상은 SH 라이트로 넘기는 그 부분 같은데 (넘기는 부분은 안나와서.. 그냥 무시하는걸지도..?) 어쨌건 건드리지 않고 일단 그냥 쓰기로 했음.   
   
 사실은 Diffuse를 프레그먼트 쉐이더로 짜고 싶었는데, Diffuse 라이팅 - 픽셀 단에서 계산하는 - 함수를 못찾겠다. 뭐 그냥 무식하게 계산하면 되긴 하는데, 그럼 자체적으로 가지고 있는 라이팅 최적화 함수들을 이용할 수가 없으니까... 뭐 사실 그냥 작게 봤을때 vertexlight와 pixellight 의 차이가 별로 없는 것도 있고. (스페큘러같은게 나오기라도 하면 또 몰라)   
   
@@ -77,4 +77,3 @@ Shader "New Shader" {
  }   
  FallBack "Vertexlit"  
 }
-{% endraw %}

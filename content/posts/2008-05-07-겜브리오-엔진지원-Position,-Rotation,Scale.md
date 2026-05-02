@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "겜브리오 엔진지원 Position, Rotation,Scale"
-date: 2008-05-07 15:58:31
-categories: [이글루스 백업, "2008-05"]
+date: 2008-05-07T15:58:31Z
+draft: false
 ---
 
-{% raw %}
 Position  
   
 xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /
@@ -151,4 +149,3 @@ Supported Controllers vs. Sampling
 Max Plug-in은 지원되지 않는 애니메이션 컨트롤러를 가진 오브젝트를 발견하면 애니메이션을 샘플링 합니다. 지원되는 컨트롤러에 있어선, 각 Max 키프레임 마다 Gamebryo 키프레임 하나가 생성됩니다.
 
 샘플링이 일어나면, Gamebryo Max plug-in은 씬 그래프에서 가장 높은 키프레임과 가장 낮은 키프레임을 사용해서 애니메이션을 샘플링 합니다. 플러그인은 Max 컨트롤러가 초당 30 프레임의 속도로 Gamebryo 키프레임에 모두 적용된 후 위치와 회전을 기록할 것입니다. 그러나 이는 Character Studio biped와 같은 경우엔 키프레임을 제대로 샘플링 하기에 충분하지 않을 수 있습니다. 이런 경우엔 샘플링 시간 범위의 처음과 끝에 최상위 레벨의 note track entry를 추가해야 합니다. [animation sequences](mk:@MSITStore:C:\Documents%20and%20Settings\정종필\바탕%20화면\Gamebryo2.2.2_kor027.chm::/Artist_s_Guides/Gamebryo_3ds_max_Plug_in/Tutorials/Simple_Animation_Sequences/Simple_Animation_Sequences.htm)를 사용하면 이 작업이 저절로 이루어집니다
-{% endraw %}

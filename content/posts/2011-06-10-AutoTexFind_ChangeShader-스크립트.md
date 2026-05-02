@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "AutoTexFind_ChangeShader 스크립트"
-date: 2011-06-10 16:55:28
-categories: [이글루스 백업, "2011-06"]
+date: 2011-06-10T16:55:28Z
+draft: false
 ---
 
-{% raw %}
 만들어서 테스트까지 끝내놨는데 어셋서버랑 6층 무선랜 문제로 오늘 하루종일 제대로 뭔가 할 수가 없었다능..   
   
 모바일 같은 경우는 과도기인 관계로, 제작할때 뭔가 뒤엎어야 할 일이 가끔 생기기도 합니다. 그럴 경우에 쓸모있는 스크립트인데요,   
@@ -19,18 +17,18 @@ categories: [이글루스 백업, "2011-06"]
 현재는 Legacy Shaders/Diffuse Fast 쉐이더를 자동으로  Mobile/VertexLit 쉐이더로 바꿔주도록 되어 있는데요.   
   
   
-![](/assets/images/posts/20110610_165528_c0055803_4df1c9522293e.jpg)이렇게 Diffuse Fast 로 되어 있는 녀석이 있습니다.   
+![](/images/c0055803_4df1c9522293e.png)이렇게 Diffuse Fast 로 되어 있는 녀석이 있습니다.   
   
-![](/assets/images/posts/20110610_165528_c0055803_4df1c9530c5dc.jpg)  
+![](/images/c0055803_4df1c9530c5dc.png)  
 맵 전부를 체크해서 저 쉐이더를 모바일버전 vertexLit쉐이더로 바꿀 예정이므로 Ctrl+A로 전부 선택해 줍니다.   
   
   
-![](/assets/images/posts/20110610_165528_c0055803_4df1c950953c4.jpg)Auto TexFinder\_ChangShader 스크립트를 찾습니다.   
+![](/images/c0055803_4df1c950953c4.png)Auto TexFinder\_ChangShader 스크립트를 찾습니다.   
   
   
   
   
-![](/assets/images/posts/20110610_165528_c0055803_4df1c9518bc63.jpg)  
+![](/images/c0055803_4df1c9518bc63.png)  
 아래 버튼은 건드리면 안됩니다. 큰일나요.   
 윗쪽 버튼이 삼품 전용 버튼입니다.   
   
@@ -39,8 +37,7 @@ categories: [이글루스 백업, "2011-06"]
 누르면... 잠시 후  
   
   
-![](/assets/images/posts/20110610_165528_c0055803_4df1c9541dc46.jpg)  
+![](/images/c0055803_4df1c9541dc46.png)  
 이렇게 쉐이더가 바뀌어 있음을 알 수 있습니다.   
   
-아직 커밋 안됐습니다. 서버에 문제가 있어서.. 서버에 올린 후 팀장님하고 말해서 처리하도록 하지요.   
-{% endraw %}
+아직 커밋 안됐습니다. 서버에 문제가 있어서.. 서버에 올린 후 팀장님하고 말해서 처리하도록 하지요.

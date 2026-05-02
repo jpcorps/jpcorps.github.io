@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "[펌]Normal Bump Map Class 02 : 개념과 원리 2"
-date: 2007-06-24 15:04:00
-categories: [이글루스 백업, "2007-06"]
+date: 2007-06-24T15:04:00Z
+draft: false
 ---
 
-{% raw %}
-https://bfilm.net/tt/trackback/147   
+http://bfilm.net/tt/trackback/147   
 에서 트랙백.   
   
   
@@ -80,7 +78,7 @@ Bump, Displacement Map과 Normal Map의 가장 큰 차이점은 전자는 값이
 이제부터 본격적으로 Normal Map의 원리를 이해해야 하는데, 먼저 쉬운 개념부터 출발해 봅시다.  
   
 
-![](https://www.bfilm.net/tt/attach/1/705052.jpg)
+![](http://www.bfilm.net/tt/attach/1/705052.jpg)
 
 노말방향과 라이팅 방향의 차이를 음영으로 변환하기
 
@@ -93,7 +91,7 @@ Bump, Displacement Map과 Normal Map의 가장 큰 차이점은 전자는 값이
 이러한 원리는 랜더링할때 사용되는 기초적인 개념이지만, 이것을 텍스쳐링에 활용한 것이 바로 노말맵입니다. 위 오른쪽 그림에서 처럼, 하나의 라이트에 대한 각각의 면의 기울기 값은, 각기 다른 명암을 만들어 내는데, 이러한 라이트를 위-아래,좌-우,앞-뒤로 총 6방향에서 빛을 쏘아 이것을 하나의 맵으로 만든것이 노말맵입니다.   
   
 
-![](https://www.bfilm.net/tt/attach/1/330286.jpg)
+![](http://www.bfilm.net/tt/attach/1/330286.jpg)
 
 노말맵의 원리
 
@@ -110,4 +108,3 @@ Bump, Displacement Map과 Normal Map의 가장 큰 차이점은 전자는 값이
 기존의 Bump는 단순히 어둡고 밝음을 표현하는데 "깊이정보"로 표현하는데 그쳤다면. 노말맵은 x.y.z 축의 기울기 값을 통해 정확한 "Normal Direct"를 찾아주기 때문에, 존재하지 않는 Mesh가 생성된듯한 효과를 주게 되는 것입니다. 하지만 Normal Map으로 생성된 가상의 기울기 값들도, 기존의 Mesh에서만 랜더링 되기 때문에 일반 Bump Map과 비슷한 한계를 가집니다. 이 부분에 대해선 직접 만들어 보면서 자세히 설명드릴 기회가 있을겁니다.  
   
 다음 시간엔, 오늘의 개념을 활용하여, Normal Map 제작툴을 활용하지 않고, Lighting을 이용해 Normal Map을 만들어 보면서, 좀더 확실한 개념을 잡아보도록 하겠습니다.
-{% endraw %}

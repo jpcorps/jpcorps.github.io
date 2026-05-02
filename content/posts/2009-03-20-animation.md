@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "animation"
-date: 2009-03-20 17:45:53
-categories: [이글루스 백업, "2009-03"]
+date: 2009-03-20T17:45:53Z
+draft: false
 ---
 
-{% raw %}
 - 어세신 크리드와 같은 섬세한 움직임.   
 
 * 첫 번째로 고려할 내용은 AS 는 UBI소프트에서 밝혔듯. 노가다의 산물이라는 것.
@@ -27,4 +25,3 @@ categories: [이글루스 백업, "2009-03"]
 - 다양한 social motion
 
 일정에 대해 고려
-{% endraw %}

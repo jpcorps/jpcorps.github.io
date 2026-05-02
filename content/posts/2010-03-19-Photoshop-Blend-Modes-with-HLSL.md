@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "Photoshop Blend Modes with HLSL"
-date: 2010-03-19 11:09:48
-categories: [이글루스 백업, "2010-03"]
+date: 2010-03-19T11:09:48Z
+draft: false
 ---
 
-{% raw %}
-<https://blog.naver.com/frustum?Redirect=Log&logNo=150042116101>  
+<http://blog.naver.com/frustum?Redirect=Log&logNo=150042116101>  
   
-**Photoshop Blend Modes with HLSL**  
+Photoshop Blend Modes with HLSL  
   
   
 Kyle Schouviller  
@@ -17,11 +15,13 @@ Kyle Schouviller
 Photoshop and other image editing programs offer artists a lot of power with layer blending modes. These allow an artist to perform a color operation when one layer is blended on top of another. For example, multiply will make the bottom layer darker based on the top layer, and is great for blending color fills on top of line art (the lines stay black while the inside gets filled).  
 Many of these effects can be achieved using the blending operations available in HLSL. Better yet, you barely need to know any HLSL to create them ? some don’t even require a special shader to work.??  
 
-## Prerequisites
+Prerequisites
+-------------
 
 For this tutorial, all you’ll need is a little bit of experience with basic algebra. You need to understand how to rearrange one side of an equation. You’ll also need XNA Game Studio 3.0 to compile and run the sample, and to create your own effects.
 
-## Intoduction to Blending
+Intoduction to Blending
+-----------------------
 
 One of the first places you’ll probably encounter blending operations is when you’re trying to make alpha blending work. Usually you’ll have a sprite with some transparency, and you want it to have the same transparency when you draw it in XNA. When you look it up online, you’ll find something like this:
 
@@ -33,7 +33,8 @@ Blend = Add
 
 You stick the code in your application and alpha blending magically works! But what’s really happening?
 
-## The Blending Equation
+The Blending Equation
+---------------------
 
 When you draw a picture on the screen, a lot happens. What it all boils down to though is determining what color to put in what pixel, based on what you want to draw, and what’s already there.
 
@@ -85,13 +86,14 @@ Result = (0.75, 0, 0.25)
 
 We’ve created a pixel that is 75% red and 25% blue. This is how alpha blending works.
 
-## Simple Effects
+Simple Effects
+--------------
 
 It turns out there are quite a few effects that are done entirely with blend modes. These are the Photoshop modes Darken, Lighten, Linear Dodge and Multiply. We’ll look at the equations for each of these, and then how we can make them using blend modes.
 
 ### Linear Dodge
 
-![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image001.jpg)
+![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image001.jpg)
 
 Linear Dodge is a blending mode that brightens the bottom layer by adding the top layer. In other words:
 
@@ -109,7 +111,7 @@ That’s all there is to it! This can be done really easily with a few lines of 
 
 ### Darken and Lighten
 
-![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image002.jpg)![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image003.jpg)
+![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image002.jpg)![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image003.jpg)
 
 Darken works by using the lowest value from the source and destination colors, and lighten uses the highest value. In other words:
 
@@ -137,7 +139,7 @@ DestinationBlend = One
 
 ### Multiply
 
-![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image004.jpg)
+![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image004.jpg)
 
 Multiply is an interesting blend mode. It darkens colors by multiplying them together. It’s great for blending colors on top of line art – the line art will have white (1) and black (0) areas, and when the color is multiplied on top of the line art, the white areas become the color, and the black areas will stay black. The equation is:
 
@@ -167,7 +169,8 @@ SourceBlend = DestinationColor
 
 DestinationBlend = Zero
 
-## Rules for Blending
+Rules for Blending
+------------------
 
 There are a few rules when working with blending:
 
@@ -181,7 +184,8 @@ There are a few rules when working with blending:
 
 ·         Blending works on each color channel individually. So max( (0,1,0), (1,0,0) ) will result in (1,1,0).
 
-## Manipulating the Source Color
+Manipulating the Source Color
+-----------------------------
 
 For more complicated effects, we need to manipulate the source color before it reaches the blending equation. This allows us greater control over how the blending equation works.
 
@@ -213,7 +217,7 @@ It’s the same result as we had earlier, but we obtained it by manipulating the
 
 ### Linear Burn
 
-![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image005.jpg)
+![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image005.jpg)
 
 Linear Burn looks like an easy effect. The equation is:
 
@@ -261,7 +265,7 @@ DestinationBlend = One
 
 ### Screen
 
-![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image006.jpg)
+![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image006.jpg)
 
 Even trickier is the Screen effect. The original equation is quite imposing:
 
@@ -293,9 +297,10 @@ DestinationBlend = One
 
 SourceBlend = InvDestColor
 
-## Putting it All Together – Hard Light
+Putting it All Together – Hard Light
+------------------------------------
 
-![](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image007.jpg)
+![](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes//image007.jpg)
 
 Now that we have multiply and screen figured out, we can do the Hard Light effect, which is a combination of the two. Hard light will multiply colors if the source is less than or equal to 0.5, and will screen otherwise. The effect takes two passes – the multiply and screen pass. Each pass must perform its operation on the correct pixels, and leave the others alone. For example, with a source of 0.25 on the screen pass, the destination color must be left alone.
 
@@ -363,7 +368,8 @@ SourceBlend = InvDestColor
 
 DestBlend = One
 
-## Exercises
+Exercises
+---------
 
 These can all be solved, and are all combinations of the above effects. They should be fairly straightforward to solve – just look to how the Hard Light effect worked. The resources section contains a link to an article that contains equations for all of these effects.
 
@@ -379,9 +385,8 @@ This effect uses linear burn and linear dodge, both of which we’ve solved. It 
 
 This is a combination of Darken and Lighten – darken if less than or equal to 0.5, lighten otherwise.
 
-## 
-
-## Difficult Modes
+Difficult Modes
+---------------
 
 The following blend modes all have some sort of problem that makes them difficult to solve (the demo code has blank shaders for you to fill in to try to achieve the expected result). They each have some problem with the above rules which must be overcome somehow. Most of them could be solved using a surface type that didn’t clamp values to [0, 1], but I’ll let you see if you can solve these effects with the default surface type.
 
@@ -417,27 +422,29 @@ Result = 0.5 – 2 \* (destination – 0.5) \* (source – 0.5)
 
 This looks like screen, but the subtraction is reversed, making it more difficult to fit into the blend modes and blend factors that are available.
 
-## Conclusion
+Conclusion
+----------
 
 Blend modes offer you a wide variety of color operations with a minimum amount of code. They also perform as well as alpha blending in most cases, and run at a very low shader spec – all of the solved blending modes in this tutorial run at or below pixel shader version 1.4. All they require you to do is work out the math!
 
-## Demo
+Demo
+----
 
-[**Download the Sample**](https://www.ziggyware.com/ZiggywareImages/Articles/blendmodes/PhotoshopBlendModes.zip)
+[Download the Sample](http://www.ziggyware.com/ZiggywareImages/Articles/blendmodes/PhotoshopBlendModes.zip)
 
 This application includes shaders for all blend modes, and displays the source image, destination image, and a pre-rendered expected result for all of the shaders. All of the blend modes solved in this tutorial are solved in the demo, and the ones that aren’t solved are in the demo as empty shaders – ready for you to fill in with your solutions!
 
-## Resources
+Resources
+---------
 
-A thorough discussion of blend mode math in Photoshop 7. In this document, “Blend” is the source color and “Base” is the destination color: < <https://dunnbypaul.net/blends/> >
+A thorough discussion of blend mode math in Photoshop 7. In this document, “Blend” is the source color and “Base” is the destination color: < <http://dunnbypaul.net/blends/> >
 
-A primer for blending in XNA: < <https://msdn.microsoft.com/en-us/library/bb976070.aspx> >.
+A primer for blending in XNA: < <http://msdn.microsoft.com/en-us/library/bb976070.aspx> >.
 
-The BlendFunction enumeration, listing blend operations usable directly in XNA: < <https://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.blendfunction.aspx> >.
+The BlendFunction enumeration, listing blend operations usable directly in XNA: < <http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.blendfunction.aspx> >.
 
-The Blend enumeration, listing SourceBlend and DestinationBlend operations usable directly in XNA: < <https://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.blend.aspx> >.
+The Blend enumeration, listing SourceBlend and DestinationBlend operations usable directly in XNA: < <http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.blend.aspx> >.
 
-D3DBLENDOP – remove the “D3DBLENDOP\_” at the beginning to use these as blend operations in an HLSL shader: < <https://msdn.microsoft.com/en-us/library/bb172509(VS.85).aspx> >
+D3DBLENDOP – remove the “D3DBLENDOP\_” at the beginning to use these as blend operations in an HLSL shader: < <http://msdn.microsoft.com/en-us/library/bb172509(VS.85).aspx> >
 
-D3DBLEND – remove the “D3DBLEND\_” at the beginning to use these as blend factors in an HLSL shader: < <https://msdn.microsoft.com/en-us/library/bb172508(VS.85).aspx> >
-{% endraw %}
+D3DBLEND – remove the “D3DBLEND\_” at the beginning to use these as blend factors in an HLSL shader: < <http://msdn.microsoft.com/en-us/library/bb172508(VS.85).aspx> >

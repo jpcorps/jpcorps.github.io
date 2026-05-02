@@ -1,10 +1,6 @@
 ---
-layout: post
 title: "SSAO( Screen Space Ambient Occlusion )"
-date: 2011-09-23 12:20:04
-categories: [이글루스 백업, "2011-09"]
+date: 2011-09-23T12:20:04Z
+draft: false
 ---
 
-{% raw %}
-
-{% endraw %}

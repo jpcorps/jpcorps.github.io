@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "Diffuse fast 쉐이더, Diffuse 보다 정말 빠른가?"
-date: 2011-02-15 16:43:16
-categories: [이글루스 백업, "2011-02"]
+date: 2011-02-15T16:43:16Z
+draft: false
 ---
 
-{% raw %}
+첫 질문은 단순한 질문에서 시작하였습니다. 가장 권장할만 하고, 가장 추천해야 할 쉐이더는 무엇인가?   
+어떤 쉐이더를 사용해야 PC에서도, 아이폰에서도 만족할 만한 속도와 품질과 편리함을 가지고 있는 쉐이더인가?   
   
-첫 질문은 단순한 질문에서 시작하였습니다. **가장 권장할만 하고, 가장 추천해야 할 쉐이더는 무엇인가?   
-어떤 쉐이더를 사용해야 PC에서도, 아이폰에서도 만족할 만한 속도와 품질과 편리함을 가지고 있는 쉐이더인가?**  
   
 물론 라이팅은 하나도 안 하고 텍스쳐만 딸랑 출력하는 Unlit 쉐이더가 가장 빠르겠지만, 라이트가 적용되는 최고 속도의 쉐이더는 알려진 바와 같이 정말 Diffuse Fast 인가? 라고 하는 것입니다. 즉 이 쉐이더가 결정되면, 모든 쉐이더를 어떤 방식으로 쉐이더를 작성해야 하는지에 대한 기초적인 기반이 정립되게 되는 것입니다. 덕분에 영향받는게 꽤 있지요.  
   
@@ -27,7 +25,7 @@ Properties {
 Fallback "VertexLit"  
 }  
 
-![](/assets/images/posts/20110215_164316_c0055803_4d5a2c9f1760f.jpg)
+![](/images/c0055803_4d5a2c9f1760f.jpg)
 
 ... 야
 
@@ -44,19 +42,26 @@ Fallback "VertexLit"
   
 이 데이터를 그대로 아이폰 3GS 로 빌드해서 프레임을 테스트 해 보았습니다.   
   
-****Diffuse fast (Vertexlit) : 17 프레임****![](/assets/images/posts/20110215_164316_c0055803_4d5a1b32cd515.jpg)  
-****Diffuse : 29.75 프레임****![](/assets/images/posts/20110215_164316_c0055803_4d5a1b818551c.jpg)  
+
+Diffuse fast (Vertexlit) : 17 프레임
+
+![](/images/c0055803_4d5a1b32cd515.png)  
+
+Diffuse : 29.75 프레임
+
+  
+![](/images/c0055803_4d5a1b818551c.png)  
   
 
 ....읭?
 
-![](/assets/images/posts/20110215_164316_c0055803_4d5a2322e530f.jpg)자, 잠깐. 지금 DP call 한계를 2배나 벗어났다고! 30프레임 가까이 나오면 어떡하자는거야!!!   
+![](/images/c0055803_4d5a2322e530f.jpg)자, 잠깐. 지금 DP call 한계를 2배나 벗어났다고! 30프레임 가까이 나오면 어떡하자는거야!!!   
   
   
 하도 이상해서 simple verex light shader를 직접 제작해서 넣어 봤습니다.   
 버텍스 라이팅에서 이보다 빠른 쉐이더는 만들 수 없습니다.   
   
-<https://www.unifycommunity.com/wiki/index.php?title=Simply_Lit>  
+<http://www.unifycommunity.com/wiki/index.php?title=Simply_Lit>  
   
   
 
@@ -84,7 +89,7 @@ SubShader {
   
   
   
-![](/assets/images/posts/20110215_164316_c0055803_4d5a1be77d9bf.jpg)
+![](/images/c0055803_4d5a1be77d9bf.png)
 
 그래도 15프레임....
 
@@ -104,7 +109,7 @@ SubShader {
 - 알파 테스팅이 더 느리다고 하는 아이폰이니 그럴 수도 있다.   
   
 그렇게 원인을 찾아 떠돌다가 찾은 문서.   
-<https://developer.apple.com/library/ios/#documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/OpenGLESPlatforms/OpenGLESPlatforms.html>  
+<http://developer.apple.com/library/ios/#documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/OpenGLESPlatforms/OpenGLESPlatforms.html>  
   
 Another advantage of deferred rendering is that it allows the GPU to perform hidden surface removal before fragments are processed. Pixels that are not visible are discarded without sampling textures or performing fragment processing,  
 디퍼드 렌더러의 장기는 픽셀 처리 하기 전에 안보이는 면 날려버리는 건데유, 안보이는 픽셀은 과감히 내쳐서 텍스쳐 셈플링도 안하고 픽셀 쉐이더 처리도 안해유.   
@@ -113,7 +118,7 @@ Another advantage of deferred rendering is that it allows the GPU to perform hid
   
 아이폰에 들어가 있는 PowerVR SGX Platform 은  Tile-Based Deferred Rendering 라고 하는 '지연 렌더링 방식'을 사용하고 있는데요.   
   
-**디퍼드 렌더러(지연 렌더러)란 라이트 연산을 위해 모든 오브젝트를 버퍼에 렌더링 해 놓고 몰아서 한 번에 라이팅 처리해 버리는 방식이라, 특성상 버텍스 라이팅을 강제로 사용하면 포워드 렌더링 처럼 돌아가니까... 덕분에 숨겨진 버텍스를 처리 못하는게 아닌가...** 라는 가정이 생기게 되었습니다.   
+디퍼드 렌더러(지연 렌더러)란 라이트 연산을 위해 모든 오브젝트를 버퍼에 렌더링 해 놓고 몰아서 한 번에 라이팅 처리해 버리는 방식이라, 특성상 버텍스 라이팅을 강제로 사용하면 포워드 렌더링 처럼 돌아가니까... 덕분에 숨겨진 버텍스를 처리 못하는게 아닌가... 라는 가정이 생기게 되었습니다.   
   
 즉 그렇게 되면 저 예제들처럼 '가려진 면이 많은 경우' 에서는 버텍스 라이팅이 픽셀라이팅보다 더 안좋은 퍼포먼스를 낼 수 밖에 없다는 것이지요.   
   
@@ -128,23 +133,29 @@ Another advantage of deferred rendering is that it allows the GPU to perform hid
   
 공을 커다랗게 하나만 만들어 테스트 (버텍스 쉐이더 부담은 줄이고 픽셀쉐이더에게만 부담주기죠)   
   
-****Diffuse Fast : 30.03 프레임****  
-![](/assets/images/posts/20110215_164316_c0055803_4d5a28680a6fb.jpg)  
 
-**Diffuse : 29.46 프레임**
+Diffuse Fast : 30.03 프레임
 
-![](/assets/images/posts/20110215_164316_c0055803_4d5a28868724f.jpg)뭐 일단 오차범위. 별 차이는 없군요. 가려진 면이 여전히 많아서 그런 걸까요?   
+  
+![](/images/c0055803_4d5a28680a6fb.png)  
+
+Diffuse : 29.46 프레임
+
+![](/images/c0055803_4d5a28868724f.png)뭐 일단 오차범위. 별 차이는 없군요. 가려진 면이 여전히 많아서 그런 걸까요?   
   
 한번 더 테스트   
   
-****Diffuse Fast : 24.43****  
-![](/assets/images/posts/20110215_164316_c0055803_4d5a2bda63e11.jpg)
 
-**Diffuse : 26.95 프레임(오차범위)**
+Diffuse Fast : 24.43
+
+  
+![](/images/c0055803_4d5a2bda63e11.png)
+
+Diffuse : 26.95 프레임(오차범위)
 
   
   
-![](/assets/images/posts/20110215_164316_c0055803_4d5a2bb6ecb03.jpg)  
+![](/images/c0055803_4d5a2bb6ecb03.png)  
   
   
   
@@ -161,9 +172,8 @@ Another advantage of deferred rendering is that it allows the GPU to perform hid
   
   
   
-**픽셀 라이팅 연산을 하는 Diffuse 쉐이더는 그렇게 무섭게 느린 쉐이더가 아닙니다.   
+픽셀 라이팅 연산을 하는 Diffuse 쉐이더는 그렇게 무섭게 느린 쉐이더가 아닙니다.   
   
 캐릭터 처럼 겹치는 vertex가 많은 상태에서는 오히려 Diffuse Fast(Vertexlit) 보다 빠를 수도 있으며, 일반적인 경우에서도 대단한 차이가 나지 않습니다.   
   
-그러므로 모바일에서도 캐릭터에는 Diffuse 쉐이더를 써도 괜찮을 것 같습니다. (배경은 여전히 Diffuse Fast를 쓰세요. 사실 더 권장하는건 Unlit 쉐이더입니다만)** 
-{% endraw %}
+그러므로 모바일에서도 캐릭터에는 Diffuse 쉐이더를 써도 괜찮을 것 같습니다. (배경은 여전히 Diffuse Fast를 쓰세요. 사실 더 권장하는건 Unlit 쉐이더입니다만)

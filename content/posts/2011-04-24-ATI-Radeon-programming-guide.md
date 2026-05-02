@@ -1,19 +1,17 @@
 ---
-layout: post
 title: "ATI Radeon programming guide"
-date: 2011-04-24 15:59:09
-categories: [이글루스 백업, "2011-04"]
+date: 2011-04-24T15:59:09Z
+draft: false
 ---
 
-{% raw %}
 오즈라엘님 블로그에서 트랙백.   
 언젠가 쓸모가 있겠징  
-ㅋㅋㅋ [ATI Radeon programming guide](https://ozlael.egloos.com/3632310)  
+ㅋㅋㅋ [ATI Radeon programming guide](http://ozlael.egloos.com/3632310)  
   
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-|  |  | [**Advanced DX9 Capabilities for ATI Radeon Cards - whitepaper (July 2009)**](https://developer.amd.com/gpu_assets/Advanced%20DX9%20Capabilities%20for%20ATI%20Radeon%20Cards_v2.pdf) | |
+|  |  | [Advanced DX9 Capabilities for ATI Radeon Cards - whitepaper (July 2009)](http://developer.amd.com/gpu_assets/Advanced%20DX9%20Capabilities%20for%20ATI%20Radeon%20Cards_v2.pdf) | |
 | Illustrates: | This white paper gives implementation details on some of the advanced capabilities exposed by Radeon graphic drivers under the DirectX 9 API. Those capabilities target a feature level not directly exposed by DirectX 9, and therefore require an additional programming interface to take advantage of them. |
 
   
@@ -22,7 +20,7 @@ categories: [이글루스 백업, "2011-04"]
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-|  |  | [**ATI Radeon HD 2000 Programming Guide (June 2007)**](https://developer.amd.com/media/gpu_assets/ATI_Radeon_HD_2000_programming_guide.pdf) | |
+|  |  | [ATI Radeon HD 2000 Programming Guide (June 2007)](http://developer.amd.com/media/gpu_assets/ATI_Radeon_HD_2000_programming_guide.pdf) | |
 | Illustrates: | This paper discusses general optimization hints and best practices for programming the latest ATI Radeon HD 2000 series hardware. It covers topics such as shaders, texturing, z optimizations, D3D10 optimizations etc. |
 
   
@@ -31,7 +29,7 @@ categories: [이글루스 백업, "2011-04"]
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-|  |  | [**Depth In-depth (June 2007)**](https://developer.amd.com/media/gpu_assets/Depth_in-depth.pdf) | |
+|  |  | [Depth In-depth (June 2007)](http://developer.amd.com/media/gpu_assets/Depth_in-depth.pdf) | |
 | Illustrates: | This paper goes through the Z optimizations in current and earlier hardware. It explains the technical details behind techniques such as Hierarchical-Z and Early-Z and discusses the how to best utilizing these hardware optimizations. |
 
   
@@ -40,7 +38,7 @@ categories: [이글루스 백업, "2011-04"]
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-|  |  | [**R2VB Programming (March 2006)**](https://developer.amd.com/media/gpu_assets/R2VB_programming.pdf) | |
+|  |  | [R2VB Programming (March 2006)](http://developer.amd.com/media/gpu_assets/R2VB_programming.pdf) | |
 | Illustrates: | This technology paper describes how to use the Render to Vertex Buffer technique to accelerate animation. |
 
   
@@ -49,7 +47,7 @@ categories: [이글루스 백업, "2011-04"]
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-|  |  | [**Radeon**](https://developer.amd.com/media/gpu_assets/Radeon_X1x00_Programming_Guide.pdf)[**X1x00 Programming Guide (March 2006)**](https://developer.amd.com/media/gpu_assets/Radeon_X1x00_Programming_Guide.pdf "Link opens in new browser window.") | |
+|  |  | [Radeon](http://developer.amd.com/media/gpu_assets/Radeon_X1x00_Programming_Guide.pdf)[X1x00 Programming Guide (March 2006)](http://developer.amd.com/media/gpu_assets/Radeon_X1x00_Programming_Guide.pdf "Link opens in new browser window.") | |
 | Illustrates: | Radeon X1x00 Programming Guide |
 
   
@@ -57,5 +55,4 @@ categories: [이글루스 백업, "2011-04"]
   
 page :  
 
-<https://developer.amd.com/gpu/radeon/pages/radeonsdksamplesdocuments.aspx>
-{% endraw %}
+<http://developer.amd.com/gpu/radeon/pages/radeonsdksamplesdocuments.aspx>

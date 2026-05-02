@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Smoothstep 함수 사용법"
-date: 2010-05-27 10:28:06
-categories: [이글루스 백업, "2010-05"]
+date: 2010-05-27T10:28:06Z
+draft: false
 ---
 
-{% raw %}
-**smoothstep(min,max,x)** : x가 [min, max] 사이의 값인 경우에 대해서 [0, 1] 사이에서 부드럽게 변하는   
+smoothstep(min,max,x) : x가 [min, max] 사이의 값인 경우에 대해서 [0, 1] 사이에서 부드럽게 변하는   
     Hermite 보간법을 리턴한다. x가 min보다 작다면 0을 리턴하고, max보다 크다면 1을 리턴한다.  
   
   
@@ -14,7 +12,7 @@ categories: [이글루스 백업, "2010-05"]
 ..라고 하는데 뭐야 저게...   
 라고 해서 알아보니.   
   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc52ce4b5c.jpg)
+![](/images/c0055803_4bfdc52ce4b5c.jpg)
 
 (그림1)
 
@@ -22,43 +20,42 @@ categories: [이글루스 백업, "2010-05"]
 일단 0에서 1로 가는 Liner 한 그래프가 있다고 치죠. 저걸 거꾸로 하면 단순무식한 렘버트 출력값과 같겠죠 (...)   
   
   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc5a9e68b6.jpg)
+![](/images/c0055803_4bfdc5a9e68b6.jpg)
 
 (그림2)
 
 그리고 min과 max 값을 정합니다. 뭐 이건 0과 1로 정하면 원래 그림인 (그림 1)과 같지만 여기서는 0.2와 0.8로 정했다고 치죠.   
   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc6232bc2d.jpg)
+![](/images/c0055803_4bfdc6232bc2d.jpg)
 
 (그림3)
 
   
 X 값이 min 값보다 작으면 최종 결과는 0 값이 나오고, X 값이 max보다 크면 1값이 나오는건 쉽지요.  
   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc65d93977.jpg)
+![](/images/c0055803_4bfdc65d93977.jpg)
 
 (그림4)
 
   
 근데 만약 X 값이 min과 max 사이에 있는 값이면?   
 비율을 다시 계산해서 값을 내놓는다는 것입니다. 그냥 Liner 하게 계산하면 그림과 같겠지요.   
-근데 여기서 Hermite Interpolation (보간법)을 사용한다고 합니다. <https://en.wikipedia.org/wiki/Hermite_interpolation>  
+근데 여기서 Hermite Interpolation (보간법)을 사용한다고 합니다. <http://en.wikipedia.org/wiki/Hermite_interpolation>  
 ... 이거 뭐야 몰라 무서워... 그래픽쟁이한테 이런 수학 공식 들이밀지 마... (이럴때만 그래픽인척 하는 초파리이자 박쥐)   
   
 뭐 그래서 더 생각 안하고, 그림으로 만들어 봤습니다. -\_-   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc7837bc7e.jpg)하프 렘버트 출력물을   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc7b42bd66.jpg)밝기에 따라 3단계로 적용. smoothstep 사용. Liner 하지 않다는 것이 보입니다.   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdc7fcd423f.jpg)Warp 대용으로 사용한 최종 결과물. 텍스쳐 셈플러 하나 줄였습니다. 만세. 근데 이게 더 무거우면 어쩌지 ㄷㄷㄷ   
+![](/images/c0055803_4bfdc7837bc7e.png)하프 렘버트 출력물을   
+![](/images/c0055803_4bfdc7b42bd66.png)밝기에 따라 3단계로 적용. smoothstep 사용. Liner 하지 않다는 것이 보입니다.   
+![](/images/c0055803_4bfdc7fcd423f.png)Warp 대용으로 사용한 최종 결과물. 텍스쳐 셈플러 하나 줄였습니다. 만세. 근데 이게 더 무거우면 어쩌지 ㄷㄷㄷ   
   
   
   
 즉 아마도 Smoothstep의 보간법은 이런 결과물을 내놓는 듯 합니다.   
   
-![](/assets/images/posts/20100527_102806_c0055803_4bfdca6ceb256.jpg)
+![](/images/c0055803_4bfdca6ceb256.jpg)
 
 (그림5)
 
   
   
-에잇 틀렸으면 좀 가르쳐 주세요. 
-{% endraw %}
+에잇 틀렸으면 좀 가르쳐 주세요.

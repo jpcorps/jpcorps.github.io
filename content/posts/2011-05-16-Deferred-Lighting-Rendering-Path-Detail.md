@@ -1,14 +1,13 @@
 ---
-layout: post
 title: "Deferred Lighting Rendering Path Detail"
-date: 2011-05-16 11:59:54
-categories: [이글루스 백업, "2011-05"]
+date: 2011-05-16T11:59:54Z
+draft: false
 ---
 
-{% raw %}
-# Deferred Lighting Rendering Path Details
+Deferred Lighting Rendering Path Details
+========================================
 
-This page describes details of Deferred Lighting [rendering path](https://unity3d.com/support/documentation/Manual/RenderingPaths.html). For a technical overview of what Deferred Lighting is, see [Deferred Lighting Approaches article](https://www.realtimerendering.com/blog/deferred-lighting-approaches/).
+This page describes details of Deferred Lighting [rendering path](http://unity3d.com/support/documentation/Manual/RenderingPaths.html). For a technical overview of what Deferred Lighting is, see [Deferred Lighting Approaches article](http://www.realtimerendering.com/blog/deferred-lighting-approaches/).
 
 Deferred Lighting is rendering path with the most lighting and shadow fidelity:  
 디퍼드 라이트는 라이트와 그림자에 적합한 렌더링 패스입니다. (특화된)
@@ -41,23 +40,26 @@ Disadvantages:
 * No support for "receive shadows" flag and limited support light Culling Masks.
 * "리시브 쉐도우" 플레그를 지원하지 않고 라이트 컬링 마스크를 제한적으로 지원합니다.
 
-## Requirements for Deferred Lighting 디퍼드 렌더링의 요구사항
+Requirements for Deferred Lighting 디퍼드 렌더링의 요구사항
+------------------------------------------------
 
-* Requires **Unity Pro**.
+* Requires Unity Pro.
 * 유니티 프로가 먼저 필요하고요
 * Graphics card with Shader Model 3.0 (or later), support for Depth render textures and two-sided stencil buffer. Most graphics cards made after 2004 support it: GeForce FX and later, Radeon X1300 and later, Intel 965 / GMA X3100 and later.
 * 그래픽 카드는 쉐이더 3.0 이상, 깊이 렌더 텍스쳐와 2사이드 스텐실 버퍼가 지원되어야 함. 2004년 이후 그래픽 카드는 대부분 지원함 ; 지포스 FX와 그 이후버전, 라데온 X1300과 이후버전, 인텔 965/GMA X3100과 그 이후버전.
 * Currently does not work on mobile platforms.
 
-## Performance Considerations 퍼포먼스의 주의사항
+Performance Considerations 퍼포먼스의 주의사항
+-------------------------------------
 
-Cost of realtime lights in Deferred Lighting is proportional to number of pixels the light shines on; and *not* dependent on scene complexity. So small point or spot lights are very cheap to render. Point or spot lights that are fully or partially occluded by some scene objects get their pixels skipped on the GPU, so they are even cheaper.  
+Cost of realtime lights in Deferred Lighting is proportional to number of pixels the light shines on; and not dependent on scene complexity. So small point or spot lights are very cheap to render. Point or spot lights that are fully or partially occluded by some scene objects get their pixels skipped on the GPU, so they are even cheaper.  
 디퍼드 렌더링에서 리얼타임 렌더링의 비용은 라이트가 현재 빛나는 , 화면의 픽셀 수에 비례합니다 ; 그리고 신의 복잡도 같은건 신경 꺼도 됩니다. 그래서 매우 작은 포인트나 스팟 라이트 같은 경우는 매우 렌더링 하기 빠릅니다. 전체 혹은 부분적으로 다른 오브젝트에게 가려진 포인트나 스팟 라이트는 GPU에서 계산이 스킵됩니다. 그래서 그들 또한 빠릅니다.
 
 Of course, lights with shadows are much more expensive than lights without shadows. In Deferred Lighting, shadow casters still need to be rendered once or more for each shadow-casting light. And the lighting shader that applies shadows is also more expensive than one without shadows.  
 물론, 라이트와 그림자는 라이트와 그림자가 없을때보다 많이 무겁습니다. 디퍼드 라이팅에서, 그림자 캐스팅은 여전히 한 번 또는 한 번 이상 , 각각 그림자 캐스팅 라이트에 의해 렌더링됩니다. 그리고 그림자가 적용되는 쉐이더는 그림자가 없는 쉐이더보다 역시 많이 무겁습니다.
 
-## Implementation Details
+Implementation Details
+----------------------
 
 When Deferred Lighting is used, rendering process in Unity happens like this:
 
@@ -65,11 +67,11 @@ When Deferred Lighting is used, rendering process in Unity happens like this:
 2. Lighting pass: lighting is computed using the previous buffers. Lighting is computed into another screen-space buffer.
 3. Final pass: objects are rendered again. They fetch computed lighting, combine it with color textures and add any ambient/emissive lighting.
 
-Objects with shaders that can't handle Deferred Lighting are rendered after this process is done, using [RenderTech-ForwardRendering](https://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html) path.
+Objects with shaders that can't handle Deferred Lighting are rendered after this process is done, using [RenderTech-ForwardRendering](http://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html) path.
 
 ### Base Pass
 
-Base pass renders each object once. View space normals and specular power are rendered into single ARGB32 [Render Texture](https://unity3d.com/support/documentation/Components/class-RenderTexture.html) (normals in RGB channels, specular power in A). If platform & hardware supports reading Z buffer as a texture, then depth is not explicitly rendered. If Z buffer can't be accessed as a texture, then depth is rendered in additional rendering pass, using [shader replacement](https://unity3d.com/support/documentation/Components/SL-ShaderReplacement.html).
+Base pass renders each object once. View space normals and specular power are rendered into single ARGB32 [Render Texture](http://unity3d.com/support/documentation/Components/class-RenderTexture.html) (normals in RGB channels, specular power in A). If platform & hardware supports reading Z buffer as a texture, then depth is not explicitly rendered. If Z buffer can't be accessed as a texture, then depth is rendered in additional rendering pass, using [shader replacement](http://unity3d.com/support/documentation/Components/SL-ShaderReplacement.html).
 
 Result of the base pass is Z buffer filled with scene contents and Render Texture with normals & specular power.
 
@@ -88,4 +90,3 @@ If a light has shadows enabled, they are rendered and applies in this pass as we
 Final pass produces final rendered image. Here all objects are rendered again; with shaders that fetch the lighting, combine it with textures and add any emissive lighting.
 
 Lightmaps are also applied in the final pass. Close to the camera, realtime lighting is used, and only baked indirect lighting is added. This crossfades into fully baked lighting further away from the camera
-{% endraw %}

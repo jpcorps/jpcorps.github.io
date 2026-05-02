@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "FlowEffect2mask 쉐이더와 자동 컨버터"
-date: 2010-07-09 12:13:08
-categories: [이글루스 백업, "2010-07"]
+date: 2010-07-09T12:13:08Z
+draft: false
 ---
 
-{% raw %}
 이펙트 아티스트분들이 작업할 때 이펙트만 따로 작업하는게 아니라 이펙트와 함께 움직일 아티펙트 또는 캐릭터와 함께 작업을 하는 경우가 대부분입니다.   
   
 문제는 이렇게 작업 할 때, 맥스 뷰포트 내에서는 이펙트 효과를 보기 힘든 관계로 작업 중간에 수시로 asset viewer로 넘겨 이펙트 타이밍과 블렌딩 효과등을 실험해 봐야 하는데 이게 그렇게 간편한 일이 아니라는 겁니다.   
@@ -24,27 +22,30 @@ categories: [이글루스 백업, "2010-07"]
 처음 제작해 보는 것이라 시간이 좀 많이 걸렸지만, 이후로는 빠르게 작업할 수 있을 것 같습니다.   
 
 단점은 쉐이더가 하나 바뀌면 3개의 파일을 수정해야 한다는 것입니다만 (FX, ms, hlsl) 그 불편함을 감수하고라도 만들 가치는 있는 것으로 보입니다.   
-![](/images/c0055803_4c367bb771662.png)  
+![](http://pds18.egloos.com/pds/201007/09/03/c0055803_4c367bb771662.png)  
   
-![](/assets/images/posts/20100709_121308_c0055803_4c36939f12c97.jpg)
+![](/images/c0055803_4c36939f12c97.png)
 
 쉐이더와 컨버터의 사용 방법은 다음과 같습니다.  
    
 총 파일은 4개로 이루어지며, 각 파일을 정확한 위치에 위치시켜야 합니다.   
   
-**nds\_Flow\_Effect\_2mask.fx**fx파일은 max를 위한 DirectX 쉐이더입니다. 이 파일은 3Dmax가 설치되어 있는 폴더의 maps/fx 폴더에 넣어야 합니다.   
+nds\_Flow\_Effect\_2mask.fx  
+fx파일은 max를 위한 DirectX 쉐이더입니다. 이 파일은 3Dmax가 설치되어 있는 폴더의 maps/fx 폴더에 넣어야 합니다.   
 (예: C:\Program Files\Autodesk\3ds Max 2009\maps\fx)  
   
-**nds\_Flow\_Effect\_2mask.hlsl**hlsl 파일은 겜브리오 쉐이더의 본체입니다. 이 파일은 겜브리오 쉐이더가 설치되어 있는 폴더의 Data / DX9 폴더에 넣어야 합니다. (예: Shaders\Data\DX9)  
+nds\_Flow\_Effect\_2mask.hlsl  
+hlsl 파일은 겜브리오 쉐이더의 본체입니다. 이 파일은 겜브리오 쉐이더가 설치되어 있는 폴더의 Data / DX9 폴더에 넣어야 합니다. (예: Shaders\Data\DX9)  
   
-**nds\_Flow\_Effect\_2mask.nsf**nsf 파일은 겜브리오 쉐이더의 설정값이 들어가는 파일입니다. 이 파일은 겜브리오 쉐이더가 설치되어 있는 폴더의 Data 폴더에 넣어야 합니다.   
+nds\_Flow\_Effect\_2mask.nsf  
+nsf 파일은 겜브리오 쉐이더의 설정값이 들어가는 파일입니다. 이 파일은 겜브리오 쉐이더가 설치되어 있는 폴더의 Data 폴더에 넣어야 합니다.   
 (예: Shaders\Data)  
   
-**Shader\_Converter\_V2.ms**맥스용 DirectX 쉐이더 <-> 겜브리오 쉐이더 를 자유자재로 전환할 수 있게 해 주는 스크립트입니다.   
+Shader\_Converter\_V2.ms  
+맥스용 DirectX 쉐이더 <-> 겜브리오 쉐이더 를 자유자재로 전환할 수 있게 해 주는 스크립트입니다.   
 이 스크립트는 특별한 폴더에 저장할 필요는 없으며, 필요할 때마다 Run 시켜 (혹은 뷰포트로 드래그 시켜) 사용하면 됩니다.   
 물체를 먼저 선택하고,컨버팅 하고 싶은 버튼을 누르세요.   
   
   
 \*PS. 현재 이 쉐이더는 외부테섭에 올라가기 위해 준비중입니다.(오늘대로 들어갈 것으로 예상됩니다 ) 본격적으로 사용은 패치 나간 후 해주세요.   
-[nds\_Flow\_Effect\_2mask.zip](https://pds20.egloos.com/pds/201007/09/03//nds_Flow_Effect_2mask.zip)
-{% endraw %}
+[nds\_Flow\_Effect\_2mask.zip](http://pds20.egloos.com/pds/201007/09/03//nds_Flow_Effect_2mask.zip)

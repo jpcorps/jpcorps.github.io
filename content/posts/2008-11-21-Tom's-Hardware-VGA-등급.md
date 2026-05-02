@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "Tom's Hardware VGA 등급"
-date: 2008-11-21 17:10:31
-categories: [이글루스 백업, "2008-11"]
+date: 2008-11-21T17:10:31Z
+draft: false
 ---
 
-{% raw %}
 |  |  |  |
 | --- | --- | --- |
-| **순위** | **Geforce** | **Radeon** |
+| 순위 | Geforce | Radeon |
 | 1 | 8800 GTX |  |
 | 2 | 8800 GTS |  |
 | 3 | 7950 GX2 | X1950 XTX |
@@ -31,4 +29,3 @@ categories: [이글루스 백업, "2008-11"]
 | 20 | 2 GTS, 4 MX 440, 2 Ultra, 2 Ti200 | 7500 |
 | 21 | 256, 2 MX 200, 4 MX 420, 2 MX 400 | SDR, LE, DDR, 7000, 7200 |
 | 22 | Nvidia TNT | ATI Rage |
-{% endraw %}

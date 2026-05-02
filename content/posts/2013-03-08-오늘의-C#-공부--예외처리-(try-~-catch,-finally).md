@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "오늘의 C# 공부 : 예외처리 (try ~ catch, finally)"
-date: 2013-03-08 07:35:50
-categories: [이글루스 백업, "2013-03"]
+date: 2013-03-08T07:35:50Z
+draft: false
 ---
 
-{% raw %}
 ////예외처리 실습  
 //using System;
 
@@ -227,4 +225,3 @@ categories: [이글루스 백업, "2013-03"]
 //        }  
 //    }  
 //}
-{% endraw %}

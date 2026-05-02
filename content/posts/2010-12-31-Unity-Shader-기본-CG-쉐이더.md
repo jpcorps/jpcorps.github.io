@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Unity Shader 기본 CG 쉐이더"
-date: 2010-12-31 11:52:29
-categories: [이글루스 백업, "2010-12"]
+date: 2010-12-31T11:52:29Z
+draft: false
 ---
 
-{% raw %}
 유니티에서의 쉐이더 처리는 크게 3가지로 나눌 수 있다 (라고 지금까지는 보인다)   
   
 1. 내장 스크립트로 처리하는 방법 : 가장 효율이 좋고 범용적이지만 할 수 있는게 별로 없다.   
@@ -81,7 +79,8 @@ Shader "Color\_Texture" {
 
 Properties{  
   \_Color ("Color Tint", Color) = (1,1,1,1)  
-**\_MainTex ("MainTex", 2D) = "white" {}**   }
+  \_MainTex ("MainTex", 2D) = "white" {}  
+   }
 
 SubShader   
  {  
@@ -98,23 +97,27 @@ SubShader
    //~ #pragma fragmentoption ARB\_fog\_exp2  
    #include "UnityCG.cginc"
 
-**sampler2D \_MainTex;**   float4 \_Color;  
+   sampler2D \_MainTex;  
+   float4 \_Color;  
     
   struct v2f   
    {  
     V2F\_POS\_FOG;  
-**float4 texcoord : TEXCOORD0;**   };  
+    float4 texcoord : TEXCOORD0;  
+   };  
      
   v2f vert (appdata\_base v)  
    {  
     v2f o;  
     PositionFog( v.vertex, o.pos, o.fog );  
-**o.texcoord = v.texcoord;**    return o;  
+    o.texcoord = v.texcoord;  
+    return o;  
    }  
      
   half4 frag (v2f i) : COLOR  
    {  
-**float4 Final = tex2D (\_MainTex, i.texcoord.xy) \* \_Color;**    return Final;  
+    float4 Final = tex2D (\_MainTex, i.texcoord.xy) \* \_Color;  
+    return Final;  
    }  
      
   ENDCG  
@@ -200,4 +203,3 @@ SubShader
 Fallback "Transparent/Diffuse"
 
 }
-{% endraw %}

@@ -1,20 +1,20 @@
 ---
-layout: post
 title: "General shader performance in Unity"
-date: 2011-02-11 14:43:40
-categories: [이글루스 백업, "2011-02"]
+date: 2011-02-11T14:43:40Z
+draft: false
 ---
 
-{% raw %}
-# Performance of Unity shaders
+Performance of Unity shaders
+============================
 
-There are a number of factors that can affect the overall performance of your game. This page will talk specifically about the performance considerations for [Built-in Shaders](https://unity3d.com/support/documentation/Components/Built-in%20Shader%20Guide.html). Performance of a shader mostly depends on two things: shader itself and which [Rendering Path](https://unity3d.com/support/documentation/Manual/RenderingPaths.html) is used by the project or specific camera. For performance tips when writing your own shaders, see [ShaderLab Shader Performance](https://unity3d.com/support/documentation/Components/SL-ShaderPerformance.html) page.   
+There are a number of factors that can affect the overall performance of your game. This page will talk specifically about the performance considerations for [Built-in Shaders](http://unity3d.com/support/documentation/Components/Built-in%20Shader%20Guide.html). Performance of a shader mostly depends on two things: shader itself and which [Rendering Path](http://unity3d.com/support/documentation/Manual/RenderingPaths.html) is used by the project or specific camera. For performance tips when writing your own shaders, see [ShaderLab Shader Performance](http://unity3d.com/support/documentation/Components/SL-ShaderPerformance.html) page.   
 여기의 내용은 당신의 게임의 전체적인 퍼포먼스에 영향을 끼치는 펙터들입니다. 이 페이지는 특히 빌트인 쉐이더 (제작된 쉐이더가 아닌 내장된 쉐이더) 의 퍼포먼스에 대해 다룹니다. 쉐이더 퍼포먼스는 크게 두 가지의 영향을 받지요 : 쉐이더 그 자체와 프로젝트 혹은 특정 카메라에 의해 사용되는 렌더 패스 말이빈다.   
 직접 제작하는 쉐이더의 퍼포먼스를 위해서 쉐이더랩 쉐이더 퍼포먼스 페이지를 보십시오.
 
-## Rendering Paths and shader performance
+Rendering Paths and shader performance
+--------------------------------------
 
-From the rendering paths Unity supports, [Deferred Lighting](https://unity3d.com/support/documentation/Components/RenderTech-DeferredLighting.html) and [Vertex Lit](https://unity3d.com/support/documentation/Components/RenderTech-VertexLit.html) paths have the most predictable performance. In Deferred lighting, each object is generally drawn twice, no matter what lights are affecting it. Similarly, in Vertex Lit each object is generally drawn once. So then, the performance differences in shaders mostly depend on how many textures they use and what calculations they do.   
+From the rendering paths Unity supports, [Deferred Lighting](http://unity3d.com/support/documentation/Components/RenderTech-DeferredLighting.html) and [Vertex Lit](http://unity3d.com/support/documentation/Components/RenderTech-VertexLit.html) paths have the most predictable performance. In Deferred lighting, each object is generally drawn twice, no matter what lights are affecting it. Similarly, in Vertex Lit each object is generally drawn once. So then, the performance differences in shaders mostly depend on how many textures they use and what calculations they do.   
   
 렌더 패스와 쉐이더 퍼포먼스   
 유니티에서 지원하는 렌더 패스인 디퍼드 라이팅이나 버텍스 라이트 패스는 굉장히 당연한 퍼포먼스를 가집니다. 디퍼드 라이팅에서는, 모든 오브젝트는 두 번 그려지고 , 라이팅이 얼마나 먹는지에는 영향을 받지 않습니다.   
@@ -23,7 +23,7 @@ From the rendering paths Unity supports, [Deferred Lighting](https://unity3d.com
 
 ### Shader Performance in Forward rendering path
 
-In [Forward](https://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html) rendering path, performance of a shader depends on **both** the shader itself and the lights in the scene. The following section explains the details. There are two basic categories of shaders from a performance perspective, Vertex-Lit, and Pixel-Lit.
+In [Forward](http://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html) rendering path, performance of a shader depends on both the shader itself and the lights in the scene. The following section explains the details. There are two basic categories of shaders from a performance perspective, Vertex-Lit, and Pixel-Lit.
 
 포워드 패스에서, 쉐이더의 퍼포먼스에 영향을 끼치는 것은 쉐이더 자체와 신에 있는 라이팅입니다. 자세한건 뒤의 섹션에 소개해 놓았습니다. 거기에는 두개의 기본적인 퍼포먼스 측면에서의 쉐이더 카테고리가 있는데, 버텍스 라이팅과 픽셀 라이팅에 대해서입니다.  
   
@@ -40,9 +40,10 @@ Remember that lights can be forced into a pixel ("important") or vertex/SH ("not
 그래서 픽셀라이트 쉐이더는 퍼포먼스 코스트를 요구합니다. 그렇지만 이 코스트는 특별한 효과를 가능하게 합니다 :몇 가지 예를 들자면,  그림자나 노말맵, 퀄리티 좋은 스페큘러나 라이트 쿠키 등 말입니다.   
 라이트는 픽셀 모드(중요함)와 버텍스 모드(덜 중요함)에 영향을 받는다는 것을 기억하세요. 픽셀 라이팅 기반으로 빛나는 버텍스 라이트들은 오브젝트의 버텍스나 전체 오브젝트를 기반으로 결정됩니다. 그리고 이것은 픽셀 라이팅과 관련된 렌더링 코스트나 특수효과들을 더하지 못합니다. (주: 버텍스 라이트들이기 때문에 특수효과를 못낸다는 말)
 
-## General shader performance
+General shader performance
+--------------------------
 
-Out of [Built-in Shaders](https://unity3d.com/support/documentation/Components/Built-in%20Shader%20Guide.html), they come roughly in this order of increasing complexity:   
+Out of [Built-in Shaders](http://unity3d.com/support/documentation/Components/Built-in%20Shader%20Guide.html), they come roughly in this order of increasing complexity:   
 빌트인 쉐이더 외에, 그들은 대충 아래와 같은 순위로 복잡도가 상승합니다.
 
 * Unlit. This is just a texture, not affected by any lighting.* 언라이트. 이것은 단지 텍스쳐입니다. 라이팅의 영향받지 않습니다.* VertexLit.* 버텍스라이트.* Diffuse.* 디퓨즈.* Normal mapped. This is a bit more expensive than Diffuse: it adds one more texture (normal map), and a couple of shader instructions.* 노말맵. 이것은 디퓨즈보다 조금 더 무겁습니다. : 이것은 한 개의 텍스쳐를 더 추가하고, 몇몇개의 쉐이더 명령을 추가합니다.* Specular. This adds specular highlight calculation.* 스페큘러. 이것은 스페큘러 하이라이팅을 추가합니다.* Normal Mapped Specular. Again, this is a bit more expensive than Specular.* 노말맵 스페큘러, 다시 이것은 스페큘러보다 조금더 비쌉니다.* Parallax Normal mapped. This adds parallax normal-mapping calculation.* 패럴랙스노말맵 : 이것은 패럴렉스 노말맵 (주: 시차 매핑으로, 노말맵보다 좀 더 무겁다) 을 추가합니다.* Parallax Normal Mapped Specular. This adds both parallax normal-mapping and specular highlight calculation.
@@ -51,4 +52,3 @@ Out of [Built-in Shaders](https://unity3d.com/support/documentation/Components/B
 Additionally, Unity has several simplified shaders targeted at mobile platforms, under "Mobile" category. These shaders work on other platforms as well, so if you can live with their simplifications (e.g. approximate specular, no per-material color support etc.), try using them!   
   
 추가적으로, 유니티는 모바일 카테고리에 몇 개의 추가적인 간단한 쉐이더를 가지고 있습니다. 이 쉐이더는 다른 플렛폼에서도 잘 돌고, 그리고 만일 당신이 이 단순한걸 써도 되는 분위기라면 이걸 쓰십시오!! (예로. 대충 계산하는 스페큘러, per 메터리얼 칼라 서포트라던가.)
-{% endraw %}

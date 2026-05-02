@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "fragment shader 기본형"
-date: 2012-09-05 17:54:35
-categories: [이글루스 백업, "2012-09"]
+date: 2012-09-05T17:54:35Z
+draft: false
 ---
 
-{% raw %}
- Shader "TestRedShader" {  
+Shader "TestRedShader" {  
     Properties {  
 //      \_MainTex ("Texture1", 2D) = "white" {}  
 //      \_BumpMap ("Bumpmap", 2D) = "bump" {}  
@@ -54,4 +52,3 @@ Category{
     
     
 }
-{% endraw %}

@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Liner Color Space 후처리"
-date: 2009-12-15 08:58:09
-categories: [이글루스 백업, "2009-12"]
+date: 2009-12-15T08:58:09Z
+draft: false
 ---
 
-{% raw %}
-[Rendering in Linear Color Space](https://jufoot.egloos.com/1960058)  
+[Rendering in Linear Color Space](http://jufoot.egloos.com/1960058)  
   
 게임에서 텍스쳐가 이미지가 뭔가 칙칙하게 나온다 생각했었는데, 과연!   
 이런게 있을 것 같다고 생각했었는데 있었습니다 .   
@@ -14,5 +12,4 @@ categories: [이글루스 백업, "2009-12"]
   
 근데 이걸 보기 이전에 제가 생각한 것과 사실 같은 방식입니다.   
 프로그래머에게 레벨 컨트롤을 할 수 있는 기능을 만들어 달라고 했거든요 :)   
-사실 이게 그거랑 비슷...   
-{% endraw %}
+사실 이게 그거랑 비슷...

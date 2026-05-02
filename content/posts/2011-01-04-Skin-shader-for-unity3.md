@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Skin shader for unity3"
-date: 2011-01-04 15:34:10
-categories: [이글루스 백업, "2011-01"]
+date: 2011-01-04T15:34:10Z
+draft: false
 ---
 
-{% raw %}
-<https://forum.unity3d.com/threads/64210-Skin-Shader-for-U3-need-help-with-converting>.  
+<http://forum.unity3d.com/threads/64210-Skin-Shader-for-U3-need-help-with-converting>.  
   
   
   
@@ -86,19 +84,18 @@ ENDCG
   
   
   
-And now some nice images using the great model from Infinite, 3D Head Scan by Lee Perry-Smith (<https://www.ir-ltd.net/blog/>).  
+And now some nice images using the great model from Infinite, 3D Head Scan by Lee Perry-Smith (<http://www.ir-ltd.net/blog/>).  
   
-The model on the **left** is rendered with a **classic Bumped Specular** shader, while the **right** model is rendered using the **skin** shader:  
+The model on the left is rendered with a classic Bumped Specular shader, while the right model is rendered using the skin shader:  
   
 Front directional light  
-![](https://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromFront.jpg)  
+![](http://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromFront.jpg)  
   
 Left directional light  
-![](https://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromLeft.jpg)  
+![](http://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromLeft.jpg)  
   
 Light from below  
-![](https://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromBelow.jpg)  
+![](http://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromBelow.jpg)  
   
 Directional light with soft shadows  
-![](https://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromRightWithShadows.jpg)
-{% endraw %}
+![](http://dl.dropbox.com/u/12552166/Unity/SkinShader%20for%20Unity%203/SkinShader_LightFromRightWithShadows.jpg)

@@ -1,18 +1,16 @@
 ---
-layout: post
 title: "Unity 엔진용 Flow 쉐이더 컨버팅"
-date: 2010-12-29 11:18:32
-categories: [이글루스 백업, "2010-12"]
+date: 2010-12-29T11:18:32Z
+draft: false
 ---
 
-{% raw %}
 이런 제길. 결국 다 다시 만들었습니다.   
   
 쉐이더 툴에서 만드는건 결국 참고로만 쓰고, 최종으로는 다시 수작업으로 작성.   
 커스텀 라이팅 체계를 쓰다보니까, 오히려 이펙트처럼 라이트 체계가 필요 없는 경우에서는 쓸데없이 커스텀 라이팅을 활성화 시켜서 디퍼드 렌더링까지 건드리는 사태를 초래하네요. 이펙트에 무슨 디퍼드 렌더링이야... 알파 들어간 녀석은 무조건 포워딩입니다.  
   
   
-![](/assets/images/posts/20101229_111832_c0055803_4d1a996cd31e9.jpg)  
+![](/images/c0055803_4d1a996cd31e9.png)  
 동작은 잘 됩니다. 코드도 간단.
 
   
@@ -39,7 +37,7 @@ SubShader {
    
  CGPROGRAM  
       #pragma surface surf Lambert   
-**//(라이팅 체계를 프레그먼트로 사용하는데, 렘버트를 사용중. 더 심플한건 없나? 무슨 종류가 있는지 알 수 없어서 고생스럽네요. 내부를 볼 수 없으니... )**  
+//(라이팅 체계를 프레그먼트로 사용하는데, 렘버트를 사용중. 더 심플한건 없나? 무슨 종류가 있는지 알 수 없어서 고생스럽네요. 내부를 볼 수 없으니... )  
  //#pragma target 2.0  
    
    
@@ -66,7 +64,7 @@ SubShader {
    o.Alpha = 1.0;  
      
    float2 MainTexScroll=\_Time.x \* float2(\_MainTexU,\_MainTexV ) ;   
-**//(\_Time이 float2로 되어 있습니다! 선언할 필요 없이 가져다 쓰는건 편하지만 덧셈할때 주의해야 합니다. )**  
+//(\_Time이 float2로 되어 있습니다! 선언할 필요 없이 가져다 쓰는건 편하지만 덧셈할때 주의해야 합니다. )  
    float2 UV\_Pan0 = IN.uv\_MainTex + MainTexScroll ;
 
    float2 MainTex1Scroll=\_Time \* float2(\_MainTex1U,\_MainTex1V ) ;  
@@ -79,4 +77,3 @@ SubShader {
       ENDCG  
 }  
 }
-{% endraw %}

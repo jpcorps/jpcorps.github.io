@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Anisotropic 수치 제어"
-date: 2010-06-24 15:57:29
-categories: [이글루스 백업, "2010-06"]
+date: 2010-06-24T15:57:29Z
+draft: false
 ---
 
-{% raw %}
-    TSAMP\_MagFilter = TEXF\_Anisotropic  
+TSAMP\_MagFilter = TEXF\_Anisotropic  
     TSAMP\_MinFilter = TEXF\_Anisotropic  
     TSAMP\_MipFilter = TEXF\_Anisotropic  
     TSAMP\_MaxAnisotropy = 4  
@@ -21,5 +19,4 @@ categories: [이글루스 백업, "2010-06"]
 뭐 우리에겐 언제나 변치않는 정의의 우리친구 '옵션' 이란 녀석이 있으니까요.   
   
   
-![](/assets/images/posts/20100624_155729_c0055803_4c23380d1a670.jpg)
-{% endraw %}
+![](/images/c0055803_4c23380d1a670.png)

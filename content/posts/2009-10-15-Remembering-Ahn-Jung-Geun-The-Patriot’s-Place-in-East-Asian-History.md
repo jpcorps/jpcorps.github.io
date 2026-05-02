@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "Remembering Ahn Jung-Geun: The Patriot’s Place in East Asian History"
-date: 2009-10-15 15:13:04
-categories: [이글루스 백업, "2009-10"]
+date: 2009-10-15T15:13:04Z
+draft: false
 ---
 
-{% raw %}
-**Remembering Ahn Jung-Geun: The Patriot’s Place in East Asian Historyxml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /**
+Remembering Ahn Jung-Geun: The Patriot’s Place in East Asian Historyxml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /
 
-*Patrick E. Vaillancourt*
+Patrick E. Vaillancourt
 
   
 
@@ -51,6 +49,3 @@ What makes this case so interesting is that, while Ahn was right to do what he d
  
 
 Perhaps the greatest tribute to be paid to one of modern Korea’s founding heroes would be for today’s leaders to adopt a more Asianist approach to bring peace to the Korean peninsula.
-
- 
-{% endraw %}

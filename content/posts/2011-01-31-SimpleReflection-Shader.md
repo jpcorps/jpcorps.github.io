@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "SimpleReflection Shader"
-date: 2011-01-31 11:10:02
-categories: [이글루스 백업, "2011-01"]
+date: 2011-01-31T11:10:02Z
+draft: false
 ---
 
-{% raw %}
 실제로 이 그래픽 카드에서는 작동 안됨.   
   
 // Upgrade NOTE: replaced 'glstate.matrix.mvp' with 'UNITY\_MATRIX\_MVP'
@@ -111,4 +109,3 @@ Shader "SimpleReflection Shader" {
   }  
  }\*/  
 }
-{% endraw %}

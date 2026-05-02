@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Unity Script 기초 1부"
-date: 2011-05-24 11:18:41
-categories: [이글루스 백업, "2011-05"]
+date: 2011-05-24T11:18:41Z
+draft: false
 ---
 
-{% raw %}
 문법 기본은 당연히 C#.   
 자바스크립트로 짤 수도 있습니다만 (그리고 그게 더 빠릅니다만) 편한건 C#.  
 쉐이더 말고 C# 작업은, 그리고 스크립트 작업은 한 번도 해본 적이 없어서 이번이 처음입니다.   
@@ -22,7 +20,7 @@ categories: [이글루스 백업, "2011-05"]
   
 그럼 어쨌건 시작.   
 
-![](/assets/images/posts/20110524_111841_c0055803_4ddb1f1ef3c26.jpg)![](/assets/images/posts/20110524_111841_c0055803_4ddb1f1e69412.jpg)우선 빈 스크립트를 제작합니다. C# 스크립트를 제작하지요.   
+![](/images/c0055803_4ddb1f1ef3c26.png)![](/images/c0055803_4ddb1f1e69412.png)우선 빈 스크립트를 제작합니다. C# 스크립트를 제작하지요.   
 그리고 이름을 바꿔둡니다.   
   
   
@@ -69,11 +67,11 @@ public class JPTestColorChange : MonoBehaviour {
 }  
 ===================================  
   
-![](/assets/images/posts/20110524_111841_c0055803_4ddb20d2609e0.jpg)  
+![](/images/c0055803_4ddb20d2609e0.png)  
   
 그리고 방금 만든 스크립트를, 적용하고자 하는 오브젝트에 적용해 줍니다.  
   
-![](/assets/images/posts/20110524_111841_c0055803_4ddb20d64f471.jpg)
+![](/images/c0055803_4ddb20d64f471.png)
 
 적용되었습니다.   
   
@@ -106,10 +104,9 @@ public class JPTestColorChange : MonoBehaviour {
   
 ===================================  
   
-![](/assets/images/posts/20110524_111841_c0055803_4ddb34c58ac00.jpg)
+![](/images/c0055803_4ddb34c58ac00.png)
 
 이것만으로 간단히 칼라 추가. 인터페이스 설정없이 변수만 추가하니까 메뉴가 생기다니 오마이갓.   
   
-![](/assets/images/posts/20110524_111841_c0055803_4ddb35a82d030.jpg)  
-이런식으로 int 와 float과 bool 추가해봄. 오오 bool 이 된다   
-{% endraw %}
+![](/images/c0055803_4ddb35a82d030.png)  
+이런식으로 int 와 float과 bool 추가해봄. 오오 bool 이 된다

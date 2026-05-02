@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "AT2/Char/Main"
-date: 2011-04-22 16:58:35
-categories: [이글루스 백업, "2011-04"]
+date: 2011-04-22T16:58:35Z
+draft: false
 ---
 
-{% raw %}
- 구시대 쉐이더. 버린것. 백업.
+구시대 쉐이더. 버린것. 백업.
 
 Shader "AT2/Char/Main" {
 
@@ -199,4 +197,3 @@ Shader "AT2/Char/Main" {
 
     Fallback "Diffuse"  
   }
-{% endraw %}

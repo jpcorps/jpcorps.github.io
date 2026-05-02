@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Plan을 4면으로 나누고 Detach 하는 맥스 스크립트"
-date: 2007-05-17 11:48:43
-categories: [이글루스 백업, "2007-05"]
+date: 2007-05-17T11:48:43Z
+draft: false
 ---
 
-{% raw %}
-![](/assets/images/posts/20070517_114843_c0055803_11053246.jpg)  
+![](/images/c0055803_11053246.jpg)  
   
 인터페이스를 만들어서 할 만큼 거창한 작업도 아니고... 해서  
 간단하게 만들어서 실행.   
@@ -55,8 +53,7 @@ delete a
   
 미친 척 줄여쓰면 4줄로도 완성 ㅡ,.ㅡ   
    
-**a = $  
+a = $  
 polyOP.tessellateByFace a #{1}  
 for t = 1 to 4 do ( polyOp.detachFaces a #{1} asNode:true )  
-delete a**
-{% endraw %}
+delete a

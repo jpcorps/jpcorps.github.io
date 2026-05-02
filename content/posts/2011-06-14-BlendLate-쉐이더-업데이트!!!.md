@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "BlendLate 쉐이더 업데이트!!!"
-date: 2011-06-14 18:11:07
-categories: [이글루스 백업, "2011-06"]
+date: 2011-06-14T18:11:07Z
+draft: false
 ---
 
-{% raw %}
 기존의 BlendLate 쉐이더가 물과 Z 파이팅을 일으켜서 +1 처리가 된 쉐이더가 BlendLate 쉐이더입니다.   
 그리는 순서가 +1 된 것 외엔 일반 알파블렌딩 쉐이더와 별 차이가 없었지요.   
   
@@ -17,18 +15,20 @@ categories: [이글루스 백업, "2011-06"]
 또한 +1이 들어가 있는 BlendLate 쉐이더는 다른 알파 쉐이더랑 충돌이 나곤 합니다.   
 때문에 BlendLate 쉐이더는 원래대로 돌려놓기로 하겠습니다.  
    
-**- 그러므로 사실 BlendLate 쉐이더는 이제 의미가 없습니다.   
+- 그러므로 사실 BlendLate 쉐이더는 이제 의미가 없습니다.   
   
 이제부터는 BlaendLate 쉐이더 사용을 자제해 주시고,   
   
-Particle/AlphaBlended 사용해 주십시오.**이미 BlendLate가 많이 사용되어 있으므로 쉐이더를 갑자기 삭제하진 않겠습니다.  
+Particle/AlphaBlended 사용해 주십시오.   
+  
+이미 BlendLate가 많이 사용되어 있으므로 쉐이더를 갑자기 삭제하진 않겠습니다.  
  즉 BlendLate 쉐이더를 쓰셔도 AlphaBlended 쉐이더와 완전 똑같습니다!! 자동으로 그렇게 됩니다.  
-그러므로 실수하셨다고 걱정할 필요 없습니다. **BlendLate 쉐이더를 쓰셔도 되긴 합니다. 단 자제만 해주세요.**  
-![](/assets/images/posts/20110614_181107_c0055803_4df724ff37dfd.jpg)  
+그러므로 실수하셨다고 걱정할 필요 없습니다. BlendLate 쉐이더를 쓰셔도 되긴 합니다. 단 자제만 해주세요.   
+  
+![](/images/c0055803_4df724ff37dfd.png)  
 수정전. 알파 블렌딩 파이팅이 납니다.   
   
-![](/assets/images/posts/20110614_181107_c0055803_4df72500dbf83.jpg)
+![](/images/c0055803_4df72500dbf83.png)
 
   
-수정후. 문제가 나지 않습니다. 
-{% endraw %}
+수정후. 문제가 나지 않습니다.

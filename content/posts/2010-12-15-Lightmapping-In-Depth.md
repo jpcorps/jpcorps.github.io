@@ -1,16 +1,15 @@
 ---
-layout: post
 title: "Lightmapping In-Depth"
-date: 2010-12-15 03:52:01
-categories: [이글루스 백업, "2010-12"]
+date: 2010-12-15T03:52:01Z
+draft: false
 ---
 
-{% raw %}
-## If you are about to lightmap your first scene in Unity, this [Quickstart Guide](Removed_Local_Path) might help you out. Lightmapping is fully integrated in Unity, so that you can build entire levels from within the Editor, lightmap them and have your materials automatically pick up the lightmaps without you having to worry about it. Lightmapping in Unity means that all your lights' properties will be mapped directly to the Beast lightmapper and baked into textures for great performance. Unity Pro extends this functionality by Global Illumination, allowing for baking realistic and beautiful lighting, that would otherwise be impossible in realtime. Additionally Unity Pro brings you sky lights and emissive materials for even more interesting scene lighting. In this page you will find a more in-depth description of all the attributes that you can find in the Lightmapping window. To open the Lightmapping window select **Window – Lightmapping**. Object
+If you are about to lightmap your first scene in Unity, this [Quickstart Guide](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/Lightmapping.html) might help you out.  Lightmapping is fully integrated in Unity, so that you can build entire levels from within the Editor, lightmap them and have your materials automatically pick up the lightmaps without you having to worry about it. Lightmapping in Unity means that all your lights' properties will be mapped directly to the Beast lightmapper and baked into textures for great performance. Unity Pro extends this functionality by Global Illumination, allowing for baking realistic and beautiful lighting, that would otherwise be impossible in realtime. Additionally Unity Pro brings you sky lights and emissive materials for even more interesting scene lighting.  In this page you will find a more in-depth description of all the attributes that you can find in the Lightmapping window. To open the Lightmapping window select Window – Lightmapping.      Object
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Per-object bake settings for lights, mesh renderers and terrains - depending on the current selection.
 
-**Mesh Renderers and Terrains:**
+Mesh Renderers and Terrains:
 
 |  |  |
 | --- | --- |
@@ -23,12 +22,12 @@ Per-object bake settings for lights, mesh renderers and terrains - depending on 
 | Tiling | (Mesh Renderers only) Tiling of object's lightmap UVs. |
 | Offset | (Mesh Renderers only) Offset of object's lightmap UVs. |
 
-**Lights:**
+Lights:
 
 |  |  |
 | --- | --- |
 |  |  |
-| Lightmapping | The Lightmapping mode: Realtime Only, Auto or Baked Only. See [Dual Lightmaps](Removed_Local_Path) description below. |
+| Lightmapping | The Lightmapping mode: Realtime Only, Auto or Baked Only. See [Dual Lightmaps](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/LightmappingInDepth.html#DualLightmaps) description below. |
 | Color | The color of the light. Same property is used for realtime rendering. |
 | Intensity | The intensity of the light. Same property is used for realtime rendering. |
 | Bounce Intensity | A multiplier to the intensity of indirect light emitted from this particular light source. |
@@ -37,7 +36,8 @@ Per-object bake settings for lights, mesh renderers and terrains - depending on 
 | Shadow Angle | (Directional lights only) Increase this value for soft direct shadows - it increases the angular coverage of the light for the shadowing (but not lighting) calculations. |
 | Shadow Samples | If you've set Shadow Radius or Angle above zero, increase the number of Shadow Samples as well. Higher sample numbers remove noise from the shadow penumbra, but might increase rendering times. |
 
-## Bake
+Bake
+----
 
 Global bake settings.
 
@@ -61,7 +61,8 @@ Global bake settings.
 | Lock Atlas | When Lock Atlas is enabled, automatic atlasing won't be run and lightmap index, tiling and offset on the objects won't be modified. |
 | Resolution | The resolution of the lightmaps in texels per world unit, so a value of 50 and a 10unit by 10unit plane will result in the plane occupying 500x500 pixels in the lightmap. |
 
-## Maps
+Maps
+----
 
 The editable array of all the lightmaps.
 
@@ -72,7 +73,8 @@ The editable array of all the lightmaps.
 | Array Size | Size of the lightmaps array (0 to 254). |
 | Lightmaps Array | The editable array of all the lightmaps in the current scene. Unassigned slots are treated as black lightmaps. Indices correspond to the Lightmap Index value on Mesh Renderers and Terrains. Unless Lock Atlas is enabled, this array will get auto-resized and populated whenever you bake lightmaps. |
 
-## Lightmap Display
+Lightmap Display
+----------------
 
 Utilities for controlling how lightmaps are displayed in the editor. Lightmap Display is a sub window of the Scene View, visible whenever the Lightmapping window is visible.
 
@@ -83,35 +85,36 @@ Utilities for controlling how lightmaps are displayed in the editor. Lightmap Di
 | Shadow Distance | The distance at which Auto lights and Close By lightmaps fade out to just Far Away lightmaps. This setting overrides but not overwrites the QualitySettings.shadowDistance setting. |
 | Show Resolution | Toggles the scene view Lightmap Resolution mode, which allows you to preview how you spend your lightmap texels on objects marked as static. |
 
-## Details
+Details
+-------
 
 ### Dual Lightmaps
 
-Dual lightmaps is Unity's approach to make lightmapping work with **specular**, **normal mapping** and proper blending of baked and realtime shadows. It's also a way to make your lightmaps look good even if the lightmap resolution is low.
+Dual lightmaps is Unity's approach to make lightmapping work with specular, normal mapping and proper blending of baked and realtime shadows. It's also a way to make your lightmaps look good even if the lightmap resolution is low.
 
-Dual lightmaps can only be used in the [Deferred Lighting](Removed_Local_Path) rendering path.
+Dual lightmaps can only be used in the [Deferred Lighting](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/RenderingPaths.html) rendering path.
 
 Dual lightmaps use two sets of lightmaps:
 
-* **Far**: Contains full illumination* **Near**: Contains indirect illumination from lights marked as **Auto**, full illumination from lights marked as **Bake Only**, emissive materials and sky lights.
+* Far: Contains full illumination* Near: Contains indirect illumination from lights marked as Auto, full illumination from lights marked as Bake Only, emissive materials and sky lights.
 
-**Realtime Only** lights are never baked. The **Near** lightmap set is used within the distance from the camera smaller than the Shadow Distance quality setting.  
-Within this distance **Auto** lights are rendered as realtime lights with specular bump and realtime shadows (this makes their shadows blend correctly with shadows from Realtime Only lights) and their indirect light is taken from the lightmap. Outside Shadow Distance **Auto** lights no longer render in realtime and full illumination is taken from the **Far** lightmap (**Realtime Only** lights are still there, but with disabled shadows).
+Realtime Only lights are never baked. The Near lightmap set is used within the distance from the camera smaller than the Shadow Distance quality setting.  
+Within this distance Auto lights are rendered as realtime lights with specular bump and realtime shadows (this makes their shadows blend correctly with shadows from Realtime Only lights) and their indirect light is taken from the lightmap. Outside Shadow Distance Auto lights no longer render in realtime and full illumination is taken from the Far lightmap (Realtime Only lights are still there, but with disabled shadows).
 
 The scene below contains one directional light with lightmapping mode set to the default Auto, a number of static lightmapped objects (buildings, obstacles, immovable details) and some dynamic moving or movable objects (dummies with guns, barrels). The scene is baked and rendered in dual lightmaps mode: behind the shadow distance buildings are fully lit only by lightmaps, while the two dummies are dynamically lit but don't cast shadows anymore; in front of the shadow distance both the dummy and static lightmapped buildings and ground are lit in realtime and cast realtime shadows, but the soft indirect light comes from the near lightmap.
 
-<!-- 로컬 경로 이미지 링크 제거됨 -->
+![](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Images/manual/LightmappingInDepth-1.jpg)
 
-<!-- 로컬 경로 이미지 링크 제거됨 -->
+![](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Images/manual/LightmappingInDepth-2.jpg)
 
 ### Single Lightmaps
 
-Single Lightmaps is a much simpler technique, but it can be used in any [rendering path](Removed_Local_Path). All static illumination (i.e. from baked only and auto lights, sky lights and emissive materials) gets baked into one set of lightmaps. These lightmaps are used on all lightmapped objects regardless of shadow distance.
+Single Lightmaps is a much simpler technique, but it can be used in any [rendering path](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/RenderingPaths.html). All static illumination (i.e. from baked only and auto lights, sky lights and emissive materials) gets baked into one set of lightmaps. These lightmaps are used on all lightmapped objects regardless of shadow distance.
 
 To match the strength of dynamic shadows to baked shadows, you need to manually adjust the Shadow Strength property of your light:
 
-<!-- 로컬 경로 이미지 링크 제거됨 --> <!-- 로컬 경로 이미지 링크 제거됨 -->  
-*Adjusting Shadow Strength of a light from the original value of 1.0 to 0.7.*
+![](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Images/manual/LightmappingInDepth-3.jpg) ![](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Images/manual/LightmappingInDepth-4.jpg)  
+Adjusting Shadow Strength of a light from the original value of 1.0 to 0.7.
 
 ### Lightmapped Materials
 
@@ -119,16 +122,16 @@ Unity doesn't require you to select special materials to use lightmaps. Any shad
 
 ### Lightmap Resolution
 
-With the *Resolution* bake setting you control how many texels per unit are needed for your scene to look good. If there's a 1x1 unit plane in your scene and the resolution is set to 10 texels per unit, your plane will take up 10x10 texels in the lightmap. Resolution bake setting is a global setting. If you want to modify it for a special object (make it very small or very big in the lightmap) you can use Scale in Lightmap property of Mesh Renderers. Setting Scale in Lightmap to 0 will result in the object not being lightmapped at all (it will still influence lightmaps on other objects). Use the *Lightmap Resolution* scene view render mode to preview how you spend your lightmap texels.
+With the Resolution bake setting you control how many texels per unit are needed for your scene to look good. If there's a 1x1 unit plane in your scene and the resolution is set to 10 texels per unit, your plane will take up 10x10 texels in the lightmap. Resolution bake setting is a global setting. If you want to modify it for a special object (make it very small or very big in the lightmap) you can use Scale in Lightmap property of Mesh Renderers. Setting Scale in Lightmap to 0 will result in the object not being lightmapped at all (it will still influence lightmaps on other objects). Use the Lightmap Resolution scene view render mode to preview how you spend your lightmap texels.
 
-<!-- 로컬 경로 이미지 링크 제거됨 -->  
-*Lightmap Resolution scene view mode visualising how the lightmap texels are spent (each square is one texel).*
+![](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Images/manual/LightmappingInDepth-5.jpg)  
+Lightmap Resolution scene view mode visualising how the lightmap texels are spent (each square is one texel).
 
 ### UVs
 
 A mesh that you're about to lightmap needs to have UVs suitable for lightmapping. The easiest way to ensure that is to enable the Generate Lightmap UVs option in Mesh Import Settings for a given mesh.
 
-For more information see the [Lightmap UVs](Removed_Local_Path) page.
+For more information see the [Lightmap UVs](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/LightmappingUV.html) page.
 
 ### Material Properties
 
@@ -138,9 +141,10 @@ The following material properties are mapped to Beast's internal scene represent
           + Alpha-based: when using a transparent shader, main texture's alpha channel will control the transparency+ Color-based: Beast's RGB transparency can be enabled by adding a texture property called \_TransparencyLM to the shader. Bear in mind that this transparency is defined in the opposite way compared to the alpha-based transparency: here a pixel with value (1, 0, 0) will be fully transparent to red light component and fully opaque to green and blue component, which will result in a red shadow; for the same reason white texture will be fully transparent, while black texture - fully opaque.* Emission
             + Self Illuminated materials will emit light tinted by the Color and Main Texture and masked by the Illum texture. The intensity of emitted light is proportional to the Emission property (0 disables emission).
 
-*Note: When mapping materials to Beast, Unity detects the 'kind' of the shader by the shader's properties and path/name keywords such as: 'Specular', 'Transparent', 'Self-Illumin', etc.*
+Note: When mapping materials to Beast, Unity detects the 'kind' of the shader by the shader's properties and path/name keywords such as: 'Specular', 'Transparent', 'Self-Illumin', etc.
 
-## Advanced
+Advanced
+--------
 
 ### Automatic Atlasing
 
@@ -150,8 +154,8 @@ Object's world-space surface area is multiplied by the per-object Scale In Light
 
 As a result of atlasing, every object to be lightmapped has it's place in one of the lightmaps and that space doesn't overlap with any other object's space. The atlasing information is stored as three values: Lightmap Index, Tiling (scale) and Offset in Mesh Renderers and as one value: Lightmap Index in Terrains and can be viewed and modified via the Object pane of the lightmapping window.
 
-<!-- 로컬 경로 이미지 링크 제거됨 -->  
-*Right-clicking a lightmap allows to select all game objects, that are using the chosen lightmap. Lightmaps of the active object from the current selection will be highlighted in yellow.*
+![](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Images/manual/LightmappingInDepth-6.jpg)  
+Right-clicking a lightmap allows to select all game objects, that are using the chosen lightmap. Lightmaps of the active object from the current selection will be highlighted in yellow.
 
 Atlasing can only modify per-object data which is Lightmap Index, Tiling and Offset and can not modify the UV set of an object, as the UV set is stored as part of the shared mesh. Lightmap UVs for a mesh can only be created at import time using Unity's built-in auto-unwrapper or in an external 3D package before importing to Unity.
 
@@ -165,7 +169,6 @@ Remember that Lock Atlas locks only atlasing, not the mesh UVs. If you change yo
 
 ### Custom Beast bake settings
 
-If you need even more control over the bake process, see the [custom Beast settings](Removed_Local_Path) page.
+If you need even more control over the bake process, see the [custom Beast settings](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/LightmappingCustomSettings.html) page.
 
 Page last updated: 2010-11-02
-{% endraw %}

@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "World normal calculate in Unity Shader"
-date: 2011-04-20 11:19:57
-categories: [이글루스 백업, "2011-04"]
+date: 2011-04-20T11:19:57Z
+draft: false
 ---
 
-{% raw %}
 유니티에서 월드 노말 구하기  
 정말 이 방법 뿐인가? 이녀석들은 노말맵을 자기들이 다 알아서 관리해서...   
   
@@ -49,4 +47,3 @@ float4 frag( v2f i ) : COLOR
     worldNormal = normalize(worldNormal);  
    
    }
-{% endraw %}

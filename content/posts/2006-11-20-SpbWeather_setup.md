@@ -1,12 +1,9 @@
 ---
-layout: post
 title: "SpbWeather_setup"
-date: 2006-11-20 13:05:32
-categories: [이글루스 백업, "2006-11"]
+date: 2006-11-20T13:05:32Z
+draft: false
 ---
 
-{% raw %}
-[spbweather\_setup.exe](https://pds2.egloos.com/pds/200611/20/03//spbweather_setup.exe)  
+[spbweather\_setup.exe](http://pds2.egloos.com/pds/200611/20/03//spbweather_setup.exe)  
   
-46123413 
-{% endraw %}
+46123413

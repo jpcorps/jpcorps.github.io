@@ -1,32 +1,32 @@
 ---
-layout: post
 title: "Procedural materials tutorial – Substance in Unity - 유니티에서 섭스턴스 사용하기"
-date: 2011-08-22 15:28:24
-categories: [이글루스 백업, "2011-08"]
+date: 2011-08-22T15:28:24Z
+draft: false
 ---
 
-{% raw %}
 유니티 3.4에서는 섭스턴스라고 하는 새로운 메터리얼 체계가 추가되었습니다.   
 듣기에 따라서는 혁신적인 이 메터리얼은, 프로시져로 제작된 텍스쳐들의 조합으로 , 굉장히 작은 용량에 거의 무제한의 , 실시간 변동 가능한 텍스쳐를 생성해 낼 수 있다는 것입니다.   
 전 옵션이 동적인 옵션이라서, 하나만 구매/제작해 놓으면 무한대의 베리에이션 생성이 가능하고요.   
-자세한 내용은 <https://www.allegorithmic.com/unity>  에서 볼 수 있구요.   
+자세한 내용은 <http://www.allegorithmic.com/unity>  에서 볼 수 있구요.   
   
   
 아래는 실제로 이것을 유니티에서 어떻게 사용할 것인지에 대한 튜터리얼을 올려 놓은 것을 대충 발번역 해 보았습니다.   
   
 =======================================================================================  
-<https://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/>  
+<http://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/>  
   
   
 This guide is designed to briefly explain what Substance is, how to create new substance materials from a substance material asset, apply them to a mesh and edit parameters.  
 이 글은 섭스턴스가 뭐고, 어떻게 만들고 어떻게 적용하고 어떻게 수정하는지 등에 대해 간단히 씌여졌습니다.
 
-## W**hat** are Substance Materials?
+What are Substance Materials?
+-----------------------------
 
-Substance materials are procedurally generated assets, from technology developed by [Allegorithmic](https://www.allegorithmic.com/). A ’substance’ is basically a set of maps, defining a whole material with all channels: Diffuse, Normal, Specular, Bump, etc. 3DS Max and Maya have substance support for rendering, but now with Unity implementation we can make use of them in real-time applications.  
+Substance materials are procedurally generated assets, from technology developed by [Allegorithmic](http://www.allegorithmic.com/). A ’substance’ is basically a set of maps, defining a whole material with all channels: Diffuse, Normal, Specular, Bump, etc. 3DS Max and Maya have substance support for rendering, but now with Unity implementation we can make use of them in real-time applications.  
 섭스턴스가 뭐냐면, 알레고리드믹에 의해 만들어진 프로시져 메터리얼 어셋입니다. '섭스턴스' 는, 기본적으로 맵의 한 셋트이고 모든 채널과 함께 전체의 매터리얼을 정의합니다 : 디퓨즈, 노말, 스페큘러, 범프 등등. 맥스나 마야는 렌더링을 위해 섭스턴스를 가지고 있습니다. 그렇지만 유니티도 이제 리얼타임 어플리케이션을 위해 사용할 수 있습니다.
 
-## W**hy** use Substance materials?
+Why use Substance materials?
+----------------------------
 
 There are a number of reasons to use of procedural materials:  
 프로시져 매터리얼을 사용하는 이유들입낟.
@@ -46,14 +46,16 @@ There are a number of reasons to use of procedural materials:
 * 복제가 빠르고 독립적 메터리얼의 라이브러리를 만들어요
 * 죽여줘요.
 
-## Where do I get Substance Materials?
+Where do I get Substance Materials?
+-----------------------------------
 
-The [Asset Store](https://unity3d.com/unity/editor/asset-store.html "Asset Store") in unity (Window > Asset Store) includes free and paid substance packages available to browse.  
+The [Asset Store](http://unity3d.com/unity/editor/asset-store.html "Asset Store") in unity (Window > Asset Store) includes free and paid substance packages available to browse.  
 얻는법은, 어셋 스토어에 가서 무료나 유료 섭스턴스 패키지를 받아요.
 
-## How do I use them?
+How do I use them?
+------------------
 
-To **customise** a substance material and **apply** in Unity follow these steps:  
+To customise a substance material and apply in Unity follow these steps:  
 섭스턴스 메터리얼을 수정하고 적용하려면 다음 스텝을 따라하세요.
 
 * Import or create a mesh onto which you want to apply materials;
@@ -66,28 +68,28 @@ To **customise** a substance material and **apply** in Unity follow these steps:
 * Apply relevant smoothing as required
 * 스무딩도 잘해놓으세요
 
-[![](https://blogs.unity3d.com/wp-content/uploads/2011/08/S5-300x138.jpg "S5")](https://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s5/)
+[![](http://blogs.unity3d.com/wp-content/uploads/2011/08/S5-300x138.jpg "S5")](http://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s5/)
 
 * Check FBX import settings for the Mesh, Select Materials Generation ‘Per Material’ esp if using multiple materials per object
 * FBX 임포트 셋팅 체크하세요. 여러 메터리얼을 각 오브젝트에 적용하려면 특별히 퍼 메터리얼로 메터리얼 생성하세요.
 * Drag object into hierarchy or viewport and save scene
 * 하이어라키로 불러오세요.
-* Find Substance material ***asset*** you want to use (the square substance icons)
+* Find Substance material asset you want to use (the square substance icons)
 * 사용하고 싶은 섭스턴스 메터리얼을 찾으세요. (네모난 섭스턴스 아이콘이요)
 
-[![](https://blogs.unity3d.com/wp-content/uploads/2011/08/S7.jpg "S7")](https://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s7/)
+[![](http://blogs.unity3d.com/wp-content/uploads/2011/08/S7.jpg "S7")](http://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s7/)
 
 * Select + to ‘Add substance from prototype’ or to create a substance material (spherical icon)
 * 인스펙터 창에서 + 버튼을 눌러서 '프로토타입으로부터 새로운 메터리얼 만들기' 를 하세요.
 * Name the new material
 * 새로운 메터리얼 이름을 정하세요.
 
-[![](https://blogs.unity3d.com/wp-content/uploads/2011/08/S22-300x104.jpg "S2")](https://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s2-3/)
+[![](http://blogs.unity3d.com/wp-content/uploads/2011/08/S22-300x104.jpg "S2")](http://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s2-3/)
 
 * Apply to object by dragging directly onto the mesh in the viewport or with multi material meshes to the element (shown below)
 * 그리고 적용시키세요. -\_-; (해석할 가치도 없...)
 
-[![](https://blogs.unity3d.com/wp-content/uploads/2011/08/S1-1024x599.jpg "S1")](https://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s1/)
+[![](http://blogs.unity3d.com/wp-content/uploads/2011/08/S1-1024x599.jpg "S1")](http://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s1/)
 
 * Edit the parameters for your material instances;
 * 당신의 메터리얼을 위해서 파라미터를 즉석에서 조절하세요
@@ -102,7 +104,7 @@ To **customise** a substance material and **apply** in Unity follow these steps:
 * View the results in the viewport – can be useful to create shader spheres in your scene for representative lighting
 * 뷰포트에서 확인하세요.
 
-[![](https://blogs.unity3d.com/wp-content/uploads/2011/08/S9-1024x645.jpg "S9")](https://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s9/)
+[![](http://blogs.unity3d.com/wp-content/uploads/2011/08/S9-1024x645.jpg "S9")](http://blogs.unity3d.com/2011/08/09/substances-procedural-materials-in-unity/s9/)
 
 ============================================================================  
   
@@ -112,7 +114,7 @@ To **customise** a substance material and **apply** in Unity follow these steps:
 (주2: 이게 한 번 사용해 보니까... 확실히 디자이너들이 만들기 꽤 난해합니다. 효과적인 응용을 위해서 프리미티브 메터리얼을 만들어 놓고 이걸 수정해서 사용해라 ... 라는건 확실히 수긍이 가긴 합니다)  
   
 일단 우리가 사용해 보려면, 다른 플러그인 설치는 필요 없지만 '프리미티브 메터리얼' 은 받아야 합니다.   
-여기에서 받을 수 있네요. <https://www.turbosquid.com/Search/Allegorithmic-Substances>   
+여기에서 받을 수 있네요. <http://www.turbosquid.com/Search/Allegorithmic-Substances>   
 일단 3개의 프리미티브 메터리얼을 프리로 받을 수 있습니다.   
 혹은 유니티 프로그램에 있는 어셋 스토어에서도 동일한 것을 받을 수 있습니다. (Window / Asset store. Ctrl+9를 눌러보세요!)  
   
@@ -125,6 +127,4 @@ To **customise** a substance material and **apply** in Unity follow these steps:
 그 외에도 Bitmap2Material 이라는 소프트웨어도 유료로 받을 수 있습니다만. (앱스토어에서요) 이것은 오히려 크레이지 범프와 비슷한 느낌의 프로그램입니다. 기능은 좀 더 있는 것 같지만... 그다지 이건 안끌리네요.   
   
 분명히 잘 사용하면 장점이 있어 보입니다만... 단점이 없는지 확인 안하는 것도 이상하지요.   
-요건 2부로 넘어갑니다.   
- 
-{% endraw %}
+요건 2부로 넘어갑니다.

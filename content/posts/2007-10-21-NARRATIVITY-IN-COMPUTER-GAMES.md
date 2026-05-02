@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "NARRATIVITY IN COMPUTER GAMES"
-date: 2007-10-21 01:28:33
-categories: [이글루스 백업, "2007-10"]
+date: 2007-10-21T01:28:33Z
+draft: false
 ---
 
-{% raw %}
 다시 번역 시작 OTL   
 일단 번역기로 최소한 돌려 놓고.  
 새로 시작합니다. OTL  
@@ -40,8 +38,8 @@ Marcel는 배관공이 된다
 이 전통에서는, 컴퓨터 게임은 컴퓨터 공학에 근거한 다른 원본과 관련하여 보인다. 겪는 변화 전경에서 및 원본 는 남아 있다 (예를들면, Ryan 1999년에서). Murray (1997년)는 사이버스페이스에 있는 설화의 그녀의 학문에 있는 의 chatterbots와 함께, 그들을 진흙, 3D 영화 및 그들의 narrarivity에 관하여 마지막으로 holodeck 관찰해서 컴퓨터 게임을, 포함한다. 극장으로 컴퓨터에서는, Laurel (1991년)는 극장 및 아리스토텔레스 학설 극적인 이론의 은유를 사용하여 컴퓨터 응용 프로그램과 공용영역을 시험한다. 또한 그녀의 학문에서는, 컴퓨터 게임은 몇몇의 사이에서 단지 1개의 신청만 대표한다. 마지막으로, Aarseth의 (1997년) 초점은 구두 매체에 있고, 원본 모험의 그의 통찰력이 있는 분석은 그렇다 하고, 그는 컴퓨터 게임을 고려하지 않는다.  
 　　  
 　　  
-　　In the last years, focused and decisive scientific analysis of the popular computer game has grown, with various conferences held. Since 2001, academic game research has its first platform with the online journal Game Studies ([www.gamestudies.org](https://www.gamestudies.org/)).   
-대중적인 컴퓨터 게임의 마지막 년, 집중된, 단호한 과학적인 분석에서는 각종 회의가, 열린 상태에서 성장했다. 2001년부터, 학문적인 게임 연구에는 온라인 전표 게임 학문 ([www.gamestudies.org](https://www.gamestudies.org/))를 가진 그것의 첫번째 플래트홈이 있다.  
+　　In the last years, focused and decisive scientific analysis of the popular computer game has grown, with various conferences held. Since 2001, academic game research has its first platform with the online journal Game Studies ([www.gamestudies.org](http://www.gamestudies.org/)).   
+대중적인 컴퓨터 게임의 마지막 년, 집중된, 단호한 과학적인 분석에서는 각종 회의가, 열린 상태에서 성장했다. 2001년부터, 학문적인 게임 연구에는 온라인 전표 게임 학문 ([www.gamestudies.org](http://www.gamestudies.org/))를 가진 그것의 첫번째 플래트홈이 있다.  
 　　  
 　　But studies in computer games still fall far short of forming different schools. Nevertheless, a vehement and often polemic body of criticism has emerged directed at studies that see the computer game as one possible form of future storytelling, or simply treat the computer game as a narrative medium at all.   
 그러나 컴퓨터 게임에 있는 학문은 아직도 먼 간결 다른 학교 형성의 내린다. 역시, 비판의 격심한 수시로 논쟁 몸은 이야기 매체로 미래 이야기 하기의 1개의 가능한 모양으로 컴퓨터 게임을 보는 학문에 지시해, 또는 간단하게 전혀 대우한다 컴퓨터 게임을 나왔다.  
@@ -104,4 +102,3 @@ pp. 165-2 H) is crucial. According to Luhmann, media represent a loose coupling 
 컴퓨터 게임에 있는 narrativity에 관한 토론이 게임과 설화 사이 감별법에서 뿌리박기 때문에, 나는 게임, 컴퓨터 게임 및 컴퓨터 게임의 narrativity의 뒤에 오는 충분히 분석을 구조를 제공하는 설화의 몇몇 정의에 집중할 것이다. 이 분석은 narratology에서 개발된 이야기 수준에 동쪽으로 향하게 할 것이다: 사건을 기술하는 수준이 말한 대로 그들의 순서 뿐 아니라 이야기와 작의는 대표의 형태 및 저자의 질문을 취급하는 논설과 내레이션의 수준에 의해, 따라 토론될 것이다. 필요할, 나는 좋을 것이 보여주 것과 같이 다른 사람에 관계를 매체 것과 같이 계산한다 15.1를 언제 고려할 것이다.
 
 of computer games. This analysis will orient itself to the narrative levels developed in narratology: story and plot as levels describing the events told as well as their order will be discussed, followed by the levels of discourse and narration, dealing with the modes of representation and questions of authorship. When necessary, I will consider relationships to other media-as figure 15.1 shows-as well.
-{% endraw %}

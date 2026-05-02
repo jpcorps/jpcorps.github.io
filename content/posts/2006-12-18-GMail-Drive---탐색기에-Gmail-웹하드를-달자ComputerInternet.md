@@ -1,12 +1,11 @@
 ---
-layout: post
 title: "GMail Drive - 탐색기에 Gmail 웹하드를 달자Computer/Internet"
-date: 2006-12-18 00:09:51
-categories: [이글루스 백업, "2006-12"]
+date: 2006-12-18T00:09:51Z
+draft: false
 ---
 
-{% raw %}
-# GMail Drive shell extension
+GMail Drive shell extension
+===========================
 
 탐색기에 Gmail 웹하드를 달자 ^^  
   
@@ -22,11 +21,9 @@ GmailFS는 Gmail을 File System으로 인식하게 해주는 프로그램이다.
 너무 많이 올리면 경고와 함께 24시간 블럭된다는 것.  
 조심조심 쓰기에는 매우 편하다.  
   
-다운로드 & 설명 : [https://](https://www.viksoe.dk/code/gmail.htm)[www.viksoe.dk/code/gmail.htm](https://www.viksoe.dk/code/gmail.htm)  
+다운로드 & 설명 : [http://](http://www.viksoe.dk/code/gmail.htm)[www.viksoe.dk/code/gmail.htm](http://www.viksoe.dk/code/gmail.htm)  
   
   
 현재까지의 최신버전은  
   
-[gmailfs1.1.zip](https://pds4.egloos.com/pds/200612/18/03//gmailfs1.1.zip)   
-  
-{% endraw %}
+[gmailfs1.1.zip](http://pds4.egloos.com/pds/200612/18/03//gmailfs1.1.zip)

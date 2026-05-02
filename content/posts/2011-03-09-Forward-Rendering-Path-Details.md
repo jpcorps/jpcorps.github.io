@@ -1,22 +1,22 @@
 ---
-layout: post
 title: "Forward Rendering Path Details"
-date: 2011-03-09 17:22:53
-categories: [이글루스 백업, "2011-03"]
+date: 2011-03-09T17:22:53Z
+draft: false
 ---
 
-{% raw %}
-# Forward Rendering Path Details
+Forward Rendering Path Details
+==============================
 
 포워드 렌더링 패스 디테일   
   
-This page describes details of Forward [rendering path](Removed_Local_Path).
+This page describes details of Forward [rendering path](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Manual/RenderingPaths.html).
 
 Forward Rendering path renders each object in one or more passes, depending on lights that affect the object. Lights themselves are also treated differently by Forward Rendering, depending on their settings and intensity.  
  이 페이지는 포워드 렌더링에 대한 자세한 서술 페이지예요.  
 하나 혹은 여러개의 패스의 각 포워드 렌더링 패스는 오브젝트에 영향을 끼치는 라이트에 달려 있어요. 라이트들은 포워드 렌더링에서 또한 다르게 취급되구요, 그들의 셋팅과 강도에 따라 좌우되지요.
 
-## Implementation Details
+Implementation Details
+----------------------
 
 세부 진행  
   
@@ -29,7 +29,7 @@ In Forward Rendering, some number of brightest lights that affect each object ar
 * 최고로 밝은 디렉셔널 라이트는 언제나 퍼픽셀 라이트로 계산되어요.
 * Lights that have their Render Mode set to Important are always per-pixel.
 * 렌더 모드에서 중요하게 셋팅된 라이트들은 언제나 퍼 픽셀 라이트로 계산되어요
-* If the above results in less lights than current Pixel Light Count [Quality Setting](Removed_Local_Path), then more lights are rendered per-pixel, in order of decreasing brightness.
+* If the above results in less lights than current Pixel Light Count [Quality Setting](file:///C:/Program%20Files/Unity/Editor/Data/Documentation/Documentation/Components/class-QualitySettings.html), then more lights are rendered per-pixel, in order of decreasing brightness.
 * 만약 위의 결과가 현재의 픽셀 라이트 카운트 퀄리티세팅보다 라이트수가 적으면 픽셀마다 더 많은 라이트가 렌더 됩니다. 밝기가 어두워 지는 순서로...
 
 Rendering of each object happens as follows:   
@@ -41,13 +41,13 @@ Rendering of each object happens as follows:
 * 다른 퍼 픽셀 라이트는 추가의 패스로 렌더링 됩니다. 한 라이트당 한 패스로.
 
 For example, if there is some object that's affected by a number of lights (a circle in a picture below, affected by lights A to H): 예를 들어, 만약 어떤 오브젝트가 여러 개의 라이트에 영향을 받는다면 (아래 그림의 공이 A에서 H 까지의 라이트 영향을 받으면)   
-![](/assets/images/posts/20110309_172253_c0055803_4d772b05c2f51.jpg)
+![](/images/c0055803_4d772b05c2f51.jpg)
 
 Let's assume lights A to H have the same color & intensity, all all of them have Auto rendering mode, so they would be sorted in exactly this order for this object. The brightest lights will be rendered in per-pixel lit mode (A to D), then up to 4 lights in per-vertex lit mode (D to G), and finally the rest of lights in SH (G to H):   
 A 부터 H 까지의 각 라이트는 같은 색과 강도를 가지고 있다고 칩시다. 이 모두들은 자동 렌더링 모드라고 치고요, 그래서 이들은 이 오브젝트를 위한 오더에 확실히 정렬될겁니다. 가장 밝은 라이트들은 퍼 픽셀 라이트 모드로 렌더링 됩니다. (A에서 D) 그리고   
 4개까지 퍼 버텍스 라이트 모드가 됩니다 (D에서 G) , 그리고 최종적으로 나머지는 SH가 됩니다. (G에서 H 까지)
 
-![](/assets/images/posts/20110309_172253_c0055803_4d772bfc76fe1.jpg)
+![](/images/c0055803_4d772bfc76fe1.jpg)
 
 Note that light groups overlap; for example last per-pixel light blends into per-vertex lit mode so there are less "light popping" as objects and lights move around.   
 라이트 그룹이 오버렙 되는걸 주의하세요 ; 예를 들어 마지막 퍼 픽셀 라이트가 퍼 버텍스 라이트 모드와 블렌딩되고 그래서 그들은 라이트가 돌아다니면서 라이트 팝핑이 적은 오브젝트가 된다.
@@ -65,11 +65,12 @@ Base pass renders object with one per-pixel directional light and all SH lights.
 Additional passes are rendered for each additional per-pixel light that affect this object. Lights in these passes can't have shadows (so in result, Forward Rendering supports one directional light with shadows).   
 추가 패스는 각 퍼 픽셀라이트가 오브젝트에 영향을 끼칠 때마다 렌더링 됩니다. 이 패스의 라이트는 그림자를 가지지 못합니다 .(그래서 결과적으로, 포워드 렌더링에서는 하나의 다이렉트 라이트로만 그림자가 만들어집니다)
 
-## Performance Considerations
+Performance Considerations
+--------------------------
 
 퍼포먼스에서의 주의사항.   
   
-Spherical Harmonics lights are *very* fast to render. They have a tiny cost on the CPU, and are *actually free* for the GPU to apply (that is, base pass always computes SH lighting; but due to the way SH lights work, the cost is exactly the same no matter how many SH lights are there).
+Spherical Harmonics lights are very fast to render. They have a tiny cost on the CPU, and are actually free for the GPU to apply (that is, base pass always computes SH lighting; but due to the way SH lights work, the cost is exactly the same no matter how many SH lights are there).
 
 The downsides of SH lights are:   
 SH(구면조화함수) 라이트는 아주 빠릅니다. 이것은 CPU에 아주 작은 영향만 주며, GPU에는 완전 공짜입니다. ( 이것은, 베이스 패스는 언제나 SH 라이팅을 계산한다는 것입니다 : 그러나 SH 라이팅 작업 때문에, 그 부하는 SH 라이트가 얼마나 있냐에 상관없이 똑같습니다 ) SH 라이팅의 두 얼굴은 다음과 같습죠 :
@@ -83,4 +84,3 @@ SH(구면조화함수) 라이트는 아주 빠릅니다. 이것은 CPU에 아주
 
 In summary, SH lights are often good enough for small dynamic objects.  
 요약하자면, SH 라이트는 작은 동적 오브젝트에는 보통 괜찮습니다.
-{% endraw %}

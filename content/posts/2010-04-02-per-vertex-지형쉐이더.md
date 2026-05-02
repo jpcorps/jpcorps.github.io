@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "per vertex 지형쉐이더"
-date: 2010-04-02 15:23:17
-categories: [이글루스 백업, "2010-04"]
+date: 2010-04-02T15:23:17Z
+draft: false
 ---
 
-{% raw %}
-![](/assets/images/posts/20100402_152317_c0055803_4bb58b77d7e9b.jpg)per pixel은 너무 무거울 것 같아서 per vertex 라이트로 변환했습니다.   
+![](/images/c0055803_4bb58b77d7e9b.jpg)per pixel은 너무 무거울 것 같아서 per vertex 라이트로 변환했습니다.   
 정밀도는 아래에 있는 퍼 픽셀라이트와 비교해 무척 떨어지지만 일단 노말과 스페큘러가 되긴 한다는 것에 위안을...  
 여기에 퍼포먼스 테스트 해 보고 그래도 무거우면 normal을 공통 맵으로 하나만 만들어 처리하거나, 스페큘러 마스크만으로 처리하는 방식도 고려중입니다. LOD는 기본.   
   
@@ -19,5 +17,4 @@ categories: [이글루스 백업, "2010-04"]
   
    
 이것이 아래의 퍼 픽셀 라이트  
-![](/images/c0055803_4bb1d9e76f721.jpg)
-{% endraw %}
+![](http://pds17.egloos.com/pds/201003/30/03/c0055803_4bb1d9e76f721.jpg)

@@ -1,20 +1,16 @@
 ---
-layout: post
 title: "Unreal Development tool kit"
-date: 2009-11-08 22:22:41
-categories: [이글루스 백업, "2009-11"]
+date: 2009-11-08T22:22:41Z
+draft: false
 ---
 
-{% raw %}
-<https://udn.epicgames.com/Three/CreatingLevels.html>  
+<http://udn.epicgames.com/Three/CreatingLevels.html>  
   
 기초는 일단 여기서 시작해야겠습니다.   
 짬짬이 공부해 봐야겠네요. 이정도면 강의때 사용하기에는 충분한데요. (아마도 그걸 노린 거겠죠)  
   
   
   
-<https://forums.epicgames.com/forumdisplay.php?s=0cfc34c930f04eba8ca6e2baf3895cfc&f=371>  
+<http://forums.epicgames.com/forumdisplay.php?s=0cfc34c930f04eba8ca6e2baf3895cfc&f=371>  
   
-여기가 포럼.   
-  
-{% endraw %}
+여기가 포럼.

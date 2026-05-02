@@ -1,17 +1,15 @@
 ---
-layout: post
 title: "[펌] [3DSMAX] skybox 만들기"
-date: 2006-11-07 23:35:02
-categories: [이글루스 백업, "2006-11"]
+date: 2006-11-07T23:35:02Z
+draft: false
 ---
 
-{% raw %}
 ### [3DSMAX] skybox 만들기
 
-![출처](https://blogimgs.naver.com/blog20/blog/ico_origin.gif) [블로그 > 절대불량](https://blog.naver.com/cerulean9)  
-![원본](https://blogimgs.naver.com/blog20/blog/ico_source.gif) <https://blog.naver.com/cerulean9/20011965713>  
+![출처](http://blogimgs.naver.com/blog20/blog/ico_origin.gif) [블로그 > 절대불량](http://blog.naver.com/cerulean9)  
+![원본](http://blogimgs.naver.com/blog20/blog/ico_source.gif) <http://blog.naver.com/cerulean9/20011965713>  
   
-**맥스의 환경맵을 이용한 스카이 박스 만들기.**  
+맥스의 환경맵을 이용한 스카이 박스 만들기.  
   
 Sky box는 의외로 간과하기 쉬운 부분이기도 하지만 이미지 왜곡 없이 제작하기가 생각보다 까다로운 점이 있습니다.  
 반구의 형태로 만들어도 되지만 게임을 만들때 극한의 리소스 싸움이 시작되면 반구의 페이스도 아쉽게 되죠.   
@@ -23,42 +21,41 @@ Sky box는 의외로 간과하기 쉬운 부분이기도 하지만 이미지 왜
   
   
 
-**1.**맥스에 맵핑이 적용될sphere 1개와sphere의 중앙에skybox가 적용될 작은 싸이즈의 box 하나를 생성시킵니다.
+1.맥스에 맵핑이 적용될sphere 1개와sphere의 중앙에skybox가 적용될 작은 싸이즈의 box 하나를 생성시킵니다.
 
-![](https://pds2.egloos.com/pds/200610/13/61/d0020761_12102266.jpg)
+![](http://pds2.egloos.com/pds/200610/13/61/d0020761_12102266.jpg)
 
   
   
 
-**2.** sphere에 edit mesh를 적용시킨 후 mesh를 flip시켜 맵핑이 적용될 환경을 안쪽으로 향하게 합니다.
+2. sphere에 edit mesh를 적용시킨 후 mesh를 flip시켜 맵핑이 적용될 환경을 안쪽으로 향하게 합니다.
 
-![](https://pds2.egloos.com/pds/200610/13/61/d0020761_1210065.jpg)
+![](http://pds2.egloos.com/pds/200610/13/61/d0020761_1210065.jpg)
 
-**3.** sphere에 UVW Mapping을 적용시킨후 맵핑으로 사용할 하늘이미지를 불러와 Mapping을 적용시킵니다.
+3. sphere에 UVW Mapping을 적용시킨후 맵핑으로 사용할 하늘이미지를 불러와 Mapping을 적용시킵니다.
 
-![](https://pds3.egloos.com/pds/200610/13/61/d0020761_12103568.jpg)
+![](http://pds3.egloos.com/pds/200610/13/61/d0020761_12103568.jpg)
 
-**4 .**두 번째 material 을 box에 지정해 준 후 box material의 self-illumination을 white로 낮춰주고 Opacity수치를 0으로 낮춰줍니다.
+4 .두 번째 material 을 box에 지정해 준 후 box material의 self-illumination을 white로 낮춰주고 Opacity수치를 0으로 낮춰줍니다.
 
-![](https://pds2.egloos.com/pds/200610/13/61/d0020761_1210574.jpg)
+![](http://pds2.egloos.com/pds/200610/13/61/d0020761_1210574.jpg)
 
-**5.** sphere의 중심에 omni light를 적당한 수치로 넣어 줍니다. 라이트를 넣는 이유는 sphere의 기본음영까지 렌더링될 텍스쳐에 적용이 되어버리기 때영될 이미지에 음영이 표현되지 않는 가장 사실적인 이미지를 얻기 위함입니다. 그렇기 때문에 sphere에 음영이 적용되지 않는 omni light가 가장 적당 합니다.
+5. sphere의 중심에 omni light를 적당한 수치로 넣어 줍니다. 라이트를 넣는 이유는 sphere의 기본음영까지 렌더링될 텍스쳐에 적용이 되어버리기 때영될 이미지에 음영이 표현되지 않는 가장 사실적인 이미지를 얻기 위함입니다. 그렇기 때문에 sphere에 음영이 적용되지 않는 omni light가 가장 적당 합니다.
 
-![](https://pds3.egloos.com/pds/200610/13/61/d0020761_12101383.jpg)
+![](http://pds3.egloos.com/pds/200610/13/61/d0020761_12101383.jpg)
 
-**6.** MAP의 Reflection에서 reflect/refract를 선택하여 줍니다.
+6. MAP의 Reflection에서 reflect/refract를 선택하여 줍니다.
 
-![](https://pds2.egloos.com/pds/200610/13/61/d0020761_12103594.jpg)
+![](http://pds2.egloos.com/pds/200610/13/61/d0020761_12103594.jpg)
 
-**7.** reflect/refract parameters에서 from file을 체크해 주고 size에 렌더링될 이미지파일의 크기를 지정해 줍니다. 그리고 To file에서 이미지가 저장될 폴더를 지정해 준 후 오브젝트의 box를 선택해주면 지정된 폴더에 6개의 이미지가 렌더링 되는 것을 볼 수 있습니다.
+7. reflect/refract parameters에서 from file을 체크해 주고 size에 렌더링될 이미지파일의 크기를 지정해 줍니다. 그리고 To file에서 이미지가 저장될 폴더를 지정해 준 후 오브젝트의 box를 선택해주면 지정된 폴더에 6개의 이미지가 렌더링 되는 것을 볼 수 있습니다.
 
-![](https://pds3.egloos.com/pds/200610/13/61/d0020761_12105940.jpg)
+![](http://pds3.egloos.com/pds/200610/13/61/d0020761_12105940.jpg)
 
-**8.** 렌더링된 이미지를 만들고자 하는 월드의 skybox에 하나하나 죄표에 맞게 적용시키면 비교적 왜곡이 없는 skybox를 제작할 수 있습니다.
+8. 렌더링된 이미지를 만들고자 하는 월드의 skybox에 하나하나 죄표에 맞게 적용시키면 비교적 왜곡이 없는 skybox를 제작할 수 있습니다.
 
-![](https://pds2.egloos.com/pds/200610/13/61/d0020761_12103325.jpg)
+![](http://pds2.egloos.com/pds/200610/13/61/d0020761_12103325.jpg)
 
 생각보다 간단한 방법으로 스카이박스 이미지를 제작할 수 있는 방법이지만 의외로 많이 사용되진 않는거 같더군요. 요즘게임에 있어서 폴리곤의 제약이 예전보다 점차 덜하기 때문에 sphere의 반구 형태로 제작해도 게임에 그다지 제약이 없긴하지만 가끔 스카이박스형태의 데이터 제작이 필요할 경우 이 방법을 사용해 보면 편할겁니다.
 
 이상의 스카이박스 제작에 관한 듀토리얼은 G-Blender 게임엔진의 그래픽 메뉴얼에 사용된 듀토리얼의 일부이지만 엔진의 특성과는 관계없이 일반적으로 사용될수 있는 방법이기에 블로그에 공개합니다.대단한건 아니지만 기본적으로 저작권은 가이블에 있구요. 상업적인 무단사용은 불허합니다...^^\* 그냥 참고로 봐주세요................................".내 영혼의 환타지 [김희선]"
-{% endraw %}

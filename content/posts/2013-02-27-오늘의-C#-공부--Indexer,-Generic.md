@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "오늘의 C# 공부 : Indexer, Generic"
-date: 2013-02-27 07:32:28
-categories: [이글루스 백업, "2013-02"]
+date: 2013-02-27T07:32:28Z
+draft: false
 ---
 
-{% raw %}
 ////인덱서
 
 //using System;  
@@ -399,4 +397,3 @@ categories: [이글루스 백업, "2013-02"]
 //        }  
 //    }  
 //}
-{% endraw %}

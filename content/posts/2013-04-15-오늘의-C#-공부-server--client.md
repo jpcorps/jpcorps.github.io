@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "오늘의 C# 공부 :server / client"
-date: 2013-04-15 07:21:25
-categories: [이글루스 백업, "2013-04"]
+date: 2013-04-15T07:21:25Z
+draft: false
 ---
 
-{% raw %}
 /////////// server  
   
   
@@ -168,4 +166,3 @@ namespace jpClient
         }  
     }  
 }
-{% endraw %}

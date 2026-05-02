@@ -1,15 +1,13 @@
 ---
-layout: post
 title: "Schematic Material Editor"
-date: 2008-11-25 10:46:52
-categories: [이글루스 백업, "2008-11"]
+date: 2008-11-25T10:46:52Z
+draft: false
 ---
 
-{% raw %}
 비주얼 쉐이더 연구중.  
 첫 번째 테스트한 프로그램은 SME(Schematic Material Editor )  
   
-[sme\_1\_0.exe](https://pds10.egloos.com/pds/200811/25/03//sme_1_0.exe)  
+[sme\_1\_0.exe](http://pds10.egloos.com/pds/200811/25/03//sme_1_0.exe)  
   
 ... 이거 뭐야   
 비주얼 쉐이더 아니잖아.   
@@ -23,9 +21,6 @@ HLSL 코드와 전혀 상관없는 녀석이었다.
 비주얼로 보여주니까, 복잡한 오브젝트도 편하게 사용할 수 있을 듯.   
 강의할때 사용해도 좋겠는걸.   
   
-![](/assets/images/posts/20081125_104652_c0055803_492b5935c7311.jpg)  
+![](/images/c0055803_492b5935c7311.jpg)  
   
-![](/assets/images/posts/20081125_104652_c0055803_492b58fec1948.jpg)  
-  
-  
-{% endraw %}
+![](/images/c0055803_492b58fec1948.jpg)

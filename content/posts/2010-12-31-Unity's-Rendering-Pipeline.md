@@ -1,36 +1,39 @@
 ---
-layout: post
 title: "Unity's Rendering Pipeline"
-date: 2010-12-31 14:56:43
-categories: [이글루스 백업, "2010-12"]
+date: 2010-12-31T14:56:43Z
+draft: false
 ---
 
-{% raw %}
-# Unity's Rendering Pipeline
+Unity's Rendering Pipeline
+==========================
 
-Shaders define both how an object looks by itself (its material properties) and how it reacts to the light. Because lighting calculations must be built into the shader, and there are many possible light & shadow types, writing quality shaders that "just work" would be an involved task. To make it easier, Unity 3 introduces [Surface Shaders](https://unity3d.com/support/documentation/Components/SL-SurfaceShaders.html), where all the lighting, shadowing, lightmapping, forward vs. deferred lighting things are taken care of automatically.
+Shaders define both how an object looks by itself (its material properties) and how it reacts to the light. Because lighting calculations must be built into the shader, and there are many possible light & shadow types, writing quality shaders that "just work" would be an involved task. To make it easier, Unity 3 introduces [Surface Shaders](http://unity3d.com/support/documentation/Components/SL-SurfaceShaders.html), where all the lighting, shadowing, lightmapping, forward vs. deferred lighting things are taken care of automatically.
 
-This document describes the pecularities of Unity's lighting & rendering pipeline and what happens behind the scenes of [Surface Shaders](https://unity3d.com/support/documentation/Components/SL-SurfaceShaders.html).
+This document describes the pecularities of Unity's lighting & rendering pipeline and what happens behind the scenes of [Surface Shaders](http://unity3d.com/support/documentation/Components/SL-SurfaceShaders.html).
 
-## Rendering Paths
+Rendering Paths
+---------------
 
-How lighting is applied and which [Passes](https://unity3d.com/support/documentation/Components/SL-Pass.html) of the shader are used depends on which [Rendering Path](https://unity3d.com/support/documentation/Manual/RenderingPaths.html) is used. Each pass in a shader communicates its lighting type via [Pass Tags](https://unity3d.com/support/documentation/Components/SL-PassTags.html).
+How lighting is applied and which [Passes](http://unity3d.com/support/documentation/Components/SL-Pass.html) of the shader are used depends on which [Rendering Path](http://unity3d.com/support/documentation/Manual/RenderingPaths.html) is used. Each pass in a shader communicates its lighting type via [Pass Tags](http://unity3d.com/support/documentation/Components/SL-PassTags.html).
 
-* In [Deferred Lighting](https://unity3d.com/support/documentation/Components/RenderTech-DeferredLighting.html), `PrepassBase` and `PrepassFinal` passes are used.* In [Forward Rendering](https://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html), `ForwardBase` and `ForwardAdd` passes are used.* In [Vertex Lit](https://unity3d.com/support/documentation/Components/RenderTech-VertexLit.html), `Vertex`, `VertexLMRGBM` and `VertexLM` passes are used.
+* In [Deferred Lighting](http://unity3d.com/support/documentation/Components/RenderTech-DeferredLighting.html), `PrepassBase` and `PrepassFinal` passes are used.* In [Forward Rendering](http://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html), `ForwardBase` and `ForwardAdd` passes are used.* In [Vertex Lit](http://unity3d.com/support/documentation/Components/RenderTech-VertexLit.html), `Vertex`, `VertexLMRGBM` and `VertexLM` passes are used.
 
-## Deferred Lighting path
+Deferred Lighting path
+----------------------
 
-`PrepassBase` pass renders normals & specular exponent; `PrepassFinal` pass renders final color by combining textures, lighting & emissive material properties. All regular in-scene lighting is done separately in screen-space. See [Deferred Lighting](https://unity3d.com/support/documentation/Components/RenderTech-DeferredLighting.html) for details.
+`PrepassBase` pass renders normals & specular exponent; `PrepassFinal` pass renders final color by combining textures, lighting & emissive material properties. All regular in-scene lighting is done separately in screen-space. See [Deferred Lighting](http://unity3d.com/support/documentation/Components/RenderTech-DeferredLighting.html) for details.
 
-## Forward Rendering path
+Forward Rendering path
+----------------------
 
-`ForwardBase` pass renders ambient, lightmaps, main directional light and not important (vertex/SH) lights at once. `ForwardAdd` pass is used for any additive per-pixel lights; one invocation per object illuminated by such light is done. See [Forward Rendering](https://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html) for details.
+`ForwardBase` pass renders ambient, lightmaps, main directional light and not important (vertex/SH) lights at once. `ForwardAdd` pass is used for any additive per-pixel lights; one invocation per object illuminated by such light is done. See [Forward Rendering](http://unity3d.com/support/documentation/Components/RenderTech-ForwardRendering.html) for details.
 
-## Vertex Lit Rendering path
+Vertex Lit Rendering path
+-------------------------
 
 Since vertex lighting is most often used on platforms that do not support programmable shaders, Unity can't create multiple shader permutations internally to handle lightmapped vs. non-lightmapped cases. So to handle lightmapped and non-lightmapped objects, multiple passes have to be written explicitly.
 
-* `Vertex` pass is used for non-lightmapped objects. All lights are rendered at once, using a fixed function OpenGL/Direct3D lighting model ([Blinn-Phong](https://en.wikipedia.org/wiki/Blinn-Phong_shading))* `VertexLMRGBM` pass is used for lightmapped objects, when lightmaps are RGBM encoded (this happens on most desktops and consoles). No realtime lighting is applied; pass is expected to combine textures with a lightmap.* `VertexLMM` pass is used for lightmapped objects, when lightmaps are double-LDR encoded (this happens on mobiles and old desktops). No realtime lighting is applied; pass is expected to combine textures with a lightmap.
+* `Vertex` pass is used for non-lightmapped objects. All lights are rendered at once, using a fixed function OpenGL/Direct3D lighting model ([Blinn-Phong](http://en.wikipedia.org/wiki/Blinn-Phong_shading))* `VertexLMRGBM` pass is used for lightmapped objects, when lightmaps are RGBM encoded (this happens on most desktops and consoles). No realtime lighting is applied; pass is expected to combine textures with a lightmap.* `VertexLMM` pass is used for lightmapped objects, when lightmaps are double-LDR encoded (this happens on mobiles and old desktops). No realtime lighting is applied; pass is expected to combine textures with a lightmap.
 
 유니티 렌더링 파이프라인   
   
@@ -47,6 +50,4 @@ Since vertex lighting is most often used on platforms that do not support progra
 버텍스라이트 : 버텍, 버텍스 NMRGBM이나 버텍스 LM 패스가 사용된다.   
   
 디퍼드 렌더링 패스   
-... 아래는 일단 패스  
- 
-{% endraw %}
+... 아래는 일단 패스

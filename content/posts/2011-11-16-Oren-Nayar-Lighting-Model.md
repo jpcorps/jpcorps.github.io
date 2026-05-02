@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Oren-Nayar Lighting Model"
-date: 2011-11-16 11:47:02
-categories: [이글루스 백업, "2011-11"]
+date: 2011-11-16T11:47:02Z
+draft: false
 ---
 
-{% raw %}
 출처: 렐릭의 포프님!!  
 공개하셨다길래 무의식중에 일단 퍼왔...  
   
@@ -13,7 +11,7 @@ categories: [이글루스 백업, "2011-11"]
 Oren-Nayar Lighting Model
 
 We used a lookup texture for optimization for a while  
-( <https://content.gpwiki.org/index.php/D3DBook:(Lighting)_Oren-Nayar> )
+( <http://content.gpwiki.org/index.php/D3DBook:(Lighting)_Oren-Nayar> )
 
 ●
 
@@ -74,4 +72,3 @@ fakey = fakey\_magic - fakey\*fakey\_magic;
 return lerp( result, fakey, roughness );
 
 }
-{% endraw %}

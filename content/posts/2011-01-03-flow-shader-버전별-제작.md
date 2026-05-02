@@ -1,12 +1,9 @@
 ---
-layout: post
 title: "flow shader 버전별 제작"
-date: 2011-01-03 10:36:00
-categories: [이글루스 백업, "2011-01"]
+date: 2011-01-03T10:36:00Z
+draft: false
 ---
 
-{% raw %}
-  
 음... 블렌딩 옵션별 flow 쉐이더를 제작했습니다.   
   
 예제에서도 이렇게 따로 나눠 놓은 걸로 봐서 techniq 등으로 처리할 수가 없나봐요.   
@@ -23,18 +20,30 @@ categories: [이글루스 백업, "2011-01"]
   
 어쨌건 그런 사연끝에 만든 쉐이더 블렌딩 베리에이션입니다.   
   
-****Screen**** 일반적으로 많이 사용하는 SrcAlpha - One 입니다. 이름처럼 소스의 알파채널을 사용하며, 뒤의 이미지를 밝게 만들어 버립니다.   
-![](/assets/images/posts/20110103_103600_c0055803_4d2128378f9de.jpg)  
-****ADD**** - Screen과 비슷하지만 훨씬 강하고 밝은 이미지가 나오게 됩니다. One-One을 사용하기 때문에 알파 채널은 필요 없고 최종 연산된 칼라에 따라 투명도가 결정됩니다.   
-![](/assets/images/posts/20110103_103600_c0055803_4d212831348df.jpg)****Standard****- 일반적인 투명도 계산입니다. 알파 채널을 이용하며, 라이트 계산은 되지 않지만 특별히 더 밝아진다던가 어두워진다던가 하지 않습니다. SrcAlpha - InvSrcAlpha (유니티에서는 OneMinusSrcAlpha) 한마디로 그냥 반투명.   
-![](/assets/images/posts/20110103_103600_c0055803_4d2129f92d13d.jpg)  
+
+Screen
+
+ 일반적으로 많이 사용하는 SrcAlpha - One 입니다. 이름처럼 소스의 알파채널을 사용하며, 뒤의 이미지를 밝게 만들어 버립니다.   
+![](/images/c0055803_4d2128378f9de.png)  
+
+ADD
+
+ - Screen과 비슷하지만 훨씬 강하고 밝은 이미지가 나오게 됩니다. One-One을 사용하기 때문에 알파 채널은 필요 없고 최종 연산된 칼라에 따라 투명도가 결정됩니다.   
+![](/images/c0055803_4d212831348df.png)
+
+Standard
+
+- 일반적인 투명도 계산입니다. 알파 채널을 이용하며, 라이트 계산은 되지 않지만 특별히 더 밝아진다던가 어두워진다던가 하지 않습니다. SrcAlpha - InvSrcAlpha (유니티에서는 OneMinusSrcAlpha) 한마디로 그냥 반투명.   
+![](/images/c0055803_4d2129f92d13d.png)  
   
-****Multi**** - 엄밀히 말하면 진짜 Multi와는 좀 다릅니다 :) Zero- InvSrcColor (유니티에서는 OneMinusSrcColor) 로, 특이한 변이재질에 가깝습니다. 알파는 사용하지 않고, 소스의 칼라에 따라 투명도가 정해집니다. 또한 색도 뒤집힙니다.   
+
+Multi
+
+ - 엄밀히 말하면 진짜 Multi와는 좀 다릅니다 :) Zero- InvSrcColor (유니티에서는 OneMinusSrcColor) 로, 특이한 변이재질에 가깝습니다. 알파는 사용하지 않고, 소스의 칼라에 따라 투명도가 정해집니다. 또한 색도 뒤집힙니다.   
   
-![](/assets/images/posts/20110103_103600_c0055803_4d2127065f2dc.jpg)  
+![](/images/c0055803_4d2127065f2dc.png)  
   
   
   
 .... 그리고 이건 지금 연구하고 있는 쉐이더 . ㅋㅋ   
-![](/assets/images/posts/20110103_103600_c0055803_4d2129fb30b3f.jpg)  
-{% endraw %}
+![](/images/c0055803_4d2129fb30b3f.png)

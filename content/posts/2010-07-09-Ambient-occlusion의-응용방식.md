@@ -1,17 +1,14 @@
 ---
-layout: post
 title: "Ambient occlusion의 응용방식"
-date: 2010-07-09 10:42:23
-categories: [이글루스 백업, "2010-07"]
+date: 2010-07-09T10:42:23Z
+draft: false
 ---
 
-{% raw %}
-[[번역] Ambient occlusion By David Rosen on November 25th, 2008](https://ozlael.egloos.com/3355438)  
+[[번역] Ambient occlusion By David Rosen on November 25th, 2008](http://ozlael.egloos.com/3355438)  
   
-<https://ozlael.egloos.com/3356471>  
+<http://ozlael.egloos.com/3356471>  
   
 거창한 방식은 아니고 예전에 맥스에서 스크립트로 돌아다니던 '돔라이트' 방식을 응용한 방식입니다.   
 지금은 맥스에 스카이라이트라는 이름으로 변화되어 기본 내장 되어 있는 것으로 알고 있습니다만.   
   
-맥스에서 AO 느낌을 내는건 아주 쉬우므로 작은 프로젝트 같은 경우는 기술 개발할 필요 없이 그냥 맥스 기능으로 AO를 구워버리면 될 듯.   
-{% endraw %}
+맥스에서 AO 느낌을 내는건 아주 쉬우므로 작은 프로젝트 같은 경우는 기술 개발할 필요 없이 그냥 맥스 기능으로 AO를 구워버리면 될 듯.

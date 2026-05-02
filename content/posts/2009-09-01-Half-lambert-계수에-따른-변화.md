@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Half lambert 계수에 따른 변화"
-date: 2009-09-01 16:37:14
-categories: [이글루스 백업, "2009-09"]
+date: 2009-09-01T16:37:14Z
+draft: false
 ---
 
-{% raw %}
-![](/assets/images/posts/20090901_163714_c0055803_4a9cceed6a492.jpg)                         Lambert                   Half Lambert Powerd 4               Half Lambert Powerd 2   
+![](/images/c0055803_4a9cceed6a492.jpg)                         Lambert                   Half Lambert Powerd 4               Half Lambert Powerd 2   
   
 쉐이더 만들다가 백업개념으로.   
   
@@ -17,5 +15,4 @@ lambert 공식은 dot(L , N)
 일반 피부 작업할때는 계수를 4 정도로 하고,   
 특별히 얼굴에 빛이 나야 하는 아가씨는 2 정도로 해도 될듯 ㅋ   
   
-물론 피부에서는 여기에 warp 적용해야 하고...  
-{% endraw %}
+물론 피부에서는 여기에 warp 적용해야 하고...

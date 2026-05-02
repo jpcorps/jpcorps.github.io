@@ -1,16 +1,13 @@
 ---
-layout: post
 title: "[펌] 3DSMAX 에서 speedtree 로 나무 만들기"
-date: 2006-11-19 22:11:42
-categories: [이글루스 백업, "2006-11"]
+date: 2006-11-19T22:11:42Z
+draft: false
 ---
 
-{% raw %}
-<https://www.gdevpia.com/zeroboard/view.php?id=coding&page=1&sn1=&divpage=1&category=4&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=1>   
+<http://www.gdevpia.com/zeroboard/view.php?id=coding&page=1&sn1=&divpage=1&category=4&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=1>   
 ... 나무 만들기 고역이지요. 아암.   
 덕분에 스피드 트리가 완전 대세가 되어 버렸던데.  
   
 만들기도 쉽고 효과도 좋고.   
   
 물론, 보기만 하면 '저거 스피드 트리 아냐!' 라고 할 정도로 티나지만...
-{% endraw %}

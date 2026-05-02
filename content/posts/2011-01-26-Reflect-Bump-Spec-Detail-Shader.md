@@ -1,13 +1,11 @@
 ---
-layout: post
 title: "Reflect Bump Spec Detail Shader"
-date: 2011-01-26 18:17:32
-categories: [이글루스 백업, "2011-01"]
+date: 2011-01-26T18:17:32Z
+draft: false
 ---
 
-{% raw %}
 이건 공개해도 될 내용으로 검열완료.   
-![](/assets/images/posts/20110126_181732_c0055803_4d3fd8eeb717e.jpg)
+![](/images/c0055803_4d3fd8eeb717e.png)
 
   
 쉐이더 3.0 전용의 쉐이더.  알파는 사용하지 않고 A 텍스쳐와 B 텍스쳐를 B 텍스쳐 알파로 마스킹해서 멀티 합성해 줍니다.   
@@ -18,5 +16,4 @@ categories: [이글루스 백업, "2011-01"]
 uv\_Texture   uv\_Texture2  하면 uv 1채널로 다 나오구요   
 uv\_Texture   uv2\_Texture2 해줘야 2번 채널이 활성화됩니다 :)   
   
-노말 연산도 지 멋대로고 하여간 웃김 ㅋㅋ   
-{% endraw %}
+노말 연산도 지 멋대로고 하여간 웃김 ㅋㅋ
