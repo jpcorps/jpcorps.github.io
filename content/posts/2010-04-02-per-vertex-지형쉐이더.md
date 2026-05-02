@@ -19,5 +19,5 @@ categories: [이글루스 백업, "2010-04"]
   
    
 이것이 아래의 퍼 픽셀 라이트  
-![](https://pds17.egloos.com/pds/201003/30/03/c0055803_4bb1d9e76f721.jpg)
+![](/images/c0055803_4bb1d9e76f721.jpg)
 {% endraw %}
