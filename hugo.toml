@@ -7,6 +7,9 @@ hasCJKLanguage = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[params]
+  mainSections = ["posts"]
+
 [params.sidebar]
   subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
   avatar = "profile.jpg"
