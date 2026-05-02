@@ -1,0 +1,802 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>CPU 클럭과 코어와 캐쉬와 아키텍쳐 &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="CPU 클럭과 코어와 캐쉬와 아키텍쳐 &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2011-08-29-cpu-%ED%81%B4%EB%9F%AD%EA%B3%BC-%EC%BD%94%EC%96%B4%EC%99%80-%EC%BA%90%EC%89%AC%EC%99%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2011-08-29-cpu-%ED%81%B4%EB%9F%AD%EA%B3%BC-%EC%BD%94%EC%96%B4%EC%99%80-%EC%BA%90%EC%89%AC%EC%99%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="CPU 클럭과 코어와 캐쉬와 아키텍쳐">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-08-29T01:58:20+00:00">
+    <meta property="article:modified_time" content="2011-08-29T01:58:20+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CPU 클럭과 코어와 캐쉬와 아키텍쳐">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "CPU 클럭과 코어와 캐쉬와 아키텍쳐",
+    "headline": "CPU 클럭과 코어와 캐쉬와 아키텍쳐",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2011-08-29-cpu-%ED%81%B4%EB%9F%AD%EA%B3%BC-%EC%BD%94%EC%96%B4%EC%99%80-%EC%BA%90%EC%89%AC%EC%99%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2011",
+    "dateCreated": "2011-08-29T01:58:20\u002b00:00",
+    "datePublished": "2011-08-29T01:58:20\u002b00:00",
+    
+    "dateModified": "2011-08-29T01:58:20\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1124"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        CPU 클럭과 코어와 캐쉬와 아키텍쳐
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2011-08-29T01:58:20&#43;00:00">29 8월 2011</time><span class="px-2 text-primary-500">&middot;</span><span>1124 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">6 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+출처</p>
+<p><a href="https://pc.daum.net/communication/communication_forum_view.jsp?id=1023&amp;mypage2=6"  target="_blank" rel="noreferrer">https://pc.daum.net/communication/communication_forum_view.jsp?id=1023&mypage2=6</a></p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://static.naver.com/ncc/2010/11/29/135729354317873.jpg"
+    ></figure>
+<p>컴퓨터의 성능을 가늠하고자 할 때 가장 먼저 살펴보게 되는 것이 바로 기본 사양표다. 여기에는 해당 컴퓨터를 구성하고 있는 부품의 항목이 일목요연하게 정리되어 있는 데, 가장 상단에는 대부분 ‘CPU’라는 항목이 위치해 있다. 그만큼 컴퓨터에서 CPU는 전반적인 성능을 좌우하는 가장 중요한 부품이라고 할 수 있다.</p>
+<p>‘CPU’, 혹은 ‘마이크로프로세서’라고 부르는 그것</p>
+<p>CPU는 ‘Central Processing Unit’의 약자로서, 직역 하면 중앙처리장치(中央處理裝置)다. 단어 그대로, 컴퓨터의 정중앙에서 모든 데이터를 처리하는 장치라는 뜻이다. CPU는 컴퓨터의 두뇌에 해당하는 것으로서, 사용자로부터 입력 받은 명령어를 해석, 연산한 후 그 결과를 출력하는 역할을 한다. 그리고 이렇게 하나의 부품에 연산 장치, 해독 장치, 제어 장치 등이 집적되어 있는 형태를 일컬어 ‘마이크로프로세서(Micro-processor)’라고 한다. CPU와 마이크로프로세서는 거의 같은 의미로 쓰이는 일이 많다. 다만 마이크로프로세서 중에는 전기밥솥이나 세탁기와 같은 제품의 제어용으로 쓰이는 것도 있어, 일반적인 컴퓨터에 장착되는 CPU와는 미묘하게 뜻이 구분되기도 한다(여기서는 CPU라고 통일해 부르기로 한다).</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://ncc.phinf.naver.net/ncc02/2010/11/29/230/3.jpg"
+    ></figure>
+<p>CPU는 데이터를 처리하는 컴퓨터의 두뇌이다.</p>
+<p>컴퓨터 CPU의 가장 기본적인 역할은 연산/계산 작업이다. 이를테면 사용자가 ‘0 + 1’이라는 명령을 내리면 CPU는 이를 받아들여 계산을 한 후 ‘1’이라는 결과를 영상 출력 장치(모니터 등)로 보여준다. 물론, 지금 우리가 사용하는 컴퓨터의 CPU는 이러한 단순한 계산 작업만 처리하지는 않으며, 문서나 그림, 음악이나 동영상 처리 등 다양한 데이터를 취급한다. 하지만 처리하는 데이터의 종류가 다르다 해도 CPU가 데이터를 처리하는 기본 원리는 ‘0 + 1 = 1’을 계산할 때와 크게 다르지 않다.</p>
+<p>왜냐하면 컴퓨터의 내부에서 이동하는 데이터는 어차피 ‘0’과 ‘1’로만 구성된 디지털 신호의 조합이기 때문이다. 예를 들어, 사용자가 숫자 ‘3’을 컴퓨터에 입력하면 CPU는 이를 ‘00011’이라는 0과 1의 조합으로 인식한다. 만약 단순한 숫자 데이터가 아닌 영상이나 음악 등의 복잡한 데이터를 CPU가 인식, 처리할 수 있는 디지털 신호로 구성하려면 수많은 0과 1의 조합이 필요하다.</p>
+<p>예를 들어 5MB 용량의 음악 파일 1개가 있다면, CPU는 이를 총 4천만 개 정도의 0과 1이 조합된 집합체로 인식한다. 이에 따라 사용자가 PC 상에서 음악 파일 하나를 클릭하여 재생하는 순간, CPU 내부에서는 ‘1100011000111101100011000110011001110~’ 등으로 길게 이어지는 연산 작업이 초당 몇 천만 번, 혹은 몇 억 번씩 이루어지고 있는 셈이다.</p>
+<p>클럭 속도? 코어 수? 무엇이 중요해?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://ncc.phinf.naver.net/ncc01/2010/11/29/125/4.jpg"
+    ></figure>
+<p>2개의 코어를 장착한 듀얼 코어 CPU</p>
+<p>이러한 연산 속도는 CPU의 종류마다 다르다. CPU의 속도를 나타내는 대표적인 단위는 ‘클럭(clock)’인데, 이는 1초당 CPU 내부에서 몇 단계의 작업이 처리되는 지를 측정해 이를 주파수 단위인 ‘Hz(헤르츠)’로 나타낸 것이다. 따라서, 이 클럭 수치가 높을수록 빠른 성능의 CPU라고 할 수 있다. 참고로, 1971년에 등장한 세계 최초의 컴퓨터 CPU인 ‘인텔(Intel) 4004’의 최대 동작 클럭은 740KHz(74만Hz)였으며, 2010년 현재 판매 중인 CPU인 ‘인텔 코어(Core) i7 960’의 동작 클럭은 3.2GHz(32억Hz)에 달한다.</p>
+<p>과거에는 이러한 클럭 속도가 CPU의 성능을 나타내는 절대적인 기준이었지만, 최근에는 하나의 CPU에 2개 이상의 코어(Core)를 집어넣은 다중 코어(멀티 코어, Multi Core) CPU가 등장하여, CPU의 성능을 나타내는 또 하나의 기준이 되고 있다.</p>
+<p>컴퓨터 CPU에서 코어란 CPU에 내장된 처리회로의 핵심 부분으로서, 예전에는 1개의 CPU 당 1개의 코어(단일 코어: Single Core)만을 가지고 있는 것이 당연했다. 1990년대 후반과 2000년대 초반을 즈음하여, 산업용/전문가용 컴퓨터를 위한 다중 코어 CPU가 출시된 적은 있었으나 특수한 환경에서만 사용되어 컴퓨터 시장에 미치는 영향은 극히 미미했다. 하지만 2005년, 2개의 코어를 갖춘 듀얼 코어(Dual Core) CPU인 인텔의 ‘펜티엄(Pentium) D’와 AMD의 ‘애슬론(Athlon)64 X2’가 등장하면서 다중 코어 CPU가 점차 대중화되기 시작했다.</p>
+<p>2007년에는 4개의 코어를 갖춘 쿼드 코어(Quad Core) CPU인 인텔의 ‘코어2 쿼드(Core2 Quad)가 등장했으며, 2008년에는 듀얼 코어와 쿼드 코어 사이의 틈새시장을 노린 코어 3개짜리 트리플 코어(Triple Core) CPU인 AMD의 페넘(Phenom) X3도 출시되어 사용자들의 관심을 받았다. 또한, 2010년에는 코어를 6개나 내장한 헥사 코어(Hexa Core) CPU, 인텔의 ‘코어 i7 980X 익스트림 에디션(Extreme Edition)’도 출시된 바 있다.</p>
+<p>이와 같은 다중 코어 CPU는 내장된 코어 개수만큼 실제 CPU를 장착한 것과 유사한 성능을 낸다. 즉 듀얼 코어 CPU는 일반적인 단일 코어 CPU가 두 번에 걸쳐 처리해야 하는 작업을 한 번에 끝낼 수 있어 전반적인 처리 효율을 높일 수 있다. 다만 다중 코어 CPU는 동시에 여러 가지 작업을 처리하거나(멀티태스킹, multi-tasking) 다중 코어 연산에 최적화된 소프트웨어를 실행할 때 진정한 성능 향상 효과를 얻을 수 있다. 다중 코어 연산을 지원하지 않는 소프트웨어를 사용하거나 한 가지 작업만 집중적으로 수행할 때는, 코어 개수는 적지만 클럭 수치가 높은 CPU가 오히려 월등한 성능을 발휘하는 경우도 많다. 그래픽 편집 프로그램이나 동영상 인코딩 프로그램, 혹은 파일 압축 프로그램 중에 다중 코어를 지원하는 경우가 많으니 참고하자.</p>
+<p>CPU의 등급과 가격을 구분 짓는 중요한 지표, 캐시 메모리</p>
+<p>클럭 속도와 코어의 수 외에도, CPU의 성능을 가늠할 수 있는 또 하나의 기준은 CPU 안에 들어 있는 캐시 메모리(cache memory)의 용량이다. ‘캐시’라 줄여 부르는데, CPU 내부의 임시 저장공간으로서 CPU가 데이터를 처리할 때 자주 사용하는 데이터를 임시 보관하는 곳이다. 이 캐시 메모리의 용량이 작으면 CPU에 비해 동작 속도가 훨씬 느린 주 기억장치(RAM, 메모리)나 보조 기억 장치(하드디스크, CD-ROM 등)로부터 직접 데이터를 불러들이는 빈도가 높아지는데, 이런 경우 컴퓨터의 전반적인 처리 속도가 크게 저하된다. 결론적으로 CPU의 캐시 메모리는 크면 클수록 성능 향상에 유리하다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://ncc.phinf.naver.net/ncc02/2010/11/29/285/2-1.jpg"
+    ></figure>
+<p>캐시 메모리는 CPU 코어와의 위치에 따라 1차 캐시 메모리(Level 1 cache memory)와 2차 캐시 메모리(Level 2 cache memory), 3차 캐시 메모리(Level 3 cache memory) 등으로 나뉜다. CPU와 가까운 곳에 위치한 캐시 메모리 일수록 성능 향상 폭이 크지만, 그만큼 제조가 어렵고 생산 단가도 높아진다.</p>
+<p>1990년대 초반까지는 CPU에 1차 캐시 메모리만 내장하고, 경우에 따라서 컴퓨터 메인보드(주 기판)상에 2차, 3차 캐시 메모리를 추가 장착하는 방식이 주류를 이루었으나, 1990년대 중반 이후부터는 CPU 내부에 1차, 2차 캐시 메모리를 함께 내장하는 방식이 일반화되었다. 그리고 2007년, AMD ‘페넘 X4’의 발매를 즈음하여 3차 캐시 메모리까지 CPU 내부에 탑재하는 경향이 생겨났다.</p>
+<p>캐시 메모리의 구성과 용량은 CPU의 등급과 가격을 결정하는 중요한 잣대가 되기도 한다. 1998년에 출시된 인텔의 ‘셀러론(Celeron) 300’ 모델은 상위 제품인 ‘펜티엄 II 300’ 모델과 유사한 코어에 클럭 수치도 동일했으나 가격은 그 절반 이하였다. 두 제품의 차이는 512KB의 2차 캐시 메모리의 유무뿐이었는데, 이로 인한 성능의 차이는 상당했다. 그 후 인텔은 기존의 셀러론 300에 128KB의 2차 캐시 메모리를 추가하면서 가격은 기존 제품과 비슷한 ‘셀러론 300A’를 출시하였는데, 가격 대비 성능이 매우 우수해 큰 인기를 끌었다.</p>
+<p>성능 비교의 시작이자 끝, 아키텍처</p>
+<p>그리고 마지막으로 알아두어야 할 점은 바로 CPU의 아키텍처(architecture)의 차이다. 아키텍처란 컴퓨터 시스템의 기본 구조 및 설계 방식, 그리고 제조 공정까지 포함하는 개념으로서, 클럭 속도나 코어의 수, 캐시의 용량이 모두 같더라도 아키텍처가 다르면 전반적인 성능에 차이가 난다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://ncc.phinf.naver.net/ncc01/2010/12/28/235/archtecture_500_.jpg"
+    ></figure>
+<p>대표적 CPU 업체 인텔과 AMD의 CPU 아키텍처 발전사</p>
+<p>자동차로 비유하면 엔진 배기량이나 차체 크기가 유사한 모델이라도, 연식이나 시리즈에 따라 출력, 편의기능 등에서 차이가 나는 것과 유사하다. 즉 몇 기통 엔진을 장착했는가, 차체 뼈대를 어떻게 설계했는가, 어떤 옵션과 부품을 내장했는가 등의 기준에 따라 전반적인 성능 및 기능이 달라지게 되는 것이다. 이와 같은 기준들이 자동차 생산에 있어 하나의 ‘아키텍처’인 셈이다.</p>
+<p>컴퓨터 CPU를 예로 들면, 2006년 1월에 출시된 ‘펜티엄 D 930’은 3GHz 클럭과 2개 코어, 총 4MB의 2차 캐시 메모리를 갖추고 있었다. 하지만 같은 해 7월에 출시된 ‘코어2 듀오 E6400’은 2.13GHz 클럭과 2개 코어, 그리고 총 2MB의 2차 캐시 메모리를 내장하여 전반적인 사양 기준이 펜티엄 D 930보다 낮음에도 불구하고 실질적인 성능은 더 우수한 것으로 평가됐다. 이는 코어2 듀오 시리즈에 적용된 아키텍처가 펜티엄 D 시리즈보다 한층 진보된 것이기 때문이다.</p>
+<p>따라서 CPU끼리 성능을 비교하고자 할 때는 일단 아키텍처가 같은 제품끼리 분류한 후에 클럭 수치나 코어 개수, 캐시 메모리 용량 등의 우열을 따져보는 것이 바람직하다. 그리고 만약 아키텍처가 다른 CPU끼리 성능을 비교하고자 할 때는 세부적인 수치를 따지기 보다는 각종 매체나 관련 커뮤니티에서 얻을 수 있는 정보를 참고하거나, 가격 비교 사이트 등을 방문해 해당 CPU 제품 간의 가격 차이를 하나씩 체크해보는 것이 좋다.
+{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-08-26-%EC%A7%80%ED%8F%AC%EC%8A%A4-8000%EB%8C%80-%EC%9D%B4%EC%83%81%EC%9D%98-unified-shader/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;지포스 8000대 이상의 Unified Shader
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-08-26T17:15:18&#43;00:00">26 8월 2011</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-08-31-7600gs%EC%9D%98-%EC%84%B1%EB%8A%A5%EB%B6%84%EC%84%9D--at2-%EC%B4%88%EB%B2%8C-%EC%82%AC%EC%96%91%EC%A1%B0%EC%82%AC--%EB%B2%84%ED%85%8D%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%A0%9C%ED%95%9C/">
+              <span class="leading-6">
+                7600GS의 성능분석 / AT2 초벌 사양조사 / 버텍스 용량제한&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-08-31T15:50:27&#43;00:00">31 8월 2011</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

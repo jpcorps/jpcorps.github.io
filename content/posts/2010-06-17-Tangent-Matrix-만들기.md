@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Tangent Matrix 만들기"
+date: 2010-06-17 15:30:42
+categories: [이글루스 백업, "2010-06"]
+---
+
+{% raw %}
+3\*3 행렬의 탄젠트 매트릭스 만들기.   
+픽셀쉐이더에서 노말맵을 처리할 때 부하를 줄이기 위해 버텍스 쉐이더 단계에서   
+시선벡터와 라이트 벡터를 미리 탄젠트 메트릭스로 전환시켜서, 후에 픽셀 쉐이더 단계에서는 간단히 노말맵과 라이트/시선벡터를 dot 처리하면 되도록 한다.  정밀도야 당근 떨어짐. 사실 효과는 마음에 들지 않지만, 재미있고 현실적인 대안이다. 어쨌거나 버텍스 단계에서 매트릭스를 탄젠트로 넘기는건 처음 보는거라 신기하다. 스승님 만세.  
+  
+...이런 기술을 보려면 이제 GPU gem을 봐야 하는 건가요?   
+  
+  
+ //mul world transform for per Vertex Normal/////////////////////  
+ float3 Normal = mul(normalize(In.Normal), (float3x3)matWorld);  
+ Normal = normalize(Normal);  
+ float3 Binormal = mul(normalize(In.Binormal), (float3x3)matWorld);  
+ Binormal = normalize(Binormal);  
+ float3 Tangent = mul(normalize(In.Tangent), (float3x3)matWorld);  
+ Tangent = normalize(Tangent);  
+  
+    Out.vLightVector = normalize(-g\_vLightDirection0);// \*0.5f+0.5f;  
+    Out.ViewInvDirection = normalize(WorldPos - matViewInv[3]);  
+  
+ //make tangent matrix/////////////////////////////////////  
+ float3x3 mObjToTangentSpace;  
+    mObjToTangentSpace[0] = Binormal;  
+    mObjToTangentSpace[1] = Tangent;  
+    mObjToTangentSpace[2] = Normal;  
+  
+그렇지만 최종적으로는 이걸 없앰으로써 바이노말과 탄젠트 입력을 받지 않아도 되게 되었다. 만세.  
+{% endraw %}

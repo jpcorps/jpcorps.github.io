@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2008-03 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2008-03/</link>
+    <description>Recent content in 2008-03 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Mon, 31 Mar 2008 17:36:04 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2008-03/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>신기하다</title>
+      <link>http://localhost:1313/posts/2008-03-31-%EC%8B%A0%EA%B8%B0%ED%95%98%EB%8B%A4/</link>
+      <pubDate>Mon, 31 Mar 2008 17:36:04 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-31-%EC%8B%A0%EA%B8%B0%ED%95%98%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>다이렉트X 초기화 설명 (펌)</title>
+      <link>http://localhost:1313/posts/2008-03-31-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8x-%EC%B4%88%EA%B8%B0%ED%99%94-%EC%84%A4%EB%AA%85-%ED%8E%8C/</link>
+      <pubDate>Mon, 31 Mar 2008 15:30:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-31-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8x-%EC%B4%88%EA%B8%B0%ED%99%94-%EC%84%A4%EB%AA%85-%ED%8E%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>loft 설명</title>
+      <link>http://localhost:1313/posts/2008-03-30-loft-%EC%84%A4%EB%AA%85/</link>
+      <pubDate>Sun, 30 Mar 2008 23:18:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-30-loft-%EC%84%A4%EB%AA%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>boolean 설명</title>
+      <link>http://localhost:1313/posts/2008-03-30-boolean-%EC%84%A4%EB%AA%85/</link>
+      <pubDate>Sun, 30 Mar 2008 21:15:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-30-boolean-%EC%84%A4%EB%AA%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Globiswon 디지털 펜 리뷰</title>
+      <link>http://localhost:1313/posts/2008-03-30-globiswon-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8E%9C-%EB%A6%AC%EB%B7%B0/</link>
+      <pubDate>Sun, 30 Mar 2008 18:01:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-30-globiswon-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8E%9C-%EB%A6%AC%EB%B7%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아 갑자기 개바빠요</title>
+      <link>http://localhost:1313/posts/2008-03-27-%EC%95%84-%EA%B0%91%EC%9E%90%EA%B8%B0-%EA%B0%9C%EB%B0%94%EB%B9%A0%EC%9A%94/</link>
+      <pubDate>Thu, 27 Mar 2008 23:39:37 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-27-%EC%95%84-%EA%B0%91%EC%9E%90%EA%B8%B0-%EA%B0%9C%EB%B0%94%EB%B9%A0%EC%9A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>겜브리오 엔진 힌트</title>
+      <link>http://localhost:1313/posts/2008-03-26-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%97%94%EC%A7%84-%ED%9E%8C%ED%8A%B8/</link>
+      <pubDate>Wed, 26 Mar 2008 11:33:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-26-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%97%94%EC%A7%84-%ED%9E%8C%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>공부중 Arias</title>
+      <link>http://localhost:1313/posts/2008-03-24-%EA%B3%B5%EB%B6%80%EC%A4%91-arias/</link>
+      <pubDate>Mon, 24 Mar 2008 11:45:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-24-%EA%B3%B5%EB%B6%80%EC%A4%91-arias/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>패키지 게임 장인이 온라인 게임은 안 되는 이유.</title>
+      <link>http://localhost:1313/posts/2008-03-23-%ED%8C%A8%ED%82%A4%EC%A7%80-%EA%B2%8C%EC%9E%84-%EC%9E%A5%EC%9D%B8%EC%9D%B4-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B2%8C%EC%9E%84%EC%9D%80-%EC%95%88-%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/</link>
+      <pubDate>Sun, 23 Mar 2008 20:52:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-23-%ED%8C%A8%ED%82%A4%EC%A7%80-%EA%B2%8C%EC%9E%84-%EC%9E%A5%EC%9D%B8%EC%9D%B4-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B2%8C%EC%9E%84%EC%9D%80-%EC%95%88-%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>블루투스 GPS 리뷰 BT- 821 리뷰</title>
+      <link>http://localhost:1313/posts/2008-03-23-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-gps-%EB%A6%AC%EB%B7%B0-bt--821-%EB%A6%AC%EB%B7%B0/</link>
+      <pubDate>Sun, 23 Mar 2008 03:12:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-23-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-gps-%EB%A6%AC%EB%B7%B0-bt--821-%EB%A6%AC%EB%B7%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GDC세미나 갔다 왔습니다.</title>
+      <link>http://localhost:1313/posts/2008-03-20-gdc%EC%84%B8%EB%AF%B8%EB%82%98-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Thu, 20 Mar 2008 22:25:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-20-gdc%EC%84%B8%EB%AF%B8%EB%82%98-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>거상2 모델 에디터. 맵툴 메뉴얼.</title>
+      <link>http://localhost:1313/posts/2008-03-17-%EA%B1%B0%EC%83%812-%EB%AA%A8%EB%8D%B8-%EC%97%90%EB%94%94%ED%84%B0.-%EB%A7%B5%ED%88%B4-%EB%A9%94%EB%89%B4%EC%96%BC/</link>
+      <pubDate>Mon, 17 Mar 2008 17:06:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-17-%EA%B1%B0%EC%83%812-%EB%AA%A8%EB%8D%B8-%EC%97%90%EB%94%94%ED%84%B0.-%EB%A7%B5%ED%88%B4-%EB%A9%94%EB%89%B4%EC%96%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>벡터 수업</title>
+      <link>http://localhost:1313/posts/2008-03-17-%EB%B2%A1%ED%84%B0-%EC%88%98%EC%97%85/</link>
+      <pubDate>Mon, 17 Mar 2008 01:36:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-17-%EB%B2%A1%ED%84%B0-%EC%88%98%EC%97%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>첫날 과제</title>
+      <link>http://localhost:1313/posts/2008-03-16-%EC%B2%AB%EB%82%A0-%EA%B3%BC%EC%A0%9C/</link>
+      <pubDate>Sun, 16 Mar 2008 19:51:10 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-16-%EC%B2%AB%EB%82%A0-%EA%B3%BC%EC%A0%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>서점 갔다 왔습니다.</title>
+      <link>http://localhost:1313/posts/2008-03-15-%EC%84%9C%EC%A0%90-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sat, 15 Mar 2008 23:13:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-15-%EC%84%9C%EC%A0%90-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>벡터 수업</title>
+      <link>http://localhost:1313/posts/2008-03-14-%EB%B2%A1%ED%84%B0-%EC%88%98%EC%97%85/</link>
+      <pubDate>Fri, 14 Mar 2008 11:50:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-14-%EB%B2%A1%ED%84%B0-%EC%88%98%EC%97%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Wall- E 트레일러</title>
+      <link>http://localhost:1313/posts/2008-03-13-wall--e-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC/</link>
+      <pubDate>Thu, 13 Mar 2008 22:02:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-13-wall--e-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>옛날엔 이런 그래픽</title>
+      <link>http://localhost:1313/posts/2008-03-11-%EC%98%9B%EB%82%A0%EC%97%94-%EC%9D%B4%EB%9F%B0-%EA%B7%B8%EB%9E%98%ED%94%BD/</link>
+      <pubDate>Tue, 11 Mar 2008 10:07:10 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-11-%EC%98%9B%EB%82%A0%EC%97%94-%EC%9D%B4%EB%9F%B0-%EA%B7%B8%EB%9E%98%ED%94%BD/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>텍스쳐 참고</title>
+      <link>http://localhost:1313/posts/2008-03-11-%ED%85%8D%EC%8A%A4%EC%B3%90-%EC%B0%B8%EA%B3%A0/</link>
+      <pubDate>Tue, 11 Mar 2008 09:49:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-11-%ED%85%8D%EC%8A%A4%EC%B3%90-%EC%B0%B8%EA%B3%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>외주 견적서</title>
+      <link>http://localhost:1313/posts/2008-03-11-%EC%99%B8%EC%A3%BC-%EA%B2%AC%EC%A0%81%EC%84%9C/</link>
+      <pubDate>Tue, 11 Mar 2008 09:47:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-11-%EC%99%B8%EC%A3%BC-%EA%B2%AC%EC%A0%81%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CryEngine Techdemo GDC 2008</title>
+      <link>http://localhost:1313/posts/2008-03-09-cryengine-techdemo-gdc-2008/</link>
+      <pubDate>Sun, 09 Mar 2008 23:02:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-09-cryengine-techdemo-gdc-2008/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Emerent techdemo 2008</title>
+      <link>http://localhost:1313/posts/2008-03-09-emerent-techdemo-2008/</link>
+      <pubDate>Sun, 09 Mar 2008 22:58:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-09-emerent-techdemo-2008/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>엠베스텍 모니터 AS기</title>
+      <link>http://localhost:1313/posts/2008-03-09-%EC%97%A0%EB%B2%A0%EC%8A%A4%ED%85%8D-%EB%AA%A8%EB%8B%88%ED%84%B0-as%EA%B8%B0/</link>
+      <pubDate>Sun, 09 Mar 2008 21:18:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-09-%EC%97%A0%EB%B2%A0%EC%8A%A4%ED%85%8D-%EB%AA%A8%EB%8B%88%ED%84%B0-as%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>부정적 마인드</title>
+      <link>http://localhost:1313/posts/2008-03-07-%EB%B6%80%EC%A0%95%EC%A0%81-%EB%A7%88%EC%9D%B8%EB%93%9C/</link>
+      <pubDate>Fri, 07 Mar 2008 10:58:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-07-%EB%B6%80%EC%A0%95%EC%A0%81-%EB%A7%88%EC%9D%B8%EB%93%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>이펙트 작업 정리</title>
+      <link>http://localhost:1313/posts/2008-03-06-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%9E%91%EC%97%85-%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Thu, 06 Mar 2008 11:59:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-06-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%9E%91%EC%97%85-%EC%A0%95%EB%A6%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>방어구 인첸트 이펙트 제작</title>
+      <link>http://localhost:1313/posts/2008-03-05-%EB%B0%A9%EC%96%B4%EA%B5%AC-%EC%9D%B8%EC%B2%B8%ED%8A%B8-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%A0%9C%EC%9E%91/</link>
+      <pubDate>Wed, 05 Mar 2008 15:33:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-05-%EB%B0%A9%EC%96%B4%EA%B5%AC-%EC%9D%B8%EC%B2%B8%ED%8A%B8-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%A0%9C%EC%9E%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아 1학기는 강사였구나;</title>
+      <link>http://localhost:1313/posts/2008-03-04-%EC%95%84-1%ED%95%99%EA%B8%B0%EB%8A%94-%EA%B0%95%EC%82%AC%EC%98%80%EA%B5%AC%EB%82%98/</link>
+      <pubDate>Tue, 04 Mar 2008 18:41:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-04-%EC%95%84-1%ED%95%99%EA%B8%B0%EB%8A%94-%EA%B0%95%EC%82%AC%EC%98%80%EA%B5%AC%EB%82%98/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>개강이다.</title>
+      <link>http://localhost:1313/posts/2008-03-03-%EA%B0%9C%EA%B0%95%EC%9D%B4%EB%8B%A4/</link>
+      <pubDate>Mon, 03 Mar 2008 00:43:10 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-03-%EA%B0%9C%EA%B0%95%EC%9D%B4%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>작업중</title>
+      <link>http://localhost:1313/posts/2008-03-01-%EC%9E%91%EC%97%85%EC%A4%91/</link>
+      <pubDate>Sat, 01 Mar 2008 15:07:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-03-01-%EC%9E%91%EC%97%85%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

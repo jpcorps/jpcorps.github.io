@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2009-06 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2009-06/</link>
+    <description>Recent content in 2009-06 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Mon, 29 Jun 2009 14:08:36 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2009-06/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>쉐이더 완성</title>
+      <link>http://localhost:1313/posts/2009-06-29-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%99%84%EC%84%B1/</link>
+      <pubDate>Mon, 29 Jun 2009 14:08:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-29-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%99%84%EC%84%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>갔다왔습니다.</title>
+      <link>http://localhost:1313/posts/2009-06-29-%EA%B0%94%EB%8B%A4%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Mon, 29 Jun 2009 00:47:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-29-%EA%B0%94%EB%8B%A4%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아이템 겟</title>
+      <link>http://localhost:1313/posts/2009-06-28-%EC%95%84%EC%9D%B4%ED%85%9C-%EA%B2%9F/</link>
+      <pubDate>Sun, 28 Jun 2009 22:56:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-28-%EC%95%84%EC%9D%B4%ED%85%9C-%EA%B2%9F/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>변압기포머</title>
+      <link>http://localhost:1313/posts/2009-06-28-%EB%B3%80%EC%95%95%EA%B8%B0%ED%8F%AC%EB%A8%B8/</link>
+      <pubDate>Sun, 28 Jun 2009 15:36:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-28-%EB%B3%80%EC%95%95%EA%B8%B0%ED%8F%AC%EB%A8%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>차기작을 위한 기술시방서</title>
+      <link>http://localhost:1313/posts/2009-06-28-%EC%B0%A8%EA%B8%B0%EC%9E%91%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%88%A0%EC%8B%9C%EB%B0%A9%EC%84%9C/</link>
+      <pubDate>Sun, 28 Jun 2009 01:08:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-28-%EC%B0%A8%EA%B8%B0%EC%9E%91%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%88%A0%EC%8B%9C%EB%B0%A9%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>shader 작업중</title>
+      <link>http://localhost:1313/posts/2009-06-26-shader-%EC%9E%91%EC%97%85%EC%A4%91/</link>
+      <pubDate>Fri, 26 Jun 2009 09:51:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-26-shader-%EC%9E%91%EC%97%85%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>요새 업무 내용 포스팅이 뜸한 이유는</title>
+      <link>http://localhost:1313/posts/2009-06-25-%EC%9A%94%EC%83%88-%EC%97%85%EB%AC%B4-%EB%82%B4%EC%9A%A9-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%B4-%EB%9C%B8%ED%95%9C-%EC%9D%B4%EC%9C%A0%EB%8A%94/</link>
+      <pubDate>Thu, 25 Jun 2009 00:52:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-25-%EC%9A%94%EC%83%88-%EC%97%85%EB%AC%B4-%EB%82%B4%EC%9A%A9-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%B4-%EB%9C%B8%ED%95%9C-%EC%9D%B4%EC%9C%A0%EB%8A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>그러니까 노트북을... 팝니다.</title>
+      <link>http://localhost:1313/posts/2009-06-24-%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84...-%ED%8C%9D%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Wed, 24 Jun 2009 00:28:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-24-%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84...-%ED%8C%9D%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>오늘의 득템</title>
+      <link>http://localhost:1313/posts/2009-06-22-%EC%98%A4%EB%8A%98%EC%9D%98-%EB%93%9D%ED%85%9C/</link>
+      <pubDate>Mon, 22 Jun 2009 22:59:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-22-%EC%98%A4%EB%8A%98%EC%9D%98-%EB%93%9D%ED%85%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>뉴 PC구입</title>
+      <link>http://localhost:1313/posts/2009-06-22-%EB%89%B4-pc%EA%B5%AC%EC%9E%85/</link>
+      <pubDate>Mon, 22 Jun 2009 00:14:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-22-%EB%89%B4-pc%EA%B5%AC%EC%9E%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>저, 게임을 별로 안해가지고.</title>
+      <link>http://localhost:1313/posts/2009-06-20-%EC%A0%80-%EA%B2%8C%EC%9E%84%EC%9D%84-%EB%B3%84%EB%A1%9C-%EC%95%88%ED%95%B4%EA%B0%80%EC%A7%80%EA%B3%A0/</link>
+      <pubDate>Sat, 20 Jun 2009 08:44:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-20-%EC%A0%80-%EA%B2%8C%EC%9E%84%EC%9D%84-%EB%B3%84%EB%A1%9C-%EC%95%88%ED%95%B4%EA%B0%80%EC%A7%80%EA%B3%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>됐다.</title>
+      <link>http://localhost:1313/posts/2009-06-18-%EB%90%90%EB%8B%A4/</link>
+      <pubDate>Thu, 18 Jun 2009 17:51:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-18-%EB%90%90%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>에헤헤</title>
+      <link>http://localhost:1313/posts/2009-06-17-%EC%97%90%ED%97%A4%ED%97%A4/</link>
+      <pubDate>Wed, 17 Jun 2009 21:03:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-17-%EC%97%90%ED%97%A4%ED%97%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>참 재미지다.</title>
+      <link>http://localhost:1313/posts/2009-06-15-%EC%B0%B8-%EC%9E%AC%EB%AF%B8%EC%A7%80%EB%8B%A4/</link>
+      <pubDate>Mon, 15 Jun 2009 08:21:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-15-%EC%B0%B8-%EC%9E%AC%EB%AF%B8%EC%A7%80%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>나라별 AT 홈페이지</title>
+      <link>http://localhost:1313/posts/2009-06-14-%EB%82%98%EB%9D%BC%EB%B3%84-at-%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/</link>
+      <pubDate>Sun, 14 Jun 2009 20:39:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-14-%EB%82%98%EB%9D%BC%EB%B3%84-at-%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아하하 회사</title>
+      <link>http://localhost:1313/posts/2009-06-14-%EC%95%84%ED%95%98%ED%95%98-%ED%9A%8C%EC%82%AC/</link>
+      <pubDate>Sun, 14 Jun 2009 19:51:09 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-14-%EC%95%84%ED%95%98%ED%95%98-%ED%9A%8C%EC%82%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아 집에 가고 싶어</title>
+      <link>http://localhost:1313/posts/2009-06-13-%EC%95%84-%EC%A7%91%EC%97%90-%EA%B0%80%EA%B3%A0-%EC%8B%B6%EC%96%B4/</link>
+      <pubDate>Sat, 13 Jun 2009 18:10:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-13-%EC%95%84-%EC%A7%91%EC%97%90-%EA%B0%80%EA%B3%A0-%EC%8B%B6%EC%96%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>요즘에 하는거 _ 쉐이더 수정</title>
+      <link>http://localhost:1313/posts/2009-06-11-%EC%9A%94%EC%A6%98%EC%97%90-%ED%95%98%EB%8A%94%EA%B1%B0-_-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%88%98%EC%A0%95/</link>
+      <pubDate>Thu, 11 Jun 2009 15:17:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-11-%EC%9A%94%EC%A6%98%EC%97%90-%ED%95%98%EB%8A%94%EA%B1%B0-_-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%88%98%EC%A0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>와 종강이다</title>
+      <link>http://localhost:1313/posts/2009-06-10-%EC%99%80-%EC%A2%85%EA%B0%95%EC%9D%B4%EB%8B%A4/</link>
+      <pubDate>Wed, 10 Jun 2009 00:46:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-10-%EC%99%80-%EC%A2%85%EA%B0%95%EC%9D%B4%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>그러니까 오늘은 연차</title>
+      <link>http://localhost:1313/posts/2009-06-08-%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C-%EC%98%A4%EB%8A%98%EC%9D%80-%EC%97%B0%EC%B0%A8/</link>
+      <pubDate>Mon, 08 Jun 2009 21:10:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-08-%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C-%EC%98%A4%EB%8A%98%EC%9D%80-%EC%97%B0%EC%B0%A8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>마지막 강의 준비를 끝냈습니다.</title>
+      <link>http://localhost:1313/posts/2009-06-07-%EB%A7%88%EC%A7%80%EB%A7%89-%EA%B0%95%EC%9D%98-%EC%A4%80%EB%B9%84%EB%A5%BC-%EB%81%9D%EB%83%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sun, 07 Jun 2009 20:59:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-07-%EB%A7%88%EC%A7%80%EB%A7%89-%EA%B0%95%EC%9D%98-%EC%A4%80%EB%B9%84%EB%A5%BC-%EB%81%9D%EB%83%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3d max 15강</title>
+      <link>http://localhost:1313/posts/2009-06-06-3d-max-15%EA%B0%95/</link>
+      <pubDate>Sat, 06 Jun 2009 16:42:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-06-3d-max-15%EA%B0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>데헷</title>
+      <link>http://localhost:1313/posts/2009-06-06-%EB%8D%B0%ED%97%B7/</link>
+      <pubDate>Sat, 06 Jun 2009 09:54:26 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-06-%EB%8D%B0%ED%97%B7/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>트랜스포머 포스터 표절!!!!</title>
+      <link>http://localhost:1313/posts/2009-06-01-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8-%ED%8F%AC%EC%8A%A4%ED%84%B0-%ED%91%9C%EC%A0%88/</link>
+      <pubDate>Mon, 01 Jun 2009 09:58:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-06-01-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8-%ED%8F%AC%EC%8A%A4%ED%84%B0-%ED%91%9C%EC%A0%88/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

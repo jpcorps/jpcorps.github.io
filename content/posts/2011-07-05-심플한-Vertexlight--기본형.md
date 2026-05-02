@@ -1,0 +1,80 @@
+---
+layout: post
+title: "심플한 Vertexlight : 기본형"
+date: 2011-07-05 10:04:40
+categories: [이글루스 백업, "2011-07"]
+---
+
+{% raw %}
+내장되어있는 버텍스 라이트 쉐이더는 이것저것 많이도 고려하길래 , 그냥 암 생각 없는 기초버전의 Vertexlight 쉐이더 기본형이 필요해서 제작해 봤음. 핵심은 Vertexshader에서 ShadeVertexLights 함수로 계산되는 부분인데, 이 부분을 UnityCG.cginc 에서 파고 들어가보니 아래와 같이 나온다.   
+  
+**float3 ShadeVertexLights (float4 vertex, float3 normal)  
+{  
+ float3 viewpos = mul (UNITY\_MATRIX\_MV, vertex).xyz;  
+ float3 viewN = mul ((float3x3)UNITY\_MATRIX\_IT\_MV, normal);  
+ float3 lightColor = UNITY\_LIGHTMODEL\_AMBIENT.xyz;  
+ #if UNITY\_HAS\_LIGHT\_PARAMETERS  
+ for (int i = 0; i < 4; i++) {  
+  float3 toLight = glstate.light[i].position.xyz - viewpos.xyz \* glstate.light[i].position.w;  
+  float lengthSq = dot(toLight, toLight);  
+  float atten = 1.0 / (1.0 + lengthSq \* glstate.light[i].attenuation.z);  
+  float diff = max (0, dot (viewN, normalize(toLight)));  
+  lightColor += glstate.light[i].diffuse.rgb \* (diff \* atten);  
+ }  
+ #endif  
+ return lightColor;  
+}**이것은 즉 버텍스 라이트를 4개까지만 계산하고 그 이상은 SH 라이트로 넘기는 그 부분 같은데 (넘기는 부분은 안나와서.. 그냥 무시하는걸지도..?) 어쨌건 건드리지 않고 일단 그냥 쓰기로 했음.   
+  
+사실은 Diffuse를 프레그먼트 쉐이더로 짜고 싶었는데, Diffuse 라이팅 - 픽셀 단에서 계산하는 - 함수를 못찾겠다. 뭐 그냥 무식하게 계산하면 되긴 하는데, 그럼 자체적으로 가지고 있는 라이팅 최적화 함수들을 이용할 수가 없으니까... 뭐 사실 그냥 작게 봤을때 vertexlight와 pixellight 의 차이가 별로 없는 것도 있고. (스페큘러같은게 나오기라도 하면 또 몰라)   
+  
+어쨌건 기본형을 만들어 놓으면 2pass 쉐이더를 짤때건 뭘할때건 유용하니까 만들어 놓자.   
+  
+Shader "New Shader" {  
+ Properties {  
+  \_MainTex ("Base (RGB)", 2D) = "white" {}  
+ }  
+ SubShader {  
+   
+ Pass   
+  {  
+  Tags { "RenderType"="Opaque" "LightMode" = "Vertex"}  
+  LOD 100  
+    
+  
+   CGPROGRAM  
+   #pragma vertex vert  
+   #pragma fragment frag  
+   #pragma fragmentoption ARB\_precision\_hint\_fastest  
+   #include "UnityCG.cginc"
+
+  sampler2D \_MainTex;  
+  float4 \_MainTex\_ST;
+
+  struct v2f {  
+    float4 pos : SV\_POSITION;  
+    float2 texcoord : TEXCOORD1;  
+    float4 diff : TEXCOORD0;  
+   };  
+   v2f vert (appdata\_base v)   
+   {  
+    v2f o;  
+    o.pos = mul( UNITY\_MATRIX\_MVP, v.vertex );  
+    o.texcoord = TRANSFORM\_TEX(v.texcoord,\_MainTex);  
+     o.diff = float4(ShadeVertexLights(v.vertex, v.normal), 1.0f);  
+    return o;  
+   }  
+     
+   half4 frag (v2f i) : COLOR  
+   {  
+    // texture  
+    float4 Finalcolor = tex2D(\_MainTex, i.texcoord);  
+    Finalcolor \*= i.diff;  
+    return float4(Finalcolor.rgb,1.0f);  
+   }   
+   ENDCG  
+    
+  }  
+ }   
+ FallBack "Vertexlit"  
+}
+{% endraw %}

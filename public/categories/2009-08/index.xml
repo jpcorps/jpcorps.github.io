@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2009-08 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2009-08/</link>
+    <description>Recent content in 2009-08 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Mon, 31 Aug 2009 15:21:15 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2009-08/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>알바 구합니다</title>
+      <link>http://localhost:1313/posts/2009-08-31-%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Mon, 31 Aug 2009 15:21:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-31-%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>워크래프트3 에서 사용된 타일 구조 연구</title>
+      <link>http://localhost:1313/posts/2009-08-30-%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B83-%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%EB%90%9C-%ED%83%80%EC%9D%BC-%EA%B5%AC%EC%A1%B0-%EC%97%B0%EA%B5%AC/</link>
+      <pubDate>Sun, 30 Aug 2009 21:43:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-30-%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B83-%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%EB%90%9C-%ED%83%80%EC%9D%BC-%EA%B5%AC%EC%A1%B0-%EC%97%B0%EA%B5%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>워크샵워크샵</title>
+      <link>http://localhost:1313/posts/2009-08-30-%EC%9B%8C%ED%81%AC%EC%83%B5%EC%9B%8C%ED%81%AC%EC%83%B5/</link>
+      <pubDate>Sun, 30 Aug 2009 05:23:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-30-%EC%9B%8C%ED%81%AC%EC%83%B5%EC%9B%8C%ED%81%AC%EC%83%B5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>오마니2</title>
+      <link>http://localhost:1313/posts/2009-08-29-%EC%98%A4%EB%A7%88%EB%8B%882/</link>
+      <pubDate>Sat, 29 Aug 2009 16:46:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-29-%EC%98%A4%EB%A7%88%EB%8B%882/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>여기는 워크샵</title>
+      <link>http://localhost:1313/posts/2009-08-28-%EC%97%AC%EA%B8%B0%EB%8A%94-%EC%9B%8C%ED%81%AC%EC%83%B5/</link>
+      <pubDate>Fri, 28 Aug 2009 18:38:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-28-%EC%97%AC%EA%B8%B0%EB%8A%94-%EC%9B%8C%ED%81%AC%EC%83%B5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>파라오와 미라전</title>
+      <link>http://localhost:1313/posts/2009-08-27-%ED%8C%8C%EB%9D%BC%EC%98%A4%EC%99%80-%EB%AF%B8%EB%9D%BC%EC%A0%84/</link>
+      <pubDate>Thu, 27 Aug 2009 23:44:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-27-%ED%8C%8C%EB%9D%BC%EC%98%A4%EC%99%80-%EB%AF%B8%EB%9D%BC%EC%A0%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>카페테리아 신메뉴 추가</title>
+      <link>http://localhost:1313/posts/2009-08-26-%EC%B9%B4%ED%8E%98%ED%85%8C%EB%A6%AC%EC%95%84-%EC%8B%A0%EB%A9%94%EB%89%B4-%EC%B6%94%EA%B0%80/</link>
+      <pubDate>Wed, 26 Aug 2009 11:03:38 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-26-%EC%B9%B4%ED%8E%98%ED%85%8C%EB%A6%AC%EC%95%84-%EC%8B%A0%EB%A9%94%EB%89%B4-%EC%B6%94%EA%B0%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>뮤지컬 아이러브유 -</title>
+      <link>http://localhost:1313/posts/2009-08-24-%EB%AE%A4%EC%A7%80%EC%BB%AC-%EC%95%84%EC%9D%B4%EB%9F%AC%EB%B8%8C%EC%9C%A0--/</link>
+      <pubDate>Mon, 24 Aug 2009 16:04:45 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-24-%EB%AE%A4%EC%A7%80%EC%BB%AC-%EC%95%84%EC%9D%B4%EB%9F%AC%EB%B8%8C%EC%9C%A0--/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>편두통 재발</title>
+      <link>http://localhost:1313/posts/2009-08-24-%ED%8E%B8%EB%91%90%ED%86%B5-%EC%9E%AC%EB%B0%9C/</link>
+      <pubDate>Mon, 24 Aug 2009 11:10:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-24-%ED%8E%B8%EB%91%90%ED%86%B5-%EC%9E%AC%EB%B0%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>게임회사 직원이 명함을 사용할 때</title>
+      <link>http://localhost:1313/posts/2009-08-23-%EA%B2%8C%EC%9E%84%ED%9A%8C%EC%82%AC-%EC%A7%81%EC%9B%90%EC%9D%B4-%EB%AA%85%ED%95%A8%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</link>
+      <pubDate>Sun, 23 Aug 2009 00:18:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-23-%EA%B2%8C%EC%9E%84%ED%9A%8C%EC%82%AC-%EC%A7%81%EC%9B%90%EC%9D%B4-%EB%AA%85%ED%95%A8%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>진흥원 갔다 온 날</title>
+      <link>http://localhost:1313/posts/2009-08-22-%EC%A7%84%ED%9D%A5%EC%9B%90-%EA%B0%94%EB%8B%A4-%EC%98%A8-%EB%82%A0/</link>
+      <pubDate>Sat, 22 Aug 2009 23:42:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-22-%EC%A7%84%ED%9D%A5%EC%9B%90-%EA%B0%94%EB%8B%A4-%EC%98%A8-%EB%82%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>오마니</title>
+      <link>http://localhost:1313/posts/2009-08-22-%EC%98%A4%EB%A7%88%EB%8B%88/</link>
+      <pubDate>Sat, 22 Aug 2009 11:24:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-22-%EC%98%A4%EB%A7%88%EB%8B%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>사막에서 라스베가스 만들기</title>
+      <link>http://localhost:1313/posts/2009-08-21-%EC%82%AC%EB%A7%89%EC%97%90%EC%84%9C-%EB%9D%BC%EC%8A%A4%EB%B2%A0%EA%B0%80%EC%8A%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Fri, 21 Aug 2009 23:34:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-21-%EC%82%AC%EB%A7%89%EC%97%90%EC%84%9C-%EB%9D%BC%EC%8A%A4%EB%B2%A0%EA%B0%80%EC%8A%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>간만에 에펙작업</title>
+      <link>http://localhost:1313/posts/2009-08-21-%EA%B0%84%EB%A7%8C%EC%97%90-%EC%97%90%ED%8E%99%EC%9E%91%EC%97%85/</link>
+      <pubDate>Fri, 21 Aug 2009 11:42:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-21-%EA%B0%84%EB%A7%8C%EC%97%90-%EC%97%90%ED%8E%99%EC%9E%91%EC%97%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>적당한 관리</title>
+      <link>http://localhost:1313/posts/2009-08-21-%EC%A0%81%EB%8B%B9%ED%95%9C-%EA%B4%80%EB%A6%AC/</link>
+      <pubDate>Fri, 21 Aug 2009 11:32:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-21-%EC%A0%81%EB%8B%B9%ED%95%9C-%EA%B4%80%EB%A6%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>사내세미나 시작했습니다.</title>
+      <link>http://localhost:1313/posts/2009-08-19-%EC%82%AC%EB%82%B4%EC%84%B8%EB%AF%B8%EB%82%98-%EC%8B%9C%EC%9E%91%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Wed, 19 Aug 2009 00:03:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-19-%EC%82%AC%EB%82%B4%EC%84%B8%EB%AF%B8%EB%82%98-%EC%8B%9C%EC%9E%91%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Plants vs Zombies : 게임개발자에게 추천하고 싶은 게임</title>
+      <link>http://localhost:1313/posts/2009-08-18-plants-vs-zombies--%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B2%8C%EC%9E%84/</link>
+      <pubDate>Tue, 18 Aug 2009 11:36:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-18-plants-vs-zombies--%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B2%8C%EC%9E%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>야옹언니 자리</title>
+      <link>http://localhost:1313/posts/2009-08-18-%EC%95%BC%EC%98%B9%EC%96%B8%EB%8B%88-%EC%9E%90%EB%A6%AC/</link>
+      <pubDate>Tue, 18 Aug 2009 11:18:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-18-%EC%95%BC%EC%98%B9%EC%96%B8%EB%8B%88-%EC%9E%90%EB%A6%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>이실장이 컵을 하나 만들어 달래서</title>
+      <link>http://localhost:1313/posts/2009-08-17-%EC%9D%B4%EC%8B%A4%EC%9E%A5%EC%9D%B4-%EC%BB%B5%EC%9D%84-%ED%95%98%EB%82%98-%EB%A7%8C%EB%93%A4%EC%96%B4-%EB%8B%AC%EB%9E%98%EC%84%9C/</link>
+      <pubDate>Mon, 17 Aug 2009 19:15:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-17-%EC%9D%B4%EC%8B%A4%EC%9E%A5%EC%9D%B4-%EC%BB%B5%EC%9D%84-%ED%95%98%EB%82%98-%EB%A7%8C%EB%93%A4%EC%96%B4-%EB%8B%AC%EB%9E%98%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>강의 듣는 친구들</title>
+      <link>http://localhost:1313/posts/2009-08-17-%EA%B0%95%EC%9D%98-%EB%93%A3%EB%8A%94-%EC%B9%9C%EA%B5%AC%EB%93%A4/</link>
+      <pubDate>Mon, 17 Aug 2009 01:00:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-17-%EA%B0%95%EC%9D%98-%EB%93%A3%EB%8A%94-%EC%B9%9C%EA%B5%AC%EB%93%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>서든어텍 _ 터치다운 개발록</title>
+      <link>http://localhost:1313/posts/2009-08-15-%EC%84%9C%EB%93%A0%EC%96%B4%ED%85%8D-_-%ED%84%B0%EC%B9%98%EB%8B%A4%EC%9A%B4-%EA%B0%9C%EB%B0%9C%EB%A1%9D/</link>
+      <pubDate>Sat, 15 Aug 2009 22:01:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-15-%EC%84%9C%EB%93%A0%EC%96%B4%ED%85%8D-_-%ED%84%B0%EC%B9%98%EB%8B%A4%EC%9A%B4-%EA%B0%9C%EB%B0%9C%EB%A1%9D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>게임의 개발록을 보는건 정말 흥미진진한 일입니다.</title>
+      <link>http://localhost:1313/posts/2009-08-15-%EA%B2%8C%EC%9E%84%EC%9D%98-%EA%B0%9C%EB%B0%9C%EB%A1%9D%EC%9D%84-%EB%B3%B4%EB%8A%94%EA%B1%B4-%EC%A0%95%EB%A7%90-%ED%9D%A5%EB%AF%B8%EC%A7%84%EC%A7%84%ED%95%9C-%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sat, 15 Aug 2009 21:49:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-15-%EA%B2%8C%EC%9E%84%EC%9D%98-%EA%B0%9C%EB%B0%9C%EB%A1%9D%EC%9D%84-%EB%B3%B4%EB%8A%94%EA%B1%B4-%EC%A0%95%EB%A7%90-%ED%9D%A5%EB%AF%B8%EC%A7%84%EC%A7%84%ED%95%9C-%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Position을 넘기는 조금 다른 방식</title>
+      <link>http://localhost:1313/posts/2009-08-13-position%EC%9D%84-%EB%84%98%EA%B8%B0%EB%8A%94-%EC%A1%B0%EA%B8%88-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EC%8B%9D/</link>
+      <pubDate>Thu, 13 Aug 2009 13:43:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-13-position%EC%9D%84-%EB%84%98%EA%B8%B0%EB%8A%94-%EC%A1%B0%EA%B8%88-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EC%8B%9D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>스타크래프트2 쉐이딩 논문</title>
+      <link>http://localhost:1313/posts/2009-08-12-%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B82-%EC%89%90%EC%9D%B4%EB%94%A9-%EB%85%BC%EB%AC%B8/</link>
+      <pubDate>Wed, 12 Aug 2009 00:48:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-12-%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B82-%EC%89%90%EC%9D%B4%EB%94%A9-%EB%85%BC%EB%AC%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>행복한 팀장되기</title>
+      <link>http://localhost:1313/posts/2009-08-11-%ED%96%89%EB%B3%B5%ED%95%9C-%ED%8C%80%EC%9E%A5%EB%90%98%EA%B8%B0/</link>
+      <pubDate>Tue, 11 Aug 2009 23:52:42 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-11-%ED%96%89%EB%B3%B5%ED%95%9C-%ED%8C%80%EC%9E%A5%EB%90%98%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>수업계획서</title>
+      <link>http://localhost:1313/posts/2009-08-11-%EC%88%98%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C/</link>
+      <pubDate>Tue, 11 Aug 2009 18:55:38 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-11-%EC%88%98%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>날씨 좋다.</title>
+      <link>http://localhost:1313/posts/2009-08-11-%EB%82%A0%EC%94%A8-%EC%A2%8B%EB%8B%A4/</link>
+      <pubDate>Tue, 11 Aug 2009 14:32:44 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-11-%EB%82%A0%EC%94%A8-%EC%A2%8B%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 수정완성</title>
+      <link>http://localhost:1313/posts/2009-08-10-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%88%98%EC%A0%95%EC%99%84%EC%84%B1/</link>
+      <pubDate>Mon, 10 Aug 2009 19:37:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-10-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%88%98%EC%A0%95%EC%99%84%EC%84%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>뭐 대충 완성</title>
+      <link>http://localhost:1313/posts/2009-08-10-%EB%AD%90-%EB%8C%80%EC%B6%A9-%EC%99%84%EC%84%B1/</link>
+      <pubDate>Mon, 10 Aug 2009 11:23:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-10-%EB%AD%90-%EB%8C%80%EC%B6%A9-%EC%99%84%EC%84%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삽질중</title>
+      <link>http://localhost:1313/posts/2009-08-09-%EC%82%BD%EC%A7%88%EC%A4%91/</link>
+      <pubDate>Sun, 09 Aug 2009 20:41:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-09-%EC%82%BD%EC%A7%88%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>사내 교육 안내</title>
+      <link>http://localhost:1313/posts/2009-08-07-%EC%82%AC%EB%82%B4-%EA%B5%90%EC%9C%A1-%EC%95%88%EB%82%B4/</link>
+      <pubDate>Fri, 07 Aug 2009 16:44:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-07-%EC%82%AC%EB%82%B4-%EA%B5%90%EC%9C%A1-%EC%95%88%EB%82%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SSAO (Screen space ambient occlusion )</title>
+      <link>http://localhost:1313/posts/2009-08-06-ssao-screen-space-ambient-occlusion-/</link>
+      <pubDate>Thu, 06 Aug 2009 22:34:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-06-ssao-screen-space-ambient-occlusion-/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>오늘의 일기</title>
+      <link>http://localhost:1313/posts/2009-08-06-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%9D%BC%EA%B8%B0/</link>
+      <pubDate>Thu, 06 Aug 2009 19:37:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-06-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%9D%BC%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>승리의 카페테리아 2</title>
+      <link>http://localhost:1313/posts/2009-08-05-%EC%8A%B9%EB%A6%AC%EC%9D%98-%EC%B9%B4%ED%8E%98%ED%85%8C%EB%A6%AC%EC%95%84-2/</link>
+      <pubDate>Wed, 05 Aug 2009 16:40:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-05-%EC%8A%B9%EB%A6%AC%EC%9D%98-%EC%B9%B4%ED%8E%98%ED%85%8C%EB%A6%AC%EC%95%84-2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>남녀 탐구생활</title>
+      <link>http://localhost:1313/posts/2009-08-04-%EB%82%A8%EB%85%80-%ED%83%90%EA%B5%AC%EC%83%9D%ED%99%9C/</link>
+      <pubDate>Tue, 04 Aug 2009 08:54:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-04-%EB%82%A8%EB%85%80-%ED%83%90%EA%B5%AC%EC%83%9D%ED%99%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>그래픽 디자이너와 프로그래머의 작업차이</title>
+      <link>http://localhost:1313/posts/2009-08-03-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EC%99%80-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%9D%98-%EC%9E%91%EC%97%85%EC%B0%A8%EC%9D%B4/</link>
+      <pubDate>Mon, 03 Aug 2009 16:50:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-03-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EC%99%80-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%9D%98-%EC%9E%91%EC%97%85%EC%B0%A8%EC%9D%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>겜브리오용 기본 쉐이더</title>
+      <link>http://localhost:1313/posts/2009-08-03-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4%EC%9A%A9-%EA%B8%B0%EB%B3%B8-%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Mon, 03 Aug 2009 14:19:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-03-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4%EC%9A%A9-%EA%B8%B0%EB%B3%B8-%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>상하이 여행기 4</title>
+      <link>http://localhost:1313/posts/2009-08-02-%EC%83%81%ED%95%98%EC%9D%B4-%EC%97%AC%ED%96%89%EA%B8%B0-4/</link>
+      <pubDate>Sun, 02 Aug 2009 03:08:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-02-%EC%83%81%ED%95%98%EC%9D%B4-%EC%97%AC%ED%96%89%EA%B8%B0-4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>상하이 여행기3</title>
+      <link>http://localhost:1313/posts/2009-08-02-%EC%83%81%ED%95%98%EC%9D%B4-%EC%97%AC%ED%96%89%EA%B8%B03/</link>
+      <pubDate>Sun, 02 Aug 2009 01:22:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-02-%EC%83%81%ED%95%98%EC%9D%B4-%EC%97%AC%ED%96%89%EA%B8%B03/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>상하이 여행기 2</title>
+      <link>http://localhost:1313/posts/2009-08-01-%EC%83%81%ED%95%98%EC%9D%B4-%EC%97%AC%ED%96%89%EA%B8%B0-2/</link>
+      <pubDate>Sat, 01 Aug 2009 17:53:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2009-08-01-%EC%83%81%ED%95%98%EC%9D%B4-%EC%97%AC%ED%96%89%EA%B8%B0-2/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

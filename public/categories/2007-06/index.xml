@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2007-06 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2007-06/</link>
+    <description>Recent content in 2007-06 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Fri, 29 Jun 2007 22:53:34 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2007-06/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>트랜스포머 봤습니다.</title>
+      <link>http://localhost:1313/posts/2007-06-29-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8-%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Fri, 29 Jun 2007 22:53:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-29-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8-%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기본공부 2</title>
+      <link>http://localhost:1313/posts/2007-06-28-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-2/</link>
+      <pubDate>Thu, 28 Jun 2007 20:15:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-28-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기본공부 1</title>
+      <link>http://localhost:1313/posts/2007-06-28-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-1/</link>
+      <pubDate>Thu, 28 Jun 2007 18:36:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-28-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TeMP견적</title>
+      <link>http://localhost:1313/posts/2007-06-28-temp%EA%B2%AC%EC%A0%81/</link>
+      <pubDate>Thu, 28 Jun 2007 15:43:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-28-temp%EA%B2%AC%EC%A0%81/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>빛의 밝기를 구하는 벡터의 dot 원리</title>
+      <link>http://localhost:1313/posts/2007-06-27-%EB%B9%9B%EC%9D%98-%EB%B0%9D%EA%B8%B0%EB%A5%BC-%EA%B5%AC%ED%95%98%EB%8A%94-%EB%B2%A1%ED%84%B0%EC%9D%98-dot-%EC%9B%90%EB%A6%AC/</link>
+      <pubDate>Wed, 27 Jun 2007 17:06:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-27-%EB%B9%9B%EC%9D%98-%EB%B0%9D%EA%B8%B0%EB%A5%BC-%EA%B5%AC%ED%95%98%EB%8A%94-%EB%B2%A1%ED%84%B0%EC%9D%98-dot-%EC%9B%90%EB%A6%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>문화액션 경험치</title>
+      <link>http://localhost:1313/posts/2007-06-25-%EB%AC%B8%ED%99%94%EC%95%A1%EC%85%98-%EA%B2%BD%ED%97%98%EC%B9%98/</link>
+      <pubDate>Mon, 25 Jun 2007 23:57:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-25-%EB%AC%B8%ED%99%94%EC%95%A1%EC%85%98-%EA%B2%BD%ED%97%98%EC%B9%98/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 재밌다.</title>
+      <link>http://localhost:1313/posts/2007-06-25-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%9E%AC%EB%B0%8C%EB%8B%A4/</link>
+      <pubDate>Mon, 25 Jun 2007 23:33:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-25-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%9E%AC%EB%B0%8C%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>겜브리오 쉐이더 3 _라이트 추가하기</title>
+      <link>http://localhost:1313/posts/2007-06-25-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%89%90%EC%9D%B4%EB%8D%94-3-_%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Mon, 25 Jun 2007 20:54:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-25-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%89%90%EC%9D%B4%EB%8D%94-3-_%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>겜브리오 쉐이더 2_디테일 맵 추가하기</title>
+      <link>http://localhost:1313/posts/2007-06-25-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%89%90%EC%9D%B4%EB%8D%94-2_%EB%94%94%ED%85%8C%EC%9D%BC-%EB%A7%B5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Mon, 25 Jun 2007 20:32:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-25-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%89%90%EC%9D%B4%EB%8D%94-2_%EB%94%94%ED%85%8C%EC%9D%BC-%EB%A7%B5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[펌] 칼라 블렌딩 공식</title>
+      <link>http://localhost:1313/posts/2007-06-25-%ED%8E%8C-%EC%B9%BC%EB%9D%BC-%EB%B8%94%EB%A0%8C%EB%94%A9-%EA%B3%B5%EC%8B%9D/</link>
+      <pubDate>Mon, 25 Jun 2007 11:42:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-25-%ED%8E%8C-%EC%B9%BC%EB%9D%BC-%EB%B8%94%EB%A0%8C%EB%94%A9-%EA%B3%B5%EC%8B%9D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>축구공</title>
+      <link>http://localhost:1313/posts/2007-06-25-%EC%B6%95%EA%B5%AC%EA%B3%B5/</link>
+      <pubDate>Mon, 25 Jun 2007 01:19:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-25-%EC%B6%95%EA%B5%AC%EA%B3%B5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[펌]Normal Bump Map Class 02 : 개념과 원리 2</title>
+      <link>http://localhost:1313/posts/2007-06-24-%ED%8E%8Cnormal-bump-map-class-02--%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9B%90%EB%A6%AC-2/</link>
+      <pubDate>Sun, 24 Jun 2007 15:04:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-24-%ED%8E%8Cnormal-bump-map-class-02--%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9B%90%EB%A6%AC-2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[펌]Normal Bump Map Class 01 : 개념과 원리</title>
+      <link>http://localhost:1313/posts/2007-06-24-%ED%8E%8Cnormal-bump-map-class-01--%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9B%90%EB%A6%AC/</link>
+      <pubDate>Sun, 24 Jun 2007 15:02:04 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-24-%ED%8E%8Cnormal-bump-map-class-01--%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9B%90%EB%A6%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>가끔씩 찾아오는</title>
+      <link>http://localhost:1313/posts/2007-06-22-%EA%B0%80%EB%81%94%EC%94%A9-%EC%B0%BE%EC%95%84%EC%98%A4%EB%8A%94/</link>
+      <pubDate>Fri, 22 Jun 2007 23:22:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-22-%EA%B0%80%EB%81%94%EC%94%A9-%EC%B0%BE%EC%95%84%EC%98%A4%EB%8A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>대충 완성</title>
+      <link>http://localhost:1313/posts/2007-06-22-%EB%8C%80%EC%B6%A9-%EC%99%84%EC%84%B1/</link>
+      <pubDate>Fri, 22 Jun 2007 21:12:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-22-%EB%8C%80%EC%B6%A9-%EC%99%84%EC%84%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>간만에 짜증을 내 버렸다.</title>
+      <link>http://localhost:1313/posts/2007-06-22-%EA%B0%84%EB%A7%8C%EC%97%90-%EC%A7%9C%EC%A6%9D%EC%9D%84-%EB%82%B4-%EB%B2%84%EB%A0%B8%EB%8B%A4/</link>
+      <pubDate>Fri, 22 Jun 2007 21:03:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-22-%EA%B0%84%EB%A7%8C%EC%97%90-%EC%A7%9C%EC%A6%9D%EC%9D%84-%EB%82%B4-%EB%B2%84%EB%A0%B8%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>겜브리오 쉐이더 공부중</title>
+      <link>http://localhost:1313/posts/2007-06-22-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B3%B5%EB%B6%80%EC%A4%91/</link>
+      <pubDate>Fri, 22 Jun 2007 15:17:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-22-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B3%B5%EB%B6%80%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>튜터리얼 콘티</title>
+      <link>http://localhost:1313/posts/2007-06-22-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%EC%BD%98%ED%8B%B0/</link>
+      <pubDate>Fri, 22 Jun 2007 10:52:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-22-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%EC%BD%98%ED%8B%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[펌] Koda Kumi - Twinkle (from Amazing Nuts!)</title>
+      <link>http://localhost:1313/posts/2007-06-22-%ED%8E%8C-koda-kumi---twinkle-from-amazing-nuts/</link>
+      <pubDate>Fri, 22 Jun 2007 10:19:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-22-%ED%8E%8C-koda-kumi---twinkle-from-amazing-nuts/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>다시 시작</title>
+      <link>http://localhost:1313/posts/2007-06-21-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91/</link>
+      <pubDate>Thu, 21 Jun 2007 22:59:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-21-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>시밤쾅 공부하자.</title>
+      <link>http://localhost:1313/posts/2007-06-21-%EC%8B%9C%EB%B0%A4%EC%BE%85-%EA%B3%B5%EB%B6%80%ED%95%98%EC%9E%90/</link>
+      <pubDate>Thu, 21 Jun 2007 21:44:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-21-%EC%8B%9C%EB%B0%A4%EC%BE%85-%EA%B3%B5%EB%B6%80%ED%95%98%EC%9E%90/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>튜터리얼 필드 기획서</title>
+      <link>http://localhost:1313/posts/2007-06-21-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%ED%95%84%EB%93%9C-%EA%B8%B0%ED%9A%8D%EC%84%9C/</link>
+      <pubDate>Thu, 21 Jun 2007 18:31:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-21-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%ED%95%84%EB%93%9C-%EA%B8%B0%ED%9A%8D%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>튜터리얼 필드 캐릭터 기획서</title>
+      <link>http://localhost:1313/posts/2007-06-21-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%ED%95%84%EB%93%9C-%EC%BA%90%EB%A6%AD%ED%84%B0-%EA%B8%B0%ED%9A%8D%EC%84%9C/</link>
+      <pubDate>Thu, 21 Jun 2007 16:31:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-21-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%ED%95%84%EB%93%9C-%EC%BA%90%EB%A6%AD%ED%84%B0-%EA%B8%B0%ED%9A%8D%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>무제</title>
+      <link>http://localhost:1313/posts/2007-06-21-%EB%AC%B4%EC%A0%9C/</link>
+      <pubDate>Thu, 21 Jun 2007 10:16:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-21-%EB%AC%B4%EC%A0%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>효율적으로 의견내기</title>
+      <link>http://localhost:1313/posts/2007-06-20-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%9D%98%EA%B2%AC%EB%82%B4%EA%B8%B0/</link>
+      <pubDate>Wed, 20 Jun 2007 12:01:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-20-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%9D%98%EA%B2%AC%EB%82%B4%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>카운셀링 6단계</title>
+      <link>http://localhost:1313/posts/2007-06-18-%EC%B9%B4%EC%9A%B4%EC%85%80%EB%A7%81-6%EB%8B%A8%EA%B3%84/</link>
+      <pubDate>Mon, 18 Jun 2007 12:50:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-18-%EC%B9%B4%EC%9A%B4%EC%85%80%EB%A7%81-6%EB%8B%A8%EA%B3%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AT</title>
+      <link>http://localhost:1313/posts/2007-06-17-at/</link>
+      <pubDate>Sun, 17 Jun 2007 20:57:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-17-at/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>주말동안 미친듯 놀다</title>
+      <link>http://localhost:1313/posts/2007-06-17-%EC%A3%BC%EB%A7%90%EB%8F%99%EC%95%88-%EB%AF%B8%EC%B9%9C%EB%93%AF-%EB%86%80%EB%8B%A4/</link>
+      <pubDate>Sun, 17 Jun 2007 18:25:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-17-%EC%A3%BC%EB%A7%90%EB%8F%99%EC%95%88-%EB%AF%B8%EC%B9%9C%EB%93%AF-%EB%86%80%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>밴드하나 만들까요</title>
+      <link>http://localhost:1313/posts/2007-06-17-%EB%B0%B4%EB%93%9C%ED%95%98%EB%82%98-%EB%A7%8C%EB%93%A4%EA%B9%8C%EC%9A%94/</link>
+      <pubDate>Sun, 17 Jun 2007 18:22:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-17-%EB%B0%B4%EB%93%9C%ED%95%98%EB%82%98-%EB%A7%8C%EB%93%A4%EA%B9%8C%EC%9A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>캐릭터 디자인의 십계명</title>
+      <link>http://localhost:1313/posts/2007-06-14-%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98-%EC%8B%AD%EA%B3%84%EB%AA%85/</link>
+      <pubDate>Thu, 14 Jun 2007 13:39:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-14-%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98-%EC%8B%AD%EA%B3%84%EB%AA%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>싫어하는 사람_좋아하는 사람</title>
+      <link>http://localhost:1313/posts/2007-06-14-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C_%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C/</link>
+      <pubDate>Thu, 14 Jun 2007 10:29:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-14-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C_%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>버추어 파이터 5의 그래픽은, 이렇게 만들어졌다.</title>
+      <link>http://localhost:1313/posts/2007-06-13-%EB%B2%84%EC%B6%94%EC%96%B4-%ED%8C%8C%EC%9D%B4%ED%84%B0-5%EC%9D%98-%EA%B7%B8%EB%9E%98%ED%94%BD%EC%9D%80-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%8B%A4/</link>
+      <pubDate>Wed, 13 Jun 2007 19:06:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-13-%EB%B2%84%EC%B6%94%EC%96%B4-%ED%8C%8C%EC%9D%B4%ED%84%B0-5%EC%9D%98-%EA%B7%B8%EB%9E%98%ED%94%BD%EC%9D%80-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>뭐냐 이 회원분포는 ;;;</title>
+      <link>http://localhost:1313/posts/2007-06-12-%EB%AD%90%EB%83%90-%EC%9D%B4-%ED%9A%8C%EC%9B%90%EB%B6%84%ED%8F%AC%EB%8A%94-/</link>
+      <pubDate>Tue, 12 Jun 2007 12:59:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-12-%EB%AD%90%EB%83%90-%EC%9D%B4-%ED%9A%8C%EC%9B%90%EB%B6%84%ED%8F%AC%EB%8A%94-/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>누나 가슴에 삼천원쯤은 있는 거예요</title>
+      <link>http://localhost:1313/posts/2007-06-12-%EB%88%84%EB%82%98-%EA%B0%80%EC%8A%B4%EC%97%90-%EC%82%BC%EC%B2%9C%EC%9B%90%EC%AF%A4%EC%9D%80-%EC%9E%88%EB%8A%94-%EA%B1%B0%EC%98%88%EC%9A%94/</link>
+      <pubDate>Tue, 12 Jun 2007 10:32:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-12-%EB%88%84%EB%82%98-%EA%B0%80%EC%8A%B4%EC%97%90-%EC%82%BC%EC%B2%9C%EC%9B%90%EC%AF%A4%EC%9D%80-%EC%9E%88%EB%8A%94-%EA%B1%B0%EC%98%88%EC%9A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>귀, 귀여운 고양이 T_T</title>
+      <link>http://localhost:1313/posts/2007-06-12-%EA%B7%80-%EA%B7%80%EC%97%AC%EC%9A%B4-%EA%B3%A0%EC%96%91%EC%9D%B4-t_t/</link>
+      <pubDate>Tue, 12 Jun 2007 10:28:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-12-%EA%B7%80-%EA%B7%80%EC%97%AC%EC%9A%B4-%EA%B3%A0%EC%96%91%EC%9D%B4-t_t/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>캐릭터 과제 완성</title>
+      <link>http://localhost:1313/posts/2007-06-11-%EC%BA%90%EB%A6%AD%ED%84%B0-%EA%B3%BC%EC%A0%9C-%EC%99%84%EC%84%B1/</link>
+      <pubDate>Mon, 11 Jun 2007 01:44:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-11-%EC%BA%90%EB%A6%AD%ED%84%B0-%EA%B3%BC%EC%A0%9C-%EC%99%84%EC%84%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>캐리비안베이에 놀러간 해적들 3_ 영화는 반드시 끝까지 봐라.</title>
+      <link>http://localhost:1313/posts/2007-06-10-%EC%BA%90%EB%A6%AC%EB%B9%84%EC%95%88%EB%B2%A0%EC%9D%B4%EC%97%90-%EB%86%80%EB%9F%AC%EA%B0%84-%ED%95%B4%EC%A0%81%EB%93%A4-3_-%EC%98%81%ED%99%94%EB%8A%94-%EB%B0%98%EB%93%9C%EC%8B%9C-%EB%81%9D%EA%B9%8C%EC%A7%80-%EB%B4%90%EB%9D%BC/</link>
+      <pubDate>Sun, 10 Jun 2007 22:14:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-10-%EC%BA%90%EB%A6%AC%EB%B9%84%EC%95%88%EB%B2%A0%EC%9D%B4%EC%97%90-%EB%86%80%EB%9F%AC%EA%B0%84-%ED%95%B4%EC%A0%81%EB%93%A4-3_-%EC%98%81%ED%99%94%EB%8A%94-%EB%B0%98%EB%93%9C%EC%8B%9C-%EB%81%9D%EA%B9%8C%EC%A7%80-%EB%B4%90%EB%9D%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>오늘도 외로운 과제중</title>
+      <link>http://localhost:1313/posts/2007-06-10-%EC%98%A4%EB%8A%98%EB%8F%84-%EC%99%B8%EB%A1%9C%EC%9A%B4-%EA%B3%BC%EC%A0%9C%EC%A4%91/</link>
+      <pubDate>Sun, 10 Jun 2007 18:58:42 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-10-%EC%98%A4%EB%8A%98%EB%8F%84-%EC%99%B8%EB%A1%9C%EC%9A%B4-%EA%B3%BC%EC%A0%9C%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아빠곰은 뚱뚱해가 바뀌었다.</title>
+      <link>http://localhost:1313/posts/2007-06-09-%EC%95%84%EB%B9%A0%EA%B3%B0%EC%9D%80-%EB%9A%B1%EB%9A%B1%ED%95%B4%EA%B0%80-%EB%B0%94%EB%80%8C%EC%97%88%EB%8B%A4/</link>
+      <pubDate>Sat, 09 Jun 2007 22:50:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-09-%EC%95%84%EB%B9%A0%EA%B3%B0%EC%9D%80-%EB%9A%B1%EB%9A%B1%ED%95%B4%EA%B0%80-%EB%B0%94%EB%80%8C%EC%97%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>좋은날 다 갔다 ㅡ,.ㅡ</title>
+      <link>http://localhost:1313/posts/2007-06-08-%EC%A2%8B%EC%9D%80%EB%82%A0-%EB%8B%A4-%EA%B0%94%EB%8B%A4-%E3%85%A1.%E3%85%A1/</link>
+      <pubDate>Fri, 08 Jun 2007 23:42:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-08-%EC%A2%8B%EC%9D%80%EB%82%A0-%EB%8B%A4-%EA%B0%94%EB%8B%A4-%E3%85%A1.%E3%85%A1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>딱 과제수준</title>
+      <link>http://localhost:1313/posts/2007-06-08-%EB%94%B1-%EA%B3%BC%EC%A0%9C%EC%88%98%EC%A4%80/</link>
+      <pubDate>Fri, 08 Jun 2007 01:07:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-08-%EB%94%B1-%EA%B3%BC%EC%A0%9C%EC%88%98%EC%A4%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>직장인 코스프레중인 게임개발자</title>
+      <link>http://localhost:1313/posts/2007-06-05-%EC%A7%81%EC%9E%A5%EC%9D%B8-%EC%BD%94%EC%8A%A4%ED%94%84%EB%A0%88%EC%A4%91%EC%9D%B8-%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <pubDate>Tue, 05 Jun 2007 16:16:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-05-%EC%A7%81%EC%9E%A5%EC%9D%B8-%EC%BD%94%EC%8A%A4%ED%94%84%EB%A0%88%EC%A4%91%EC%9D%B8-%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>speedtree 시리얼/도움말</title>
+      <link>http://localhost:1313/posts/2007-06-04-speedtree-%EC%8B%9C%EB%A6%AC%EC%96%BC%EB%8F%84%EC%9B%80%EB%A7%90/</link>
+      <pubDate>Mon, 04 Jun 2007 11:02:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-04-speedtree-%EC%8B%9C%EB%A6%AC%EC%96%BC%EB%8F%84%EC%9B%80%EB%A7%90/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>얼굴 맵핑 작업중</title>
+      <link>http://localhost:1313/posts/2007-06-04-%EC%96%BC%EA%B5%B4-%EB%A7%B5%ED%95%91-%EC%9E%91%EC%97%85%EC%A4%91/</link>
+      <pubDate>Mon, 04 Jun 2007 01:14:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-04-%EC%96%BC%EA%B5%B4-%EB%A7%B5%ED%95%91-%EC%9E%91%EC%97%85%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>광주 강연회 갔다왔어용</title>
+      <link>http://localhost:1313/posts/2007-06-03-%EA%B4%91%EC%A3%BC-%EA%B0%95%EC%97%B0%ED%9A%8C-%EA%B0%94%EB%8B%A4%EC%99%94%EC%96%B4%EC%9A%A9/</link>
+      <pubDate>Sun, 03 Jun 2007 14:22:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-03-%EA%B4%91%EC%A3%BC-%EA%B0%95%EC%97%B0%ED%9A%8C-%EA%B0%94%EB%8B%A4%EC%99%94%EC%96%B4%EC%9A%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>장수풍뎅이 우화했습니다.</title>
+      <link>http://localhost:1313/posts/2007-06-03-%EC%9E%A5%EC%88%98%ED%92%8D%EB%8E%85%EC%9D%B4-%EC%9A%B0%ED%99%94%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sun, 03 Jun 2007 13:40:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-03-%EC%9E%A5%EC%88%98%ED%92%8D%EB%8E%85%EC%9D%B4-%EC%9A%B0%ED%99%94%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>dds 옵션별 테스트파일</title>
+      <link>http://localhost:1313/posts/2007-06-01-dds-%EC%98%B5%EC%85%98%EB%B3%84-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%8C%8C%EC%9D%BC/</link>
+      <pubDate>Fri, 01 Jun 2007 15:45:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-01-dds-%EC%98%B5%EC%85%98%EB%B3%84-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%8C%8C%EC%9D%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>dds 옵션별 성능비교표</title>
+      <link>http://localhost:1313/posts/2007-06-01-dds-%EC%98%B5%EC%85%98%EB%B3%84-%EC%84%B1%EB%8A%A5%EB%B9%84%EA%B5%90%ED%91%9C/</link>
+      <pubDate>Fri, 01 Jun 2007 15:24:57 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-06-01-dds-%EC%98%B5%EC%85%98%EB%B3%84-%EC%84%B1%EB%8A%A5%EB%B9%84%EA%B5%90%ED%91%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

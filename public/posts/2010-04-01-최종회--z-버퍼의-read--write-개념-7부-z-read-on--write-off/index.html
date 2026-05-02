@@ -1,0 +1,1062 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>최종회 : Z 버퍼의 Read / Write 개념 (7부, Z Read On / Write Off) &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="최종회 : Z 버퍼의 Read / Write 개념 (7부, Z Read On / Write Off) &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2010-04-01-%EC%B5%9C%EC%A2%85%ED%9A%8C--z-%EB%B2%84%ED%8D%BC%EC%9D%98-read--write-%EA%B0%9C%EB%85%90-7%EB%B6%80-z-read-on--write-off/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2010-04-01-%EC%B5%9C%EC%A2%85%ED%9A%8C--z-%EB%B2%84%ED%8D%BC%EC%9D%98-read--write-%EA%B0%9C%EB%85%90-7%EB%B6%80-z-read-on--write-off/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="최종회 : Z 버퍼의 Read / Write 개념 (7부, Z Read On / Write Off)">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-04-01T23:06:29+00:00">
+    <meta property="article:modified_time" content="2010-04-01T23:06:29+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="최종회 : Z 버퍼의 Read / Write 개념 (7부, Z Read On / Write Off)">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "최종회 : Z 버퍼의 Read \/ Write 개념 (7부, Z Read On \/ Write Off)",
+    "headline": "최종회 : Z 버퍼의 Read \/ Write 개념 (7부, Z Read On \/ Write Off)",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2010-04-01-%EC%B5%9C%EC%A2%85%ED%9A%8C--z-%EB%B2%84%ED%8D%BC%EC%9D%98-read--write-%EA%B0%9C%EB%85%90-7%EB%B6%80-z-read-on--write-off/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2010",
+    "dateCreated": "2010-04-01T23:06:29\u002b00:00",
+    "datePublished": "2010-04-01T23:06:29\u002b00:00",
+    
+    "dateModified": "2010-04-01T23:06:29\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1273"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        최종회 : Z 버퍼의 Read / Write 개념 (7부, Z Read On / Write Off)
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2010-04-01T23:06:29&#43;00:00">1 4월 2010</time><span class="px-2 text-primary-500">&middot;</span><span>1273 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">6 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+<a href="https://chulin28ho.egloos.com/5267860"  target="_blank" rel="noreferrer">1부 바로가기</a><a href="https://chulin28ho.egloos.com/5268685"  target="_blank" rel="noreferrer">2부 바로가기</a><a href="https://chulin28ho.egloos.com/5269434"  target="_blank" rel="noreferrer">3부 바로가기</a><a href="https://chulin28ho.egloos.com/5270691"  target="_blank" rel="noreferrer">4부 바로가기</a><a href="https://chulin28ho.egloos.com/5271687"  target="_blank" rel="noreferrer">5부 바로가기</a><a href="https://chulin28ho.egloos.com/5272883"  target="_blank" rel="noreferrer">6부 바로가기</a>우아. 오래 지났습니다 ㄷㄷㄷ<br>
+지난 번 쓴 6부가 3월 18일이었으니까, 벌써 보름이 다 되어 가네요 ㄷㄷㄷ</p>
+<p>그 동안 몸도 좀 아팠고, 강연준비가 갑자기 들어오고, XX 에 XX위원으로 참가하는 일도 해야 했고, 삼성 3D TV 리뷰어 당첨에<br>
+회사에서도 지형 쉐이더 방식을 안해보던 방식으로 만져보느라 (= 스승을 괴롭혀 공부해 보느라) 이제야 7부를 쓰게 되었습니다</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb49833447b1.jpg"
+    ></figure>
+<p>아니 정말이래도요</p>
+<p> </p>
+<p>그러다가 갑자기 &quot; 기다리고 있었는데 왜 7부 안쓰세요&quot; 라는 말을 오늘 듣고 번쩍! 놀라서, 조금씩이라도 써 두지 않으면 잊어버리겠구나&hellip; 라고 생각이 들어 다시 쓰게 되었습니다. 글을 기다리고 있는 분이 한 분이라도 있다면 힘이 나는 법이지요.</p>
+<p>으음? 무슨 얘기를 여태까지 했었죠 ?? (멍&hellip;. )<br>
+아, 그렇군요. Z 버퍼 얘기하다가  개악마 알파 블렌딩의 횡포에 대해 얘기했었고, 그걸 해결하기 위해 뒤에서 그리기, 테스팅하기, read(test)/ write 조작하기 등을 얘기했었죠. <br>
+그러다가 결국 완벽히 해결하는 방법은 없다라는 것을 깨닫고, 마지막 남은 희망인 Z Read ON / Write Off 에 대해 얘기해 보는 것만 남았습니다. </p>
+<p>자아 기억이 안나시는 분은 저번 6강을 보시면 되겠고, 7강은 이제부터 시작합니다.</p>
+<p><strong>4. Z Read = ON     Z Write = OFF</strong></p>
+<p>자아 드디어 이게 나왔습니다. 그동안 숙제 잘 하셨는지요? <br>
+한 번 같이 생각해 봅시다. </p>
+<p>역시나 plan이 하나 있습니다. </p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds16.egloos.com/pds/201003/18/03/c0055803_4ba209754658a.jpg"
+    ></figure>
+<p>늘 하던대로, 예 그렇습니다. 이녀석은 Z Read와 Z Write를 하는 녀석입니다. 그러므로 지금 Z 값은 화면에 모두 &lsquo;4&rsquo; 로 적혀져 있는 상황입니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds17.egloos.com/pds/201003/18/03/c0055803_4ba20a1104190.jpg"
+    ></figure>
+<p>역시 나중에 주전자가 그려졌습니다. 자아. Z read 는? on이니까 하겠지요! 아아 좋아요. read(test) 해 보니 자신이 그려질 구석이 없다는걸 깨닫고 안그립니다. 뒤에 있으니까요.<br>
+Z Write는? 안합니다만, 어차피 가려졌으니까 필요가 없습니다. 괜찮군요 흠흠. 이상태로도 OK</p>
+<p>뭔가 상큼한 시작이군요.<br>
+좋아요 그럼 주전자가 먼저 그려지고 plan이 나중에 그려진다면?<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb4a0d573e4b.jpg"
+    ></figure>
+<br>
+이것도 ok 입니다. 어차피 주전자는 Z 값을 Write 하지 않기 때문에, Plan이 그려질때 어떠한 장애도 일어나지 않지요.<br>
+흠흠 완벽합니다.</p>
+<p>이 방법의 문제점은 딱 하나입니다.<br>
+주전자가 먼저 그려지고, plan이 나중에 그려질 때, plan이 주전자를 덮어버린다는 것입니다. 주전자는 Z write를 하지 않으니까요.<br>
+ 즉 아래와 같은 모양에서, plan이 먼저 그려진다면 뭐 별 상관 없겠는데 Plan이 나중에 그려진다면 주전자를 덮어버리게 됩니다.<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb4a1ed79c82.jpg"
+    ></figure>
+<br>
+흠 이것도 못쓰겠 &hellip;. <strong>가 아니잖았!!!!!!!!!!!!!!!!!!!!!</strong></p>
+<p>어차피 우리는 지금 반투명일때의 문제 때문에 이걸 얘기해 왔던 거고,<br>
+만일 주전자가 반투명이고 plan이 불투명이면,<br>
+어차피 불투명인 오브젝트부터 먼저 그리고 반투명을 그려 버리니까 (2부 참조)<br>
+위와 같은 경우는 절대로 일어나지 않는다는 것 아닙니까!!!!</p>
+<p>오오 정말로 희망이 보이기 시작합니다. 이것은 개악마 알파 블렌딩을 물리칠 수 있는 구세주인 것인가?!<br>
+예제를 바꿔서 심도깊게 다시 봐야겠군요.<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb4a37404e26.jpg"
+    ></figure>
+<strong>개악마</strong> 알파 블렌딩 등장이십니다. 알파 테스팅 아닙니다.</p>
+<p>우선 둘 다 Z read on에 Z write off 라고 봅시다. 자 .. 뭐부터 그려볼까요.<br>
+보통 뒷쪽부터 그리는 것은 어떠한 경우에도 별 문제가 되지 않습니다.<br>
+근데 아시다시피 앞쪽과 뒷쪽을 판가름하기 애매한 상태가 너무 많이 일어나니까요&hellip; 완벽하게 뒷쪽부터 그리는 것은 사실상 불가능하다는 것도 지난번에 말씀드렸습니다. </p>
+<p>그러니 문제가 일어나는 앞쪽부터 그려보죠. 이것만 성공하면 오케이일텐데 말이죠&hellip; <br>
+ <br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb4a5a61e39f.jpg"
+    ></figure>
+앞쪽의 나뭇잎을 그렸습니다. Z read on 이라서 test를 해봤더니 아무 문제 없습니다. 혼자인데 문제 있을리가 -_-;;;<br>
+그런데 Z write는 off 라서 자신의 z 값은 쓰지 않습니다. 즉 Z 값만으로 봤을때는 화면에 지금 아무것도 없습니다.<br>
+뭔가 슬슬 느낌이&hellip;</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb4a37404e26.jpg"
+    ></figure>
+그렇습니다. 분명 앞에서부터 그렸는데,</p>
+<p>**뒤에 그린 나뭇잎이 그려질 때 아무런 저항이 생기지 않습니다.</p>
+<p>오오오오오오오오오오오오!!!!</p>
+<p>이것이야말로 개악마 알파 블렌딩을 처치해주실</p>
+<p>만능의 옵션!!!!!!!**</p>
+<p>앞이되건 뒤가되건, 불투명인 것들만 먼저 그려주는 것만 지켜준다면 어떤 경우건 짤리는 일이 생기지 않습니다!!!<br>
+<strong>경배하라!!! 할렐루야!!!!</strong></p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb4a69bd013e.jpg"
+    ></figure>
+<strong>개악마 알파 블렌딩이여 Z read ON  Z wite OFF 의 축복을 받고 천겁의 지옥으로 굴러떨어져랏!!!</strong></p>
+<p>아하하하 기쁩니다. 드디어 해답을 찾은 것 같습니다.<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8a67925bd3.gif"
+    ></figure>
+<br>
+불투명인 것 부터 먼저 그리고, 알파 블렌딩인 것들은 Z read ON / Write OFF 처리를 해 준다면 어떠한 경우라도 제대로 그릴 수 있게 되는군요. 자 그럼 이렇게 긴 시간동안 강의를 읽어주셔서 대단히 감사합니다. 다음 기회에 뵙겠습니다.</p>
+<p><strong>끝.</strong></p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8a6c253d28.jpg"
+    ></figure>
+<p>&hellip; 이라고 끝내고 싶지만. 정말 그럴까요?</p>
+<p><strong>개악마</strong> 알파 블렌딩이 그렇게 호락호락하게 넘어갈까요?<br>
+그게 그렇게 말처럼 쉽게 넘어가지 않습니다. 알파 블렌딩은 <strong>개악마</strong> 니까요.</p>
+<p>분명 짤리는 일은 더이상 생기지 않습니다. 그리는 순서가 앞뒤가 바뀔 수는 있겠지만, 그렇다고 해도 뒷면이 안보이는건 아니잖아요? A+B 나 B+A 나 똑같지 않습니까?<br>
+라고 생각하기 쉽습니다만, 세상이 그게 또 그렇지 않습니다.</p>
+<p>자아, 마음을 가라앉히고, 찬찬히 디벼보도록 합시다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8a8953425f.jpg"
+    ></figure>
+어머나 여기 갑자기 아주 돈을 많이 벌 수 있을 것 같은 게임 스크린샷이 있습니다. 무슨게임인지는 모르겠지만 말입니다 음하하.</p>
+<p>자아 이게 배경이라고 치고요.<br>
+여기에 이펙트 두 개가 터집니다.<br>
+하나는 붉은 색 이펙트로, 80%의 투명도를 가져서 20%만 보이는 이펙트고요<br>
+또 하나는 푸른 색 이펙트로, 50% 만 보이는 이펙트입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8aa03d405f.jpg"
+    ></figure>
+<br>
+그럼 예상하기로는 뭐&hellip; 20+50 = 70이니, 뒷 배경은 30%이고 &hellip; 나머지 푸른색과 붉은 색이 50대 20으로 잘 더해진 보라색이 나오리라고 예상할 수 있을 겁니다.<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8aaf9618f8.jpg"
+    ></figure>
+네 쉽지요.<br>
+뭐.. 여기서 붉은 색과 푸른 색이 뒤바뀐다고 별 차이 있겠습니까?<br>
+다 거기서 거기지요.</p>
+<p>그래서 순서를 뒤집어서 섞어 보면, 이렇게 됩니다.<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8ac137bf88.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8ac5589924.jpg"
+    ></figure>
+으엥? 위의 것은 붉은색을 먼저 그리고 푸른색을 나중에 그린 것이고,<br>
+아래 것은 푸른색을 먼저 그리고 붉은색을 나중에 그린 것입니다.<br>
+분명 둘이 다릅니다. 그것도 확연히 다릅니다. 이유가 무엇일까요?</p>
+<p>자아 다시 한 번 보도록 하겠습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8ae9ed143d.jpg"
+    ></figure>
+여기 녹색이 있습니다. (0.0f,1.0f,0.0f)<br>
+이건 배경색입니다. 게임에 반투명이 그려지기 전, 불투명만으로 이루어진 칼라란 말입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8af0a00ca3.jpg"
+    ></figure>
+그리고 여기에 붉은 색 20%가 반투명으로 추가되었습니다. 이제 나온 칼라는 녹색 80%, 붉은 색 20% 로 이루어지게 되었습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8af6c3ac7b.jpg"
+    ></figure>
+자아, 여기에 50%의 푸른색이 추가되었습니다.<br>
+이 부분에서 잘 보세요. 우리가 최종으로 푸른색을 50% 로 출력하고, 나머지 칼라(녹색80% 붉은색 20%가 더해진 칼라) 를 50% 출력하는 것입니다.<br>
+그러므로 최종 결과는? <strong>푸른색 50% 녹색 40% 붉은 색 10%</strong> 가 되는 것입니다.<br>
+이게 최종 칼라죠.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8ae9ed143d.jpg"
+    ></figure>
+근데 이번엔 아까와 같은 녹색에<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8b01658926.jpg"
+    ></figure>
+푸른 색 50% 가 먼저 찍혔다고 칩시다.<br>
+그러면 결과물은 푸른색 50% 에 녹색 50%. 흐음. 네에. 좋습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8b04c2e8a2.jpg"
+    ></figure>
+그리고 이제 다시 붉은 색 20% 를 더하는 거죠.<br>
+그럼 20% 는 붉은 색이고, 나머지 80% 가 이전색 (푸른색 50% 녹색 50%) 이니까&hellip;<br>
+최종 결과물은? <strong>붉은색20% 푸른색40% 녹색 40%</strong> 가 되는 것입니다 !!!!</p>
+<p><strong><strong>자아 두 결과물을 비교해 보시죠.</strong></strong></p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8af6c3ac7b.jpg"
+    ></figure>
+<p><strong>R 10% G 40% B 50%</strong></p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8b04c2e8a2.jpg"
+    ></figure>
+<p><strong>R 20% G 40% B 40%</strong></p>
+<p><strong>부부부 분명히 다릅니다!!!!</strong> 심지어 푸른색과 붉은색이 둘 다 50% 라고 해도 다릅니다!!! 즉 섞이는 순서에 따라 전혀 다른 색이 나오게 된다는 것입니다&hellip; !!!</p>
+<p>즉 Read(Test) On Write Off 를 사용해서, 반투명인 것이 둘 다 짤리지 않고 보이는 것은 좋은데, 그래도 찍히는 순서에 따라서는 색이 차이가 날 수 밖에 없다는 겁니다!!! 역시 <strong>개악마</strong> 알파 블렌딩!!! 끝끝내 물고 늘어지는군요!!!!!</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8b1cd6729f.jpg"
+    ></figure>
+<p>그렇습니다. 우리가 최종 보루로 여겨왔던 이 방법도, 완벽한 방법은 아니었습니다.<br>
+물론 좋은 방법이고 가장 성공할 확률이 큰 방법이긴 하지만, 이것만으로는 완벽하게 해결되지 않는다는 것입니다.<br>
+즉 <strong>앞뒤 순서만 제대로 제어가 된다면 이 방법이 가장 좋은 방법이긴 합니다.</strong></p>
+<p>자아. 이제 진짜로 마지막 결론을 내릴 때가 되었군요.</p>
+<p>그렇다면 어떻게 해결해야 할까요?</p>
+<p>방법은 바로 <strong>&lsquo;적절한 때에 적절한 방법을 섞어서 써야한다&rsquo;</strong> 라는 것입니다.<br>
+지금은 단순히 알파 블렌딩에 대해서만 얘기했지, 블렌딩 옵션에 대해서는 또 전혀 얘기하지 않았습니다.<br>
+어떤 경우에 한해서는 합해지면 더 밝아지는 add 옵션이나 더 어두워지는 multi 옵션을 사용해야 하는데, 그럴 경우 또 여기서 한 단계 더 문제가 꼬여지게 됩니다. 이럴 경우에는 정말로 &lsquo;그때에 맞춰서&rsquo; 만드는 수 밖에 없는 거지요.</p>
+<p>그래서 가장 많이 사용하는 방법은 &lsquo;그룹핑&rsquo; 입니다.<br>
+적당한 오브젝트끼리 그룹을 지어서, 어떤것을 먼저 찍을 것인지를 미리 정해놓는 것입니다.<br>
+기본적으로는 pivot 점을 기준으로 해서 결정하겠지만, 그 보다 큰 기준을 정해놓고 몇 개의 그리는 레이어를 나눠 놓는 방식을 사용하곤 합니다.</p>
+<p>예를 들면, 물은 반드시 맨 아래 찍히는 녀석이니 맨 처음에 그립니다. (게임에 따라 다르지만&hellip;)<br>
+그래서 물 오브젝트를 만들고 그룹설정을 &lsquo;물&rsquo; 로 해 놓으면 다른 반투명 오브젝트보다 먼저 그립니다.<br>
+그 다음은 &lsquo;데칼&rsquo; 이겠지요. 바닥에 인터페이스 류의 데칼이 그려진다던가 하면 그 다음 레벨로 그룹핑합니다.<br>
+그 다음은 이펙트겠지요. 그 다음은 구름.. 등등<br>
+무식하게 나누면 위와 같이 레이어를 나눠서 Grouping 할 수 있겠지만, 실제로는 게임의 특성에 따라 다양한 방식으로 나눠서 해결하곤 합니다.</p>
+<p>이런 식으로 그룹을 만들어 놓으면, pivot에 우선되어 그리는 순서를 결정하게 되고, 역시 완벽하지는 않지만 상당 부분 해결할 수 있게 됩니다.</p>
+<p>**그러므로 Z 버퍼와 알파 블렌딩은 ,</p>
+<p>경우에 따라 가장 적합한 방법을 복합적으로 사용하는 것이 정답입니다.**<br>
+다소 얼빵한 결론처럼 보입니다만, 실제로 요즘의 최신 게임도 이 문제로 종종 오류가 보이곤 합니다.<br>
+그러므로 그것이 개악마 알파 블렌딩과 싸울 수 있는 방법이며, 이렇기 때문에 현재까지 수많은 개발자들이 개악마 알파 블렌딩과 싸우려 노력하고 있는 것입니다.<br>
+자아 이제 진짜로 끝났습니다. 진짜예요. 다소 결말 부분이 오래 걸렸습니다만, 어쨌건 끝냈단 말입니다. 아아 힘들어요. 다시는 안해요 이런거. 블렌딩 옵션까지 끼었으면 엄청날 뻔 했지 뭐예요&hellip;</p>
+<p>그럼 이렇게 예상치도 못하게 7강까지 끌었던 Z 버퍼의 Read/Write 개념을 끝내겠습니다.<br>
+그동안 봐주셔서 감사합니다. :)<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100401_230629_c0055803_4bb8b5ab394e7.jpg"
+    ></figure>
+
+{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2010-03-31-%EC%9D%BC%EB%8B%A8-%EB%AD%90-%ED%86%A0%EB%81%BC%EC%A7%91-%EC%99%84%EC%84%B1/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;일단 뭐 토끼집 완성
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2010-03-31T01:27:24&#43;00:00">31 3월 2010</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2010-04-02-%EC%82%BC%EC%84%B1-%ED%8C%8C%EB%B8%8C-full-hd-3d-led-tv-%EC%B2%B4%ED%97%98%EB%8B%A8-%EB%B0%9C%EB%8C%80%EC%8B%9D/">
+              <span class="leading-6">
+                삼성 파브 Full HD 3D LED TV 체험단 발대식&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2010-04-02T01:51:16&#43;00:00">2 4월 2010</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

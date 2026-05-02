@@ -1,0 +1,866 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>Making of Atlantica &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="Making of Atlantica &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2011-08-15-making-of-atlantica/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2011-08-15-making-of-atlantica/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="Making of Atlantica">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-08-15T10:37:50+00:00">
+    <meta property="article:modified_time" content="2011-08-15T10:37:50+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Making of Atlantica">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Making of Atlantica",
+    "headline": "Making of Atlantica",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2011-08-15-making-of-atlantica/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2011",
+    "dateCreated": "2011-08-15T10:37:50\u002b00:00",
+    "datePublished": "2011-08-15T10:37:50\u002b00:00",
+    
+    "dateModified": "2011-08-15T10:37:50\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2167"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Making of Atlantica
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2011-08-15T10:37:50&#43;00:00">15 8월 2011</time><span class="px-2 text-primary-500">&middot;</span><span>2167 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">11 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+실시간 전략 턴제 MMORPG 게임인 아틀란티카는 &lsquo;군주 온라인&rsquo;으로 새로운 경제와 정치 시스템을 MMORPG에 접목시킨 게임업체 Ndoors 에서 제작한,  전 세계 12개국에서 약 1천만명의 회원을 보유하고 있는 턴 베이스 방식의 전투를 가지는 유명 MMORPG 이다.</p>
+<p>이 게임을 기획하고 제작한 김태곤 상무는 약 20년이라는 기간동안 충무공전과 임진록 시리즈, 천년의 신화 등 유명한 전략 시뮬레이션 게임을 개발하였으며 &lsquo;임진록온라인 거상&rsquo;을 비롯하여 &lsquo;군주 온라인&rsquo; &lsquo;아틀란티카 온라인&rsquo; 등 성공적인 게임을 연속으로 흥행시킨, 몇 안되는 한국의 스타 개발자중 한 명이다.</p>
+<p>아틀란티카는 전 세계의 실제 지명을 기반으로 한 가상의 세계를 돌아다니면서 잊혀진 대륙 아틀란티스의 전설을 찾는 내용으로 이루어진 전형적인 방식의 MMORPG 이다. 주인공은 아틀란티스의 후예로, 사라진 아틀란티스 대륙을 찾아 전세계를 돌아다니면서 각국의 독특한 용병들을 영입하여 성장시키면서 최대 9명으로 조합되어진 독특한 용병단을 이끌게 되는데, 각 용병들은 다양하고 개성적인 외형과 스킬, 능력을 가지고 또한 그 다양한 조합에 따라 숨겨진 능력이 발현되기도 한다. </p>
+<p>&ldquo;아틀란티카의 시작은 사실 군주온라인(북미버전명 &lsquo;루미나리&rsquo;)에 그 뿌리를 두고 있다고 할 수 있습니다. 우리는 군주온라인의 실험적인 경제와 정치 시스템이 훌륭하게 안착되었음을 깨닫고, 그 단점을 개선하고 좀 더 글로벌하게 통할 수 있는 MMORPG 게임을 만들고자 했지요. 일단 군주 온라인에서는 한국적인 지형과 내용에 너무 치중한 나머지, 외국에 수출할 때 외국인들이 내용을 이해하고 몰입하는데 한계가 있을 수 밖에 없었습니다. 그렇다고 완전히 재창조된 낯설은 판타지로 우리 회사 제품들의 특징이었던 역사와 교육의 접목을 포기하고 싶지는 않았기 때문에 우리는 전세계의 전설, 설화, 지리와 역사를 모두 이용한 컨텐츠인 &lsquo;아틀란티카&rsquo;를 제작하기로 했지요&rdquo;</p>
+<p>아틀란티카 이건 개발팀장이 말했다.<br>
+ &ldquo;그동안 한국의 온라인 게임들은 콘솔게임 전투의 액션성을 따라잡아야 한다는 묘한 열등감을 가지고 있었습니다. 그렇지만 우리는 &lsquo;재미있는 게임의 종류는 아주 많은데 어째서 대형 온라인 게임은 모두 실시간 액션 전투이어야 하는가&rsquo; 라고 생각했습니다. 사실 우리의 추억에는 수많은 턴제 전략게임이 남아 있었고 실제로 우리는 그동안의 경험에 비추어 볼 때 액션보다 전략성이 강한 게임쪽을 훨씬 잘 만들 수 있었습니다. 또한 장기간 즐겨야 하는 MMORPG의 특성상 지속적인 집중도를 요구하는 높은 수준의 액션성은 상당한 피로를 유발할 수 밖에 없었고, 그렇다고 아무 생각없이 기계처럼 클릭만 하는 전투를 만들고 싶지는 않았기 때문에 우리는 우리가 잘 할 수 있는 전략성이 강한 턴제 온라인 게임으로 방향을 잡게 되었습니다. 때문에 우리는 극한의 액션성을 추구하며 경쟁하는 다른 대형 온라인 게임들과 확실한 차별성을 가질 수 있게 되었지요. &quot;</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e48c1dd392ca.jpg"
+    ></figure>
+<p>about Atlantica</p>
+<p>개발사 : (주)Ndoors<br>
+유통사 : (주)Ndoors<br>
+출시일 : 2008.1.10<br>
+출시 플랫폼 : PC<br>
+사용된 주요 개발 엔진 :<br>
+Gamebryo<br>
+SpeedTree</p>
+<p>게임 개발 소요 시간 : 약 2년<br>
+개발 팀 규모 : 오픈시 약 200 여명<br>
+개발 예산 : 약 30억원<br>
+수상 내역 및 실적 :</p>
+<p>대한민국 게임대상 최우수게임상(국무총리상) 수상 / 우수개발자상(김태곤 개발이사) -ml:namespace prefix = o ns = &ldquo;urn:schemas-microsoft-com&#x1f3e2;office&rdquo; /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /-ml:namespace prefix = o /</p>
+<p>문화관광부 이달의우수게임 수상</p>
+<p>KGC AWARDS Game Design부문 대상</p>
+<p>중국 금령상 ‘2008 중국 최고의 해외 온라인게임대상’ 수상</p>
+<p>태국게임쇼(TGS)&lsquo;최고 온라인 게임상&rsquo; 수상</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e511791475e4.jpg"
+    ></figure>
+<p><strong>What Went Right</strong><br>
+<strong>숙련되고 오래 호흡을 맞춰 온 핵심인력들</strong></p>
+<p>아틀란티카의 개발팀은 Ndoors가 생기기 이전부터 HQteam이라고 불리우는 팀으로 존재했던 개발팀이며, 그 핵심인력들이 대부분 그대로 유지되어 왔던 관계로 주요 인력들 중 상당수가 10년 이상 같이 한 팀에서 일해온 팀원들이었다.<br>
+&ldquo;단지 경력만 오래 된 인원들이 아니라, 실제로 10년 이상 손발을 맞춰 온 인원들이 모여서 만드는 안정감은 생각보다 무척 큰 힘이 되는 것이었습니다. 또한 덕분에 초반에는 매우 적은 인원으로 프로젝트를 진행할 수 있었지요&rdquo;</p>
+<p>물론 오래된 팀이 장점만 있는 것은 아니다. 오래된 팀에서 흔히 볼 수 있는 대표적인 단점은 자신들의 방식에 너무나도 익숙해짐으로써 생기는 매너리즘인데, 다행히도 이것은 도전적인 프로젝트를 빠른 속도로 계속 만들어가야 하는 회사 특유의 상황으로 인해 오히려 장점으로 승화되었다.<br>
+&ldquo;전혀 새로운 상황이나 문제가 닥쳐 오더라도, 김태곤 상무와 함께 오래 호흡을 맞춰 온 능숙한 리더들은 빠르고 합리적으로 문제를 해결하는 법을 알고 있었습니다. 그리고 서로가 그 해결책을 알고 있다는 것조차 서로 알고 있었지요. 남은 것은 불확실한 것들만을 골라 빠르게 테스트 해 보고, 빠르게 결정을 내리는 것 뿐이었습니다.중요한 것은 원칙이라던가 고정된 절차 같은 형식이 아니었습니다. 중요한 것은 &lsquo;우리가 원하는 게임을 만들기 위해 지금 당장 필요한 것은 무엇인가&rsquo; 라는 걸 생각하고, 당장 실행하는 행동력이었습니다. &quot;<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e51178d2f8fc.jpg"
+    ></figure>
+</p>
+<p><strong>빨리 만들기</strong></p>
+<p>&lsquo;아틀란티카&rsquo;가 성공할 수 있었던 대표적인 요인 중 하나는 빠른 개발이다. 사실 &lsquo;아틀란티카&rsquo;가 개발되기 전, &lsquo;아틀란티카&rsquo;는 이미 &lsquo;군주온라인&rsquo;의 전투를 개량하여 턴제로 제작한 &lsquo;군주배틀&rsquo; 이라는 이름의 게임으로 알파 버전까지 제작되었으며, 일부 유저들에게까지 공개까지 되었던 상태였다. 이 게임은 군주 온라인의 리소스를 대부분 재 이용하여 제작한 것이었기 때문에 매우 빠른 시간에 만들 수 있었다. &ldquo;군주 배틀은 확실히 가능성이 있었습니다. 게임의 가장 중요한 핵심목표였던 턴 방식의 전투가 완성되자, 그 외의 것들은 군주온라인에서 제작한 것을 그대로 이어와서 개량하면 되는 것이었지요. 이렇게 재빠르게 게임을 만들고 보니 게임이 성공할 수 있다는 충분한 확신을 가질 수 있게 되었지요. 이제 남은 것은 이 재미있는 게임을 전세계에 통할 수 있도록 개량하는 일이었습니다&rdquo;<br>
+그리고 약 1년동안, 2D로 제작되어졌었던 이 게임은 유명한 게임엔진인 게임브리오를 통해 3D로 다시 제작되어 아틀란티카로 완성되어 출시하게 되었다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e494212e43ba.jpg"
+    ></figure>
+<p>&lt;아틀란티카의 전신이었던 군주배틀&gt;</p>
+<p> &ldquo;계획이 구체화되고 집중되면 어떤 경우에서건 유리합니다. 우리는 난생 처음 만드는 3D 게임임에도 불구하고, 게임의 기본적인 구조와 목표가 구체적으로 완성되어 있던 상태였기 때문에 실수와 낭비를 최대한 줄일 수 있었습니다&rdquo;<br>
+아틀란티카 프로그램팀장인 손석환 팀장이 말했다.</p>
+<p>&quot; 그렇지만 그렇다고 서버와 클라이언트의 안정성을 소홀히 할 수는 없었지요. 멋진 비주얼을 제공하고 재미를 보장하는 게임이라고 하더라도 불안정한 서비스와 운영은 유저들에게 버림받을 수 밖에 없기 때문에, 이 부분에 대해서는 절대로 양보할 수가 없었습니다. 많은 개발자들이 밤낮은 가리지 않고 수백번이 넘는 테스트를 진행하였고, 최대한 많은 에러 검출 환경을 구축해 테스트 하였습니다. 덕분에 짧은 개발 기간에도 불구하고 안정된 서비스를 할 수 있었습니다&rdquo;</p>
+<p>온라인 게임의 특성상, 절대로 양보해야 하지 말아야 할 것은 안정성이다. 아무리 잘 만든 게임이라 하더라도 수시로 접속이 끊어지는 게임이라면 절대로 성공할 수 없다. 때문에 속도를 우선시하는 개발 환경이었더라도 반드시 지켜야 할 필수적인 덕목은 재미와 안정성이었고, 이 두 가지가 갖춰지지 않은 상태에서는 게임을 공개하지 않는다는 것이 가장 중요한 목표였다.</p>
+<p><strong>개방된 커뮤니케이션</strong></p>
+<p>Ndoors에는 매우 단순한 게시판 형태의 인트라넷이 존재한다. 프로젝트와 직무 그룹에 따라 구분되어 있는 이 단순해 보이는 게시판은, 모든 개발내용을 비롯하여 운영과 영업내용에 대해서까지 거의 실시간으로 하나도 빼놓지 않고 올라온다. 모든 게시판은 모두에게 열람, 작성할 권한이 있으며 특별한 작업 보고서나 기획서등을 따로 문서로 제작하지 않고 인트라넷으로 공유하고 있다. (심지어는 매출과 동접내역까지도 어떠한 수정도 가하지 않은 실제 데이터가 올라온다) 직원 평가등 비밀로 해야 하는 내용을 제외하고는 회사의 거의 모든 데이터가 공유되는 이 게시판은, 하루 평균 200~300개의 게시물이 올라오기 때문에 꼼꼼히 챙겨보지 않으면 회사의 중요한 공지사항이나 개발 방향을 놓칠 수도 있다.</p>
+<p>&ldquo;지극히 단순한 구조의 인트라넷은, 누구나 보자마자 바로 적응할 수 있다는 장점이 있습니다. 그리고 의무적으로 인트라넷 사용을 활성화시키기 때문에, 인트라넷을 통하지 않으면 일이 진행되지 않습니다. 누구나 게임에 대한 의견을 말할 수 있고, 누구나 다른 팀에서 진행되는 내용에 관심이 있다면 볼 수 있고 질문을 할 수 있습니다. 때문에 인트라넷의 활용 여부를 조사하는 것 만으로 어느 직원이 회사에 관심이 있는지 쉽게 알 수 있었습니다. 모바일 버전도 준비되어 있어서, 해외 출장 중이건 여행중이건, 심지어 휴가 중에도 - 조금 슬프지만 말입니다 - 인트라넷을 훑어 보는 것 만으로 현재 프로젝트와 회사의 상태를 쉽게 알 수 있었습니다. 그리고 이것은 쓸모없는 &lsquo;문제점 공유만을 위한 회의&rsquo;로 낭비되는 시간을 대폭 줄일 수 있었고, 수 많은 인원으로 돌아가는 거대한 프로젝트가 제대로 굴러갈 수 있게 해 주었습니다.&rdquo;</p>
+<p>지금도 인트라넷에는 하루에 300개 이상의 글이 매일 올라오고 있고, 여기서 좋은 의견을 지속적으로 낸 그래픽 디자이너가 기획자로 발탁되는 경우도 여러 번 있었다. </p>
+<p><strong>What Went Wrong</strong><br>
+<strong>그래픽 수준의 문제</strong><br>
+&ldquo;사실 이것은 커다란 문제였습니다&rdquo; 그래픽을 담당했던 고동환 AD와 정종필TA가 말을 이었다. &ldquo;이전까지는 귀여운 스타일의 2D 게임만 만들던 그래픽 디자이너들에게 갑자기 실사 스타일의 8등신 캐릭터가 뛰어다니는 3D 게임을 만들라고 하는 것은 보통 일이 아니었지요. 우리는 우리의 직원들이 꾸준히 발전하고 싶어한다는 욕구가 있음을 알고 있었고, 자신의 가능성을 발견하고자 하는 것을 알고 있었습니다. 때문에 새로운 프로젝트를 위해 새로운 직원을 고용하지 않고, 기존의 인력들 중에서 새 프로젝트에 도전해 보고 싶은 직원들을 자체적으로 교육시켜 아틀란티카를 제작하도록 하고 싶었습니다. 그렇지만 이것은 그렇게 쉬운 일이 아니었지요. &quot;</p>
+<p>이 문제는 그래픽 뿐만 아니라 프로그램에서도 마찬가지였다. 3D 엔진을 처음 다뤄보는 개발자들이 대부분인 상태에서 대형 3D MMORPG를 만드는 것은 쉬운 일이 아니었다. 때문에 가장 다루기 쉬운 엔진이었던 게임브리오를 선택 해서 사용했지만, 기술팀이 초반에는 존재하지 않았기 때문에 컨텐츠 개발자들만으로는 많은 그래픽 기술까지 섬세하게 지원하는 것은 한계가 있었다.</p>
+<p>&ldquo;그래픽 디자이너가 최선을 다해 만들어 놓은 그래픽이, 3D MAX 에서 볼 때보다 게임에 넣었을때 더 안좋아 보이는 경우가 많이 발생했었습니다. 덕분에 우리는 게임을 서비스하기 직전까지 게임 엔진과 셰이딩을 업그레이드 하면서 그래픽 데이터를 다시 제작해야만 했었습니다. 다행히도 후반부에 기술팀이 조직되면서, 서비스하기 직전에는 어느 정도 원하는 그래픽 수준까지 올릴 수 있었습니다만 많은 그래픽 디자이너들이 그 댓가를 감수해야만 했었습니다.&rdquo; </p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e5117aa5345f.jpg"
+    ></figure>
+<p><strong>유지보수가 쉽지 않았다.</strong><br>
+빨리 제작한다는 것은 장점도 있지만 단점도 가지고 있는 양날의 검과 같다. 빠르게 제작하는 것은 분명히 성공적인 게임 개발을 위해 중요한 일이지만, 때로는 제대로 준비가 되지 않은채로 진행될 수도 있다는 위험성이 있다.<br>
+&ldquo;당장은 필요 없어 보이지만 나중을 위해 필요한 것들을 잊어서는 안되었었습니다. 사실 경험이 부족했던 것도 한 이유라고 할 수 있었지요. 빠른 제작을 위해 너무 많은 하드코딩이 들어갔었고, 이것은 지속적으로 큰 폭으로 계속 개량되어야 하는 온라인 게임에서 큰 약점이었습니다. 대형 MMORPG에서 어느 정도의 예외코드들은 존재할 수 밖에 없지만, 가능하면 최대한 이런 상황을 줄여야 나중에 생길 수 있는 각종 문제나 새로운 요구사항등을 보다 안전하고 쉽게 처리해 나갈 수 있습니다.&rdquo;</p>
+<p> &ldquo;또한 3D MMORPG 게임은 전세계의 다양한 PC의 사양에서 돌아가야 하기 때문에, 그 안정성을 확보하고 특이한 시스템에서 발생하는 퍼포먼스 저하 등의 이유를 재빠르고 쉽게 인지할 수 있도록 하는 프로파일링 툴과 기능을 꼭 초반에 집어넣었어야 했었다는 것을 배웠습니다. 나중에 게임이 복잡해지면 복잡해질 수록 생겨나는 문제들도 복잡해지는데, 미리 프로파일링으로 문제를 잡아낼 수 있었다면 보다 빠르게 문제를 대응할 수 있었겠지요. 초반에는 툴을 만드는 것보다 그냥 개발하는 것이 물론 빨랐습니다. 그러나 이러한 것들이 쌓이다 보니 서비스가 3년쯤 지나자 엉뚱한 부분에서 개발 시간이 지체되더군요&rdquo;<br>
+아틀란티카 이 건 기획팀장이 말했다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e5117aa76087.jpg"
+    ></figure>
+<br>
+&quot; 자동화된 툴이 빈약하게 갖추어저 있었기 때문에 수동적인 작업에 의존하는 부분이 많았습니다. 그러다보니 문제가 발생했을 때 원인을 찾기 힘들었고, 심지어 문제를 해결하기 위해서 1~2주간 했던 작업물들을 전부 뒤로 돌리고 새로 시작해야 하는 경우도 발행했었지요. 덕분에 QA 팀에서는 하나의 문제를 찾기 위해서 매주 업데이트 때마다 밤을 새는 일이 부지기수였습니다. 거대한 게임일수록 모든 기능들은 서로 연관성을 가지고 묶여 있기 때문에 새로 개발된 것들만 테스트 해야 하는 것이 아니라, 어디에 어떤 문제가 맞물려 있을지 몰라 항상 처음부터 끝까지 테스트를 진행해야 했기 때문입니다. &quot;</p>
+<p>다행히도 이를 깨달은 개발팀은 늦게나마 자체 툴을 제작하여 QA의 자동화를 시켜서, 가련한 QA팀들은 이제서야 집에 갈 수 있었고 일정은 더 이상 밀리지 않게 되었다. 그리고 이후에는 이 교훈을 되살려, 컨텐츠 양과 프로젝트 참여인원의 수가 상대적으로 적은 초기에 툴을 꼭 먼저 제작하는 시스템이 정립되었다.</p>
+<p><strong>게임이 너무 어려워졌다.</strong><br>
+온라인 게임은 지속적으로 변화해야 하고 개선되어야만 한다. 지속적인 아이템, 퀘스트, 시스템과 컨텐츠들의 지속적인 업데이트만이 온라인 게임의 생명을 늘이고, 유저들이 떠나가지 않도록 붙잡아 둘 수 있다. 아틀란티카 개발팀은 특유의 빠른 개발속도로 다양한 나라의 요구사항에 맞추어 게임을 지속적으로 발전시켜 왔다. </p>
+<p>&ldquo;우리의 유저들은 더욱 더 많은 것을 요구했고, 개발팀은 유저의 다양한 요구들을 충족시켜 주기 위해 끊임없이 게임을 개량시켰습니다. 다양한 아이템을 만들고, 다양한 전략을 위해 다양한 용병과 다양한 스킬들을 만들었지요. 그렇지만 무엇보다 턴제 전투의 가장 큰 약점인, 1인 위주의 전투라는 것을 극복하기가 힘들었습니다&rdquo;</p>
+<p>아틀란티카 이 건 기획팀장이 말했다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e51179d8b83a.jpg"
+    ></figure>
+<p>&ldquo;온라인 게임 유저들은 다수의 유저가 서로 협동을 하면서 전투를 하고 싶어했습니다. 우리도 그렇게 만들고 싶었지요. 그렇지만 많은 유저가 많은 용병을 데리고 서로 협동을 하며 턴제 전투를 진행하기에는 다소 무리가 있었습니다. 한 턴에 30초의 시간이라는 것이, 상의하면서 게임을 진행하기에는 부족했고, 그렇다고 그냥 개인별로 상의없이 게임을 진행하자니 손이 빠른 유저는 손이 느린 유저의 턴이 끝날때까지 지루하게 기다려야 하는 사태가 벌어진 것입니다. 그래서 우리는 그것을 극복하기 위해 대규모 인원들이 협동해서 전투를 할 수 있는 완전히 다른 전투 시스템인 TBS 시스템을 넣기도 했습니다. 하나의 게임에 두 개의 전투 시스템이 들어가게 된 것이지요. 그런데 그렇게 정신없이 업데이트를 하고 있다가 문득 돌아보니, 우리는 우리의 게임이 너무 복잡해지고 있다는 것을 깨달았습니다.&rdquo;</p>
+<p>복잡해진 게임은 게임을 깊게 분석하면서 즐기는 하드코어한 유저들에게는 매력적인 것일 수 있다. 그렇지만 게임을 처음 시작했다던가, 한동안 게임을 쉬었다가 다시 접속한 유저들에게는 자신이 알지 못하는 수준의 과다한 정보는 오히려 게임에 대한 진입장벽이 될 수도 있다.   <br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110815_103750_c0055803_4e51179555320.jpg"
+    ></figure>
+</p>
+<p><strong>정리</strong><br>
+한국의 게임 개발 역사는 그리 길지 않다. 그리고 그 길지 않은 개발 역사 속에서도, 한국 게임 제작의 태동기에 모인 게임 제작자들이 지금까지 흩어지지 않고 게임 개발 경험을 축적해가면서 매번 새로운 도전을 하는 게임을 제작하는 팀은 손에 꼽을 정도로 적다. 그들은 현재 웹 기반으로 돌아가는 대형 실시간3D MMORPG를 제작하고 있고, 이것 역시 이전까지 시도해 본 적이 없는 새로운 도전이다. 또한 이 게임은 모바일 기기에서도 연동되는 것을 목표로 하고 있다.</p>
+<p>&ldquo;새로운 도전을 하는 것은 언제나 멋진 일입니다. 그렇게 하기 위해서 저희는 가능한 한 빨리, 제대로 된 게임을 만들기 위해 모든 자원을 아끼지 않습니다. 게임 하나를 만들기 위해 5년이나 10년동안 만들게 되면, 온라인 게임에서의 가장 소중한 경험인 유저의 피드백을 받는 경험에 공백이 생긴다는 말이지요. 그렇다고 제대로 완성되지 않은 게임을 시장에 내놓으면 유저의 피드백을 받을 기회도 받지 못하고 사라질 것입니다. 저희는 패키지 게임을 제작해 본 경험이 충분하고, 온라인 게임을 제작해서 서비스 한 경험도 충분하기 때문에, 어느 정도까지 개발하고 어느 시점에서 서비스 해야 하는지에 대한 목표를 비교적 명확하게 정할 수 있는 능력을 가지고 있습니다. 문서나 책으로는 전달할 수 없는 집단의 스타일과 분위기를 꾸준히 유지하기 때문에, 저희는 그 능력을 믿고 계속 새로운 도전을 할 수 있는 것입니다&rdquo;</p>
+<p>모든 집단과 스타일에는 장점이 있는 만큼 단점이 있다. 그렇기 때문에 사실 궁극적으로 옳다라는 방법이나 답이 있을리는 없다. 이것은 누구나 인정하는 것이고, 피해 갈 수 없는 장애물인 것이다. Ndoors의 개발팀도 이 점에 대해서 동의하고 있으며, 가장 중요한 것은 서로간의 커뮤니티의 활성화라고 말한다.<br>
+&ldquo;인원이 많아질수록, 의견도 많고 갈등도 많은 것이 당연합니다. 현실의 벽에 부딪혀 양보해야 할 수도 있고, 시간과 예산, 능력의 부족일 수도 있습니다. 특히 저희처럼 짧은 기간안에 전례가 없는 시도를 하는 프로젝트일 수록 이런 문제는 자주 일어나게 되지요. 이러한 경우, 갈등을 말할 창구가 없거나 숨기기만 한다면 아무런 해결책을 찾을 수 없게 됩니다. 가장 위험한 상처는 겉으로 드러난 상처가 아니라, 겉은 멀쩡하지만 안에서 곪고 있는 상처인 것입니다. 심각해 보이는 문제도, 모두 열어놓고 문제를 펼쳐보면 의외로 쉽게 풀리는 경우도 많습니다. 그리고 우리는 그러한 상처를 드러내고 해결하는 것을 매우 중요하게 생각하고 있습니다. 이것이 우리가 오랫동안 인원을 유지하면서 일할 수 있었던 방법입니다.&rdquo;</p>
+<p>{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-08-03-7600gt%EB%8A%94-%EA%B6%8C%EC%9E%A5%EC%82%AC%EC%96%91..-%EA%B6%8C%EC%9E%A5%EC%82%AC%EC%96%91-%EC%9E%90%EB%8F%99%EC%9D%B8%EC%8B%9D-%EA%B3%B5%EC%8B%9D/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;7600GT는 권장사양.. 권장사양 자동인식 공식.
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-08-03T17:42:14&#43;00:00">3 8월 2011</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-08-22-procedural-materials-tutorial--substance-in-unity---%EC%9C%A0%EB%8B%88%ED%8B%B0%EC%97%90%EC%84%9C-%EC%84%AD%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">
+              <span class="leading-6">
+                Procedural materials tutorial – Substance in Unity - 유니티에서 섭스턴스 사용하기&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-08-22T15:28:24&#43;00:00">22 8월 2011</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

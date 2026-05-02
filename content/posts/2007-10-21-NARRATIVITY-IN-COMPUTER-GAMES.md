@@ -1,0 +1,107 @@
+---
+layout: post
+title: "NARRATIVITY IN COMPUTER GAMES"
+date: 2007-10-21 01:28:33
+categories: [이글루스 백업, "2007-10"]
+---
+
+{% raw %}
+다시 번역 시작 OTL   
+일단 번역기로 최소한 돌려 놓고.  
+새로 시작합니다. OTL  
+OTL  
+OTL
+
+ I  15  I   
+NARRATIVITY IN COMPUTER GAMES   
+Britta Neitzel
+
+Marcel becomes a plumber. -Gerard Genette, 1988, p. 19
+
+Game or Narrative   
+Research work on computer games cannot avail itself of a long tradition-popular computer games are just thirty-five years old, after all. Narratives, on the contrary, are a large and influential part of our culture. Stories have long served as structures to give order and a sense of meaning to the world. And it is not only literature that tells stories. History can be seen as a certain type of storytelling as well; films tell stories, drama, comic strips and even painting contain narrative features. Thus it seems reasonable to assume that computer games tell stories as well.   
+Marcel는 배관공이 된다  
+   
+게임과 네러티브   
+컴퓨터 게임에 대한 연구는 유명 게임이 35년 정도밖에 안되었기 때문에 그것 뿐. 별로.. 연구가 되지 않았다   
+네러티브는 반대로, 문화에서 매우 크고 영향력있는 파트이다.   
+스토리는 세계에 대한 감각과 계급 구조를 오래 제공해 왔다.   
+그리고 스토리를 말하는 것은 문학 뿐만이 아니다.   
+역시는 어떤 타입의 스토리 텔링
+
+게임 또는 설화   
+컴퓨터 게임에 연구 활동은이다 다만 35 살, 어쨌든 긴 전통 대중적인 컴퓨터 게임을 이용할 수 없다. 설화는, 그와는 반대로, 우리의 문화의 크고 유력한 부분이다. 이야기는 구조로 오랫동안 세계에 의미의 순서 그리고 감을 주는 것을 봉사했다. 그리고 이야기를 이야기하는 뿐만 아니라 문학이다. 역사는 이야기 하기의 어느 정도 유형으로 또한 보일 수 있다; 필름은 이야기, 연극, 연재 만화를 이야기하고 그려서 조차 이야기 특징을 포함하십시오. 따라서 컴퓨터 게임이 이야기를 또한 이야기한ㄴ다고 추정하는 것이 적당하게 보인다.
+
+　　The issue of narrativity in computer games has, in fact, gained a certain prominence, with opinions covering a spectrum ranging from general negation to euphoric affirmation. Out of studies of hypertext in the 1980s and 1990s arose questions about the possibilities of "interactive storytelling" as a new form of narrative in digital media (cf. e.g., Bolter, 1991; Landow, 1992, 1994). These studies have expanded to include verbally based computer games, the so-called text adventures.   
+컴퓨터 게임에 있는 narrativity의 문제점은, 실제로, 의견이 특정 굴지를, 일반적인 부정에서 행복한 긍정판단에 배열하는 스펙트럼을 포함하는 상태에서 얻었다. 1980년대 및 1990 년대 질문은에 있는 하이퍼 텍스트의 학문에서 "상호 작용하는 이야기 하기"의 가능성에 관한 디지털 매체 (cf. 예를들면, Bolter 1991년에 있는 설화의 새로운 모양으로 발생했다; Landow, 1992년, 1994년). 이 학문은 구두로 근거한 컴퓨터 게임, 소위 원본 모험을 포함하기 위하여 확장했다  
+　　  
+　　  
+　　In this tradition, computer games are seen in connection with other texts based on computer technology. The text and the changes it undergoes remain in the foreground (e.g., in Ryan, 1999). Murray (1997) includes computer games in her study of narrative in cyberspace by observing them, along with chatterbots, "IUDs, 3D movies, and finally the holodeck, in relation to their narrarivity. In Computers as theatre, Laurel (1991) examines computer applications and interfaces using the metaphor of the theatre and Aristotelian dramatic theory. In her study as well, computer games represent only one application among several. Finally, Aarseth's (1997) focus is on verbal media and, apart from his insightful analysis of the text adventure, he does not consider computer games.   
+이 전통에서는, 컴퓨터 게임은 컴퓨터 공학에 근거한 다른 원본과 관련하여 보인다. 겪는 변화 전경에서 및 원본 는 남아 있다 (예를들면, Ryan 1999년에서). Murray (1997년)는 사이버스페이스에 있는 설화의 그녀의 학문에 있는 의 chatterbots와 함께, 그들을 진흙, 3D 영화 및 그들의 narrarivity에 관하여 마지막으로 holodeck 관찰해서 컴퓨터 게임을, 포함한다. 극장으로 컴퓨터에서는, Laurel (1991년)는 극장 및 아리스토텔레스 학설 극적인 이론의 은유를 사용하여 컴퓨터 응용 프로그램과 공용영역을 시험한다. 또한 그녀의 학문에서는, 컴퓨터 게임은 몇몇의 사이에서 단지 1개의 신청만 대표한다. 마지막으로, Aarseth의 (1997년) 초점은 구두 매체에 있고, 원본 모험의 그의 통찰력이 있는 분석은 그렇다 하고, 그는 컴퓨터 게임을 고려하지 않는다.  
+　　  
+　　  
+　　In the last years, focused and decisive scientific analysis of the popular computer game has grown, with various conferences held. Since 2001, academic game research has its first platform with the online journal Game Studies ([www.gamestudies.org](https://www.gamestudies.org/)).   
+대중적인 컴퓨터 게임의 마지막 년, 집중된, 단호한 과학적인 분석에서는 각종 회의가, 열린 상태에서 성장했다. 2001년부터, 학문적인 게임 연구에는 온라인 전표 게임 학문 ([www.gamestudies.org](https://www.gamestudies.org/))를 가진 그것의 첫번째 플래트홈이 있다.  
+　　  
+　　But studies in computer games still fall far short of forming different schools. Nevertheless, a vehement and often polemic body of criticism has emerged directed at studies that see the computer game as one possible form of future storytelling, or simply treat the computer game as a narrative medium at all.   
+그러나 컴퓨터 게임에 있는 학문은 아직도 먼 간결 다른 학교 형성의 내린다. 역시, 비판의 격심한 수시로 논쟁 몸은 이야기 매체로 미래 이야기 하기의 1개의 가능한 모양으로 컴퓨터 게임을 보는 학문에 지시해, 또는 간단하게 전혀 대우한다 컴퓨터 게임을 나왔다.  
+　　  
+　　This criticism is mainly borne by the fear that methods developed for the study of literature are insufficient to deal with the specifics of computer games, and would, on the contrary, simply incorporate them into its own territory, treating computer games as a derivative of literature. This position argues that computer games are games after all, and that because games are something completely different from narratives, they couldn't possibly be studied according to narrative criteria  
+이 비판은 문학의 학문을 위해 개발된 방법이 컴퓨터 게임의 특성을 취급하게 부족한 공포에 의해 문학의 유래물로 컴퓨터 게임을 대우하는 그것의 자신의 영토로 주로, 그와는 반대로, 간단하게 그들을 통합할 것입니다 품어지고. 이 위치는 게임이 설화와 다른 무언가 완전하게이기 때문에 컴퓨터 게임이 게임 어쨌든다는 것을, 그리고, 이야기 표준에 따르면 가능하게 공부될 수 없었다는 것을 이라고와 주장한다
+
+　　　　?  7   
+　　A position that simply treats the computer game as narrative, or one that negates any relation between narratives and games, are both too narrow in scope. In the first case, there is a danger of overlooking differences between games and narratives; computer games are, in fact, more than "interactive narratives." The second position, on the other hand, risks disregarding similarities between computer games and narratives just because not every game has the same structure and computer games are structured differently than, for example, ball games. Common to both positions is that they are based on exclusivity and are aimed at fundamental principles, an approach that fails to acknowledge the specifics of the computer: the computer is a hybrid medium that integrates various forms and other media and in so doing dissolves distinctions between them (d. Thomsen, 1994). Digital memory and processing mechanisms allow the computer to adapt almost unlimited surfaces for equally innumerable functions, as well
+
+설화로 간단하게 컴퓨터 게임을 대우하는 위치, 또는 설화와 게임 사이 어떤 관계든지 부정하는 것은, 범위에서 두 너무 좁다. 첫번째 케이스에서는, 게임과 설화의 바라보는 차이의 위험이 있다; 컴퓨터 게임은이다, 실제로, "상호 작용하는 설화 보다는 더 많은 것." 다만 각 게임에는 아닙니다 동일한 구조와 컴퓨터 게임이 있기 때문에 컴퓨터 게임과 설화 사이 상사성 무시하고 두번째 위치, 다른 한편으로는, 위험은 과, 예를 들면, 볼 게임 다르게 구축된다. 두 위치 전부에 공유지는, 컴퓨터의 특성을 인정하지 못하는 접근 그들이 배타성에 근거하고 겨냥한 기본 원리이다 이다: 컴퓨터는 각종 모양 및 다른 매체를 통합하고 그렇게 함으로써 그들 사이 구별을 녹이는 잡종 매체이다 (d. Thomsen 1994년). 디지털 기억과 가공 기계장치는 컴퓨터가, 뿐 아니라 다른 매체의 구조를 바꾸기 위하여 통합하고 동등하게 무수한 기능을 위한 거의 무제한 표면을 적응시키는 것을 허용한다. 장난감으로 컴퓨터, 및 이렇게 컴퓨터 게임은, 경계의 이 해체 및 각종 성분의 통합이라고 특히 에 관하여 기술되어야 한다. 컴퓨터 게임이 게임이다 는 사실은 이야기 질이 있는에서 절대로 그들을 제하지 않는다. 따라서, 이 장에서 나는 nonnarrative와 이야기 컴퓨터 게임 사이 과도적인 지역 뿐만 아니라 컴퓨터 게임과 설화에 있는 공용성 그리고 부분적으로 덮는 성분이, 있다 가정에 근거하여 제 3 의 관점을, 가지고 간다
+
+FORMS   
+MEDIA   
+228   
+NARRATIVES   
+I TEXTS   
+/  
+Mode of representation
+
+8.   
+narrative levels: story   
+discourse narration   
+GAMES   
+back and forth "as-if"   
+- repetitions cyclical time structure
+
+COMPUTER APPLICATIONS   
+Mode of representation   
+node of operation   
+Social playing situation   
+- at home   
+- leisure time   
+TELEVISION   
+I Figure 15.1 I   
+Relationships between computer games and other media
+
+as to integrate and change the structures of other media. The computer as toy, and thus the computer game, must be described specifically in reference to this dissolution of boundaries and integration of various elements. The fact that computer games are games by no means excludes them from having narrative qualities. Thus, in this chapter I take a third viewpoint, based on the assumption that there are commonalities and overlapping elements in computer games and narratives, as well as a transitional zone between nonnarrative and narrative computer games.'
+
+　　Figure 15.1 shows some broad relations between computer games and other media. These involve similarities in the modes of operation, representation, as well as more social and cultural similarities, for example media use in certain locations and times.
+
+　　Not every computer game, however, has relationships to each of the media mentioned here. Especially the manner of presentation divides the computer games into two categories. The text adventures, of course, have something in common with written texts, whereas the presentational style of all other computer games can be described in comparison to other visual media, especially film. But this is not the only difference among computer games. Arcade games, for example, are played in ,1 different environment than those played on a console or computer. Pong (Atari, 1972), for instance, differs fundamentally from Tomb Raider (Core, Eidos, 1996)-in regard to narrativity, for one thing.
+
+　　For the case of the narrativiry of computer games, the differentiation between medium and form in figure 15.1 taken from Niklas Luhmann (cf. Luhmann, 1995,   
+　　  
+pp. 165-2 H) is crucial. According to Luhmann, media represent a loose coupling of elements consolidated through form. Each form depends on a certain medium for its realization, while simultaneously introducing, as form, a certain struchlfe into these media. Because the narrative as well as the game only ever appear in a certain medium, they will be understood here as forms that can be combined with various media." Thus a certain computer game can take over narrative as well as ludic forms-and also forms that are not mentioned here in detail. By no means are either narrative or game fully described forms yet-nor will they ever be-but some defining features as the narrative levels in case of the narrative and the "as-if," the repetitions, and the back and forth movement in case of the game appear in most of the definitions.
+
+　　Computer games not only have varying relationships to other media, but there are also differences among the computer games themselves. Due to this variety of computer games, it is necessary to narrow my focus of attention in this chapter. What I will discuss on the following pages is the single-player computer game based on a graphic surface. I will neither consider rnultiplayer games, because they are played in a different "narrative" situation, nor text adventures, 3D environments such as the CAVE or "holodecks," because they have a different mode of presentation.
+
+　　Because the debate over narrativity in computer games is rooted in the differentiation between game and narrative, I will focus on some definitions of the game, the computer game, and the narrative to provide a frame for the following in-depth analysis of the narrativity
+
+숫자 15.1는 컴퓨터 게임과 다른 매체 사이 약간 넓은 관계를 보여준다. 이들은 사회 및 문화적인 상사성, 특정 위치 및 시간에 있는 예를 들면 매체 사용 뿐만 아니라 작동 방식에 있는 상사성, 대표를, 포함한다.
+
+각 컴퓨터 게임에는 아닙니다, 그러나, 여기에서 언급된 매체의 각각에 관계가 있다. 발표의 특히 방법은 2개의 종류로 컴퓨터 게임을 분할한다. 다른 컴퓨터 게임 전부의 표상적인 작풍이 다른 시각적인 매체와 비교하여 기술될 수 있더라도 반면 원본은 모험한다, 당연히, 무언가 과 같이 문서로 쓰여진 원본이, 특히 필름 있으십시오. 그러나 이것은 컴퓨터 게임 중 유일한 다름이 아니다. 아케이드 게임은, 장치 또는 컴퓨터에 논 그들 보다는 예를 들면, 1개의 다른 환경 안으로 한다. Pong (Atari 1972년)는 무덤 침입자 (Core, Eidos 1996년)와 narrativity에 - 관계에서 -, 예를 들면, 우선 기본적으로 다르다.
+
+매체 사이 컴퓨터 게임, 감별법 및 Niklas Luhmann (cf. Luhmann 1995년, PP에게서 가지고 가는 숫자 15.1에 있는 모양의 narrativiry의 예를 위해. 165-2 H는) 결정적이다. Luhmann에 따르면, 매체는 모양을 통해서 결합된 성분의 느슨한 연결을 대표한다. 각 모양은 그것의 현실화를 위한 특정 매체에 이 매체로, 모양으로, 동시로 특정 구조를 소개하고 있는 동안 달려 있다. 게임 뿐 아니라 설화가 특정 매체에서서만 이제까지 나타나기 때문에, 그들은 각종 매체와 결합될 수 있는 모양으로 여기에서 이해될 것이다. "이렇게 특정 컴퓨터 게임은 상세히 여기서 언급되지 않는 또한 모양 모양 그리고 ludic 뿐만 아니라 설화를 인수할 수 있다. 것과 같이 만약에," 게임의 경우에는 반복 및 앞뒤로 움직이는 운동이 정의의 대부분에서 나타나면 설화 또는 게임 이제까지 완전히 기술한 모양 아직 도 아니다 의지는 설화의 경우에는 설화 수준으로 그들 이 그러나 몇몇 정의 특징 및 "절대로 이지 않는다.
+
+컴퓨터 게임에는 뿐만 아니라 다른 매체에 다양한 관계가 있다, 그러나 또한 컴퓨터 게임 중 다름 그들자신이 있다. 컴퓨터 게임의 이 다양성 때문에, 이 장에 있는 주의의 나의 초점을 좁히는 것이 필수이. 나가 뒤에 오는 페이지에 토론할 무엇을 도표 표면에 근거한 단 하나 선수 컴퓨터 게임이다. 나는 다른 "이야기" 상황에서 하기 때문에, 고려한다 아니 rnultiplayer 게임을 의도하지 않는다, 도 아니다 발표의 다른 형태가 있기 때문에 원본은, 굴과 같은 3D 환경 또는 "holodecks" 모험한다.
+
+컴퓨터 게임에 있는 narrativity에 관한 토론이 게임과 설화 사이 감별법에서 뿌리박기 때문에, 나는 게임, 컴퓨터 게임 및 컴퓨터 게임의 narrativity의 뒤에 오는 충분히 분석을 구조를 제공하는 설화의 몇몇 정의에 집중할 것이다. 이 분석은 narratology에서 개발된 이야기 수준에 동쪽으로 향하게 할 것이다: 사건을 기술하는 수준이 말한 대로 그들의 순서 뿐 아니라 이야기와 작의는 대표의 형태 및 저자의 질문을 취급하는 논설과 내레이션의 수준에 의해, 따라 토론될 것이다. 필요할, 나는 좋을 것이 보여주 것과 같이 다른 사람에 관계를 매체 것과 같이 계산한다 15.1를 언제 고려할 것이다.
+
+of computer games. This analysis will orient itself to the narrative levels developed in narratology: story and plot as levels describing the events told as well as their order will be discussed, followed by the levels of discourse and narration, dealing with the modes of representation and questions of authorship. When necessary, I will consider relationships to other media-as figure 15.1 shows-as well.
+{% endraw %}

@@ -1,0 +1,1169 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>삼품테스트 이번주 (1부) &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="삼품테스트 이번주 (1부) &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2011-06-12-%EC%82%BC%ED%92%88%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EB%B2%88%EC%A3%BC-1%EB%B6%80/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2011-06-12-%EC%82%BC%ED%92%88%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EB%B2%88%EC%A3%BC-1%EB%B6%80/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="삼품테스트 이번주 (1부)">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-06-12T17:12:27+00:00">
+    <meta property="article:modified_time" content="2011-06-12T17:12:27+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="삼품테스트 이번주 (1부)">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "삼품테스트 이번주 (1부)",
+    "headline": "삼품테스트 이번주 (1부)",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2011-06-12-%EC%82%BC%ED%92%88%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EB%B2%88%EC%A3%BC-1%EB%B6%80/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2011",
+    "dateCreated": "2011-06-12T17:12:27\u002b00:00",
+    "datePublished": "2011-06-12T17:12:27\u002b00:00",
+    
+    "dateModified": "2011-06-12T17:12:27\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1615"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        삼품테스트 이번주 (1부)
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2011-06-12T17:12:27&#43;00:00">12 6월 2011</time><span class="px-2 text-primary-500">&middot;</span><span>1615 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">8 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}</p>
+<ul>
+<li>일단 최적화 상황</li>
+</ul>
+<dl>
+<dt>: 현재 권장사양에서는 매우 훌륭한 프레임으로 플레이가 가능합니다. 오히려 권장사양을 좀 낮추어도 되지 않을까 싶을 정도로.</dt>
+<dd>그에 반해 최저사양은 매우 심하게 느립니다.. 일단 명근팀장이 옵션 메니져를 코딩중이므로, 이를 완성한 후 옵션별 최적화를 시키고 나서 다시 테스트 해보는 것이 필요할듯 하네요. 현재는 텍스쳐 저해상도와 후처리 효과, 라이트 계산등에서 저사양옵션이 가동되고 있습니다만 원거리 컬링, 일정 이상 캐릭터 심볼로 교체, 캐릭터 메쉬 lod, 저사양 쉐이더로 교체, 터레인 옵션 변화 등 아직도 최저사양을 위해 할 일이 많이 남아 있으므로 속단하기는 이르다고 보입니다.</dd>
+<dd>특히 최저사양에서는 로딩이 매우 심각하게 느렸습니다. 현재 박실장님 테스트중입니다. 단 , 테스트 컴퓨터의 하드웨어 문제일 수도 있으므로 조각 모음, OS 재설치 등 이후 다시 테스트 해보는 것이 필요하다고 보입니다.</dd>
+</dl>
+<ul>
+<li>주말 삼품 테스트 일기.</li>
+</ul>
+<p>테스트도 매일 해서 잔소리를 늘어 놓으면, 듣는 사람도 지겹고 글도 읽고 싶어 지지도 않고</p>
+<p>무엇보다 테스트 하는 사람이 어느새 익숙해져서 &ldquo;원래 그런거지 뭐&rdquo; 라는 느낌을 받을까봐 일주일에 한 번씩 정도 까칠하게 테스트 해 봅니다 :)</p>
+<p>일단 버그 리포트도 아무 감흥없이 한 줄 씌여 있으면, 무슨 문제인지 제대로 전달 못하고 흐지부지 되는 경우를 많이 봐왔단 말이죠. 그래서 다소 귀찮지만 감성적으로 (라고 쓰고 감정적으로라고 읽는다) 써 봅니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds16.egloos.com/pmf/201001/02/41/a0007341_4b3f515f381b8.jpg"
+    ></figure>
+<p>대충 하는것 같아 보여도 할 때마다 큰맘먹고 하는 거예요. 쓴소리 하는 사람도 마냥 기분좋지만은 않음 . ㅋ<br>
+열심히 하시는거 다 알지만 그렇다고 좋은소리만 너무 해도 안좋아요.<br>
+감정있는거 아니니까 진짜 아우.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df467590f829.jpg"
+    ></figure>
+집에서의 컴퓨터로는 로딩시간이 10초 내외로 걸립니다. 전에 다운로드 받은게 있어서 그런건가요? 하여간 뭐 걱정없습니다.<br>
+ <br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4678b42d01.jpg"
+    ></figure>
+오늘은 특별히 김좀비님의 요청도 있고 하니 사운드도 켜놓고 함께 봅니다.</p>
+<p>크게 틀어놓지는 않습니다. 집에서 할 때나 PC방에서 할 때는 아무래도 주변 잡 사운드 / 질낮은 스피커 / 가족들에게 민폐 / 등의 이유로 크게 틀어놓지는 않겠지요. 싸구려 2.1 채널 스피커에서 들리는 음악은 꽤 괜찮은 사운드를 들려줍니다.<br>
+그렇지만 조금 아쉬운 점이라면 이정도&hellip;?   </p>
+<ul>
+<li>
+<p>로그인 시의 음악은 짧게 듣더라도 자주 들으며, 몇 년 동안 듣기도 합니다. 때문에 시작할 때에 이미 유저의 마음을 원하는 느낌으로 만들, 좀 후킹스러운 음악이어야 한다고 봅니다. 함축적으로 게임 세계를 설명해주며, 누구나 길거리에서 스쳐 들어도 게임이 생각나는 그런 음악이어야 한다고 말이죠. 그것도 초반 몇 초 안되는 시간안에 말입니다 :) </p>
+</li>
+<li>
+<p> 개인적으로 그라나도 에스파다의 로그인 피아노 음악은 듣자마자 그대로 외워질만큼 강렬하고 신선했으며, 깔끔하게 게임의 이미지를 전달하고 있어서 무척 이상적인 로그인 음악이었다고 생각하고 있습니다. (실제로 인터넷을 돌다보면, 가끔 잔잔한 영상의 브금BGM 으로 사용되는 경우가 꽤 보이지요) 어려운 일이지만, 저는 이 음악이 게임의 인상을 결정하는 최고의 음악이고, 유저에게 강렬한 인상으로 남는 음악이었으면 합니다. <br>
+신선한 악기로  새로운 느낌을 준다던가 하는 방법은 어떨런지요?</p>
+</li>
+<li>
+<p>동양적인 느낌의 음악을 어째서 배제하였는지는 저번에 들어서 잘 알고 있습니다만, 덕분에 다소 삼국지라는 이미지와는 동떨어지는 느낌이 된 것은 아닌가 싶습니다 그러니까 이런 경우는 동양 악기를 포인트로 사용해서 서양풍의 음악이지만 약간 독특한 느낌을 주게 한다던가? 예를 들어, 가야금인가 거문고로 연주한 캐논 변주곡 꽤나 멋지고 신선했던 것처럼 말입니다.</p>
+</li>
+</ul>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46c3bb9a54.jpg"
+    ></figure>
+- 멋진 화면이긴 합니다만 확실히 예전에 만든 이미지라, 지금 수준에서 보면 좀 떨어져 보이는 것도 사실입니다. 게임은 만들수록 사람 눈이 높아지고 실력도 좋아지고 엔진 적응력도 좋아져서, 초반 작품보다는 후반 작품이 늘 퀄리티가 좋지요. 지금 워낙 바빠서 어쩔 수 없는 것 알고 있습니다만, 나중에 조금 여유를 부릴 수 있으면 한 번 바꿔 주는 것도 좋을 것 같습니다. 사람 눈이란 간사한 거지요.</p>
+<ul>
+<li>
+<p>군주생성 해보려고 캐릭터 지웠더니 다시 안만들어 지네요. 산아야! 디비 매일 날리는거 아니었냐!!! ㄷㄷㄷ <br>
+내 개발자 J 를 돌려줘 OTL</p>
+</li>
+<li>
+<p>할 수 없이 서브케인 개팔자J 로 들어갑니다.  <figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f89b19e6.jpg"
+    ></figure>
+여전히 캐릭터 생성할때 글씨는 한 템포 늦게 써집니다. 완성형인듯. 코딩 프로그램에서도 저렇게 되지요. 저거 누가 신경 쓰고는 있는 건가요? 나중에 고칠 수 있는 건가요?</p>
+</li>
+</ul>
+<p>그리고 인터페이스가 &hellip; 이 부분에 한해서는 꽤 퀄리티가 떨어지네요. 내용 의미없는건 그전에 말했고&hellip;<br>
+이 부분의 디자인은 눈이 높아져 그런지 좀 불만이네요.</p>
+<p>또 저 공지사항 메세지 여전히 너무 중간부터 시작되는 느낌이 없지 않습니다. 좀 위로 올려야 겠다고 생각..</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f9126380.jpg"
+    ></figure>
+-사실 처음에 볼때는 웹게임인데 이정도면 대단하지. 라는 느낌으로 바라봤던게 사실입니다. 그렇지만 게임을 만들다 보니 웹게임이라고 퀄리티가 안나오는게 아니더란 말이죠.<br>
+캐릭터 변신할때 오색찬란한 파티클도 좀 더 심플하게 만들면 어떨까라는 생각이 듭니다.  </p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f9225905.jpg"
+    ></figure>
+일단 저랑 가장 비슷하게 생긴 녀석을 찾다보니 이녀석을 선택하게 되었습니다 (&hellip;자폭&hellip;)<br>
+어쩐지 이녀석 얼굴에 비친 조명은 굉장히 분위기가 잘맞는다고 할까, 다른 캐릭터보다 훨씬 입체적으로 보이는데, 뭔가 폴리곤이 많다던가..?</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f933bf37.jpg"
+    ></figure>
+그렇게 해서 세컨캐인 개팔자J 가 완성되었습니다.<br>
+개팔자J 캐릭터도 못만들면 어떻게 하나고요? 그 다음은 상팔자J 랍니다 :)</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f9b1482f.jpg"
+    ></figure>
+- 이렇게 캐릭터를 간단하게 만들고, 게임에 들어갔습니다. 테스트 때에는 저기에 캐릭터가 약 20명 정도 모여 있었지요. 권장사양에서는 좋은 프레임을 보였었습니다. 적어도 50명 정도 모인걸 보고 싶네요.</p>
+<ul>
+<li><strong>저 미니맵 참 보기 싫네요. 언제 제대로 되나요?</strong>- 어쨌건 게임에 들어갔을때, 뭘 해야 할지도 모르기 때문에 저렇게 눈앞에 &ldquo;누르고 싶게 생긴 것&quot;이 있는 것은 매우 중요합니다 .</li>
+</ul>
+<p>그렇지만 말이죠. 걱정되는게 없지는 않아요. 다행히 npc 근처에 접근할 수는 없지만 지금 말풍선이 대단히 크게 제작되고 있던데요, 이 말풍선이 npc 를 가려버리게 되지 않을까요? 가로 사이즈 제한도 없던데, 지금은 생겼나요? 테스트해볼걸 그랬네요.<br>
+(테스트 해봤더니 이거 뭐 무한정 길게 써지네요&hellip; 계속 이렇게 크게 할 것인지? 줄바꿈은 안만들 것인지? 제한은 없는지?)</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f9c12509.jpg"
+    ></figure>
+최고로 접근한 스샷입니다. 이름이 절반쯤 잘리는데, 별로 보기 좋지 않아 보입니다만. 이름표를 내리던가 카메라 각도를 바꿔야겠지요.</p>
+<p>-여기서 생각해야 할 것이 저 캐릭터 이름의 사이즈입니다. 일부 게임은 어떤 뷰가 되더라도 캐릭터 이름표가 동일한 사이즈로 나오게 되어 있는 게임이 있고, 어떤 게임은 지금 우리 게임처럼 접근하면 커지고 멀어지면 작아집니다. 둘다 장단점이 있기 때문에 어떤게 좋다고 말하긴 힘든데요, 어쨌건 우리는 지금 근접하면 커지는 이름표를 채택하고 있습니다.</p>
+<p>그런데 NPC는 또 특이하게도 , 멀리 있으면 커지는 이름표네요. 나쁘지 않군요.  캐릭터도 그렇나요? 캐릭터도 그렇게 하면 , 최고로 카메라를 근접시켰을때 작아질 것 같네요.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46f9d38128.jpg"
+    ></figure>
+- 또하나 , 보통 카메라를 최고 줌아웃 했을 때 가장 넓게 혹은 멀리 보이는 것이 상식입니다만 우리 게임의 카메라뷰는 현재 중간 정도로 했을 때 가장 넓게 보입니다. 어째서 이 정도 뷰를 가장 줌아웃했을때로 하지 않았는지 궁금하네요 임ad ?</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fa6a9f52.jpg"
+    ></figure>
+이 정도가 가장 줌아웃했을 때지요. 원래 제가 잡았던 최고 줌아웃보다 좀 더 가깝게 변해있습니다.<br>
+원래 목표는<br>
+&lsquo;줌인하면 다이나믹한 뷰로, 그렇지만 너무 넓게 보이진 않고 캐릭터가 크게 보이게 - 캐릭터가 이쁘게 보일 수 있도록&rsquo;<br>
+&lsquo;줌아웃하면 공간감각이 조금 좋지 못한 여자들도 쉽게 위치를 인지하고 주변 상황을 파악할 수 있는 , 안정적인 아이소메트릭 스타일의 뷰로&rsquo;</p>
+<p>였습니다만 지금은 의도가 약간 애매해 보이네요. 뭐 ad의 권한이니 느려지지만 않으면 저야 상관 없습니다만 ㅋㅋ</p>
+<p>그리고 여전히 카메라를 돌리다가 마우스가 저 채팅창 쪽으로 가면 마우스 컨트롤을 잃어 버립니다.<br>
+채팅에 신경쓰지 않을때에는 채팅의 백그라운드를 투명하게 한다던가 하는 등의 UI 컨트롤도 필요합니다만 전혀 되어 있지 않군요.<br>
+단언하건데 지금 게임에서 가장 늦은 부분은 UI라고 할 수 있습니다.</p>
+<ul>
+<li>마을 음악은 개인적으로 꽤 마음에 드네요. 약간 디즈니 영화 음악같은 느낌? 역시 동양 악기 (똥그랑 땡땡 소리나는 ㅋㅋ ) 좀 포인트로 섞어주면 어떨까라는 생각이..</li>
+</ul>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fb3f1479.jpg"
+    ></figure>
+위에 새로운 인터페이스가 뭔가 생겼네요. 버튼이 세개군요. 뭔가요저거? 말풍선도 없고&hellip;</p>
+<p>첫 번째 것은 자동이동 명령버튼입니까?<br>
+두 번째 것은 무엇?<br>
+세 번째 것은 퀘스트 리스트입니까?</p>
+<p>작동되는 것은 두 번째 버튼 뿐입니다. 퀘스트 정보네요.<br>
+근데&hellip; 두 번째 버튼을 다시 한 번 누르면 닫혀야 한다고 몸이 말하고 있는데, 닫히질 않네요. 이런 작은 배려가 아쉽습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fbc0a222.jpg"
+    ></figure>
+그담에 또하나 인터페이스의 문제점을 보죠. 현재 &lsquo;진행중인 퀘스트&rsquo; &lsquo;진행 가능한 퀘스트&rsquo; &lsquo;완료된 퀘스트&rsquo; 세 개의 버튼이 있는데, 어떤게 눌린 버튼인지 알아보실 수 있나요?</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fc3c3cb6.jpg"
+    ></figure>
+이 문제는 채팅창에도 동일하게 나타납니다. 현재 무슨 버튼이 눌린건지 맞추신 분에게<br>
+제주도 2박 3일 노숙 이용권을 드립니다. 단, 우천시에만 사용 가능합니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds17.egloos.com/pmf/201001/02/41/a0007341_4b3f4e9f439a0.jpg"
+    ></figure>
+<br>
+아잉 그러지 말고.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fcc22fa4.jpg"
+    ></figure>
+UI 디자인 말고 기능도 제대로 동작하지 않는 것들이 꽤 보입니다. 예를 들어 게임종료 버튼은 전혀 동작하지 않습니다.</p>
+<p>캐릭터를 새로 만들고 싶어서 게임을 종료하려 했는데 말입니다. 결국 익스플로어의 X 버튼으로 눌러 게임을 껐습 &hellip;<br>
+아니 잠깐, <strong>X 버튼을 누르면 바로 꺼지게 할겁니까?</strong> 정말로? 괜찮습니까? 물론 웹게임이라 할말은 없습니다만,<br>
+실수로 X 버튼을 눌렀을때 일언반구의 물어봄도 없이 게임을 꺼도 괜찮은 건가요? 한 번 물어보기라고 해야 하는 것 아닌가요?<br>
+기술적으로 불가능한가?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds16.egloos.com/pmf/201003/16/41/a0007341_4b9f8b21ec4a0.jpg"
+    ></figure>
+<p>뭔가 갑자기 꺼지니까 이런 느낌.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fd73035b.jpg"
+    ></figure>
+로딩창 후처리는 조금 생각해 보심이 ㅋㅋㅋ 무서워요.</p>
+<p>두 번째 캐릭터는 아까 말씀드렸듯이 상팔자 J 입니다. 이거마저 막히면 뭐하지..</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fd8af065.jpg"
+    ></figure>
+근데 이 캐릭터가 말입니다. 서서 있을때는 이렇게 도를 들고 있다가&hellip;</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fe3c5de4.jpg"
+    ></figure>
+이동할때는 팔을 들어 도를 어깨에 걸칩니다. 이동할때마다 번잡스럽게 팔을 들었다 놨다 하니까 좀 이상하네요. 보통 이럴땐 처음부터 어깨 위에 올려놓거나,이동시에도 내리고 다니는게 좋지 않을까요.</p>
+<p>걷는 것 상당히 귀엽 &hellip;</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df46fed1469f.jpg"
+    ></figure>
+첫 퀘스트를 받는 곳까지 왔습니다. 여전히 저 마크는 이해불가이며, 첫 번째에 기능메뉴가 있는 것도 마음에 들지 않습니다.<br>
+좌우가 너무 넓어 비는 것도 마음에 들지 않구요.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4704916b31.jpg"
+    ></figure>
+이젠 결국 &ldquo;외워서&rdquo; 아래 있는 메뉴를 먼저 선택해야 한다는 것을 압니다.<br>
+의용병 모집이 늘 쓰이는 메뉴가 아니라면, 그냥 의용병 대장한테 가서 때가 되면 자동으로 이벤트 창 열리고 만명 주면 안되는 건가요? 굳이 메뉴를 독립시킨 것은 제작의 편의성 그 이상도 아닌 것으로 보입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4705188c7b.jpg"
+    ></figure>
+묘하게 줄이 안맞는 것도 신경쓰임.<br>
+그리고 인터페이스 사운드가 주로 책을 넘기는 사운드인데, 저 장면에 책장을 넘기는 소리는 전혀 맞지 않네요.</p>
+<p>오늘 저 좀 묘하게 까칠해요. 이해해 주세요 </p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds17.egloos.com/pmf/201003/20/41/a0007341_4ba453e8d33df.jpg"
+    ></figure>
+<br>
+일일히 이런데 성질내면 안되는데&hellip; 오래 못사는데&hellip; <br>
+아니 그러니까 까칠한 유저 빙의모드라니깐요&hellip;</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df473552e963.jpg"
+    ></figure>
+그러니까 위에서 말한, 시스템 안내 메시지가 너무 낮다는 얘기는 이런 거예요.<br>
+지금 &lsquo;의용병을 모집하기&rdquo; 라는 안내 메시지가 불투명 메시지인데, 지금 화면에 보이는 저 자리가 두 번째 자리입니다. 즉 첫번째 나타날 때는 더 아래 있었단 얘기. 글씨나 캐릭터가 백그라운드에 나타났을때 너무 적나라하게 가리는 자리입니다.</p>
+<p>UI 쪽 안된게 많은데 이거 한 달 안에 가능해&hellip;? 라고 묻고 싶달까요.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4735645c8d.jpg"
+    ></figure>
+퀘스트를 받을때 도움말 같은 것이 뜨네요. 저런거 좋아요.<br>
+근데 선도 거칠고 창도 안이쁘고&hellip; (꼭 파워포인트로 만든것 같네요)</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4736098cc7.jpg"
+    ></figure>
+퀘스트 창은 디자인도 미완성이고 내용도 전혀 쓸모없이 연결되어 있네요. 이건 뭐 아직 안만든거라고 생각하겠습니다.</p>
+<p>퀘스트 완료 소리. 들어갔네요.<br>
+<strong>퀘스트 받는 소리도 들어갔군요! 퀘스트 받는 소리는 퀘스트 이펙트와 함께 뜨니까 공감백배!!! 잘 어울립니다.</strong><br>
+그런데 완료는&hellip; 으음&hellip; 뭔가 좀 안어울리는 느낌이네요.<br>
+왜 그럴까요? 사운드도 조금 부족하지만 그것보다&hellip;</p>
+<p>아아 알겠습니다. 타이밍 문제입니다.. !!!<br>
+이유는 알겠는데 해결책이 좀&hellip; 거시기 하네요. 쓰기도 뭐하고. .</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4734c44a50.jpg"
+    ></figure>
+<br>
+퀘스트를 계속 받습니다. 저 노랑 라인이랑 말풍선은 투박하지만, 눈에는 일단 잘띄네요.<br>
+조금 있다 단축키 I를 누르라고 하지만, <strong>우리 단축키는 전부 한글 모드에서 안됩니다.</strong> 치명적이네요 알고 계시겠지요?</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df473676206b.jpg"
+    ></figure>
+<br>
+뭐 인터페이스 창들의 소팅도 아직 문제가 많고&hellip;</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df47370dd362.jpg"
+    ></figure>
+UI라는게 보통 잔손이 많이 가고 귀찮고 꼼꼼해야 하는 것이 아니예요.<br>
+정말 짜증날정도로 할일이 많은데, 그것 모두가 물흐르듯 스무스하게 넘어가지 않으면 또 안된단 말이죠.<br>
+인터페이스에 손을 많이 대는데, 인터페이스가 없는 듯 느끼도록 만들어야 하니</p>
+<p>드릴 말씀이라고는<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://pds17.egloos.com/pmf/201001/02/41/a0007341_4b3f515ff0b05.jpg"
+    ></figure>
+</p>
+<p>이것밖에..</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4be6c401f7.jpg"
+    ></figure>
+내가 해봐서 아는데, UI는 정말 게임을 통채로 이해하고 관리하고 있지 않으면 잘 만들기 힘듭니다 진짜.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4737a41a7c.jpg"
+    ></figure>
+어쨌거나 인터페이스에 대한 불만글질은 계속됩니다.<br>
+퀘스트가 끝난게 언젠데 (뒤에서 번쩍 하더군요 . 퀘스트가 끝나면 저 창은 닫아주던가..)<br>
+안내 도움말은 여전히 떠있습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df473845cd17.jpg"
+    ></figure>
+난 네 글이 삐뚤어진 모양새가 안갖춰진것 같애.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df4738ad161f.jpg"
+    ></figure>
+<br>
+역시 퀘스트 정보창은 쓸모없이 넓기만 하고.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110612_171227_c0055803_4df473fb559db.jpg"
+    ></figure>
+좀 있다가 열어봐도 그대로. 헐헐.</p>
+<p><strong>1부 결론 : UI 에 시간이 많이 들어갈 것 같습니다. 이 속도면 곤란할 것 같은데요. 훨씬 더 빨리 하지 않으면 큰일나겠습니다.</strong>
+{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-06-10-autotexfind_changeshader-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;AutoTexFind_ChangeShader 스크립트
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-06-10T16:55:28&#43;00:00">10 6월 2011</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-06-12-2%EB%B6%80/">
+              <span class="leading-6">
+                2부&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-06-12T17:33:52&#43;00:00">12 6월 2011</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

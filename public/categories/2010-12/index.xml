@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2010-12 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2010-12/</link>
+    <description>Recent content in 2010-12 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Fri, 31 Dec 2010 14:56:43 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2010-12/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unity&#39;s Rendering Pipeline</title>
+      <link>http://localhost:1313/posts/2010-12-31-unitys-rendering-pipeline/</link>
+      <pubDate>Fri, 31 Dec 2010 14:56:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-31-unitys-rendering-pipeline/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Unity Shader 기본 CG 쉐이더</title>
+      <link>http://localhost:1313/posts/2010-12-31-unity-shader-%EA%B8%B0%EB%B3%B8-cg-%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Fri, 31 Dec 2010 11:52:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-31-unity-shader-%EA%B8%B0%EB%B3%B8-cg-%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>불멸 온라인 두분토론</title>
+      <link>http://localhost:1313/posts/2010-12-31-%EB%B6%88%EB%A9%B8-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EB%91%90%EB%B6%84%ED%86%A0%EB%A1%A0/</link>
+      <pubDate>Fri, 31 Dec 2010 10:28:04 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-31-%EB%B6%88%EB%A9%B8-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EB%91%90%EB%B6%84%ED%86%A0%EB%A1%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>새 Flow 쉐이더 제작</title>
+      <link>http://localhost:1313/posts/2010-12-30-%EC%83%88-flow-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%A0%9C%EC%9E%91/</link>
+      <pubDate>Thu, 30 Dec 2010 12:13:04 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-30-%EC%83%88-flow-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%A0%9C%EC%9E%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Unity 엔진용 Flow 쉐이더 컨버팅</title>
+      <link>http://localhost:1313/posts/2010-12-29-unity-%EC%97%94%EC%A7%84%EC%9A%A9-flow-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%BB%A8%EB%B2%84%ED%8C%85/</link>
+      <pubDate>Wed, 29 Dec 2010 11:18:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-29-unity-%EC%97%94%EC%A7%84%EC%9A%A9-flow-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%BB%A8%EB%B2%84%ED%8C%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2010년 내 이글루 결산</title>
+      <link>http://localhost:1313/posts/2010-12-29-2010%EB%85%84-%EB%82%B4-%EC%9D%B4%EA%B8%80%EB%A3%A8-%EA%B2%B0%EC%82%B0/</link>
+      <pubDate>Wed, 29 Dec 2010 09:03:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-29-2010%EB%85%84-%EB%82%B4-%EC%9D%B4%EA%B8%80%EB%A3%A8-%EA%B2%B0%EC%82%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Flow Shader 유니티 버전</title>
+      <link>http://localhost:1313/posts/2010-12-28-flow-shader-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EB%B2%84%EC%A0%84/</link>
+      <pubDate>Tue, 28 Dec 2010 14:15:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-28-flow-shader-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EB%B2%84%EC%A0%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>연말연시 모임 추천 . 숯불돼지갈비 태능 맥갈비</title>
+      <link>http://localhost:1313/posts/2010-12-26-%EC%97%B0%EB%A7%90%EC%97%B0%EC%8B%9C-%EB%AA%A8%EC%9E%84-%EC%B6%94%EC%B2%9C-.-%EC%88%AF%EB%B6%88%EB%8F%BC%EC%A7%80%EA%B0%88%EB%B9%84-%ED%83%9C%EB%8A%A5-%EB%A7%A5%EA%B0%88%EB%B9%84/</link>
+      <pubDate>Sun, 26 Dec 2010 01:14:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-26-%EC%97%B0%EB%A7%90%EC%97%B0%EC%8B%9C-%EB%AA%A8%EC%9E%84-%EC%B6%94%EC%B2%9C-.-%EC%88%AF%EB%B6%88%EB%8F%BC%EC%A7%80%EA%B0%88%EB%B9%84-%ED%83%9C%EB%8A%A5-%EB%A7%A5%EA%B0%88%EB%B9%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>연말연시의 유부중립국 대처방법 추천. 라 시갈 몽마르트</title>
+      <link>http://localhost:1313/posts/2010-12-25-%EC%97%B0%EB%A7%90%EC%97%B0%EC%8B%9C%EC%9D%98-%EC%9C%A0%EB%B6%80%EC%A4%91%EB%A6%BD%EA%B5%AD-%EB%8C%80%EC%B2%98%EB%B0%A9%EB%B2%95-%EC%B6%94%EC%B2%9C.-%EB%9D%BC-%EC%8B%9C%EA%B0%88-%EB%AA%BD%EB%A7%88%EB%A5%B4%ED%8A%B8/</link>
+      <pubDate>Sat, 25 Dec 2010 22:34:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-25-%EC%97%B0%EB%A7%90%EC%97%B0%EC%8B%9C%EC%9D%98-%EC%9C%A0%EB%B6%80%EC%A4%91%EB%A6%BD%EA%B5%AD-%EB%8C%80%EC%B2%98%EB%B0%A9%EB%B2%95-%EC%B6%94%EC%B2%9C.-%EB%9D%BC-%EC%8B%9C%EA%B0%88-%EB%AA%BD%EB%A7%88%EB%A5%B4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>간간히 컴백</title>
+      <link>http://localhost:1313/posts/2010-12-23-%EA%B0%84%EA%B0%84%ED%9E%88-%EC%BB%B4%EB%B0%B1/</link>
+      <pubDate>Thu, 23 Dec 2010 20:00:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-23-%EA%B0%84%EA%B0%84%ED%9E%88-%EC%BB%B4%EB%B0%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>IPAD 버전 그래픽 기술연구 보고</title>
+      <link>http://localhost:1313/posts/2010-12-23-ipad-%EB%B2%84%EC%A0%84-%EA%B7%B8%EB%9E%98%ED%94%BD-%EA%B8%B0%EC%88%A0%EC%97%B0%EA%B5%AC-%EB%B3%B4%EA%B3%A0/</link>
+      <pubDate>Thu, 23 Dec 2010 16:53:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-23-ipad-%EB%B2%84%EC%A0%84-%EA%B7%B8%EB%9E%98%ED%94%BD-%EA%B8%B0%EC%88%A0%EC%97%B0%EA%B5%AC-%EB%B3%B4%EA%B3%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>해외전문가 초청 게임제작 워크숍 라이팅 과정 후기</title>
+      <link>http://localhost:1313/posts/2010-12-21-%ED%95%B4%EC%99%B8%EC%A0%84%EB%AC%B8%EA%B0%80-%EC%B4%88%EC%B2%AD-%EA%B2%8C%EC%9E%84%EC%A0%9C%EC%9E%91-%EC%9B%8C%ED%81%AC%EC%88%8D-%EB%9D%BC%EC%9D%B4%ED%8C%85-%EA%B3%BC%EC%A0%95-%ED%9B%84%EA%B8%B0/</link>
+      <pubDate>Tue, 21 Dec 2010 16:10:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-21-%ED%95%B4%EC%99%B8%EC%A0%84%EB%AC%B8%EA%B0%80-%EC%B4%88%EC%B2%AD-%EA%B2%8C%EC%9E%84%EC%A0%9C%EC%9E%91-%EC%9B%8C%ED%81%AC%EC%88%8D-%EB%9D%BC%EC%9D%B4%ED%8C%85-%EA%B3%BC%EC%A0%95-%ED%9B%84%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>exr 파일 포맷</title>
+      <link>http://localhost:1313/posts/2010-12-18-exr-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EB%A7%B7/</link>
+      <pubDate>Sat, 18 Dec 2010 16:37:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-18-exr-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EB%A7%B7/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>뭐야 이게;;;</title>
+      <link>http://localhost:1313/posts/2010-12-18-%EB%AD%90%EC%95%BC-%EC%9D%B4%EA%B2%8C/</link>
+      <pubDate>Sat, 18 Dec 2010 01:40:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-18-%EB%AD%90%EC%95%BC-%EC%9D%B4%EA%B2%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>일단 결정. AT2 제작사양및 옵션 결정</title>
+      <link>http://localhost:1313/posts/2010-12-17-%EC%9D%BC%EB%8B%A8-%EA%B2%B0%EC%A0%95.-at2-%EC%A0%9C%EC%9E%91%EC%82%AC%EC%96%91%EB%B0%8F-%EC%98%B5%EC%85%98-%EA%B2%B0%EC%A0%95/</link>
+      <pubDate>Fri, 17 Dec 2010 18:25:42 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-17-%EC%9D%BC%EB%8B%A8-%EA%B2%B0%EC%A0%95.-at2-%EC%A0%9C%EC%9E%91%EC%82%AC%EC%96%91%EB%B0%8F-%EC%98%B5%EC%85%98-%EA%B2%B0%EC%A0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>캐릭터별 100마리 카피 데이터 비교</title>
+      <link>http://localhost:1313/posts/2010-12-17-%EC%BA%90%EB%A6%AD%ED%84%B0%EB%B3%84-100%EB%A7%88%EB%A6%AC-%EC%B9%B4%ED%94%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B9%84%EA%B5%90/</link>
+      <pubDate>Fri, 17 Dec 2010 13:50:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-17-%EC%BA%90%EB%A6%AD%ED%84%B0%EB%B3%84-100%EB%A7%88%EB%A6%AC-%EC%B9%B4%ED%94%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B9%84%EA%B5%90/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>사양결정중</title>
+      <link>http://localhost:1313/posts/2010-12-17-%EC%82%AC%EC%96%91%EA%B2%B0%EC%A0%95%EC%A4%91/</link>
+      <pubDate>Fri, 17 Dec 2010 10:42:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-17-%EC%82%AC%EC%96%91%EA%B2%B0%EC%A0%95%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Lightmapping In-Depth</title>
+      <link>http://localhost:1313/posts/2010-12-15-lightmapping-in-depth/</link>
+      <pubDate>Wed, 15 Dec 2010 03:52:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-15-lightmapping-in-depth/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[미션2] MIO GPS Car Kit 과 함께하는 일상 : 그리스 요리점 산토리니</title>
+      <link>http://localhost:1313/posts/2010-12-12-%EB%AF%B8%EC%85%982-mio-gps-car-kit-%EA%B3%BC-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-%EC%9D%BC%EC%83%81--%EA%B7%B8%EB%A6%AC%EC%8A%A4-%EC%9A%94%EB%A6%AC%EC%A0%90-%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88/</link>
+      <pubDate>Sun, 12 Dec 2010 22:28:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-12-%EB%AF%B8%EC%85%982-mio-gps-car-kit-%EA%B3%BC-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-%EC%9D%BC%EC%83%81--%EA%B7%B8%EB%A6%AC%EC%8A%A4-%EC%9A%94%EB%A6%AC%EC%A0%90-%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[미션1] MIO GPS Car Kit 개봉기</title>
+      <link>http://localhost:1313/posts/2010-12-04-%EB%AF%B8%EC%85%981-mio-gps-car-kit-%EA%B0%9C%EB%B4%89%EA%B8%B0/</link>
+      <pubDate>Sat, 04 Dec 2010 21:12:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-04-%EB%AF%B8%EC%85%981-mio-gps-car-kit-%EA%B0%9C%EB%B4%89%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>유니티 셈플 테스트</title>
+      <link>http://localhost:1313/posts/2010-12-03-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EC%85%88%ED%94%8C-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Fri, 03 Dec 2010 15:29:44 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-03-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EC%85%88%ED%94%8C-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>영어 공부법</title>
+      <link>http://localhost:1313/posts/2010-12-03-%EC%98%81%EC%96%B4-%EA%B3%B5%EB%B6%80%EB%B2%95/</link>
+      <pubDate>Fri, 03 Dec 2010 15:20:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-03-%EC%98%81%EC%96%B4-%EA%B3%B5%EB%B6%80%EB%B2%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>꼬르륵 .</title>
+      <link>http://localhost:1313/posts/2010-12-02-%EA%BC%AC%EB%A5%B4%EB%A5%B5-/</link>
+      <pubDate>Thu, 02 Dec 2010 23:15:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-12-02-%EA%BC%AC%EB%A5%B4%EB%A5%B5-/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

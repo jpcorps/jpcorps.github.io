@@ -1,0 +1,59 @@
+---
+layout: post
+title: "'TEXCOORD' has too big of a numeric index (8) 에러"
+date: 2012-10-04 17:31:51
+categories: [이글루스 백업, "2012-10"]
+---
+
+{% raw %}
+<https://forum.unity3d.com/threads/56180-Strumpy-Shader-Editor-4.0a-Massive-Improvements/page23>  
+  
+  
+  
+  
+Originally Posted by **duke**
+
+Getting this:  
+"Shader error in 'ShaderEditor/EditorShaderCache': Program 'vert\_surf', output semantic attribute "TEXCOORD" has too big of a numeric index (8) at line 161"  
+  
+In 3.0, not 3.1.  
+  
+edit: Told the shader to be transparent - problem fixed.
+
+Duke sent me a PM about this, I'll post the reply here for anyone that runs into similar issues. The breakdown is that by using the world reflection node the vertex interpolator count was exceeded. Here is the explanation:  
+  
+--------  
+  
+So in shader land you can have a certain number of varying outputs from the vertex shader into the pixel shader. In shader model 2 this is 8 (+2 color interpolators), SM3 it is 10, and SM4 it is 16 (which can be expanded to 32 via geometry shaders).  
+  
+Now if we look at the structure that the vertex shader was generating for output into the pixel shader:   
+
+Code:
+
+```
+1. struct Input {
+
+   - float4 screenPos;
+
+     - float2 uv_Bump2;
+
+       - float3 worldRefl;
+
+         - float3 viewDir;
+
+           - INTERNAL_DATA
+
+             - };
+```
+
+  
+Because you are using the world reflection node INTERNAL\_DATA is required (which is a whole matrix worth of interpolators!). Unity (on internal shader compilation) will pad out this data structure out even more with things like shadow data, and lightmapping data depending on which shader permutation is being compiled.  
+  
+Looking at the error message: 'Shader error in 'ShaderEditor/EditorShaderCache': Program 'frag\_surf', cannot locate suitable resource to bind parameter "\_ShadowCoord" at line 152' it seems like something has exceeded the allowed interpolator count.   
+  
+The way to work around this issue is to reduce the number of interpolators you are using. Step one for me would be to remove the World Reflection node and replace it with a Vertex Reflection node. It is much simpler (you can't modify it by the normal from the normal map ![](https://forum.unity3d.com/threads/56180-Strumpy-Shader-Editor-4.0a-Massive-Improvements/images/smilies/frown.png "Frown") ) but it will only use one interpolator register instead of the 4 I think you are using now.  
+  
+This issue can also be run into if you have too many unity texture samples because the offset UV's / tiling / scaling is calculated via the texture matrix in the vertex shader and passed through as an interpolator. There is a node that can help with this (Mesh UV), but it bypasses unity's nice material stuff. If the texture coordinates were calculated in the pixel shader this would not be so much an issue, but this is out of the shader editors control.  
+  
+If you are curious as to why this does not happen with transparent shaders it is because they don't calculate the same permutations of shaders that an opaque object does. In other words you kind of got lucky that you didn't go over the interpolator count before.
+{% endraw %}

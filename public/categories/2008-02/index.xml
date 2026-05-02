@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2008-02 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2008-02/</link>
+    <description>Recent content in 2008-02 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Fri, 29 Feb 2008 15:56:02 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2008-02/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>아 젝일</title>
+      <link>http://localhost:1313/posts/2008-02-29-%EC%95%84-%EC%A0%9D%EC%9D%BC/</link>
+      <pubDate>Fri, 29 Feb 2008 15:56:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-29-%EC%95%84-%EC%A0%9D%EC%9D%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>인첸 이펙트</title>
+      <link>http://localhost:1313/posts/2008-02-28-%EC%9D%B8%EC%B2%B8-%EC%9D%B4%ED%8E%99%ED%8A%B8/</link>
+      <pubDate>Thu, 28 Feb 2008 14:41:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-28-%EC%9D%B8%EC%B2%B8-%EC%9D%B4%ED%8E%99%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>수잉츄</title>
+      <link>http://localhost:1313/posts/2008-02-27-%EC%88%98%EC%9E%89%EC%B8%84/</link>
+      <pubDate>Wed, 27 Feb 2008 17:52:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-27-%EC%88%98%EC%9E%89%EC%B8%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>머드박스 트레이닝 비디오</title>
+      <link>http://localhost:1313/posts/2008-02-27-%EB%A8%B8%EB%93%9C%EB%B0%95%EC%8A%A4-%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D-%EB%B9%84%EB%94%94%EC%98%A4/</link>
+      <pubDate>Wed, 27 Feb 2008 15:54:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-27-%EB%A8%B8%EB%93%9C%EB%B0%95%EC%8A%A4-%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D-%EB%B9%84%EB%94%94%EC%98%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>기사용 이미지 작업중</title>
+      <link>http://localhost:1313/posts/2008-02-27-%EA%B8%B0%EC%82%AC%EC%9A%A9-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%9E%91%EC%97%85%EC%A4%91/</link>
+      <pubDate>Wed, 27 Feb 2008 12:59:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-27-%EA%B8%B0%EC%82%AC%EC%9A%A9-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%9E%91%EC%97%85%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>학교 갔다 왔습니다.</title>
+      <link>http://localhost:1313/posts/2008-02-25-%ED%95%99%EA%B5%90-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Mon, 25 Feb 2008 20:20:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-25-%ED%95%99%EA%B5%90-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>오오 동영상 기능 오오</title>
+      <link>http://localhost:1313/posts/2008-02-25-%EC%98%A4%EC%98%A4-%EB%8F%99%EC%98%81%EC%83%81-%EA%B8%B0%EB%8A%A5-%EC%98%A4%EC%98%A4/</link>
+      <pubDate>Mon, 25 Feb 2008 20:10:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-25-%EC%98%A4%EC%98%A4-%EB%8F%99%EC%98%81%EC%83%81-%EA%B8%B0%EB%8A%A5-%EC%98%A4%EC%98%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>깃발류 제작용 모핑 생성 스크립트 V0.9</title>
+      <link>http://localhost:1313/posts/2008-02-22-%EA%B9%83%EB%B0%9C%EB%A5%98-%EC%A0%9C%EC%9E%91%EC%9A%A9-%EB%AA%A8%ED%95%91-%EC%83%9D%EC%84%B1-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-v0.9/</link>
+      <pubDate>Fri, 22 Feb 2008 10:45:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-22-%EA%B9%83%EB%B0%9C%EB%A5%98-%EC%A0%9C%EC%9E%91%EC%9A%A9-%EB%AA%A8%ED%95%91-%EC%83%9D%EC%84%B1-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-v0.9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>자동 모핑 스크립트 완성 T0T</title>
+      <link>http://localhost:1313/posts/2008-02-20-%EC%9E%90%EB%8F%99-%EB%AA%A8%ED%95%91-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%99%84%EC%84%B1-t0t/</link>
+      <pubDate>Wed, 20 Feb 2008 18:25:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-20-%EC%9E%90%EB%8F%99-%EB%AA%A8%ED%95%91-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%99%84%EC%84%B1-t0t/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>맥스 스크립트 작성중</title>
+      <link>http://localhost:1313/posts/2008-02-19-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%A4%91/</link>
+      <pubDate>Tue, 19 Feb 2008 17:18:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-19-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>토끼</title>
+      <link>http://localhost:1313/posts/2008-02-19-%ED%86%A0%EB%81%BC/</link>
+      <pubDate>Tue, 19 Feb 2008 12:34:45 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-19-%ED%86%A0%EB%81%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>맥스 스크립트 작성중</title>
+      <link>http://localhost:1313/posts/2008-02-18-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%A4%91/</link>
+      <pubDate>Mon, 18 Feb 2008 16:56:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-18-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[펌] 아이들의 반응[혈액형별]</title>
+      <link>http://localhost:1313/posts/2008-02-15-%ED%8E%8C-%EC%95%84%EC%9D%B4%EB%93%A4%EC%9D%98-%EB%B0%98%EC%9D%91%ED%98%88%EC%95%A1%ED%98%95%EB%B3%84/</link>
+      <pubDate>Fri, 15 Feb 2008 14:59:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-15-%ED%8E%8C-%EC%95%84%EC%9D%B4%EB%93%A4%EC%9D%98-%EB%B0%98%EC%9D%91%ED%98%88%EC%95%A1%ED%98%95%EB%B3%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>맥스 스크립트 작성중</title>
+      <link>http://localhost:1313/posts/2008-02-15-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%A4%91/</link>
+      <pubDate>Fri, 15 Feb 2008 14:49:26 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-15-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>인생의 진리</title>
+      <link>http://localhost:1313/posts/2008-02-15-%EC%9D%B8%EC%83%9D%EC%9D%98-%EC%A7%84%EB%A6%AC/</link>
+      <pubDate>Fri, 15 Feb 2008 09:14:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-15-%EC%9D%B8%EC%83%9D%EC%9D%98-%EC%A7%84%EB%A6%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Max Exporter 만들기 #4 - 3D Model Exporter</title>
+      <link>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%234---3d-model-exporter/</link>
+      <pubDate>Thu, 14 Feb 2008 16:15:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%234---3d-model-exporter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Max Exporter 만들기 #3 - Animation Exporter</title>
+      <link>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%233---animation-exporter/</link>
+      <pubDate>Thu, 14 Feb 2008 16:15:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%233---animation-exporter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Max Exporter 만들기 #2 - Bone Exporter</title>
+      <link>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%232---bone-exporter/</link>
+      <pubDate>Thu, 14 Feb 2008 16:14:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%232---bone-exporter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Max Exporter 만들기 #1</title>
+      <link>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%231/</link>
+      <pubDate>Thu, 14 Feb 2008 16:13:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%231/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>풋</title>
+      <link>http://localhost:1313/posts/2008-02-14-%ED%92%8B/</link>
+      <pubDate>Thu, 14 Feb 2008 10:30:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-14-%ED%92%8B/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>맥스 스크립트 다시 시작</title>
+      <link>http://localhost:1313/posts/2008-02-12-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91/</link>
+      <pubDate>Tue, 12 Feb 2008 18:32:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-12-%EB%A7%A5%EC%8A%A4-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>허리병 도지다</title>
+      <link>http://localhost:1313/posts/2008-02-12-%ED%97%88%EB%A6%AC%EB%B3%91-%EB%8F%84%EC%A7%80%EB%8B%A4/</link>
+      <pubDate>Tue, 12 Feb 2008 02:33:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-12-%ED%97%88%EB%A6%AC%EB%B3%91-%EB%8F%84%EC%A7%80%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>출근했습니다.</title>
+      <link>http://localhost:1313/posts/2008-02-11-%EC%B6%9C%EA%B7%BC%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Mon, 11 Feb 2008 09:58:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-11-%EC%B6%9C%EA%B7%BC%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>내가 이말까지는 안하려 했는데</title>
+      <link>http://localhost:1313/posts/2008-02-11-%EB%82%B4%EA%B0%80-%EC%9D%B4%EB%A7%90%EA%B9%8C%EC%A7%80%EB%8A%94-%EC%95%88%ED%95%98%EB%A0%A4-%ED%96%88%EB%8A%94%EB%8D%B0/</link>
+      <pubDate>Mon, 11 Feb 2008 01:58:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-11-%EB%82%B4%EA%B0%80-%EC%9D%B4%EB%A7%90%EA%B9%8C%EC%A7%80%EB%8A%94-%EC%95%88%ED%95%98%EB%A0%A4-%ED%96%88%EB%8A%94%EB%8D%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>무똥 까데 레드</title>
+      <link>http://localhost:1313/posts/2008-02-08-%EB%AC%B4%EB%98%A5-%EA%B9%8C%EB%8D%B0-%EB%A0%88%EB%93%9C/</link>
+      <pubDate>Fri, 08 Feb 2008 00:51:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-08-%EB%AC%B4%EB%98%A5-%EA%B9%8C%EB%8D%B0-%EB%A0%88%EB%93%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>와 논다.</title>
+      <link>http://localhost:1313/posts/2008-02-05-%EC%99%80-%EB%85%BC%EB%8B%A4/</link>
+      <pubDate>Tue, 05 Feb 2008 17:41:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-05-%EC%99%80-%EB%85%BC%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>이안양 컴퓨터 고치는중</title>
+      <link>http://localhost:1313/posts/2008-02-03-%EC%9D%B4%EC%95%88%EC%96%91-%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%A0%EC%B9%98%EB%8A%94%EC%A4%91/</link>
+      <pubDate>Sun, 03 Feb 2008 13:52:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-03-%EC%9D%B4%EC%95%88%EC%96%91-%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%A0%EC%B9%98%EB%8A%94%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>비행기 게임 다시 복습</title>
+      <link>http://localhost:1313/posts/2008-02-01-%EB%B9%84%ED%96%89%EA%B8%B0-%EA%B2%8C%EC%9E%84-%EB%8B%A4%EC%8B%9C-%EB%B3%B5%EC%8A%B5/</link>
+      <pubDate>Fri, 01 Feb 2008 09:56:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2008-02-01-%EB%B9%84%ED%96%89%EA%B8%B0-%EA%B2%8C%EC%9E%84-%EB%8B%A4%EC%8B%9C-%EB%B3%B5%EC%8A%B5/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

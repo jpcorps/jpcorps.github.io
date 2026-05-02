@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2014-04 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2014-04/</link>
+    <description>Recent content in 2014-04 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Thu, 24 Apr 2014 18:25:24 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2014-04/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>예제파일</title>
+      <link>http://localhost:1313/posts/2014-04-24-%EC%98%88%EC%A0%9C%ED%8C%8C%EC%9D%BC/</link>
+      <pubDate>Thu, 24 Apr 2014 18:25:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2014-04-24-%EC%98%88%EC%A0%9C%ED%8C%8C%EC%9D%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>유니티 물 쉐이더 강의용 예제</title>
+      <link>http://localhost:1313/posts/2014-04-10-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EB%AC%BC-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%9D%98%EC%9A%A9-%EC%98%88%EC%A0%9C/</link>
+      <pubDate>Thu, 10 Apr 2014 02:08:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2014-04-10-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EB%AC%BC-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%9D%98%EC%9A%A9-%EC%98%88%EC%A0%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>사수가 하나도 없는 상황이 되었어요 ㅠ 어째야 하지요?</title>
+      <link>http://localhost:1313/posts/2014-04-08-%EC%82%AC%EC%88%98%EA%B0%80-%ED%95%98%EB%82%98%EB%8F%84-%EC%97%86%EB%8A%94-%EC%83%81%ED%99%A9%EC%9D%B4-%EB%90%98%EC%97%88%EC%96%B4%EC%9A%94-%E3%85%A0-%EC%96%B4%EC%A7%B8%EC%95%BC-%ED%95%98%EC%A7%80%EC%9A%94/</link>
+      <pubDate>Tue, 08 Apr 2014 21:10:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2014-04-08-%EC%82%AC%EC%88%98%EA%B0%80-%ED%95%98%EB%82%98%EB%8F%84-%EC%97%86%EB%8A%94-%EC%83%81%ED%99%A9%EC%9D%B4-%EB%90%98%EC%97%88%EC%96%B4%EC%9A%94-%E3%85%A0-%EC%96%B4%EC%A7%B8%EC%95%BC-%ED%95%98%EC%A7%80%EC%9A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CCRC 좋다</title>
+      <link>http://localhost:1313/posts/2014-04-07-ccrc-%EC%A2%8B%EB%8B%A4/</link>
+      <pubDate>Mon, 07 Apr 2014 22:36:10 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2014-04-07-ccrc-%EC%A2%8B%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>성공한 사람의 인생은 성공한 후에 포장되어 평범한 사람을 망친다.</title>
+      <link>http://localhost:1313/posts/2014-04-07-%EC%84%B1%EA%B3%B5%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%98-%EC%9D%B8%EC%83%9D%EC%9D%80-%EC%84%B1%EA%B3%B5%ED%95%9C-%ED%9B%84%EC%97%90-%ED%8F%AC%EC%9E%A5%EB%90%98%EC%96%B4-%ED%8F%89%EB%B2%94%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%84-%EB%A7%9D%EC%B9%9C%EB%8B%A4/</link>
+      <pubDate>Mon, 07 Apr 2014 08:50:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2014-04-07-%EC%84%B1%EA%B3%B5%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%98-%EC%9D%B8%EC%83%9D%EC%9D%80-%EC%84%B1%EA%B3%B5%ED%95%9C-%ED%9B%84%EC%97%90-%ED%8F%AC%EC%9E%A5%EB%90%98%EC%96%B4-%ED%8F%89%EB%B2%94%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%84-%EB%A7%9D%EC%B9%9C%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>유니티 툰 쉐이더 강의용 예제들</title>
+      <link>http://localhost:1313/posts/2014-04-04-%EC%9C%A0%EB%8B%88%ED%8B%B0-%ED%88%B0-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%9D%98%EC%9A%A9-%EC%98%88%EC%A0%9C%EB%93%A4/</link>
+      <pubDate>Fri, 04 Apr 2014 02:25:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2014-04-04-%EC%9C%A0%EB%8B%88%ED%8B%B0-%ED%88%B0-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%9D%98%EC%9A%A9-%EC%98%88%EC%A0%9C%EB%93%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

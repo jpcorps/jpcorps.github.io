@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2007-08 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2007-08/</link>
+    <description>Recent content in 2007-08 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Fri, 31 Aug 2007 12:31:56 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2007-08/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>셰이더 연습 - 뽀샤시 효과</title>
+      <link>http://localhost:1313/posts/2007-08-31-%EC%85%B0%EC%9D%B4%EB%8D%94-%EC%97%B0%EC%8A%B5---%EB%BD%80%EC%83%A4%EC%8B%9C-%ED%9A%A8%EA%B3%BC/</link>
+      <pubDate>Fri, 31 Aug 2007 12:31:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-31-%EC%85%B0%EC%9D%B4%EB%8D%94-%EC%97%B0%EC%8A%B5---%EB%BD%80%EC%83%A4%EC%8B%9C-%ED%9A%A8%EA%B3%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>cfgg</title>
+      <link>http://localhost:1313/posts/2007-08-31-cfgg/</link>
+      <pubDate>Fri, 31 Aug 2007 01:19:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-31-cfgg/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>집밖에서 즐기는 홈 시어터 - 슬링박스 #4 마지막편</title>
+      <link>http://localhost:1313/posts/2007-08-31-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%234-%EB%A7%88%EC%A7%80%EB%A7%89%ED%8E%B8/</link>
+      <pubDate>Fri, 31 Aug 2007 00:37:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-31-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%234-%EB%A7%88%EC%A7%80%EB%A7%89%ED%8E%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 연습 - 다시 노말 범프</title>
+      <link>http://localhost:1313/posts/2007-08-30-%EC%85%B0%EC%9D%B4%EB%8D%94-%EC%97%B0%EC%8A%B5---%EB%8B%A4%EC%8B%9C-%EB%85%B8%EB%A7%90-%EB%B2%94%ED%94%84/</link>
+      <pubDate>Thu, 30 Aug 2007 17:38:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-30-%EC%85%B0%EC%9D%B4%EB%8D%94-%EC%97%B0%EC%8A%B5---%EB%8B%A4%EC%8B%9C-%EB%85%B8%EB%A7%90-%EB%B2%94%ED%94%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>개강했습니당</title>
+      <link>http://localhost:1313/posts/2007-08-29-%EA%B0%9C%EA%B0%95%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%B9/</link>
+      <pubDate>Wed, 29 Aug 2007 23:22:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-29-%EA%B0%9C%EA%B0%95%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%B9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 - 퍼 픽셀 라이팅</title>
+      <link>http://localhost:1313/posts/2007-08-28-%EC%85%B0%EC%9D%B4%EB%8D%94---%ED%8D%BC-%ED%94%BD%EC%85%80-%EB%9D%BC%EC%9D%B4%ED%8C%85/</link>
+      <pubDate>Tue, 28 Aug 2007 16:09:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-28-%EC%85%B0%EC%9D%B4%EB%8D%94---%ED%8D%BC-%ED%94%BD%EC%85%80-%EB%9D%BC%EC%9D%B4%ED%8C%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>수채화 완성했습니다.</title>
+      <link>http://localhost:1313/posts/2007-08-27-%EC%88%98%EC%B1%84%ED%99%94-%EC%99%84%EC%84%B1%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Mon, 27 Aug 2007 22:42:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-27-%EC%88%98%EC%B1%84%ED%99%94-%EC%99%84%EC%84%B1%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기본공부 23 - 캐릭터 라이트</title>
+      <link>http://localhost:1313/posts/2007-08-27-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-23---%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%9D%BC%EC%9D%B4%ED%8A%B8/</link>
+      <pubDate>Mon, 27 Aug 2007 15:02:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-27-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-23---%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%9D%BC%EC%9D%B4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>역시 초딩</title>
+      <link>http://localhost:1313/posts/2007-08-26-%EC%97%AD%EC%8B%9C-%EC%B4%88%EB%94%A9/</link>
+      <pubDate>Sun, 26 Aug 2007 13:36:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-26-%EC%97%AD%EC%8B%9C-%EC%B4%88%EB%94%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>꾸준히 수채화 작업.</title>
+      <link>http://localhost:1313/posts/2007-08-26-%EA%BE%B8%EC%A4%80%ED%9E%88-%EC%88%98%EC%B1%84%ED%99%94-%EC%9E%91%EC%97%85/</link>
+      <pubDate>Sun, 26 Aug 2007 11:19:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-26-%EA%BE%B8%EC%A4%80%ED%9E%88-%EC%88%98%EC%B1%84%ED%99%94-%EC%9E%91%EC%97%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>집밖에서 즐기는 홈 시어터 - 슬링박스 #3</title>
+      <link>http://localhost:1313/posts/2007-08-23-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%233/</link>
+      <pubDate>Thu, 23 Aug 2007 02:01:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-23-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%233/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>집밖에서 즐기는 홈 시어터 - 슬링박스 #2</title>
+      <link>http://localhost:1313/posts/2007-08-23-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%232/</link>
+      <pubDate>Thu, 23 Aug 2007 01:58:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-23-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%232/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>어디선가 받은 엠마작가의 작품</title>
+      <link>http://localhost:1313/posts/2007-08-22-%EC%96%B4%EB%94%94%EC%84%A0%EA%B0%80-%EB%B0%9B%EC%9D%80-%EC%97%A0%EB%A7%88%EC%9E%91%EA%B0%80%EC%9D%98-%EC%9E%91%ED%92%88/</link>
+      <pubDate>Wed, 22 Aug 2007 15:10:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-22-%EC%96%B4%EB%94%94%EC%84%A0%EA%B0%80-%EB%B0%9B%EC%9D%80-%EC%97%A0%EB%A7%88%EC%9E%91%EA%B0%80%EC%9D%98-%EC%9E%91%ED%92%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기본공부 22 _ 블룸효과</title>
+      <link>http://localhost:1313/posts/2007-08-20-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-22-_-%EB%B8%94%EB%A3%B8%ED%9A%A8%EA%B3%BC/</link>
+      <pubDate>Mon, 20 Aug 2007 20:48:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-20-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-22-_-%EB%B8%94%EB%A3%B8%ED%9A%A8%EA%B3%BC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>슬링박스 리뷰 2</title>
+      <link>http://localhost:1313/posts/2007-08-20-%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%EB%A6%AC%EB%B7%B0-2/</link>
+      <pubDate>Mon, 20 Aug 2007 01:01:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-20-%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%EB%A6%AC%EB%B7%B0-2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>방이 엉망 OTL</title>
+      <link>http://localhost:1313/posts/2007-08-18-%EB%B0%A9%EC%9D%B4-%EC%97%89%EB%A7%9D-otl/</link>
+      <pubDate>Sat, 18 Aug 2007 14:26:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-18-%EB%B0%A9%EC%9D%B4-%EC%97%89%EB%A7%9D-otl/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기본공부 21_멀티패스</title>
+      <link>http://localhost:1313/posts/2007-08-17-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-21_%EB%A9%80%ED%8B%B0%ED%8C%A8%EC%8A%A4/</link>
+      <pubDate>Fri, 17 Aug 2007 18:40:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-17-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-21_%EB%A9%80%ED%8B%B0%ED%8C%A8%EC%8A%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기본공부 20_노말맵</title>
+      <link>http://localhost:1313/posts/2007-08-16-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-20_%EB%85%B8%EB%A7%90%EB%A7%B5/</link>
+      <pubDate>Thu, 16 Aug 2007 18:02:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-16-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-20_%EB%85%B8%EB%A7%90%EB%A7%B5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>집밖에서 즐기는 홈 시어터 - 슬링박스 #1</title>
+      <link>http://localhost:1313/posts/2007-08-15-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%231/</link>
+      <pubDate>Wed, 15 Aug 2007 17:19:57 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-15-%EC%A7%91%EB%B0%96%EC%97%90%EC%84%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%ED%99%88-%EC%8B%9C%EC%96%B4%ED%84%B0---%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%231/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>올바른 국어공부</title>
+      <link>http://localhost:1313/posts/2007-08-15-%EC%98%AC%EB%B0%94%EB%A5%B8-%EA%B5%AD%EC%96%B4%EA%B3%B5%EB%B6%80/</link>
+      <pubDate>Wed, 15 Aug 2007 10:59:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-15-%EC%98%AC%EB%B0%94%EB%A5%B8-%EA%B5%AD%EC%96%B4%EA%B3%B5%EB%B6%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>풍경화 완성</title>
+      <link>http://localhost:1313/posts/2007-08-14-%ED%92%8D%EA%B2%BD%ED%99%94-%EC%99%84%EC%84%B1/</link>
+      <pubDate>Tue, 14 Aug 2007 20:20:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-14-%ED%92%8D%EA%B2%BD%ED%99%94-%EC%99%84%EC%84%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>셰이더 프로그래밍 기초공부 18 _ 블러 효과 기본</title>
+      <link>http://localhost:1313/posts/2007-08-14-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EC%B4%88%EA%B3%B5%EB%B6%80-18-_-%EB%B8%94%EB%9F%AC-%ED%9A%A8%EA%B3%BC-%EA%B8%B0%EB%B3%B8/</link>
+      <pubDate>Tue, 14 Aug 2007 16:28:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-14-%EC%85%B0%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EC%B4%88%EA%B3%B5%EB%B6%80-18-_-%EB%B8%94%EB%9F%AC-%ED%9A%A8%EA%B3%BC-%EA%B8%B0%EB%B3%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>무제</title>
+      <link>http://localhost:1313/posts/2007-08-14-%EB%AC%B4%EC%A0%9C/</link>
+      <pubDate>Tue, 14 Aug 2007 15:38:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-14-%EB%AC%B4%EC%A0%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Half Lambert</title>
+      <link>http://localhost:1313/posts/2007-08-13-half-lambert/</link>
+      <pubDate>Mon, 13 Aug 2007 11:41:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-13-half-lambert/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>슬링박스 리뷰 시작했습니다.</title>
+      <link>http://localhost:1313/posts/2007-08-11-%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%EB%A6%AC%EB%B7%B0-%EC%8B%9C%EC%9E%91%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sat, 11 Aug 2007 22:47:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-11-%EC%8A%AC%EB%A7%81%EB%B0%95%EC%8A%A4-%EB%A6%AC%EB%B7%B0-%EC%8B%9C%EC%9E%91%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>회사에 화실 열었습니다 ㅎㅎ</title>
+      <link>http://localhost:1313/posts/2007-08-11-%ED%9A%8C%EC%82%AC%EC%97%90-%ED%99%94%EC%8B%A4-%EC%97%B4%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4-%E3%85%8E%E3%85%8E/</link>
+      <pubDate>Sat, 11 Aug 2007 00:02:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-11-%ED%9A%8C%EC%82%AC%EC%97%90-%ED%99%94%EC%8B%A4-%EC%97%B4%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4-%E3%85%8E%E3%85%8E/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>sb</title>
+      <link>http://localhost:1313/posts/2007-08-10-sb/</link>
+      <pubDate>Fri, 10 Aug 2007 00:39:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-10-sb/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>렌더몽키로 툴 교체합니다.</title>
+      <link>http://localhost:1313/posts/2007-08-09-%EB%A0%8C%EB%8D%94%EB%AA%BD%ED%82%A4%EB%A1%9C-%ED%88%B4-%EA%B5%90%EC%B2%B4%ED%95%A9%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Thu, 09 Aug 2007 17:09:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-09-%EB%A0%8C%EB%8D%94%EB%AA%BD%ED%82%A4%EB%A1%9C-%ED%88%B4-%EA%B5%90%EC%B2%B4%ED%95%A9%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>튜터리얼 대사</title>
+      <link>http://localhost:1313/posts/2007-08-09-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%EB%8C%80%EC%82%AC/</link>
+      <pubDate>Thu, 09 Aug 2007 13:53:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-09-%ED%8A%9C%ED%84%B0%EB%A6%AC%EC%96%BC-%EB%8C%80%EC%82%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 프로그래밍 기본공부 18 - 굴절쉐이더</title>
+      <link>http://localhost:1313/posts/2007-08-08-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-18---%EA%B5%B4%EC%A0%88%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Wed, 08 Aug 2007 14:28:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-08-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-18---%EA%B5%B4%EC%A0%88%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>니시카와 젠지의3D 게임 팬을 위한 「로스트 플라넷」그래픽스 강좌</title>
+      <link>http://localhost:1313/posts/2007-08-07-%EB%8B%88%EC%8B%9C%EC%B9%B4%EC%99%80-%EC%A0%A0%EC%A7%80%EC%9D%983d-%EA%B2%8C%EC%9E%84-%ED%8C%AC%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%A1%9C%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9D%BC%EB%84%B7%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4-%EA%B0%95%EC%A2%8C/</link>
+      <pubDate>Tue, 07 Aug 2007 18:42:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-07-%EB%8B%88%EC%8B%9C%EC%B9%B4%EC%99%80-%EC%A0%A0%EC%A7%80%EC%9D%983d-%EA%B2%8C%EC%9E%84-%ED%8C%AC%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%A1%9C%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9D%BC%EB%84%B7%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4-%EA%B0%95%EC%A2%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>니시카와 젠지의3D 게임 팬을 위한E3 게임 그래픽스 강좌</title>
+      <link>http://localhost:1313/posts/2007-08-07-%EB%8B%88%EC%8B%9C%EC%B9%B4%EC%99%80-%EC%A0%A0%EC%A7%80%EC%9D%983d-%EA%B2%8C%EC%9E%84-%ED%8C%AC%EC%9D%84-%EC%9C%84%ED%95%9Ce3-%EA%B2%8C%EC%9E%84-%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4-%EA%B0%95%EC%A2%8C/</link>
+      <pubDate>Tue, 07 Aug 2007 18:40:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-07-%EB%8B%88%EC%8B%9C%EC%B9%B4%EC%99%80-%EC%A0%A0%EC%A7%80%EC%9D%983d-%EA%B2%8C%EC%9E%84-%ED%8C%AC%EC%9D%84-%EC%9C%84%ED%95%9Ce3-%EA%B2%8C%EC%9E%84-%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4-%EA%B0%95%EC%A2%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 프로그래밍 기본공부 17 - 반사쉐이더</title>
+      <link>http://localhost:1313/posts/2007-08-07-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-17---%EB%B0%98%EC%82%AC%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Tue, 07 Aug 2007 14:29:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-07-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-17---%EB%B0%98%EC%82%AC%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>모 영화의 과열현상</title>
+      <link>http://localhost:1313/posts/2007-08-06-%EB%AA%A8-%EC%98%81%ED%99%94%EC%9D%98-%EA%B3%BC%EC%97%B4%ED%98%84%EC%83%81/</link>
+      <pubDate>Mon, 06 Aug 2007 00:01:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-06-%EB%AA%A8-%EC%98%81%ED%99%94%EC%9D%98-%EA%B3%BC%EC%97%B4%ED%98%84%EC%83%81/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>국어공부하기</title>
+      <link>http://localhost:1313/posts/2007-08-05-%EA%B5%AD%EC%96%B4%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sun, 05 Aug 2007 11:29:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-05-%EA%B5%AD%EC%96%B4%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SLR카메라 방수팩 리뷰</title>
+      <link>http://localhost:1313/posts/2007-08-04-slr%EC%B9%B4%EB%A9%94%EB%9D%BC-%EB%B0%A9%EC%88%98%ED%8C%A9-%EB%A6%AC%EB%B7%B0/</link>
+      <pubDate>Sat, 04 Aug 2007 23:25:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-04-slr%EC%B9%B4%EB%A9%94%EB%9D%BC-%EB%B0%A9%EC%88%98%ED%8C%A9-%EB%A6%AC%EB%B7%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>에버랜드 갔다 왔습니다.</title>
+      <link>http://localhost:1313/posts/2007-08-04-%EC%97%90%EB%B2%84%EB%9E%9C%EB%93%9C-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sat, 04 Aug 2007 18:50:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-04-%EC%97%90%EB%B2%84%EB%9E%9C%EB%93%9C-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>라따뚜이 - 픽사는 그런 문제들을 잘 해결합니다.</title>
+      <link>http://localhost:1313/posts/2007-08-04-%EB%9D%BC%EB%94%B0%EB%9A%9C%EC%9D%B4---%ED%94%BD%EC%82%AC%EB%8A%94-%EA%B7%B8%EB%9F%B0-%EB%AC%B8%EC%A0%9C%EB%93%A4%EC%9D%84-%EC%9E%98-%ED%95%B4%EA%B2%B0%ED%95%A9%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Sat, 04 Aug 2007 17:57:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-04-%EB%9D%BC%EB%94%B0%EB%9A%9C%EC%9D%B4---%ED%94%BD%EC%82%AC%EB%8A%94-%EA%B7%B8%EB%9F%B0-%EB%AC%B8%EC%A0%9C%EB%93%A4%EC%9D%84-%EC%9E%98-%ED%95%B4%EA%B2%B0%ED%95%A9%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 프로그래밍 기본공부 16</title>
+      <link>http://localhost:1313/posts/2007-08-02-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-16/</link>
+      <pubDate>Thu, 02 Aug 2007 17:30:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-02-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-16/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 프로그래밍 기본공부 15</title>
+      <link>http://localhost:1313/posts/2007-08-02-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-15/</link>
+      <pubDate>Thu, 02 Aug 2007 15:10:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-02-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-15/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>리뷰하나 시작 - SLR방수팩</title>
+      <link>http://localhost:1313/posts/2007-08-02-%EB%A6%AC%EB%B7%B0%ED%95%98%EB%82%98-%EC%8B%9C%EC%9E%91---slr%EB%B0%A9%EC%88%98%ED%8C%A9/</link>
+      <pubDate>Thu, 02 Aug 2007 00:03:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-02-%EB%A6%AC%EB%B7%B0%ED%95%98%EB%82%98-%EC%8B%9C%EC%9E%91---slr%EB%B0%A9%EC%88%98%ED%8C%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Game Project Survival Test</title>
+      <link>http://localhost:1313/posts/2007-08-01-game-project-survival-test/</link>
+      <pubDate>Wed, 01 Aug 2007 22:33:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-01-game-project-survival-test/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 프로그래밍 기본공부 14</title>
+      <link>http://localhost:1313/posts/2007-08-01-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-14/</link>
+      <pubDate>Wed, 01 Aug 2007 14:47:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-01-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-14/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>쉐이더 프로그래밍 기본공부 13</title>
+      <link>http://localhost:1313/posts/2007-08-01-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-13/</link>
+      <pubDate>Wed, 01 Aug 2007 12:30:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2007-08-01-%EC%89%90%EC%9D%B4%EB%8D%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%EA%B3%B5%EB%B6%80-13/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

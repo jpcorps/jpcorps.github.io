@@ -1,0 +1,1154 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>Max Exporter 만들기 #3 - Animation Exporter &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="Max Exporter 만들기 #3 - Animation Exporter &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%233---animation-exporter/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%233---animation-exporter/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="Max Exporter 만들기 #3 - Animation Exporter">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2008-02-14T16:15:05+00:00">
+    <meta property="article:modified_time" content="2008-02-14T16:15:05+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Max Exporter 만들기 #3 - Animation Exporter">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Max Exporter 만들기 #3 - Animation Exporter",
+    "headline": "Max Exporter 만들기 #3 - Animation Exporter",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%233---animation-exporter/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2008",
+    "dateCreated": "2008-02-14T16:15:05\u002b00:00",
+    "datePublished": "2008-02-14T16:15:05\u002b00:00",
+    
+    "dateModified": "2008-02-14T16:15:05\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1576"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Max Exporter 만들기 #3 - Animation Exporter
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2008-02-14T16:15:05&#43;00:00">14 2월 2008</time><span class="px-2 text-primary-500">&middot;</span><span>1576 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">8 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-10">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    목차
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#제-4-편--max-exporter-3---animation-exporter">제 4 편 : Max Exporter #3 - Animation Exporter</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    목차
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#제-4-편--max-exporter-3---animation-exporter">제 4 편 : Max Exporter #3 - Animation Exporter</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}</p>
+
+<h1 class="relative group">===================================================================================<br>
+게임 강좌 - 게임개발 문턱 넘기기<br>
+by 조무영
+    <div id="by-조무영" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#by-%ec%a1%b0%eb%ac%b4%ec%98%81" aria-label="앵커">#</a>
+    </span>
+    
+</h1>
+
+<h2 class="relative group">제 4 편 : Max Exporter #3 - Animation Exporter
+    <div id="제-4-편--max-exporter-3---animation-exporter" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%ec%a0%9c-4-%ed%8e%b8--max-exporter-3---animation-exporter" aria-label="앵커">#</a>
+    </span>
+    
+</h2>
+<p>지난번에는 본을 익스포트 해보았습니다.<br>
+이번에는 그 본의 애니메이션을 익스포트 하겠습니다.<br>
+기본적인 골격은 같으니 그리 어렵지 않을 듯 합니다.</p>
+<hr>
+<ol start="0">
+<li>들어가며</li>
+</ol>
+<ol>
+<li>몇가지 알아둘 점</li>
+</ol>
+<p>별로 없어요&hellip; -.-;</p>
+<ol start="2">
+<li>강좌의 내용</li>
+</ol>
+<p>본 애니메이션을 뽑아내는 Exporter 를 살펴보겠습니다.<br>
+지난번과 마찬가지로 스크립트 소스를 풀로 올리고 주석을 다는 방식으로 진행하겠습니다.<br>
+설명하는 내용은 // 로 처리하겠습니다. (이건 스크립트 실제 주석처리는 아닙니다)</p>
+<hr>
+<ol>
+<li>DelDX_Anim_Export.ms 소스 분석</li>
+</ol>
+<p>macroScript AnimationExport category: &ldquo;DelDX&rdquo;<br>
+(<br>
+&ndash;==============================================================상수 (어차피 변수로 처리되지만)<br>
+local DelDXAnimVersion = 0010<br>
+local Dir_Output = &ldquo;D:\Work\델마당\세미나 강의\예제\Dat\Anim&rdquo;<br>
+global StrLen_Comment = 64<br>
+// 위의 상수 선언부는 지난시간 강좌내용과 비슷합니다.</p>
+<p>&ndash;==============================================================변수<br>
+global ExportNow = False<br>
+global Comment = &quot;&quot;<br>
+global SamplingGap<br>
+global TickToMS<br>
+// 변수 선언부도 비슷&hellip;</p>
+<p>&ndash;==============================================================라이브러리 파일을 포함하는 부분<br>
+Include &ldquo;Lib_Fnc.ms&rdquo;<br>
+Include &ldquo;DelDX_Fnc.ms&rdquo;<br>
+// 라이브러리 불러오는 부분도 비슷&hellip;<br>
+// 근데 이번에는 딱히 라이브러리 함수를 쓰지 않았다는 생각이 문득 드는군요&hellip; -.-;</p>
+<p>&ndash;==============================================================뭔가 입력받기 위한 창 (이벤트 핸들러도 있다 !!!)<br>
+// 여기서부터 롤아웃입니다.<br>
+// 역시 지난번 시간에 다루었던 내용인데요, 이번에는 샘플링 간격도 입력받습니다.<br>
+// Default 값은 1 인데요, 이렇게 하면 샘플링을 촘촘하게 하기 때문에 정확도가 높아지는 대신 파일 용량이 늘어납니다.<br>
+rollout InputInfoBox &ldquo;DelDX Animation Exporter&rdquo; width:291 height:240<br>
+(<br>
+label TitleLable &ldquo;DelDX Animation Exporter v&rdquo; pos:[16,10] width:264 height:17<br>
+label lbl10 &ldquo;간단한 설명을 적어보셔요&hellip;&rdquo; pos:[17,46] width:272 height:17<br>
+edittext CommentEdit &quot;&quot; pos:[12,67] width:261 height:20 enabled:true<br>
+label lbl9 &ldquo;프레임의 샘플링 간격을 정해주셔요&hellip;&rdquo; pos:[13,117] width:263 height:19<br>
+spinner SamplingGapSpin &quot;&quot; pos:[14,143] width:259 height:16 enabled:true range:[0,1000,1] type:#integer scale:1<br>
+button OKBtn &ldquo;OK&rdquo; pos:[84,179] width:118 height:24<br>
+on InputInfoBox open do<br>
+(<br>
+TitleLable.Caption = (&ldquo;DelDX Animation Exporter v&rdquo;+(DelDXAnimVersion as String))<br>
+)<br>
+on OKBtn pressed do<br>
+(<br>
+Comment = CommentEdit.Text<br>
+SamplingGap = SamplingGapSpin.Range.z &ndash; Value 프로퍼티가 없다고 우기니 원&hellip;<br>
+DestroyDialog InputInfoBox<br>
+ExportNow = True<br>
+)<br>
+)</p>
+<p>////////////////////////////////////////////////////////////////////////////////// 여기서부터 본격적인 프로그램 시작입니다.<br>
+// 지난시간에 다루었던 중복되는 내용은 따로 설명하지 않고 넘어가겠습니다.<br>
+// 혹시 제가 헷갈려서 새로운 내용인데 빼먹었거나&hellip; 그런 경우에는 리플 달아주셔요&hellip;<br>
+//////////////////////////////////////////////////////////////////////////////////</p>
+<p>BoneObjList = GetBoneObjList()<br>
+// 본 목록을 구합니다.<br>
+// 요기서 익스포트할 애니메이션이라는게 결국 본 애니메이션인데요&hellip;<br>
+// 예를 들어, 0.1 초 단위로 애니메이션을 하면서 본의 현재상태를 계속 저장한다면&hellip;<br>
+// 게임 엔진에서 그걸 시간 단위로 적용해나가면 일종의 애니메이션이 재현되는 셈이겠지요 ?<br>
+// 그런 방식입니다&hellip;</p>
+<p>if (BoneObjList != Undefined) and (BoneObjList.Count &gt; 0) then &ndash; 본이 없으면 애니도 엄따 !!!<br>
+(<br>
+&ndash;파일 이름 선택<br>
+local AnimFileName = getSaveFileName caption:&ldquo;DelDX Anim Export&rdquo; types: &ldquo;Anim Files (*.dan)|*.dan|All Files (*.*)|*.*|&rdquo; filename: (Dir_Output+&quot;\*.dan&quot;)<br>
+if AnimFileName != Undefined then<br>
+(<br>
+CreateDialog InputInfoBox Modal:True<br>
+if ExportNow then<br>
+(<br>
+&ndash;Max 시간을 ms 단위로 환산하기 위한 상수를 구하고&hellip;<br>
+TickToMS = ticksPerFrame * 1000 / 4800<br>
+// 맥스에서의 프레임당 Tick 이라는 것이 우리가 프로그래밍에서 흔히 쓰는 1/1000초 (=ms) 와는<br>
+// 다른 단위입니다.<br>
+// 그래서 시간을 저장할때 환산하기 위해서 이렇게 변수를 하나 만들어서 값을 넣어두었습니다.</p>
+<p>&ndash;파일 열기<br>
+AnimFile = fOpen AnimFileName &ldquo;wb&rdquo;</p>
+<p>if AnimFile != Undefined then<br>
+(<br>
+&ndash;FileHeader<br>
+WriteLong AnimFile DelDXAnimVersion<br>
+if Comment == Undefined then Comment = &quot;&quot;<br>
+WriteStringByLen AnimFile Comment StrLen_Comment &ndash;이 애니메이션에 대한 간단한 설명<br>
+WriteLong AnimFile BoneObjList.Count<br>
+WriteFloat AnimFile (AnimationRange.Start * TickToMS)<br>
+WriteFloat AnimFile (AnimationRange.End * TickToMS)<br>
+// 애니메이션 파일의 헤더를 쓰는 부분입니다.<br>
+// 디자이너의 코멘트 뒤로 본의 갯수와 애니메이션 시작/끝 시각을 ms 단위로 넣어주고 있지요.</p>
+<p>undo off<br>
+// 여기서부터 일어나는 일에 대해서는 언두 버퍼에 저장하지 않겠다는 뜻입니다.<br>
+// 속도증가와 사용메모리 감소 효과가 있다고 스크립트 레퍼런스에 나오는데 체감효과는 없더군요.</p>
+<p>&ndash;Make Clone<br>
+local CloneObjList = #()<br>
+// 쌍동이 오브젝트 목록입니다.<br>
+// 본 오브젝트의 쌍동이들을 만들어서 여기다가 넣을겁니다.<br>
+// 본이 오브젝트가 아닌 다른 것으로 만들어지는 경우에도 Transform 행렬 등을 사용해야 하므로<br>
+// 이렇게 쌍동이 &ldquo;오브젝트&rdquo; 로 만들어 쓰면 편리합니다.</p>
+<p>for iObj in BoneObjList do<br>
+(<br>
+// 본 오브젝트 목록의 모든 오브젝트에 대해 다음 과정을 통해 쌍동이를 만들어줍니다.<br>
+CloneObj = Snapshot iObj Name:(iObj.Name as String + &ldquo;_Clone&rdquo;)<br>
+CloneObj.Parent = Undefined<br>
+CloneObj.Transform = iObj.Transform<br>
+CloneObj.Position.Track = Bezier_Position()<br>
+CloneObj.Rotation.Track = Tcb_Rotation()<br>
+CloneObj.Scale.Track = Tcb_Scale()<br>
+Append CloneObjList CloneObj<br>
+// 요렇게 만들어진 쌍동이 오브젝트를 오브젝트 목록(CloneObj) 에 추가(Append)합니다.<br>
+)</p>
+<p>for i=1 to BoneObjList.Count do<br>
+(<br>
+if BoneObjList[i].Parent != Undefined then<br>
+(<br>
+CloneObjList[i].Parent = BoneObjList[i]<br>
+)<br>
+)<br>
+// 부모본을 갖는 본의 쌍동이는 원본 본에 링크시켜줘야 합니다.<br>
+// 안그러면 애니메이션을 할때 쌍동이가 제대로 움직이지 않게 되어버리지요.</p>
+<p>&ndash;Make animation keys<br>
+animate on<br>
+// 애니메이션을 활성화합니다.<br>
+// 이걸 해줘야 뒤쪽에서 as Time 구문으로 현재시각을 바꿔주는 루틴에서 씬 전체가 반응을 하게 됩니다.</p>
+<p>for iObj = 1 to CloneObjList.Count do &ndash; 각 본 별로<br>
+(<br>
+// 쌍동이들 각각에 대해 다음과 같은 정보를 끄집어내어 파일에 써줘야 합니다.<br>
+local RData<br>
+local RKeyList = #()<br>
+local RKeyCount = 0<br>
+local TData<br>
+local TKeyList = #()<br>
+local TKeyCount = 0<br>
+local SData<br>
+local SKeyList = #()<br>
+local SKeyCount = 0<br>
+// 회전(R), 이동(T), 확대축소(S) 정보를 배열로 저장할 것입니다.<br>
+// 각각의 배열 길이는 카운터 변수를 두구요.</p>
+<p>local Loop = True &ndash;시간을 잘게 쪼개서 애니 데이타 배열을 만든다<br>
+local CurrTime = AnimationRange.Start<br>
+// 현재 시각 변수(CurrTime)를 애니메이션 시작 시각에 맞춰놓습니다.</p>
+<p>while Loop do at Time CurrTime<br>
+(<br>
+// Loop 변수가 True 인 동안은 While 문을 계속 돌게 됩니다.<br>
+// at Time CurrTime 이라는 구문은 맥스 스크립트의 특징적인 문법이 적용된건데요,<br>
+// 씬 전체가 CurrTime 이라는 시각의 애니메이션 상태가 됩니다.<br>
+// 마치 맥스의 애니메이션 프레임바를 스크롤하는 셈이죠.<br>
+// 이렇게 시각을 세팅한 후에 현재의 본 상태값을 읽어오면 애니메이션 정보를 얻는게 되죠.</p>
+<p>// 우선 회전값을 알아냅니다.<br>
+&ndash;Rotate&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br>
+RData = TTimeAndValue Time: CurrTime Value: CloneObjList[iObj].Rotation<br>
+// RData 에 현재 시각의 iObj 번째 본의 회전값을 저장합니다.<br>
+// 이때 본이 아니라 그 본의 쌍동이 오브젝트로부터 회전값을 얻어옵니다.</p>
+<p>// 이제 값을 배열에 추가합니다.<br>
+// 참고로, 맥스의 배열은 모두 가변배열입니다.<br>
+// 편리하지만 느리고 무겁죠.<br>
+if RKeyCount &lt;= 1 then<br>
+(<br>
+Append RKeyList RData<br>
+RKeyCount = RKeyCount + 1<br>
+)<br>
+else<br>
+(<br>
+if (RKeyList[RKeyCount-1].Value == RData.Value) and (RKeyList[RKeyCount].Value == RData.Value) then<br>
+(<br>
+&ndash; 아끼자<br>
+RKeyList[RKeyCount-1].Time = RData.Time<br>
+)<br>
+else<br>
+(<br>
+Append RKeyList RData<br>
+RKeyCount = RKeyCount + 1<br>
+)<br>
+)<br>
+// 배열에 값을 넣는 내용이 좀 복잡하게 되어있지요 ?<br>
+// 동일한 값이 계속 들어가는 경우에 중간값들을 생략하도록 만들어서 그렇습니다.<br>
+// 예를 들어, 애니메이션 시작후 1초간 회전값이 0 도라면&hellip;<br>
+// 0초때와 1초때의 회전값만 저장하면 충분하겠지요.<br>
+// 그런데 프레임마다의 값을 모두 저장한다면 메모리 낭비이고, 애니메이션 속도에도 지장을 주겠죠.<br>
+// 위의 코드에서는 그런 경우에 중간값들을 저장하지 않도록 하고 있습니다.</p>
+<p>// 이동, 확대축소 값도 회전값을 얻는 과정과 동일합니다.<br>
+&ndash;Trans&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br>
+TData = TTimeAndValue Time: CurrTime Value: CloneObjList[iObj].Position<br>
+if TKeyCount &lt;= 1 then<br>
+(<br>
+Append TKeyList TData<br>
+TKeyCount = TKeyCount + 1<br>
+)<br>
+else<br>
+(<br>
+if (TKeyList[TKeyCount-1].Value == TData.Value) and (TKeyList[TKeyCount].Value == TData.Value) then<br>
+(<br>
+&ndash; 아끼자<br>
+TKeyList[TKeyCount-1].Time = TData.Time<br>
+)<br>
+else<br>
+(<br>
+Append TKeyList TData<br>
+TKeyCount = TKeyCount + 1<br>
+)<br>
+)<br>
+&ndash;Scale&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br>
+SData = TTimeAndValue Time: CurrTime Value: CloneObjList[iObj].Scale<br>
+if SKeyCount &lt;= 1 then<br>
+(<br>
+Append SKeyList SData<br>
+SKeyCount = SKeyCount + 1<br>
+)<br>
+else<br>
+(<br>
+if (SKeyList[SKeyCount-1].Value == SData.Value) and (SKeyList[SKeyCount].Value == SData.Value) then<br>
+(<br>
+&ndash; 아끼자<br>
+SKeyList[SKeyCount-1].Time = SData.Time<br>
+)<br>
+else<br>
+(<br>
+Append SKeyList SData<br>
+SKeyCount = SKeyCount + 1<br>
+)<br>
+)</p>
+<p>&ndash;마무리&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br>
+if CurrTime &lt; AnimationRange.End then<br>
+(<br>
+// 애니메이션이 아직 계속되고 있다면</p>
+<p>// 현재 시각을 샘플링 간격만큼 증가시킵니다.<br>
+CurrTime = CurrTime + SamplingGap</p>
+<p>// 애니메이션 끝 시각 이후로 벗어나지 않도록 보정을 해주고요&hellip;<br>
+if CurrTime &gt; AnimationRange.End then CurrTime = AnimationRange.End<br>
+)<br>
+else<br>
+(<br>
+// 애니메이션이 끝났다면&hellip;</p>
+<p>// While 루프를 빠져나오도록 변수를 조작해주고요&hellip;<br>
+Loop = False</p>
+<p>&ndash; 하나라도 아끼자<br>
+if (RKeyCount&gt;1) and (RKeyList[RKeyCount-1].Value == RKeyList[RKeyCount].Value) then<br>
+(<br>
+DeleteItem RKeyList RKeyCount<br>
+RKeyCount = RKeyCount - 1<br>
+)<br>
+if (TKeyCount&gt;1) and (TKeyList[TKeyCount-1].Value == TKeyList[TKeyCount].Value) then<br>
+(<br>
+DeleteItem TKeyList TKeyCount<br>
+TKeyCount = TKeyCount - 1<br>
+)<br>
+if (SKeyCount&gt;1) and (SKeyList[SKeyCount-1].Value == SKeyList[SKeyCount].Value) then<br>
+(<br>
+DeleteItem SKeyList SKeyCount<br>
+SKeyCount = SKeyCount - 1<br>
+)<br>
+// 앞에서 같은 값이 반복되는 경우에 대한 처리를 했는데<br>
+// 맨 마지막 값에 대해서는 처리되지 않는 문제가 있습니다.<br>
+// 그래서 마지막 하나라도 아끼려고 요런 코드가 들어갔습니다.<br>
+)<br>
+)</p>
+<p>// 이제 파일로 저장하는 부분입니다.<br>
+&ndash; 만들어진 배열을 파일로 저장하고&hellip;</p>
+<p>// 먼저 회전값 배열을 저장합니다.<br>
+WriteLong AnimFile RKeyCount<br>
+for iFrame = 1 to RKeyCount do<br>
+(<br>
+WriteLong AnimFile (RKeyList[iFrame].Time * TickToMS)<br>
+// 시각을 저장할때 TickToMS 값을 곱해서 ms 단위로 환산하고 있지요&hellip;</p>
+<p>WriteFloat AnimFile RKeyList[iFrame].Value.x<br>
+WriteFloat AnimFile RKeyList[iFrame].Value.z &ndash; y ↔ z<br>
+WriteFloat AnimFile RKeyList[iFrame].Value.y &ndash;<br>
+// y 와 z 값이 바뀌어야 한다는 이야기는 지난시간에도 했지요 ?</p>
+<p>WriteFloat AnimFile (-RKeyList[iFrame].Value.w)<br>
+// 웬 w 값일까요 ???<br>
+// 맥스에서의 회전값은 X, Y, Z 축에 대한 회전각으로 표시(오일러각 방식)되는게 아니라<br>
+// 쿼터니온으로 표시가 됩니다.<br>
+// 회전에 대한 표현방법중 하나라고 생각하시면 됩니다.<br>
+// 회전만 이렇게 표현하구요, 이동과 확대축소는 일반적인 벡터를 사용합니다.<br>
+// 쿼터니온에 대한 설명은 생략할터이니 관심있는 분께서는 인터넷이나 책을 참고해보셔요&hellip;<br>
+// 그래도 잘 모르시겠다면 리플 달아주시구요&hellip;<br>
+)<br>
+// 맥스의 좌표계가 DX 와 다르기 때문입니다.</p>
+<p>// 회전, 확대축소 값의 배열도 같은 방법으로 저장하구요&hellip;<br>
+WriteLong AnimFile TKeyCount<br>
+for iFrame = 1 to TKeyCount do<br>
+(<br>
+WriteLong AnimFile (TKeyList[iFrame].Time * TickToMS)<br>
+WriteFloat AnimFile TKeyList[iFrame].Value.x<br>
+WriteFloat AnimFile TKeyList[iFrame].Value.z &ndash; y ↔ z<br>
+WriteFloat AnimFile TKeyList[iFrame].Value.y &ndash;<br>
+)<br>
+WriteLong AnimFile SKeyCount<br>
+for iFrame = 1 to SKeyCount do<br>
+(<br>
+WriteLong AnimFile (SKeyList[iFrame].Time * TickToMS)<br>
+WriteFloat AnimFile SKeyList[iFrame].Value.x<br>
+WriteFloat AnimFile SKeyList[iFrame].Value.z &ndash; y ↔ z<br>
+WriteFloat AnimFile SKeyList[iFrame].Value.y &ndash;<br>
+)<br>
+)</p>
+<p>&ndash;마무리<br>
+animate off<br>
+// 앞서 animate on 했던걸 끕니다.</p>
+<p>undo on<br>
+// undo off 했던걸 원래 상태로 돌리구요&hellip;</p>
+<p>&ndash;Delete Clone<br>
+for iObj in CloneObjList do Delete iObj<br>
+// 쌍동이 오브젝트들을 모두 없애줍니다.</p>
+<p>// 나머지는 지난번 내용과 비슷하군요&hellip;<br>
+if fClose AnimFile then<br>
+(<br>
+MessageBox &ldquo;DAN 파일로 Export 되었습니다.&rdquo;<br>
+)<br>
+else<br>
+(<br>
+MessageBox &ldquo;파일 닫기 실패&rdquo;<br>
+)<br>
+)<br>
+else<br>
+(<br>
+MessageBox &ldquo;파일 열기 실패&rdquo;<br>
+)<br>
+)<br>
+)<br>
+)<br>
+else<br>
+(<br>
+MessageBox &ldquo;본을 찾지 못했습니다.&rdquo;<br>
+)</p>
+<p>gc()<br>
+)</p>
+<hr>
+<p>맥스 스크립트가 어려운 이유는 문법이 어렵거나 로직이 어려워서가 아니라<br>
+명령어, 함수 등등을 찾아내기가 어려워서입니다.<br>
+이미 만들어진 것을 분석하는 내용은 그리 어렵지 않습니다.</p>
+<p>오늘은 여기까지입니다.<br>
+다음 시간에는 모델 익스포터를 다루어보겠습니다.<br>
+이번 강좌 내용보다 한층 복잡해질 것이고,<br>
+3D 모델링에 대한 기초적인 지식이 없으면 난해한 부분도 있을텐데요,<br>
+모든걸 완전히 이해하는 것 보다는 흐름을 이해하는 것이 중요하다는 점 잊지 마시기 바랍니다.</p>
+<p>궁금하신 내용이 있으시면 질문리플 달아주셔요&hellip;</p>
+
+<h1 class="relative group">그럼 좋은 하루 되셔요.<br>
+<a href="https://www.delmadang.com"  target="_blank" rel="noreferrer">www.delmadang.com</a>
+    <div id="" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#" aria-label="앵커">#</a>
+    </span>
+    
+</h1>
+<p>{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%232---bone-exporter/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Max Exporter 만들기 #2 - Bone Exporter
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2008-02-14T16:14:16&#43;00:00">14 2월 2008</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2008-02-14-max-exporter-%EB%A7%8C%EB%93%A4%EA%B8%B0-%234---3d-model-exporter/">
+              <span class="leading-6">
+                Max Exporter 만들기 #4 - 3D Model Exporter&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2008-02-14T16:15:50&#43;00:00">14 2월 2008</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

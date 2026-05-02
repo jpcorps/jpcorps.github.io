@@ -1,0 +1,1125 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강 &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강 &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2012-01-20-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-3%EA%B0%95/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2012-01-20-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-3%EA%B0%95/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2012-01-20T14:43:57+00:00">
+    <meta property="article:modified_time" content="2012-01-20T14:43:57+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강",
+    "headline": "ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2012-01-20-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-3%EA%B0%95/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2012",
+    "dateCreated": "2012-01-20T14:43:57\u002b00:00",
+    "datePublished": "2012-01-20T14:43:57\u002b00:00",
+    
+    "dateModified": "2012-01-20T14:43:57\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1770"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 3강
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2012-01-20T14:43:57&#43;00:00">20 1월 2012</time><span class="px-2 text-primary-500">&middot;</span><span>1770 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">9 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+<a href="https://gamedevforever.com/category/"  target="_blank" rel="noreferrer">https://gamedevforever.com/category/</a>아트</p>
+<p>여기에 연재되는 글입니다. 이글루스에는 며칠 늦게 올립니당</p>
+<p>=================================================================================================</p>
+<p>안녕하십니까 남들은 조낸 멋진거 막막 쓰고 인기높고 막 그러는데<br>
+저만 괜히 정말 아무것도 모르는 초보를 위한다고 너무 수준낮게 쓰느라<br>
+팀블로그 그래픽 반의 질을 떨어뜨리는건 아닐까 하고 걱정하고 있는 대마왕J 입니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile2.uf.tistory.com/image/1666DB434F0C510E1A34DB"
+    ></figure>
+<p>나&hellip; 나도 쓸꺼야! 실버치매님처럼 멋진 글을!!!!</p>
+<p>근데 생각해 보니까 하지만 난 어차피 수준이 초딩이잖아?<br>
+컨트롤 C+V 밖에 못하는</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile1.uf.tistory.com/image/17146C454F0C51D3320C98"
+    ></figure>
+<p>그러니 닥치고 저는 이 사이트의 낮은 레벨을 담당하는 것이 낫습니다.</p>
+
+<h1 class="relative group">시작합니다. 이히히 ~
+    <div id="시작합니다-이히히-" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%ec%8b%9c%ec%9e%91%ed%95%a9%eb%8b%88%eb%8b%a4-%ec%9d%b4%ed%9e%88%ed%9e%88-" aria-label="앵커">#</a>
+    </span>
+    
+</h1>
+<p><strong>1. 텍스쳐를 넣어 봅시다.</strong><br>
+자 드디어 텍스쳐를 넣을 시간입니다! 텍스쳐를 넣는 것도 지극히 간단하지요.<br>
+아까 만든 것처럼 빈 화면에서 오른쪽 클릭을 해서 Maps로 간 다음,<br>
+이번엔 Color가 아니라 <strong>TextureMap을 선택합니다.</strong><br>
+텍스쳐를 넣어야 하니까, 당연한 선택이겠지요?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile24.uf.tistory.com/image/201D14474F01C00E07FF9B"
+    ></figure>
+<p>자, 이렇게 TextureMap이 생겨났습니다.<br>
+아직 아무 그림도 없지요.</p>
+<p>역시 이 것을 선택하면, 오른쪽에 인터페이스가 좌아악 펼쳐집니다&hellip;<br>
+이 옵션들은 사실 굉장히 기능이 많습니다. 각종 시멘틱(Semantic) 설정에, 텍스쳐 UV 채널, 샘플러 셋팅, 밉맵의 개수, 심지어 감마 코렉션(Gamma correction) 을 위한 기능까지 들어 있습니다.<br>
+간편하게 다루는 툴인데 비해, 상당히 많은 기능이 들어 있지요.</p>
+<p>뭐 그치만 그딴건 아직 안봅니다. 신경쓰지 마세요</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile3.uf.tistory.com/image/191A58334F0C195F3B7B0C"
+    ></figure>
+<p>어쨌건 텍스쳐를 하나 넣어 봅시다.<br>
+아래 그림처럼, <strong>UI Name 아래 있는 버튼을 눌러</strong> 볼까요.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile8.uf.tistory.com/image/12550A504F01C0A91853A7"
+    ></figure>
+<p>저는<strong>D_grass.dds 라고 하는 풀 그림이 그려진 그림을 선택했습니다</strong>. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_1"  target="_blank" rel="noreferrer">[각주:1]</a><br>
+드디어 그림이 보이는 군요.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile22.uf.tistory.com/image/1207B34A4F01C26F35C150"
+    ></figure>
+<p>자, 이제 이 TextureMap을 왼쪽의 셰이더 루트의 Ambient Color에 연결해 주면 될텐데&hellip;<br>
+아까 칼라를 연결할 때에는 하나밖에 없었는데, 이젠 다양한 색깔로 여러 종류가 있습니다. <strong>분홍색의 RGBA</strong> , <strong>녹색의 RGB</strong>, 그리고 <strong>파랑색의 R,G,B,A</strong> &hellip;</p>
+<p>일단 결과를 보는게 급하지요! 답을 알려 드리겠습니다. 여기서는 색이 중요합니다!<strong>RGB라고 씌인 녹색 공과 Ambient color를 연결해 주세요!</strong> <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_2"  target="_blank" rel="noreferrer">[각주:2]</a></p>
+<p>그리고 이 쉐이더를 주전자와 연결시켜 주시면, <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_3"  target="_blank" rel="noreferrer">[각주:3]</a> 드디어 주전자에 텍스쳐가 입혀집니다!!!</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile28.uf.tistory.com/image/20607B504F01C407172DD0"
+    ></figure>
+<p>축하드립니다. 드디어 텍스쳐를 연결하셨습니다. 이제 이곳 저곳에 연결해 보시고 끊어보시기도 하면서 가지고 놀아보세요. 잘 작동하는 것도 있고 잘 작동하지 않는 것도 있을 겁니다.</p>
+<p>그리고 특히, 아래 그림의 이 부분을 제일 주목해 주세요.<a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_4"  target="_blank" rel="noreferrer">[각주:4]</a><br>
+아래 그림의 붉은 박스 영역과 같이<br>
+RGBA 들이 같이 있기도 하고 , 떨어져 있기도 한 이 부분 말입니다.</p>
+<p>우선 생각하기에 RGB 값이 연결되는 것은 당연하게 보이긴 합니다. 이미지는 보통 RGB로 구성되니까요.<br>
+하지만 알파가 포함된 RGBA , 그리고 r,g,b,a 가 각각 떨어져 있는 것도 있습니다.<br>
+이것을 어떻게 사용해야 할까요?</p>
+<p>이걸 알기 위해서는 색상의 각 요소가 프로그램에서 어떻게 사용되는지를 알 필요가 있습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile24.uf.tistory.com/image/2009D6494F01C4AC166AC1"
+    ></figure>
+<p><strong>2. Float 의 비밀</strong></p>
+<p>이전에 빨강 공을 만들때, float3라는 말을 언급했었지요?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile26.uf.tistory.com/image/115A9A444F08649C311D1C"
+    ></figure>
+<p>자&hellip; 이게 무슨 소리인지 이제 알아볼 시간입니다. :)<br>
+원래대로 풀버전으로 설명하면 칼라의 bit 부터 시작해서 너무 길어지므로 최대한 축약해 보도록 하겠습니다.<br>
+풀버전 설명은 다음기회에 따로 준비하도록 하지요. 오늘은 간략하게 간락하게 쉽게 쉽게 &hellip;</p>
+<p>우선, 컴퓨터 그래픽에서의 &lsquo;색&rsquo; 에 대해서 생각해 보도록 하지요.<br>
+학교 수업시간에 배운바에 의하면, TV나 모니터의 빛은 &lsquo;가산혼합법&rsquo; 이라고 해서, 다 더하면 하얗게 되는 색이라고 합니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile10.uf.tistory.com/image/154B9F3F4F086537122361"
+    ></figure>
+<p>이런 그림 기억나시죠? 빨강색 , 녹색, 파랑색이 있고, 이 세 가지의 색을 모두 더한 색은 흰색이고, 세 가지의 색이 전혀 없는 색은 검은 색이다 &hellip; 라는 거 말이죠.</p>
+<p>이거와는 반대로, 잉크로 인쇄하는건 달라서, 섞으면 섞을수록 어두워지고&hellip; 다 더해도 진짜 검은색이 사실 안나오기 때문에 검은색을 따로 추가하고 어쩌고 해서 CMYK<a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_5"  target="_blank" rel="noreferrer">[각주:5]</a>다 &hellip; 라는거 말이죠.</p>
+<p>네, 그렇지만 우리들의 모니터는 가산혼합법으로 이루어지는 녀석이라, 3가지의 색 (Red,Green,Blue) 이 모여서 더해지는 색 구조를 따르고 있습니다. 그리고 색을 모두 더하면 흰색이 되구요.</p>
+<p>만일 빨강색이 있다면, 우리 그래픽 디자이너들이 익숙한 포토샵에서는 이렇게 보이겠지요?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile27.uf.tistory.com/image/195C09434F086715071691"
+    ></figure>
+<p>빨강색을 선택했더니, (R,G,B) 가 (255,0,0) 이라고 합니다.<br>
+이건 그래픽 디자이너분들한테는 매우 익숙한 광경이지요.<br>
+그렇다면 흰색은 무엇이겠습니까?<br>
+흰 색은 RGB가 모두 최고 밝은 상태이므로 (255,255,255) 겠지요?</p>
+<p>그렇다면 검은색은 ?<br>
+검은색은 RGB에 아무런 값도 없는 상태를 의미하니 (0,0,0) 일겁니다.</p>
+<p>자, 그럼 회색일때 RGB 값은 어떤 값일까요?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile1.uf.tistory.com/image/150CA03D4F08681305F0F5"
+    ></figure>
+<p>&hellip; 네 그렇습니다. (128,128,128) 입니다. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_6"  target="_blank" rel="noreferrer">[각주:6]</a></p>
+<p>이렇게, 우리는 일반적으로 0<del>255 까지의 수를 가지는 세 가지의 색(RGB) 의 조합으로 모든 색을 표현하고 있습니다.<br>
+이 때, R, G, B 라고 불리우는 각 색의 값을 &lsquo;채널&rsquo; 이라고 부릅니다. 즉 색을 만들기 위해서는 3개의 채널이 필요하고, 우리가 일반적으로 사용하는 채널당 8비트 이미지는 <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_7"  target="_blank" rel="noreferrer">[각주:7]</a> 0</del>255 까지의 값을 가진 R,G,B 채널들의 조합으로 만들어 진다는 것이지요.</p>
+<p>자, 다시 한 번 정리해 봅시다. 채널당 8비트인 이미지에서 RGB 값은,<br>
+****R G B<br>
+빨강색은 &mdash;&mdash;&mdash;&mdash; (255, 0, 0)<br>
+흰색은 &mdash;&mdash;&mdash;&mdash;&ndash; (255, 255, 255)<br>
+검은색은 &mdash;&mdash;&mdash;&mdash; (0, 0, 0)<br>
+회색은 &mdash;&mdash;&mdash;&mdash;&ndash; (128, 128, 128)****이란 말입니다. 이해가시겠지요?</p>
+<p>근데 프로그래밍에서는 이런 숫자를 쓰지 않습니다. 그 이유에 대해서 제대로 쓰면 또 양이 많아지기 때문에, 간단히 말해서 &lsquo;컴퓨터가 원래 그렇게 돌아가기 때문임&rsquo; 이라고 우기도록 하겠습니다</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile27.uf.tistory.com/image/1104353E4F0C291F25706E"
+    ></figure>
+<p>이힝힝. 모, 몰라서 그러는 거 아니라능!! 믿어달라능!!!</p>
+<p>프로그래밍에서는 그럼 색을 어떻게 쓸까요?<br>
+바로 포프 스승님 강의를 읽어보셨으면 알만한 내용인, **&quot;% 로 표시합니다&quot;**라는 겁니다.<br>
+즉</p>
+<p><strong><strong>R G B<br>
+빨강색은 &mdash;&mdash;&mdash;&mdash; (100%, 0%, 0%)<br>
+흰색은 &mdash;&mdash;&mdash;&mdash;&ndash; (100%, 100%, 100%)<br>
+검은색은 &mdash;&mdash;&mdash;&mdash; (0%, 0%, 0%)<br>
+회색은 &mdash;&mdash;&mdash;&mdash;&ndash; (50%, 50%, 50%)</strong></strong></p>
+<p>라는 거지요.<br>
+그리고 다시 이것을 소숫점으로 나타내면 Float(부동소수점)<a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_8"  target="_blank" rel="noreferrer">[각주:8]</a> 이 되는데요.<br>
+그럼 이렇게 나타나게 됩니다.</p>
+<p><strong><strong>R G B<br>
+빨강색은 &mdash;&mdash;&mdash;&mdash; (1, 0, 0)<br>
+흰색은 &mdash;&mdash;&mdash;&mdash;&ndash; (1, 1, 1)<br>
+검은색은 &mdash;&mdash;&mdash;&mdash; (0, 0, 0)<br>
+회색은 &mdash;&mdash;&mdash;&mdash;&ndash; (0.5, 0.5, 0.5)</strong></strong></p>
+<p>즉, float 이란 부동소수점으로 표시한 채널을 의미하며, 이것이 RGB 일 경우에는 소수점 3개가 필요하니 float3 라고 표시하는 겁니다. 최종적으로는 이렇게 표시되겠지요.</p>
+<p><strong><strong>R G B<br>
+빨강색은 &mdash;&mdash;&mdash;&mdash; float3 (1.0, 0.0, 0.0)<br>
+흰색은 &mdash;&mdash;&mdash;&mdash;&ndash; float3 (1.0, 1.0, 1.0)<br>
+검은색은 &mdash;&mdash;&mdash;&mdash; float3 (0.0, 0.0, 0.0)<br>
+회색은 &mdash;&mdash;&mdash;&mdash;&ndash; float3 (0.5, 0.5, 0.5)</strong></strong></p>
+<p>그러므로 이 그림에서 float3란, <strong>&lsquo;3개의 소수점으로 이루어진 값&rsquo;</strong> 이라는 의미가 되는 겁니다.<br>
+그러면 아래 그림에서 Ambient Color로 넘어가는 값은 float3(1.0, 0.0, 0.0) 이라는게 이해 되시겠지요?</p>
+<p>여기서 또 하나 재미있는 것은, float3의 값을 받는 Ambient color 도 녹색 박스라는 겁니다. 다시 말해서 float3만을 받을 수 있다는 말이지요. color 니까 당연하겠지요.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile26.uf.tistory.com/image/115A9A444F08649C311D1C"
+    ></figure>
+<p><strong>3. Float을 그림으로 보자</strong><br>
+float3 는 float + float + float 3개가 모여서 만들어 졌다는걸 아시겠지요?</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile24.uf.tistory.com/image/2009D6494F01C4AC166AC1"
+    ></figure>
+<p>그럼 이 이미지가 슬슬 이해 되실 겁니다.<br>
+RGBA 란? A 란 &lsquo;알파 채널&rsquo; 을 의미하지요. 투명도를 나타내는 바로 그 값이 포함된것 말이지요.<br>
+투명도 역시 0~255 라는 단계를 가질 수 있습니다. 즉 RGB에다가 A 가 추가로 포함되어서, 투명도가 포함된 이미지를 의미한다는 말이지요. 그러므로 이건 float으로 나타내면? float+float+float+float 4개가 모여 4자리니까 <strong>float4</strong> 라고 말할 수 있겠지요? 아래처럼 말이지요.<br>
+<strong><strong>R G B A<br>
+빨강색인데 불투명 &mdash;&mdash;&mdash;&mdash; float4 (1.0, 0.0, 0.0, 1.0)<br>
+빨강색인데 완전투명 &mdash;&mdash;&mdash;- float4 (1.0, 0.0, 0.0, 0.0)<br>
+빨강색인데 절반정도 투명 &mdash;- - float4 (1.0, 0.0, 0.0, 0.5)</strong></strong></p>
+<p>그렇다면 각각 떨어져 있는 R, G, B, A 의 단위는 무엇일까요?</p>
+<p>&hellip;. 네 그렇습니다. <strong>그냥 float</strong>이지요. 한 자리 소숫점 숫자일테니까요.<br>
+이런 식이란 말입니다.<br>
+<strong><strong>빨강색인데 R채널 &mdash;&mdash;&mdash;&mdash; float (1.0)<br>
+<strong><strong>빨강색인데 G채널 &mdash;&mdash;&mdash;&mdash; float (0.0)<br>
+빨강색인데 B채널 &mdash;&mdash;&mdash;&mdash; float (0.0)</strong></strong></strong></strong></p>
+<p>이 부분이 가장 중요하면서 초반에 그래픽 디자이너분들이 가장 많이 포기하는 부분이므로 좀 더 자세하게 써 보겠습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile7.uf.tistory.com/image/1866FF384F0C2E5E0B6CAE"
+    ></figure>
+<p>자, 익숙해 보이는 포토샵 화면입니다. 풀 그림이 있고요, 채널 탭이 보입니다.<br>
+알파 채널이 있다는 것도 보이시지요? 그리고 지금 &lsquo;눈&rsquo; 마크가 RGB가 켜 있어서, RGB채널이 모두 보이고 있는 상태라는 것도 알 수 있습니다.</p>
+<p>자 이제 채널을 하나 하나 따로 따로 보겠습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile26.uf.tistory.com/image/1825AF394F0C2EC22058DF"
+    ></figure>
+<p>Red 채널입니다. Red 채널만 활성화 시키자, 그림이 흑백으로 변했습니다.<br>
+이미지를 잘 보시죠. 무슨 의미일까요?<br>
+이 이미지의 <strong>한 픽셀 한 픽셀은, float 값들을 의미합니다. Red 값의 강도만 0.0~1.0 사이로 나타내면 되기 때문에, 흑백으로 충분한 것입니다.</strong></p>
+<p>즉 흰색 점들은 float (1.0) 을 의미하고, 회색인 점들은 float(0.5)를 의미합니다. 검은색 점은? 당연히 float(0.0) 을 의미하겠지요. 각 점은 밝기에 따라, 다양한 한 자리의 소수점 값을 가지고 있습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile6.uf.tistory.com/image/132FB3354F0C2F831DF3B7"
+    ></figure>
+<p>이번엔 녹색 채널입니다. 아까보다 밝아 보이죠? 당연합니다. 그림 전체가 녹색에 가깝기 때문에 녹색 값이 높은 겁니다. 그래서 녹색 채널만 보면 밝아 보이는 거구요</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile2.uf.tistory.com/image/12228C394F0C2FDF2A186B"
+    ></figure>
+<p>Blue 채널을 보니 좀 어둡습니다. 즉 이 이미지에는 파랑색이 별로 들어가 있지 않다는 얘기겠지요.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile27.uf.tistory.com/image/13228C394F0C2FDF2BE2B6"
+    ></figure>
+<p>알파를 보겠습니다. 역시 다른 채널과 마찬가지로, 흑백으로 되어 있습니다.<br>
+또한 다른 채널과 완전히 마찬가지로, 0인 부분 (투명한 부분) 은 완전한 검은색으로 되어 있고, 1인 부분 (불투명한 부분) 은 흰색으로 되어 있으며, 0.5 (반만 투명한 부분) 은 흰색으로 되어 있습니다.</p>
+<p>이렇게 4개의 채널을 봤습니다.</p>
+<p>&hellip;무언가 발견하신 것이 있는지?<br>
+**사실, R,G,B,A 내 개의 채널은 아무런 차이가 없습니다! 모두 똑같은 &lsquo;float1&rsquo; 구조를 가지고 있습니다!**모두 각 픽셀당 소수점 하나만을 가지는 숫자로 되어 있을 뿐입니다. 즉 언제건 Red와 Green을 바꿔도 상관없고 , Blue와 Alpha를 바꿔도 문제없이 정상 동작합니다. 단지 이미지의 색이 달라질 뿐이겠지요.</p>
+<p>그래서 아래와 같이 , R,G,B,A가 각각 따로 동일하게 취급을 받을 수 있는 것입니다.<br>
+이것이 가장 중요한, 채널과 float에 대한 간략한 개념입니다. (말씀 드렸다시피, 풀버전은 나중에&hellip;)</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile24.uf.tistory.com/image/2009D6494F01C4AC166AC1"
+    ></figure>
+<p><strong>4. Opacity를 만들자.</strong><br>
+프로그래머들은 Opacity라고 하면 잘 못알아 듣습니다. Alpha나 Transparant 라고 하면 잘 알아 들어도&hellip;<br>
+어쨌건 여기까지 잘 하신 상태란 말입니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile4.uf.tistory.com/image/1738CB3C4F0C5FC72B7ED9"
+    ></figure>
+<p>이제 Opacity에 값을 추가할 차례입니다.<br>
+잘 보세요. Opacity는 파란 색 값을 원하고 있습니다.</p>
+<p>파란 색 값이란? float 값을 의미합니다. 한 자리의 숫자요. 위에서 말한.<br>
+하긴 투명도 결정하는데 RGB 세 채널은 필요없겠죠. 한 자리면 됩니다. 투명한 것은 &lsquo;얼마나 투명하냐 &rsquo; 라는 한 자리의 수만 있으면 되니까요.</p>
+<p>흔히 그래픽만 하시던 분들이 쉐이더를 공부할때 이 부분에서 혼동을 많이 하시는데, 3Dmax의 Opacity는 &ldquo;흑백으로 된 RGB&rdquo; 이미지를 따로 만들어서 Opacity에 넣지요. 이것은 그거랑 다릅니다. 그정도로 필요 없습니다.<br>
+사실 Opacity를 표현하기 위해서는 &lsquo;채널 하나&rsquo; 만으로도 충분하고, 그래서 알파 채널 하나만 있으면 투명도를 결정하는데 충분하게 사용할 수 있다는 말입니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile25.uf.tistory.com/image/204BF3374F0C608005602B"
+    ></figure>
+<p>자, <strong>알파 채널 (A) 를 클릭해서 끌어내 봅니다.</strong> float 이 나오는 것을 알 수 있습니다!!</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile27.uf.tistory.com/image/13228C394F0C2FDF2BE2B6"
+    ></figure>
+<p>즉 지금 이 그림이 나오고 있는 것이지요?</p>
+<p><strong>이것을 Opacity 에다가 끌어 놓으면 되는 것입니다.</strong></p>
+<p>주의할 점은, float은 반드시 float에 넣어야 하고, float3는 반드시 float3에 넣어줘야 한다는 겁니다.<br>
+Opacity는 파란색 (float) 만을 받는 값이기 때문에, 반드시 float을 넣어줘야지,<br>
+여기다가 녹색 (RGB)데이터를 넣어봐야 들어가지도 않습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile7.uf.tistory.com/image/2044353B4F0C6112187DF2"
+    ></figure>
+<p>자! 결과물이 드디어 나왔습니다. 원하던 모양이 나왔네요.<a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_6_9"  target="_blank" rel="noreferrer">[각주:9]</a> 이것이 채널을 사용하는 법입니다.<br>
+RGB 채널은 Ambient Color에 연결했고, A 채널은 Opacity에 연결했습니다.</p>
+<p>이번 강의는 여기서 끝입니다 . 잘 하셨어요.<br>
+그런데 퀴즈가 하나 있어요&hellip; 이해하셨나 테스트!</p>
+<p>만약 Opacity에 A 채널을 넣지 않고, B나 G, R 채널을 끌어다 놓아도 될까요?</p>
+<p>정답은</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile10.uf.tistory.com/image/177B66334F0C6206243E67"
+    ></figure>
+<p>됩니다!!! B 채널을 Opacity로 끌어다 놓았습니다.<br>
+Alpha 채널과 똑같은 float 이기 때문에 당연히 됩니다. 그것만 맞으면 뭐든지 들어간다니깐요.<br>
+지금 현재 B채널은 Ambient Color에서도 쓰이고 있고, Opacity 에도 쓰이고 있군요.</p>
+<p>대신 투명도가&hellip;</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile2.uf.tistory.com/image/12228C394F0C2FDF2A186B"
+    ></figure>
+<p>이 이미지의 강도에 맞게 결정되었다는건 이해하시겠지요? 자, 놀랍지요? 이것이 기존에 그래픽 디자이너들이 잘 모르던, 채널의 속사정입니다. 가장 중요하면서, 가장 기초가 되는 바로 그 부분이지요.</p>
+<p><strong>각각의 채널은 동등한 구조의 float으로 구성되어 있고, 이게 단지 순서에 따라 Red냐 Green이냐 Blue냐 Alpha 이냐를 결정하고 있으며, 이걸 서로 섞어도 일단 서로 호환은 된다는 말입니다.</strong></p>
+<p>이걸 잘 이해하셨다면, 이제 오늘 강의는 진짜로 끝입니다. 다음부터 재미있어 지겠군요.</p>
+<p>===================================================================================================</p>
+<ul>
+<li>
+<p>다음 시간에는, 쉐이더를 가지고 놀아보는 시간입니다. 산수야 놀자! 입니다.<br>
+모든 색의 채널이 0.0~1.0 사이의 숫자라는 것을 알았으니, 이것을 더하고 곱하고 가지고 놀아봅시다.</p>
+</li>
+<li>
+<p>시간이 된다면, 조금 더 이미지를 조합해 봅시다. 재미있을겁니다.</p>
+</li>
+</ul>
+<ol>
+<li>이 텍스쳐 파일은 ShaderFX를 설치하면 자동으로 깔리는 텍스쳐 중 하나입니다. 저는 C:Program FilesAutodesk3ds Max 2009maps 안에 있네요. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_1"  target="_blank" rel="noreferrer">[본문으로]</a>- Ambient Color에만 연결하는게 지겨우신 분들은 Diffuse Color나 Self-illumination에도 연결해 보세요. 재미있는 변화가 일어날 겁니다. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_2"  target="_blank" rel="noreferrer">[본문으로]</a>- 쉐이더와 주전자를 동시에 선택한 채, Tools / Assign Material to selection을 해주면 됩니다. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_3"  target="_blank" rel="noreferrer">[본문으로]</a>- 어떻게 Texture Map 오브젝트가 저렇게 크게 보이게 할 수 있느냐고요? 마우스 휠을 굴려보세요. 확대, 축소가 됩니다. 마우스 가운데 버튼을 누른채 이동하면 패닝이 되구요. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_4"  target="_blank" rel="noreferrer">[본문으로]</a>- Cyan, Magenta, Yellow, Black 을 의미합니다. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_5"  target="_blank" rel="noreferrer">[본문으로]</a>- 사실, 모니터의 출력특성에 따른 색상보정으로 감마 코렉션(Gamma correction) 이라는게 적용되어서, 진짜 회색은 128,128,128 이 아닙니다만 여기서는 그 얘기를 무시하고 넘어가겠습니다. 분명 실버치매님이 써주실 거다에 한표. ㅋㅋㅋ <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_6"  target="_blank" rel="noreferrer">[본문으로]</a>- 채널당 8비트는 R,G,B 채널들이 각각 2의 8승 = 256 단계 로 이루어져 있다는 말입니다. 물론 채널당 다른 비트도 존재합니다. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_7"  target="_blank" rel="noreferrer">[본문으로]</a>- 소수점이 있는 수를 표현할때 사용하는 방식이라고 생각하시면 편합니다. 물론 어느 정도 한계치가 있어서, 너무 큰 수나 너무 작은 수는 표현 불가능하지만 일반적인 셰이더 작업을 위해서는 충분하고 남습니다. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_8"  target="_blank" rel="noreferrer">[본문으로]</a>- 참고로, 맥스 2012에서는 잘 나오지 않습니다. 현재 사용하고 있는 맥스는 2009 버전이며, 2010 버전에서도 잘 나오던걸로 기억합니다.. <a href="https://gamedevforever.com/script/powerEditor/pages/wysiwyg_xhtml_explorer.php?prefix=&amp;ver=1.1.196&amp;css=http%3A%2F%2Fcfs.tistory.com%2Fcustom%2Fblog%2F88%2F886330%2Fskin%2Fwysiwyg.css&amp;__T__=1326643477#footnote_link_6_9"  target="_blank" rel="noreferrer">[본문으로]</a>
+{% endraw %}</li>
+</ol>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2012-01-12-%EC%82%BC%EA%B5%AD%EC%A7%80%EB%A5%BC-%ED%92%88%EB%8B%A4-%EC%84%9C%ED%8F%AC%ED%84%B0%EC%A6%88-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%9C%EC%9E%91/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;삼국지를 품다 서포터즈 테스트 시작
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2012-01-12T23:35:28&#43;00:00">12 1월 2012</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2012-01-27-unity-3.5-%EC%8B%A0%EA%B8%B0%EC%88%A0--level-of-detail/">
+              <span class="leading-6">
+                Unity 3.5 신기술 : Level of Detail&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2012-01-27T23:30:49&#43;00:00">27 1월 2012</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

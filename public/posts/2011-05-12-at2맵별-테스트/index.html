@@ -1,0 +1,1158 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>AT2맵별 테스트 &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="AT2맵별 테스트 &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2011-05-12-at2%EB%A7%B5%EB%B3%84-%ED%85%8C%EC%8A%A4%ED%8A%B8/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2011-05-12-at2%EB%A7%B5%EB%B3%84-%ED%85%8C%EC%8A%A4%ED%8A%B8/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="AT2맵별 테스트">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-05-12T11:16:13+00:00">
+    <meta property="article:modified_time" content="2011-05-12T11:16:13+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AT2맵별 테스트">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "AT2맵별 테스트",
+    "headline": "AT2맵별 테스트",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2011-05-12-at2%EB%A7%B5%EB%B3%84-%ED%85%8C%EC%8A%A4%ED%8A%B8/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2011",
+    "dateCreated": "2011-05-12T11:16:13\u002b00:00",
+    "datePublished": "2011-05-12T11:16:13\u002b00:00",
+    
+    "dateModified": "2011-05-12T11:16:13\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "844"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        AT2맵별 테스트
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2011-05-12T11:16:13&#43;00:00">12 5월 2011</time><span class="px-2 text-primary-500">&middot;</span><span>844 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">4 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+역시 제대로, 풀버전으로 분석하고 문제거리가 있으면 역추적하고&hellip; 하려면 거의 한 달이 걸리는 짓이긴 합니다만, 짧은 시간안에 하느라 그렇게 하지는 못했습니다. 그저 작업하실때 염두해 두시고 체크하시면서 작업해 주시면 되겠습니다.<br>
+<strong>Babylon_field04<br>
+바빌론 필드_04</strong><br>
+프레임이 잘 나오고 드로우콜도 낮습니다. 추후 모래바람 이펙트가 추가된다던가 하면 얘기가 달라질 수도 있습니다&hellip;<br>
+드로우콜이 낮은데 비해 프레임이 상대적으로 잘 나오지는 않는 것 같습니다. 가끔 튀는 영역이 있는 것으로 보이는데 이 부분의 확인이 추후 필요할 듯 합니다. 어쨌건 데이터는 굉장히 가벼운 상태입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a3998e2.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a530448.jpg"
+    ></figure>
+<br>
+<strong>바빌론 Sp_gate<br>
+Babylon_sp_gate</strong>프레임이 살짝 낮습니다만 약간의 최적화를 통해 프레임이 올라갈 가능성이 큰 맵이며, 데이터 자체는 현재로도 안정적인 용량을 보여주고 있습니다. 단지 배경이 좀 비어보여서 추후 오브젝트 장식물들이 추가된다면 좀 느려질지도 모르겠습니다. 주의 부탁드립니다.<br>
+프레임이 튀고 있는 증상이 보이는데, 오브젝트의 처리가 불안할때 저런 증상이 나타납니다. 나중에 원인을 찾으면 프레임이 약간 올라갈 수도 있습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a622aca.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a6d5b17.jpg"
+    ></figure>
+</p>
+<p><strong>브라소프_브란 캐슬 가든<br>
+brso_brancastle_garden04</strong><br>
+아기자기하고 이쁜 맵이지만 크기가 작아 가벼운 편에 속합니다. 프레임도 잘 나오고, 맵도 이쁘고 데이터도 가볍습니다. 나중에 컬링이 적용될때 적극 참고가 될만한 좋은 맵입니다. 이 정도의 용량만 한 번에 보여지면 좋을 것 같습니다. (특히 로마가 참고하면 좋겠네요)<br>
+순간적으로 이미지 이펙트 스크립트가 뭔가 튀는 증상을 볼 수 있습니다. 뭔가 고질적인데, 이것만 잡아도 안정적 프레임이 나올 수 있을 것 같습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a8349a7.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a7c4abd.jpg"
+    ></figure>
+<br>
+<strong>브라소프 _ 필드<br>
+brasov_ fild</strong><br>
+나무가 많아 batch가 적극적으로 작동하고 있습니다.<br>
+하늘이 어둡네요 :)</p>
+<p>오브젝트가 많아 프레임이 잘 안나오고 있습니다. LOD나 컬링을 손봐야 할 것 같습니다. 깊이 텍스쳐를 업데이트 할때 간혹 튀긴 하는데 지금은 이유를 잘 모르겠네요.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a9dfa98.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41a98b9ba.jpg"
+    ></figure>
+<strong>브라소프 _ 박쥐동굴<br>
+brasov_batcave</strong><br>
+물이 약 22%의 부하를 먹고 있습니다. 새로 생긴 물 무척 무겁네요. 조정이 필요할 것 같습니다. 옵션이 많아졌으니 가능하겠지요.<br>
+그럼에도 불구하고 프레임이 괜찮게 나오는 편이니, 물만 개선하면 프레임이 좋을 것 같습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41aa841ad.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41aca4c10.jpg"
+    ></figure>
+</p>
+<p><strong>브리타이나 칼 섬?<br>
+br_carlisle</strong>&hellip;혹시 castle 이 아닌건가요?</p>
+<p>어쨌건 드로우콜이 높은데도 프레임이 잘 나오고 있습니다. 나무들의 영향이 크겠지요. 나무들은 드로우콜을 높이지만, 현재 batch가 560으로 매우 높기 때문에 프레임 저하가 작은 것입니다. 폴리곤도 많은데 말이지요. 이렇게 batch 가 높으면 프레임에 좋은 영향을 줍니다.<br>
+중간중간 가비지콜렉터(GC)가 튀고 있습니다. GC는 일종의 쓰레기통으로, 메모리에서 필요없는 부분을 정리해 버리는 기능입니다. 이 부분이 튄다는 것은 뭔가 이상한 오브젝트가 대량으로 생성/삭제를 반복하고 있다던가, 프로그램적으로 메모리 관리를 이상하게 하고 있다던가, GC 자체가 에러가 있다던가&hellip;</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41c6a54fc.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41c83a49a.jpg"
+    ></figure>
+<br>
+<strong>브리타니아 _노팅엄 마을<br>
+br_notinum</strong><br>
+맨 처음 제작된 맵이고 맨 처음 퍼포먼스 테스트가 되어, 합격점을 받았던 맵이기도 합니다. 그때와 지금이 어떻게 달라졌는지 비교해 볼까요?  프레임은 25프레임 정도로, 컬링이 되어 있지 않은 상태에서 이정도면 (넓은 맵이기도 하고) 괜찮은 편이라고 할 수 있습니다. 역시 드로우콜도 매우 적고 안정적이면서도 이미지가 비어 보이지 않습니다. 여전히 이상적이네요.<br>
+중간중간 튀는 부분이 있습니다만 부정기적이라 잡기 힘드네요.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41cb0c047.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41cb3c02d.jpg"
+    ></figure>
+<br>
+<strong>노팅엄_배틀맵3<br>
+br_notium_battle</strong><br>
+캐릭터가 많이 나오고 인터페이스가 나오는 맵이라는데 의의가 있는 데이터입니다.<br>
+데이터가 높지는 않지만 프레임도 무척 나오지 않네요.<br>
+약간 튀는 구간이 있지만 기본적으로 캐릭터들이 무거운 상태 - LOD도 되어 있지 않은 상태라 많이 무거워짐을 알 수 있습니다.<br>
+캐릭터 최적화가 필요하다는 것을 알 수 있습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41ce39505.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41cf8ab2b.jpg"
+    ></figure>
+<br>
+팬드래건 여관<br>
+br_pan_inn</p>
+<p>작은 건물 안입니다. 가볍겠죠.<br>
+데이터는 가볍습니다만 프레임은 생각만큼 높게 나오진 않습니다.<br>
+15% 정도를 이미지 이펙트가 잡아먹고 있네요. 그 외에도 뭔가 높이 잡아먹는 요소가 오브젝트에 있는 듯 한데.. 잘 모르겠습니다.<br>
+나중에 잘 찾아봐야 할 것 같습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41d193711.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41d306687.jpg"
+    ></figure>
+<br>
+<strong>팬드래건<br>
+br_pandragon</strong>팬드래건입니다. 이런 이미지가 보통 무겁죠.. 어디 볼까요.</p>
+<p>과연 무겁습니다. 이렇게 광활한 이미지는 무거울 수 밖에 없지요. 건물 LOD 라던가의 방법을 강구해야 할 것 같습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41d4841d7.jpg"
+    ></figure>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41e8dd7ba.jpg"
+    ></figure>
+<br>
+<strong>한슨집 Fx<br>
+br_hanson_FX</strong>FX가 추가되어 있는 집을 보았습니다. 집 자체가 가벼운 편이라 Xㅏ 들어가도 그다지 부담이 없네요.<br>
+단, 이런 실내들이 공통적으로 그림자를 끄니까 선 샤프트 같은 이미지 이펙트들이 캐릭터들한테 적용이 되면서 부하가 유발됩니다. 추후 정리하면 더 나아질듯 합니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41ebb5daa.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41ed037e2.jpg"
+    ></figure>
+</p>
+<p><strong>동굴_배틀맵<br>
+cave_battle 맵입니다. (이건 이미지가 노팅엄 전투맵 같은 느낌이네요)</strong><br>
+역시 캐릭터가 많습니다.<br>
+위의 노팅엄 전투맵보다는 프레임이 잘 나옵니다. 이유가 확실히 분석되진 않았습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41ef5b50a.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41ef67916.jpg"
+    ></figure>
+<br>
+<strong>ione_house<br>
+아이온 하우스?</strong><br>
+이건 볼 것도 없이 가장 가볍고 가장 빠릅니다. 신기한건, 데이터가 가장 적은건 아니라는 것입니다. 굉장히 압도적으로 좋은 프레임이 나오는데요, 원인을 연구하면 좋은 힌트가 될 수 있을것 같습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41f2bb00d.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41f2df5ab.jpg"
+    ></figure>
+<p><strong>히살리스크_컬버트던전<br>
+dungeon_culvert</strong>딱 봐도 힘이 들어간 무거운 던전입니다. 그런데 특이하게 드로우콜은 높지 않습니다. 폴리곤도 많지 않습니다. 그렇지만 프레임은 거기에 걸맞게 잘 나오지는 않습니다&hellip; 이유가 뭘까요? 라이트? 디퍼드에서 라이트의 추가는 그렇게 큰 영향을 주지 않습니다.</p>
+<p>이미지 이펙트와 피직스가 30% 정도를 먹고 있는데요. 이 부분을 찾아보면 힌트가 될지도 모르겠습니다.<br>
+나중에 본격적으로 테스트할 때..</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41f53512d.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41f7be278.jpg"
+    ></figure>
+</p>
+<p><strong>히살리스크<br>
+Hisarlik</strong>프레임이 꽤 안나오는 지역중 하나입니다. 버텍스도 꽤 많은 편이고, 드로우콜도 높습니다.<br>
+거기에 순간적으로 워터가 75%의 부하를 잡아먹으며 펄쩍펄쩍 뛰고 있습니다.<br>
+추후 최적화를 좀 고려해봐야 할 것 같은 곳입니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb41f772e91.jpg"
+    ></figure>
+<p><strong>트로이 _시타델<br>
+troycitadel</strong></p>
+<p>가장 무거운 맵중 하나입니다. 보이는 것도 꽤 많습니다.<br>
+적극적인 컬링과 LOD가 요구됩니다.<br>
+특이사항은 없습니다. 잘 줄여 주세요.  장과장님 화이팅. :)</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42c56587f.jpg"
+    ></figure>
+<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42c802de0.jpg"
+    ></figure>
+<br>
+<strong>콜로세움<br>
+Colosseum_battle</strong><br>
+데이터가 가볍긴 합니다. 그렇지만 그렇게 프레임이 좋지는 않네요. 역시 그림자를 끄니까 이미지 이펙트 . 특히 선 샤프트가 30% 를 먹어가고 있습니다. 나중에 조정이 필요하겠네요.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42c8bbad9.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42cacc2fb.jpg"
+    ></figure>
+<strong>로마 시내<br>
+rome_city</strong>최강으로 무겁습니다만, 최고로 느리진 않습니다. 역시 최적화에 따라서 개선될 여지가 꽤 있다는 말이겠지요.<br>
+미리부터 적극적인 최적화를 고려해서 디자인 되어 있는 것으로 알고 있습니다. 이제 그걸 적용해서 실행할 단계지요.<br>
+역시나 숨겨져 있는 워터의 무게가 22%를 차지하고 있습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42cc0069a.jpg"
+    ></figure>
+<p><strong>왕의계곡 동쪽<br>
+vellyofking_East</strong><br>
+프레임이 굉장히 잘나옵니다. 드로우콜도 굉장히 낮습니다. 하지만 드로우콜 비율 프레임이 가장 잘 나오는 맵 같습니다.<br>
+특별히 튀는 영역도 없고, 무척 이상적이고 안정적으로 나오고 있습니다.<br>
+좋은 모범이 되는 맵입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42cd88169.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42cfa24a5.jpg"
+    ></figure>
+<br>
+<strong>왕의계곡 서쪽.<br>
+Vellyofking_West</strong></p>
+<p>물이 있어서 어떨까 싶었는데, 과연 물이 16%를 차지하고 있네요. 그리고 동쪽보다 데이터가 무거워서 프레임이 잘 안나옵니다. 여기는 건물이 빽빽히 있는 지형이 아니라, 거리 컬링만 적용해도 굉장히 효과가 좋을 것 같습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42d1c934d.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42d2a2398.jpg"
+    ></figure>
+<br>
+<strong>왕의계곡 전투맵<br>
+Vellyofkingbattle</strong></p>
+<p>메쉬 스키닝 수치가 높게 나와서 프레임을 저하시키고 있습니다. 이것 역시 캐릭터의 최적화가 필요할듯 합니다.<br>
+배경 데이터로만 따지면 가벼운데 말입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42e19d65d.jpg"
+    ></figure>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20110512_111613_c0055803_4dcb42e3549c9.jpg"
+    ></figure>
+
+{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-05-11-at2-%EB%A7%B5-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;AT2 맵 퍼포먼스 테스트
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-05-11T17:56:07&#43;00:00">11 5월 2011</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2011-05-16-deferred-lighting-rendering-path-detail/">
+              <span class="leading-6">
+                Deferred Lighting Rendering Path Detail&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2011-05-16T11:59:54&#43;00:00">16 5월 2011</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

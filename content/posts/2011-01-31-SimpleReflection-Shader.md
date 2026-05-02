@@ -1,0 +1,114 @@
+---
+layout: post
+title: "SimpleReflection Shader"
+date: 2011-01-31 11:10:02
+categories: [이글루스 백업, "2011-01"]
+---
+
+{% raw %}
+실제로 이 그래픽 카드에서는 작동 안됨.   
+  
+// Upgrade NOTE: replaced 'glstate.matrix.mvp' with 'UNITY\_MATRIX\_MVP'
+
+Shader "SimpleReflection Shader" {  
+ Properties {  
+  \_NormalMap ("Normal Map", 2D) = "white" {}  
+  \_BumpScale ("Bump Scale", Range(0.01,10.0)) = 1  
+  \_SkyCube ("Sky Cubemap", Cube) = "\_Skybox" { TexGen CubeReflect }      
+ }  
+ #warning Upgrade NOTE: SubShader commented out; uses Unity 2.x style fixed function per-pixel lighting. Per-pixel lighting is not supported without shaders anymore.  
+/\*SubShader   
+ {  
+  // Pixel lights  
+  Pass  
+  {  
+   Name "BASE"  
+   Tags { "LightMode" = "Pixel" }  
+   Lighting On  
+   Cull Off  
+     
+   CGPROGRAM  
+   #pragma vertex vert  
+   #pragma fragment frag  
+   #pragma fragmentoption ARB\_fog\_exp2  
+   #pragma fragmentoption ARB\_precision\_hint\_fastest
+
+   #include "UnityCG.cginc"  
+   //#include "AutoLight.cginc"   
+     
+   uniform samplerCube \_SkyCube;  
+     
+   uniform sampler2D \_NormalMap;  
+   uniform float4 \_NormalMap\_ST;  
+     
+   uniform float \_BumpScale;  
+    
+   struct v2f  
+   {  
+    float4 position : POSITION;  
+    float4 uv : TEXCOORD0;   
+      
+    float3 viewDirWS : TEXCOORD2;  
+    float3 normalWS : TEXCOORD4;  
+    float3 tangentWS : TEXCOORD5;  
+    float3 binormalWS : TEXCOORD6;  
+   };
+
+   v2f vert ( appdata\_tan i  )  
+   {  
+    v2f o;  
+      
+    o.position = mul( UNITY\_MATRIX\_MVP, i.vertex);  
+    o.uv.xy = TRANSFORM\_TEX( i.texcoord, \_NormalMap );  
+      
+    // ObjSpaceViewDir give us the viewDir in ObjSpace  
+    // so we transform it to world space  
+    o.viewDirWS = mul( \_Object2World, float4( ObjSpaceViewDir( i.vertex ), 0) ).xyz;  
+      
+    // we transform the normal and tangent in world space as well  
+    o.normalWS = mul( \_Object2World, float4(i.normal,0) ).xyz;  
+    o.tangentWS = mul( \_Object2World, float4(i.tangent.xyz,0) ).xyz;  
+      
+    // we cross product directly from world space vectors so we save one transform  
+    float3 binormalWS = cross( o.normalWS, o.tangentWS ) \* i.tangent.w;  
+    o.binormalWS = binormalWS;  
+      
+    return o;  
+   }  
+     
+   float4 frag( v2f i ) : COLOR  
+   {  
+    // get the normal from our Normal Map  
+    float3 normal = tex2D( \_NormalMap, i.uv.xy ).rgb;  
+    normal = normal.rgb \* 2 - 1; // transform it from 0,1 to [-1,+1]    
+    // we scale only x & y then normalize it  
+    normal = normalize(normal\* float3(\_BumpScale,\_BumpScale,1)) ;  
+      
+    // transform the normal by our world space tangent space  
+    // this gives us a normal in world space  
+    float3 normalWS = normal.x \* normalize(i.tangentWS);  
+    normalWS += normal.y \* normalize(i.binormalWS);  
+    normalWS += normal.z \* normalize(i.normalWS);      
+    normalWS = normalize(normalWS);  
+      
+    // always normalize vector coming from the vertex shader  
+    float3 viewDirWS = normalize(i.viewDirWS);
+
+    // we use -viewDir because viewDir goes from the current point to the camera  
+    // and we need the inverse of this vector to compute the reflection vector  
+    float3 reflectVec = reflect( -viewDirWS, normalWS );
+
+    // reflectVec being in world space, we can now sample the cube map  
+    float4 reflectionColor = texCUBE( \_SkyCube, reflectVec );
+
+    // camera facing lighting  
+    float kD = dot( viewDirWS, normalWS);  
+       
+    return float4(reflectionColor.rgb \* kD, 1);  
+   }  
+     
+   ENDCG  
+  }  
+ }\*/  
+}
+{% endraw %}

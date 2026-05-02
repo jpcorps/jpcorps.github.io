@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2010-06 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2010-06/</link>
+    <description>Recent content in 2010-06 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Tue, 29 Jun 2010 17:35:45 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2010-06/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>flow 쉐이더 2차 버전</title>
+      <link>http://localhost:1313/posts/2010-06-29-flow-%EC%89%90%EC%9D%B4%EB%8D%94-2%EC%B0%A8-%EB%B2%84%EC%A0%84/</link>
+      <pubDate>Tue, 29 Jun 2010 17:35:45 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-29-flow-%EC%89%90%EC%9D%B4%EB%8D%94-2%EC%B0%A8-%EB%B2%84%EC%A0%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>flow 이펙트 쉐이더 (맥스용)</title>
+      <link>http://localhost:1313/posts/2010-06-28-flow-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%89%90%EC%9D%B4%EB%8D%94-%EB%A7%A5%EC%8A%A4%EC%9A%A9/</link>
+      <pubDate>Mon, 28 Jun 2010 16:21:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-28-flow-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%89%90%EC%9D%B4%EB%8D%94-%EB%A7%A5%EC%8A%A4%EC%9A%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>구름이 구름이</title>
+      <link>http://localhost:1313/posts/2010-06-28-%EA%B5%AC%EB%A6%84%EC%9D%B4-%EA%B5%AC%EB%A6%84%EC%9D%B4/</link>
+      <pubDate>Mon, 28 Jun 2010 01:59:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-28-%EA%B5%AC%EB%A6%84%EC%9D%B4-%EA%B5%AC%EB%A6%84%EC%9D%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>워크샵 워크샵</title>
+      <link>http://localhost:1313/posts/2010-06-27-%EC%9B%8C%ED%81%AC%EC%83%B5-%EC%9B%8C%ED%81%AC%EC%83%B5/</link>
+      <pubDate>Sun, 27 Jun 2010 20:47:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-27-%EC%9B%8C%ED%81%AC%EC%83%B5-%EC%9B%8C%ED%81%AC%EC%83%B5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>니시카와 젠지씨의 책 : 게임 제작자가 되기 위한3D그래픽스 기술</title>
+      <link>http://localhost:1313/posts/2010-06-25-%EB%8B%88%EC%8B%9C%EC%B9%B4%EC%99%80-%EC%A0%A0%EC%A7%80%EC%94%A8%EC%9D%98-%EC%B1%85--%EA%B2%8C%EC%9E%84-%EC%A0%9C%EC%9E%91%EC%9E%90%EA%B0%80-%EB%90%98%EA%B8%B0-%EC%9C%84%ED%95%9C3d%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4-%EA%B8%B0%EC%88%A0/</link>
+      <pubDate>Fri, 25 Jun 2010 13:52:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-25-%EB%8B%88%EC%8B%9C%EC%B9%B4%EC%99%80-%EC%A0%A0%EC%A7%80%EC%94%A8%EC%9D%98-%EC%B1%85--%EA%B2%8C%EC%9E%84-%EC%A0%9C%EC%9E%91%EC%9E%90%EA%B0%80-%EB%90%98%EA%B8%B0-%EC%9C%84%ED%95%9C3d%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4-%EA%B8%B0%EC%88%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>anisotropic 샘플링</title>
+      <link>http://localhost:1313/posts/2010-06-25-anisotropic-%EC%83%98%ED%94%8C%EB%A7%81/</link>
+      <pubDate>Fri, 25 Jun 2010 11:52:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-25-anisotropic-%EC%83%98%ED%94%8C%EB%A7%81/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NDC(넥슨 개발자 컨퍼런스)</title>
+      <link>http://localhost:1313/posts/2010-06-24-ndc%EB%84%A5%EC%8A%A8-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4/</link>
+      <pubDate>Thu, 24 Jun 2010 16:51:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-24-ndc%EB%84%A5%EC%8A%A8-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Anisotropic 수치 제어</title>
+      <link>http://localhost:1313/posts/2010-06-24-anisotropic-%EC%88%98%EC%B9%98-%EC%A0%9C%EC%96%B4/</link>
+      <pubDate>Thu, 24 Jun 2010 15:57:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-24-anisotropic-%EC%88%98%EC%B9%98-%EC%A0%9C%EC%96%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>그냥</title>
+      <link>http://localhost:1313/posts/2010-06-21-%EA%B7%B8%EB%83%A5/</link>
+      <pubDate>Mon, 21 Jun 2010 20:55:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-21-%EA%B7%B8%EB%83%A5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>도덕성의 또 다른 측면</title>
+      <link>http://localhost:1313/posts/2010-06-21-%EB%8F%84%EB%8D%95%EC%84%B1%EC%9D%98-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%B8%A1%EB%A9%B4/</link>
+      <pubDate>Mon, 21 Jun 2010 19:46:44 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-21-%EB%8F%84%EB%8D%95%EC%84%B1%EC%9D%98-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%B8%A1%EB%A9%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Texture sampling</title>
+      <link>http://localhost:1313/posts/2010-06-21-texture-sampling/</link>
+      <pubDate>Mon, 21 Jun 2010 17:57:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-21-texture-sampling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>mipmap 디테일 테스트</title>
+      <link>http://localhost:1313/posts/2010-06-21-mipmap-%EB%94%94%ED%85%8C%EC%9D%BC-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Mon, 21 Jun 2010 15:59:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-21-mipmap-%EB%94%94%ED%85%8C%EC%9D%BC-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NDC 2010 시상식 참여</title>
+      <link>http://localhost:1313/posts/2010-06-18-ndc-2010-%EC%8B%9C%EC%83%81%EC%8B%9D-%EC%B0%B8%EC%97%AC/</link>
+      <pubDate>Fri, 18 Jun 2010 21:33:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-18-ndc-2010-%EC%8B%9C%EC%83%81%EC%8B%9D-%EC%B0%B8%EC%97%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>밉맵(mipmap) 컨트롤</title>
+      <link>http://localhost:1313/posts/2010-06-18-%EB%B0%89%EB%A7%B5mipmap-%EC%BB%A8%ED%8A%B8%EB%A1%A4/</link>
+      <pubDate>Fri, 18 Jun 2010 12:02:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-18-%EB%B0%89%EB%A7%B5mipmap-%EC%BB%A8%ED%8A%B8%EB%A1%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>밉맵 컨트롤</title>
+      <link>http://localhost:1313/posts/2010-06-17-%EB%B0%89%EB%A7%B5-%EC%BB%A8%ED%8A%B8%EB%A1%A4/</link>
+      <pubDate>Thu, 17 Jun 2010 18:05:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-17-%EB%B0%89%EB%A7%B5-%EC%BB%A8%ED%8A%B8%EB%A1%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tangent Matrix 만들기</title>
+      <link>http://localhost:1313/posts/2010-06-17-tangent-matrix-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Thu, 17 Jun 2010 15:30:42 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-17-tangent-matrix-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>대충 정리끝</title>
+      <link>http://localhost:1313/posts/2010-06-14-%EB%8C%80%EC%B6%A9-%EC%A0%95%EB%A6%AC%EB%81%9D/</link>
+      <pubDate>Mon, 14 Jun 2010 23:58:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-14-%EB%8C%80%EC%B6%A9-%EC%A0%95%EB%A6%AC%EB%81%9D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>명동성당에서 미사보기</title>
+      <link>http://localhost:1313/posts/2010-06-14-%EB%AA%85%EB%8F%99%EC%84%B1%EB%8B%B9%EC%97%90%EC%84%9C-%EB%AF%B8%EC%82%AC%EB%B3%B4%EA%B8%B0/</link>
+      <pubDate>Mon, 14 Jun 2010 00:31:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-14-%EB%AA%85%EB%8F%99%EC%84%B1%EB%8B%B9%EC%97%90%EC%84%9C-%EB%AF%B8%EC%82%AC%EB%B3%B4%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>새 식구가 생겼습니다.</title>
+      <link>http://localhost:1313/posts/2010-06-11-%EC%83%88-%EC%8B%9D%EA%B5%AC%EA%B0%80-%EC%83%9D%EA%B2%BC%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Fri, 11 Jun 2010 21:33:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-11-%EC%83%88-%EC%8B%9D%EA%B5%AC%EA%B0%80-%EC%83%9D%EA%B2%BC%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>겜브리오 라이트스피드 테스트 쉐이더</title>
+      <link>http://localhost:1313/posts/2010-06-07-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%8A%A4%ED%94%BC%EB%93%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Mon, 07 Jun 2010 17:47:45 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-07-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%8A%A4%ED%94%BC%EB%93%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>찜질기 구입</title>
+      <link>http://localhost:1313/posts/2010-06-07-%EC%B0%9C%EC%A7%88%EA%B8%B0-%EA%B5%AC%EC%9E%85/</link>
+      <pubDate>Mon, 07 Jun 2010 00:46:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-07-%EC%B0%9C%EC%A7%88%EA%B8%B0-%EA%B5%AC%EC%9E%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>럭키가이</title>
+      <link>http://localhost:1313/posts/2010-06-04-%EB%9F%AD%ED%82%A4%EA%B0%80%EC%9D%B4/</link>
+      <pubDate>Fri, 04 Jun 2010 22:56:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-04-%EB%9F%AD%ED%82%A4%EA%B0%80%EC%9D%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>근황</title>
+      <link>http://localhost:1313/posts/2010-06-04-%EA%B7%BC%ED%99%A9/</link>
+      <pubDate>Fri, 04 Jun 2010 13:47:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-04-%EA%B7%BC%ED%99%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3D TV 리뷰 2등</title>
+      <link>http://localhost:1313/posts/2010-06-02-3d-tv-%EB%A6%AC%EB%B7%B0-2%EB%93%B1/</link>
+      <pubDate>Wed, 02 Jun 2010 21:24:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2010-06-02-3d-tv-%EB%A6%AC%EB%B7%B0-2%EB%93%B1/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

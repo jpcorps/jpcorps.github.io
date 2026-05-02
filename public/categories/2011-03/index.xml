@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2011-03 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2011-03/</link>
+    <description>Recent content in 2011-03 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Wed, 30 Mar 2011 17:46:49 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2011-03/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>카메라 수정이슈</title>
+      <link>http://localhost:1313/posts/2011-03-30-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%88%98%EC%A0%95%EC%9D%B4%EC%8A%88/</link>
+      <pubDate>Wed, 30 Mar 2011 17:46:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-30-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%88%98%EC%A0%95%EC%9D%B4%EC%8A%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>구인광고 2차</title>
+      <link>http://localhost:1313/posts/2011-03-30-%EA%B5%AC%EC%9D%B8%EA%B4%91%EA%B3%A0-2%EC%B0%A8/</link>
+      <pubDate>Wed, 30 Mar 2011 13:41:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-30-%EA%B5%AC%EC%9D%B8%EA%B4%91%EA%B3%A0-2%EC%B0%A8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>게임테크 2011 참관기 (이어서)</title>
+      <link>http://localhost:1313/posts/2011-03-30-%EA%B2%8C%EC%9E%84%ED%85%8C%ED%81%AC-2011-%EC%B0%B8%EA%B4%80%EA%B8%B0-%EC%9D%B4%EC%96%B4%EC%84%9C/</link>
+      <pubDate>Wed, 30 Mar 2011 02:38:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-30-%EA%B2%8C%EC%9E%84%ED%85%8C%ED%81%AC-2011-%EC%B0%B8%EA%B4%80%EA%B8%B0-%EC%9D%B4%EC%96%B4%EC%84%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>게임테크 2011 참관기</title>
+      <link>http://localhost:1313/posts/2011-03-29-%EA%B2%8C%EC%9E%84%ED%85%8C%ED%81%AC-2011-%EC%B0%B8%EA%B4%80%EA%B8%B0/</link>
+      <pubDate>Tue, 29 Mar 2011 09:37:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-29-%EA%B2%8C%EC%9E%84%ED%85%8C%ED%81%AC-2011-%EC%B0%B8%EA%B4%80%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>남만 던전 섹션 4 퍼포먼스 테스트</title>
+      <link>http://localhost:1313/posts/2011-03-28-%EB%82%A8%EB%A7%8C-%EB%8D%98%EC%A0%84-%EC%84%B9%EC%85%98-4-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Mon, 28 Mar 2011 16:03:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-28-%EB%82%A8%EB%A7%8C-%EB%8D%98%EC%A0%84-%EC%84%B9%EC%85%98-4-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>물 쉐이더 소규모 수정</title>
+      <link>http://localhost:1313/posts/2011-03-23-%EB%AC%BC-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%86%8C%EA%B7%9C%EB%AA%A8-%EC%88%98%EC%A0%95/</link>
+      <pubDate>Wed, 23 Mar 2011 15:07:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-23-%EB%AC%BC-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%86%8C%EA%B7%9C%EB%AA%A8-%EC%88%98%EC%A0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼국지를 품다 캐릭터 쉐이더</title>
+      <link>http://localhost:1313/posts/2011-03-23-%EC%82%BC%EA%B5%AD%EC%A7%80%EB%A5%BC-%ED%92%88%EB%8B%A4-%EC%BA%90%EB%A6%AD%ED%84%B0-%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Wed, 23 Mar 2011 11:02:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-23-%EC%82%BC%EA%B5%AD%EC%A7%80%EB%A5%BC-%ED%92%88%EB%8B%A4-%EC%BA%90%EB%A6%AD%ED%84%B0-%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>테스트 후기</title>
+      <link>http://localhost:1313/posts/2011-03-22-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%9B%84%EA%B8%B0/</link>
+      <pubDate>Tue, 22 Mar 2011 17:18:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-22-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%9B%84%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아티스트 충원합니다.</title>
+      <link>http://localhost:1313/posts/2011-03-22-%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8-%EC%B6%A9%EC%9B%90%ED%95%A9%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Tue, 22 Mar 2011 11:19:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-22-%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8-%EC%B6%A9%EC%9B%90%ED%95%A9%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>기타 코드</title>
+      <link>http://localhost:1313/posts/2011-03-20-%EA%B8%B0%ED%83%80-%EC%BD%94%EB%93%9C/</link>
+      <pubDate>Sun, 20 Mar 2011 23:22:15 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-20-%EA%B8%B0%ED%83%80-%EC%BD%94%EB%93%9C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tangled - When will my life begin?</title>
+      <link>http://localhost:1313/posts/2011-03-20-tangled---when-will-my-life-begin/</link>
+      <pubDate>Sun, 20 Mar 2011 23:20:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-20-tangled---when-will-my-life-begin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>게임자격증 출제 백업</title>
+      <link>http://localhost:1313/posts/2011-03-20-%EA%B2%8C%EC%9E%84%EC%9E%90%EA%B2%A9%EC%A6%9D-%EC%B6%9C%EC%A0%9C-%EB%B0%B1%EC%97%85/</link>
+      <pubDate>Sun, 20 Mar 2011 16:53:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-20-%EA%B2%8C%EC%9E%84%EC%9E%90%EA%B2%A9%EC%A6%9D-%EC%B6%9C%EC%A0%9C-%EB%B0%B1%EC%97%85/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>유니티의 3가지 쉐이더 제작 방법</title>
+      <link>http://localhost:1313/posts/2011-03-16-%EC%9C%A0%EB%8B%88%ED%8B%B0%EC%9D%98-3%EA%B0%80%EC%A7%80-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%A0%9C%EC%9E%91-%EB%B0%A9%EB%B2%95/</link>
+      <pubDate>Wed, 16 Mar 2011 17:51:26 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-16-%EC%9C%A0%EB%8B%88%ED%8B%B0%EC%9D%98-3%EA%B0%80%EC%A7%80-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%A0%9C%EC%9E%91-%EB%B0%A9%EB%B2%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 퍼포먼스 테스트 결과보고 3부</title>
+      <link>http://localhost:1313/posts/2011-03-16-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0-3%EB%B6%80/</link>
+      <pubDate>Wed, 16 Mar 2011 14:49:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-16-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0-3%EB%B6%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 퍼포먼스 테스트 결과보고 2부</title>
+      <link>http://localhost:1313/posts/2011-03-15-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0-2%EB%B6%80/</link>
+      <pubDate>Tue, 15 Mar 2011 18:32:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-15-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0-2%EB%B6%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 퍼포먼스 테스트 결과보고</title>
+      <link>http://localhost:1313/posts/2011-03-15-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0/</link>
+      <pubDate>Tue, 15 Mar 2011 18:27:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-15-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼성에서 주최한 3D TV 비교 시연회를 갔다 왔습니다.</title>
+      <link>http://localhost:1313/posts/2011-03-14-%EC%82%BC%EC%84%B1%EC%97%90%EC%84%9C-%EC%A3%BC%EC%B5%9C%ED%95%9C-3d-tv-%EB%B9%84%EA%B5%90-%EC%8B%9C%EC%97%B0%ED%9A%8C%EB%A5%BC-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Mon, 14 Mar 2011 10:23:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-14-%EC%82%BC%EC%84%B1%EC%97%90%EC%84%9C-%EC%A3%BC%EC%B5%9C%ED%95%9C-3d-tv-%EB%B9%84%EA%B5%90-%EC%8B%9C%EC%97%B0%ED%9A%8C%EB%A5%BC-%EA%B0%94%EB%8B%A4-%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>싱가폴 항공 : 크리스 월드와 함께 공부하기</title>
+      <link>http://localhost:1313/posts/2011-03-12-%EC%8B%B1%EA%B0%80%ED%8F%B4-%ED%95%AD%EA%B3%B5--%ED%81%AC%EB%A6%AC%EC%8A%A4-%EC%9B%94%EB%93%9C%EC%99%80-%ED%95%A8%EA%BB%98-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sat, 12 Mar 2011 05:53:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-12-%EC%8B%B1%EA%B0%80%ED%8F%B4-%ED%95%AD%EA%B3%B5--%ED%81%AC%EB%A6%AC%EC%8A%A4-%EC%9B%94%EB%93%9C%EC%99%80-%ED%95%A8%EA%BB%98-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GDC 강연 참관기 : 금요일 강연내용</title>
+      <link>http://localhost:1313/posts/2011-03-11-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0--%EA%B8%88%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</link>
+      <pubDate>Fri, 11 Mar 2011 01:11:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-11-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0--%EA%B8%88%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GDC 강연 참관기 : 목요일 강연내용</title>
+      <link>http://localhost:1313/posts/2011-03-11-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0--%EB%AA%A9%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</link>
+      <pubDate>Fri, 11 Mar 2011 01:10:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-11-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0--%EB%AA%A9%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품에서 실시간 라이트 여러개 사용하기 : 라이트맵 안만들기</title>
+      <link>http://localhost:1313/posts/2011-03-10-%EC%82%BC%ED%92%88%EC%97%90%EC%84%9C-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%97%AC%EB%9F%AC%EA%B0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0--%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5-%EC%95%88%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Thu, 10 Mar 2011 20:50:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-10-%EC%82%BC%ED%92%88%EC%97%90%EC%84%9C-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%97%AC%EB%9F%AC%EA%B0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0--%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5-%EC%95%88%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GDC 강연 참관기 : 수요일 강연내용</title>
+      <link>http://localhost:1313/posts/2011-03-10-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0--%EC%88%98%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</link>
+      <pubDate>Thu, 10 Mar 2011 08:56:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-10-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0--%EC%88%98%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GDC 강연 참관기 :  수요일 강연내용</title>
+      <link>http://localhost:1313/posts/2011-03-10-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0---%EC%88%98%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</link>
+      <pubDate>Thu, 10 Mar 2011 01:47:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-10-gdc-%EA%B0%95%EC%97%B0-%EC%B0%B8%EA%B4%80%EA%B8%B0---%EC%88%98%EC%9A%94%EC%9D%BC-%EA%B0%95%EC%97%B0%EB%82%B4%EC%9A%A9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Forward Rendering Path Details</title>
+      <link>http://localhost:1313/posts/2011-03-09-forward-rendering-path-details/</link>
+      <pubDate>Wed, 09 Mar 2011 17:22:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-09-forward-rendering-path-details/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>퍼포먼스를 올리고 싶습니까? : 기획자를 위한 3D 그래픽스</title>
+      <link>http://localhost:1313/posts/2011-03-09-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4%EB%A5%BC-%EC%98%AC%EB%A6%AC%EA%B3%A0-%EC%8B%B6%EC%8A%B5%EB%8B%88%EA%B9%8C--%EA%B8%B0%ED%9A%8D%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-3d-%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4/</link>
+      <pubDate>Wed, 09 Mar 2011 11:46:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-09-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4%EB%A5%BC-%EC%98%AC%EB%A6%AC%EA%B3%A0-%EC%8B%B6%EC%8A%B5%EB%8B%88%EA%B9%8C--%EA%B8%B0%ED%9A%8D%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-3d-%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 물 쉐이더</title>
+      <link>http://localhost:1313/posts/2011-03-08-%EC%82%BC%ED%92%88-%EB%AC%BC-%EC%89%90%EC%9D%B4%EB%8D%94/</link>
+      <pubDate>Tue, 08 Mar 2011 10:15:36 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-08-%EC%82%BC%ED%92%88-%EB%AC%BC-%EC%89%90%EC%9D%B4%EB%8D%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>여기는 샌프란시스코</title>
+      <link>http://localhost:1313/posts/2011-03-02-%EC%97%AC%EA%B8%B0%EB%8A%94-%EC%83%8C%ED%94%84%EB%9E%80%EC%8B%9C%EC%8A%A4%EC%BD%94/</link>
+      <pubDate>Wed, 02 Mar 2011 17:56:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-03-02-%EC%97%AC%EA%B8%B0%EB%8A%94-%EC%83%8C%ED%94%84%EB%9E%80%EC%8B%9C%EC%8A%A4%EC%BD%94/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

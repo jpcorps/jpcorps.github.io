@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2012-08 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2012-08/</link>
+    <description>Recent content in 2012-08 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Thu, 30 Aug 2012 09:33:16 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2012-08/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>명일역 항아리 닭강정</title>
+      <link>http://localhost:1313/posts/2012-08-30-%EB%AA%85%EC%9D%BC%EC%97%AD-%ED%95%AD%EC%95%84%EB%A6%AC-%EB%8B%AD%EA%B0%95%EC%A0%95/</link>
+      <pubDate>Thu, 30 Aug 2012 09:33:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-30-%EB%AA%85%EC%9D%BC%EC%97%AD-%ED%95%AD%EC%95%84%EB%A6%AC-%EB%8B%AD%EA%B0%95%EC%A0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>유니티 4.0이 발표되었습니다.</title>
+      <link>http://localhost:1313/posts/2012-08-24-%EC%9C%A0%EB%8B%88%ED%8B%B0-4.0%EC%9D%B4-%EB%B0%9C%ED%91%9C%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <pubDate>Fri, 24 Aug 2012 17:57:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-24-%EC%9C%A0%EB%8B%88%ED%8B%B0-4.0%EC%9D%B4-%EB%B0%9C%ED%91%9C%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>게임테크 2012 강연료 기부 인증</title>
+      <link>http://localhost:1313/posts/2012-08-22-%EA%B2%8C%EC%9E%84%ED%85%8C%ED%81%AC-2012-%EA%B0%95%EC%97%B0%EB%A3%8C-%EA%B8%B0%EB%B6%80-%EC%9D%B8%EC%A6%9D/</link>
+      <pubDate>Wed, 22 Aug 2012 09:30:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-22-%EA%B2%8C%EC%9E%84%ED%85%8C%ED%81%AC-2012-%EA%B0%95%EC%97%B0%EB%A3%8C-%EA%B8%B0%EB%B6%80-%EC%9D%B8%EC%A6%9D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 9강</title>
+      <link>http://localhost:1313/posts/2012-08-19-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-9%EA%B0%95/</link>
+      <pubDate>Sun, 19 Aug 2012 13:35:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-19-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-9%EA%B0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Phong 셰이더보다 싼 유사 Blinn-Phong 셰이딩 모델</title>
+      <link>http://localhost:1313/posts/2012-08-18-phong-%EC%85%B0%EC%9D%B4%EB%8D%94%EB%B3%B4%EB%8B%A4-%EC%8B%BC-%EC%9C%A0%EC%82%AC-blinn-phong-%EC%85%B0%EC%9D%B4%EB%94%A9-%EB%AA%A8%EB%8D%B8/</link>
+      <pubDate>Sat, 18 Aug 2012 13:03:26 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-18-phong-%EC%85%B0%EC%9D%B4%EB%8D%94%EB%B3%B4%EB%8B%A4-%EC%8B%BC-%EC%9C%A0%EC%82%AC-blinn-phong-%EC%85%B0%EC%9D%B4%EB%94%A9-%EB%AA%A8%EB%8D%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>뷰 벡터 / 카메라 벡터 구하는 식</title>
+      <link>http://localhost:1313/posts/2012-08-18-%EB%B7%B0-%EB%B2%A1%ED%84%B0--%EC%B9%B4%EB%A9%94%EB%9D%BC-%EB%B2%A1%ED%84%B0-%EA%B5%AC%ED%95%98%EB%8A%94-%EC%8B%9D/</link>
+      <pubDate>Sat, 18 Aug 2012 00:19:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-18-%EB%B7%B0-%EB%B2%A1%ED%84%B0--%EC%B9%B4%EB%A9%94%EB%9D%BC-%EB%B2%A1%ED%84%B0-%EA%B5%AC%ED%95%98%EB%8A%94-%EC%8B%9D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>이벤트 2부 : 이태원 여행</title>
+      <link>http://localhost:1313/posts/2012-08-16-%EC%9D%B4%EB%B2%A4%ED%8A%B8-2%EB%B6%80--%EC%9D%B4%ED%83%9C%EC%9B%90-%EC%97%AC%ED%96%89/</link>
+      <pubDate>Thu, 16 Aug 2012 03:23:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-16-%EC%9D%B4%EB%B2%A4%ED%8A%B8-2%EB%B6%80--%EC%9D%B4%ED%83%9C%EC%9B%90-%EC%97%AC%ED%96%89/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>마눌님을 위한 이벤트 1부 : 시네 드 셰프</title>
+      <link>http://localhost:1313/posts/2012-08-08-%EB%A7%88%EB%88%8C%EB%8B%98%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-1%EB%B6%80--%EC%8B%9C%EB%84%A4-%EB%93%9C-%EC%85%B0%ED%94%84/</link>
+      <pubDate>Wed, 08 Aug 2012 01:55:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-08-%EB%A7%88%EB%88%8C%EB%8B%98%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-1%EB%B6%80--%EC%8B%9C%EB%84%A4-%EB%93%9C-%EC%85%B0%ED%94%84/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>듀얼 라이트맵에 대한 연구</title>
+      <link>http://localhost:1313/posts/2012-08-01-%EB%93%80%EC%96%BC-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%B0%EA%B5%AC/</link>
+      <pubDate>Wed, 01 Aug 2012 12:01:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-08-01-%EB%93%80%EC%96%BC-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%B0%EA%B5%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

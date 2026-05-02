@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2011-07 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2011-07/</link>
+    <description>Recent content in 2011-07 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Fri, 29 Jul 2011 21:37:47 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2011-07/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>어떻게 쉐이더를 공부했냐고요?</title>
+      <link>http://localhost:1313/posts/2011-07-29-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%89%90%EC%9D%B4%EB%8D%94%EB%A5%BC-%EA%B3%B5%EB%B6%80%ED%96%88%EB%83%90%EA%B3%A0%EC%9A%94/</link>
+      <pubDate>Fri, 29 Jul 2011 21:37:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-29-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%89%90%EC%9D%B4%EB%8D%94%EB%A5%BC-%EA%B3%B5%EB%B6%80%ED%96%88%EB%83%90%EA%B3%A0%EC%9A%94/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>테크니컬 아티스트는 무엇을 합니까?</title>
+      <link>http://localhost:1313/posts/2011-07-29-%ED%85%8C%ED%81%AC%EB%8B%88%EC%BB%AC-%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%84-%ED%95%A9%EB%8B%88%EA%B9%8C/</link>
+      <pubDate>Fri, 29 Jul 2011 21:16:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-29-%ED%85%8C%ED%81%AC%EB%8B%88%EC%BB%AC-%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%84-%ED%95%A9%EB%8B%88%EA%B9%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>S 프로젝트 내부테스트 최저사양. 최저옵션</title>
+      <link>http://localhost:1313/posts/2011-07-29-s-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%82%B4%EB%B6%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%B5%9C%EC%A0%80%EC%82%AC%EC%96%91.-%EC%B5%9C%EC%A0%80%EC%98%B5%EC%85%98/</link>
+      <pubDate>Fri, 29 Jul 2011 17:33:37 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-29-s-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%82%B4%EB%B6%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%B5%9C%EC%A0%80%EC%82%AC%EC%96%91.-%EC%B5%9C%EC%A0%80%EC%98%B5%EC%85%98/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>유니티 3.4 업그레이드 내역</title>
+      <link>http://localhost:1313/posts/2011-07-28-%EC%9C%A0%EB%8B%88%ED%8B%B0-3.4-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C-%EB%82%B4%EC%97%AD/</link>
+      <pubDate>Thu, 28 Jul 2011 14:52:44 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-28-%EC%9C%A0%EB%8B%88%ED%8B%B0-3.4-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C-%EB%82%B4%EC%97%AD/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>QA 의 시간이다!</title>
+      <link>http://localhost:1313/posts/2011-07-25-qa-%EC%9D%98-%EC%8B%9C%EA%B0%84%EC%9D%B4%EB%8B%A4/</link>
+      <pubDate>Mon, 25 Jul 2011 16:55:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-25-qa-%EC%9D%98-%EC%8B%9C%EA%B0%84%EC%9D%B4%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>대사창의 클릭해서 넘어가는 속도에 대해</title>
+      <link>http://localhost:1313/posts/2011-07-24-%EB%8C%80%EC%82%AC%EC%B0%BD%EC%9D%98-%ED%81%B4%EB%A6%AD%ED%95%B4%EC%84%9C-%EB%84%98%EC%96%B4%EA%B0%80%EB%8A%94-%EC%86%8D%EB%8F%84%EC%97%90-%EB%8C%80%ED%95%B4/</link>
+      <pubDate>Sun, 24 Jul 2011 18:34:57 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-24-%EB%8C%80%EC%82%AC%EC%B0%BD%EC%9D%98-%ED%81%B4%EB%A6%AD%ED%95%B4%EC%84%9C-%EB%84%98%EC%96%B4%EA%B0%80%EB%8A%94-%EC%86%8D%EB%8F%84%EC%97%90-%EB%8C%80%ED%95%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품테스트 7/21</title>
+      <link>http://localhost:1313/posts/2011-07-21-%EC%82%BC%ED%92%88%ED%85%8C%EC%8A%A4%ED%8A%B8-721/</link>
+      <pubDate>Thu, 21 Jul 2011 12:41:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-21-%EC%82%BC%ED%92%88%ED%85%8C%EC%8A%A4%ED%8A%B8-721/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>각 맵별 부하테스트 초벌테스트</title>
+      <link>http://localhost:1313/posts/2011-07-21-%EA%B0%81-%EB%A7%B5%EB%B3%84-%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%B4%88%EB%B2%8C%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Thu, 21 Jul 2011 10:57:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-21-%EA%B0%81-%EB%A7%B5%EB%B3%84-%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%B4%88%EB%B2%8C%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 퍼포먼스 테스트 - 익스플로러 버전별 프레임 차이</title>
+      <link>http://localhost:1313/posts/2011-07-20-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8---%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-%EB%B2%84%EC%A0%84%EB%B3%84-%ED%94%84%EB%A0%88%EC%9E%84-%EC%B0%A8%EC%9D%B4/</link>
+      <pubDate>Wed, 20 Jul 2011 22:07:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-20-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8---%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-%EB%B2%84%EC%A0%84%EB%B3%84-%ED%94%84%EB%A0%88%EC%9E%84-%EC%B0%A8%EC%9D%B4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>불법 캐릭터 도용의 현장</title>
+      <link>http://localhost:1313/posts/2011-07-19-%EB%B6%88%EB%B2%95-%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%8F%84%EC%9A%A9%EC%9D%98-%ED%98%84%EC%9E%A5/</link>
+      <pubDate>Tue, 19 Jul 2011 21:47:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-19-%EB%B6%88%EB%B2%95-%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%8F%84%EC%9A%A9%EC%9D%98-%ED%98%84%EC%9E%A5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[Shader] 삼품 이펙트 쉐이더 추가 및 수정</title>
+      <link>http://localhost:1313/posts/2011-07-19-shader-%EC%82%BC%ED%92%88-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%B6%94%EA%B0%80-%EB%B0%8F-%EC%88%98%EC%A0%95/</link>
+      <pubDate>Tue, 19 Jul 2011 10:46:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-19-shader-%EC%82%BC%ED%92%88-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%B6%94%EA%B0%80-%EB%B0%8F-%EC%88%98%EC%A0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>[Shader]삼품 캐릭터 쉐이더 대폭 업데이트!!!</title>
+      <link>http://localhost:1313/posts/2011-07-18-shader%EC%82%BC%ED%92%88-%EC%BA%90%EB%A6%AD%ED%84%B0-%EC%89%90%EC%9D%B4%EB%8D%94-%EB%8C%80%ED%8F%AD-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
+      <pubDate>Mon, 18 Jul 2011 23:18:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-18-shader%EC%82%BC%ED%92%88-%EC%BA%90%EB%A6%AD%ED%84%B0-%EC%89%90%EC%9D%B4%EB%8D%94-%EB%8C%80%ED%8F%AD-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 맵별 퍼포먼스 테스트</title>
+      <link>http://localhost:1313/posts/2011-07-18-%EC%82%BC%ED%92%88-%EB%A7%B5%EB%B3%84-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Mon, 18 Jul 2011 12:14:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-18-%EC%82%BC%ED%92%88-%EB%A7%B5%EB%B3%84-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>장비실에서 프로파일링중</title>
+      <link>http://localhost:1313/posts/2011-07-18-%EC%9E%A5%EB%B9%84%EC%8B%A4%EC%97%90%EC%84%9C-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81%EC%A4%91/</link>
+      <pubDate>Mon, 18 Jul 2011 10:56:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-18-%EC%9E%A5%EB%B9%84%EC%8B%A4%EC%97%90%EC%84%9C-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81%EC%A4%91/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2011 차세대 게임 개발 경진대회</title>
+      <link>http://localhost:1313/posts/2011-07-16-2011-%EC%B0%A8%EC%84%B8%EB%8C%80-%EA%B2%8C%EC%9E%84-%EA%B0%9C%EB%B0%9C-%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/</link>
+      <pubDate>Sat, 16 Jul 2011 15:34:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-16-2011-%EC%B0%A8%EC%84%B8%EB%8C%80-%EA%B2%8C%EC%9E%84-%EA%B0%9C%EB%B0%9C-%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>현재 삼품 퍼포먼스의 문제는 무엇인가?</title>
+      <link>http://localhost:1313/posts/2011-07-15-%ED%98%84%EC%9E%AC-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/</link>
+      <pubDate>Fri, 15 Jul 2011 10:53:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-15-%ED%98%84%EC%9E%AC-%EC%82%BC%ED%92%88-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>박실장님 DELL inspiron one 프로파일링 보고</title>
+      <link>http://localhost:1313/posts/2011-07-13-%EB%B0%95%EC%8B%A4%EC%9E%A5%EB%8B%98-dell-inspiron-one-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81-%EB%B3%B4%EA%B3%A0/</link>
+      <pubDate>Wed, 13 Jul 2011 18:06:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-13-%EB%B0%95%EC%8B%A4%EC%9E%A5%EB%8B%98-dell-inspiron-one-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81-%EB%B3%B4%EA%B3%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TKEffect_StandardRim 쉐이더 업데이트!</title>
+      <link>http://localhost:1313/posts/2011-07-12-tkeffect_standardrim-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
+      <pubDate>Tue, 12 Jul 2011 09:29:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-12-tkeffect_standardrim-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>끝났다!</title>
+      <link>http://localhost:1313/posts/2011-07-12-%EB%81%9D%EB%82%AC%EB%8B%A4/</link>
+      <pubDate>Tue, 12 Jul 2011 01:38:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-12-%EB%81%9D%EB%82%AC%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>상중하 옵션작업 추가</title>
+      <link>http://localhost:1313/posts/2011-07-11-%EC%83%81%EC%A4%91%ED%95%98-%EC%98%B5%EC%85%98%EC%9E%91%EC%97%85-%EC%B6%94%EA%B0%80/</link>
+      <pubDate>Mon, 11 Jul 2011 14:19:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-11-%EC%83%81%EC%A4%91%ED%95%98-%EC%98%B5%EC%85%98%EC%9E%91%EC%97%85-%EC%B6%94%EA%B0%80/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>모바일 4 터레인 퍼포먼스</title>
+      <link>http://localhost:1313/posts/2011-07-10-%EB%AA%A8%EB%B0%94%EC%9D%BC-4-%ED%84%B0%EB%A0%88%EC%9D%B8-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4/</link>
+      <pubDate>Sun, 10 Jul 2011 00:20:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-10-%EB%AA%A8%EB%B0%94%EC%9D%BC-4-%ED%84%B0%EB%A0%88%EC%9D%B8-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>아틀란티카 S 테스트</title>
+      <link>http://localhost:1313/posts/2011-07-07-%EC%95%84%ED%8B%80%EB%9E%80%ED%8B%B0%EC%B9%B4-s-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Thu, 07 Jul 2011 17:34:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-07-%EC%95%84%ED%8B%80%EB%9E%80%ED%8B%B0%EC%B9%B4-s-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼품 상중하 옵션안 자동인식 기획</title>
+      <link>http://localhost:1313/posts/2011-07-07-%EC%82%BC%ED%92%88-%EC%83%81%EC%A4%91%ED%95%98-%EC%98%B5%EC%85%98%EC%95%88-%EC%9E%90%EB%8F%99%EC%9D%B8%EC%8B%9D-%EA%B8%B0%ED%9A%8D/</link>
+      <pubDate>Thu, 07 Jul 2011 17:03:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-07-%EC%82%BC%ED%92%88-%EC%83%81%EC%A4%91%ED%95%98-%EC%98%B5%EC%85%98%EC%95%88-%EC%9E%90%EB%8F%99%EC%9D%B8%EC%8B%9D-%EA%B8%B0%ED%9A%8D/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>심플한 Vertexlight : 기본형</title>
+      <link>http://localhost:1313/posts/2011-07-05-%EC%8B%AC%ED%94%8C%ED%95%9C-vertexlight--%EA%B8%B0%EB%B3%B8%ED%98%95/</link>
+      <pubDate>Tue, 05 Jul 2011 10:04:40 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2011-07-05-%EC%8B%AC%ED%94%8C%ED%95%9C-vertexlight--%EA%B8%B0%EB%B3%B8%ED%98%95/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

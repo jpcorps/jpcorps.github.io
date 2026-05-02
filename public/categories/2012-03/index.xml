@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2012-03 on 대충 살아가는 게임개발자</title>
+    <link>http://localhost:1313/categories/2012-03/</link>
+    <description>Recent content in 2012-03 on 대충 살아가는 게임개발자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2026 대충 살아가는 게임개발자</copyright>
+    <lastBuildDate>Thu, 15 Mar 2012 19:10:52 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/2012-03/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>겜브리오 4.0 세미나 참관기</title>
+      <link>http://localhost:1313/posts/2012-03-15-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-4.0-%EC%84%B8%EB%AF%B8%EB%82%98-%EC%B0%B8%EA%B4%80%EA%B8%B0/</link>
+      <pubDate>Thu, 15 Mar 2012 19:10:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-03-15-%EA%B2%9C%EB%B8%8C%EB%A6%AC%EC%98%A4-4.0-%EC%84%B8%EB%AF%B8%EB%82%98-%EC%B0%B8%EA%B4%80%EA%B8%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>정신을 차려보니</title>
+      <link>http://localhost:1313/posts/2012-03-12-%EC%A0%95%EC%8B%A0%EC%9D%84-%EC%B0%A8%EB%A0%A4%EB%B3%B4%EB%8B%88/</link>
+      <pubDate>Mon, 12 Mar 2012 22:46:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-03-12-%EC%A0%95%EC%8B%A0%EC%9D%84-%EC%B0%A8%EB%A0%A4%EB%B3%B4%EB%8B%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼국지 퀴즈</title>
+      <link>http://localhost:1313/posts/2012-03-12-%EC%82%BC%EA%B5%AD%EC%A7%80-%ED%80%B4%EC%A6%88/</link>
+      <pubDate>Mon, 12 Mar 2012 00:46:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-03-12-%EC%82%BC%EA%B5%AD%EC%A7%80-%ED%80%B4%EC%A6%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>삼국지를 품다 OST 도화 (桃花) - Peach Blossom</title>
+      <link>http://localhost:1313/posts/2012-03-11-%EC%82%BC%EA%B5%AD%EC%A7%80%EB%A5%BC-%ED%92%88%EB%8B%A4-ost-%EB%8F%84%ED%99%94-%E6%A1%83%E8%8A%B1---peach-blossom/</link>
+      <pubDate>Sun, 11 Mar 2012 20:29:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-03-11-%EC%82%BC%EA%B5%AD%EC%A7%80%EB%A5%BC-%ED%92%88%EB%8B%A4-ost-%EB%8F%84%ED%99%94-%E6%A1%83%E8%8A%B1---peach-blossom/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ShaderFX를 이용한, 그래픽 디자이너를 위한 기초 쉐이더 강좌 7강</title>
+      <link>http://localhost:1313/posts/2012-03-09-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-7%EA%B0%95/</link>
+      <pubDate>Fri, 09 Mar 2012 21:50:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-03-09-shaderfx%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B7%B8%EB%9E%98%ED%94%BD-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%89%90%EC%9D%B4%EB%8D%94-%EA%B0%95%EC%A2%8C-7%EA%B0%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PT 다 만들었다</title>
+      <link>http://localhost:1313/posts/2012-03-02-pt-%EB%8B%A4-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/</link>
+      <pubDate>Fri, 02 Mar 2012 02:46:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2012-03-02-pt-%EB%8B%A4-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

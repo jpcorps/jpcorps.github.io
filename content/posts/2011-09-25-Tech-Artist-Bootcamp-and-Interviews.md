@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Tech Artist Bootcamp and Interviews"
+date: 2011-09-25 19:03:22
+categories: [이글루스 백업, "2011-09"]
+---
+
+{% raw %}
+[Tech Artist Bootcamp and Interviews](https://ozlael.egloos.com/3739565)  
+  
+오즈라엘님이 올려주셨다! 올려주셨다!!  
+  
+  
+  
+
+원문:
+
+<https://www.gamedev.net/page/resources/_/reference/visual-arts/tech-artist-bootcamp-and-interviews-r2818>
+
+**Introducing Tech-Artists.org**  
+  
+We are the premiere (and only!) community focused on tech art for games and film. Whether you're looking for tips on creating tools and pipelines, help with using a language or API, or just want to hobnob with some of the best technical artists in the industry, [tech-artists.org](https://tech-artists.org/ "External link") is for you. Anybody who's anybody in the tech art world - and plenty of people outside of it - are a part of our great community.   
+  
+-Rob Galanakis  
+Founder, tech-artists.org  
+I came to this site through good friend and tech artist evangelist Bill Crosbie and was delighted to find a community that reminded me so much of GameDev.net in its early years. This is another one of those niche sites focusing on a game development field and actively run by those actually in that field, so you know you're getting content that's beneficial to you as an aspiring or active tech artist. We look forward to working more with them in the future, but for now check out what they've done at the last GDC!  
+  
+Drew SikoraExecutive Producer, GameDev.net  
+**GDC '11 Tech Artist Bootcamp**  
+  
+This past GDC, Jeff Hanna from Volition organized with various other technical artists a ["bootcamp" tutorial session](https://www.gdconf.com/conference/tutorials.html#214 "External link") with the focus of educating instructors, studio management and other technical artists about the role of TAs and the skills needed to be proficient in this field of the games industry.  
+  
+Tech-Artists.org has the compilation of slides and videos that came out of this session:  
+  
+[**.zip with all 8 talks**](https://tech-artists.org/downloads/GDC2011/GDC2011_TABootcamp_All.zip "External link") (No videos)  
+  
+[Keith Self-Ballard “In Advocacy of Tech Art”](https://tech-artists.org/downloads/GDC2011/GDC2011_KeithSelf-Ballard_Advocacy.pdf "External link")  
+[Scott Goffman “Making Tools Your Artists Will Use”](https://tech-artists.org/downloads/GDC2011/GDC2011_ScottGoffman_MakingGoodTools.pdf "External link")  
+[Rob Galanakis “Ending The Culture War”](https://tech-artists.org/downloads/GDC2011/GDC2011_RobGalanakis_EndingCultureWar.pdf "External link")  
+[Seth Gibson “TA Personality Assessment”](https://tech-artists.org/downloads/GDC2011/GDC2011_SethGibson_TAPersonalityAssessment.pptx "External link")  
+[Steve Theodore “Epic Fail”](https://tech-artists.org/downloads/GDC2011/GDC2011_SteveTheodore_EpicFail.pdf "External link")  
+[Adam Pletcher “Tech Art and Databases”](https://tech-artists.org/downloads/GDC2011/GDC2011_AdamPletcher_Databases.pdf "External link")  
+[Bryan Moss “Using Sim Data In Realtime With Video Textures”](https://tech-artists.org/downloads/GDC2011/GDC2011_BryanMoss_VideoCloth.pdf "External link") ([Videos](https://tech-artists.org/downloads/GDC2011/GDC2011_BryanMoss_VideoCloth_VIDEOS.zip "External link"))  
+[Bronwen Grimes “Shader Techniques in Portal 2”](https://tech-artists.org/downloads/GDC2011/GDC2011_BronwenGrimes_NonstandardTextures.pdf "External link")  
+  
+You can also visit Tech-Artists.org for [additional notes and discussion](https://tech-artists.org/forum/showthread.php?t=1500 "External link") on the session.  
+  
+Recently an email was sent out by Jeff to begin discussing details for another bootcamp at GDC 2012 - so keep your eyes peeled both here and over at Tech-Artists.org for more details as they become available!  
+  
+  
+**Technical Artist Interviews**  
+  
+Bill Crosbie from the IGDA Educational SIG spent some time at GDC '11 interviewing a number of technical artists, 18 in total, and has posted these interviews on [his YouTube channel](https://www.youtube.com/opcode6 "External link"). The goal was to talk to both professional tech artists and students to get a better understanding of what was needed for a more formal education in the field of technical art.  
+  
+He's selected 5 of his favorite for us to feature below. Check them out for a revealing look into what it means to be a technical artist in the industry today and how people would like to see their field evolve in the years to come.  
+  
+**Jeff Hanna**  
+  
+Jeff Hanna, Senior Technical Artist at Volition and leader of the Technical Artist boot-camp at GDC11, describes what it means to be a technical artist in the games industry.  
+  
+  
+  
+**Rob Galanakis**  
+  
+Rob Galanakis, TA for CCP Games, talks about the importance of programming and why a TA must learn to be 'ruthless' to help better the production environment. Don't miss this one!  
+  
+  
+  
+**Craig Goodman**  
+  
+Craig Goodman, Insomniac Games, shares some laughs and really deep concepts about the need for TAs to be broadly educated, perpetually asking questions about the world and always learning. This video is a little longer, but stick with it to the end. It's worth it.  
+  
+  
+  
+**Bronwen Grimes**  
+  
+Bronwen Grimes, TA for Valve Software, discusses why it is important for a TA to have flexibility in both education and job structure.  
+  
+  
+  
+**Ben Cloward**  
+  
+Ben Cloward, TA for Bioware Austin, talks about how a TA can solve huge problems or automate complex tasks quickly through the power of scripting, resulting in more time to engage in other creative work. Also, he gives a stern warning for students looking to enter the industry with work that is 'good enough' in school.
+
+ if(!document.getElementById("empathyButtonJS")) { strLoginURL = "https://ozlael.egloos.com/pop\_bridge.php?url=http%3A%2F%2Fozlael.egloos.com%2F3739565"; window.sp\_pop\_url = "https://cyxso.cyworld.com/PopUpLogin.sk?loginstr=direct&redirection="+encodeURIComponent(strLoginURL)+"&pop=direct"; var se = document.createElement('script'); se.type = "text/javascript"; se.src = "https://csp.cyworld.com/js/sp.js"; se.id = "empathyButtonJS"; document.getElementsByTagName('head')[0].appendChild(se); } 
+{% endraw %}

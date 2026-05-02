@@ -1,0 +1,821 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>전투 인터페이스[제안] 연구 중간 &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="전투 인터페이스[제안] 연구 중간 &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2010-08-05-%EC%A0%84%ED%88%AC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%A0%9C%EC%95%88-%EC%97%B0%EA%B5%AC-%EC%A4%91%EA%B0%84/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2010-08-05-%EC%A0%84%ED%88%AC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%A0%9C%EC%95%88-%EC%97%B0%EA%B5%AC-%EC%A4%91%EA%B0%84/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="전투 인터페이스[제안] 연구 중간">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-08-05T11:01:19+00:00">
+    <meta property="article:modified_time" content="2010-08-05T11:01:19+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="전투 인터페이스[제안] 연구 중간">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "전투 인터페이스[제안] 연구 중간",
+    "headline": "전투 인터페이스[제안] 연구 중간",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2010-08-05-%EC%A0%84%ED%88%AC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%A0%9C%EC%95%88-%EC%97%B0%EA%B5%AC-%EC%A4%91%EA%B0%84/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2010",
+    "dateCreated": "2010-08-05T11:01:19\u002b00:00",
+    "datePublished": "2010-08-05T11:01:19\u002b00:00",
+    
+    "dateModified": "2010-08-05T11:01:19\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1035"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        전투 인터페이스[제안] 연구 중간
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2010-08-05T11:01:19&#43;00:00">5 8월 2010</time><span class="px-2 text-primary-500">&middot;</span><span>1035 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">5 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+그동안 궁리했던 전투 화면의 기초 인터페이스 구상 및 고려했던 사항들에 대해 정리해 올려봅니다.<br>
+이것보다 더 생각이 있긴 한데 그것까지 정리해서 올리자니 그게 쉬운일이 아니더군요. 이미 정리하지 않으면 안될만큼 생각해 놔서&hellip;<br>
+맥스 화면 뷰포트로 작업했는데 원하는 효과가 잘 나오지 않아서 맥스용 뷰포트 쉐이더를 수동으로 제작해서 작업하였습니다 ㅋㅋㅋ<br>
+뭐 작업을 했어도 제안일 뿐, 결정은 담당 디렉터가 해야겠지요</p>
+<p>====================================================================================</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100805_110119_c0055803_4c5a1d938e512.jpg"
+    ></figure>
+- 일단 바닥쪽이 지금 상태라면 너무 강하다고 판단하였습니다. 바닥의 컨트라스트가 강하고 너무 디테일이 많거나 색의 변화가 심하면<br>
+화면의 여러 정보를 미세하게 알려줄때 힘들어집니다. 가뜩이나 정보가 많은 게임이라, 정보의 스트레스에서 벗어나게 하는 것을 우선시 하였습니다. (이건 이미 AD가 고려중)</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100805_110119_c0055803_4c5a1f31331dd.jpg"
+    ></figure>
+- <strong>바닥의 격자는 살리는 것이 필요하다고 보여집니다.</strong> (옵션으로 끄게 하는 한이 있더라도) 전략게임의 즐거움은 &lsquo;내가 상황을 컨트롤 할 수 있다&rsquo; 라는 것이고, 상황을 컨트롤하기 위해서 조작을 &lsquo;생각&rsquo;하게 해서는 안됩니다. ( 이동해서 공격이 가능하면 클릭만으로 자동으로  이동해서 공격하고, 이동해서 공격해도 안되는 거리에 있으면 아예 이동을 못하는 지금의 방식도 조작을 &lsquo;생각&rsquo; 해야 하는 상황을 만들기 때문에 저는 반대입니다. 인터페이스는 배울 필요가 없어야 합니다.)</p>
+<p>즉 눈대중이건 마우스 오버건 현재 상황을 감각적이고 명쾌하게 설명해주는 것은 순수한 게임 플레이에 유저를 집중시키기 위해 필수적이며, 때문에 바닥의 격자는 보다 유저를 전략에 몰입시키는데 유리한 도구로 사용되게 됩니다. 그렇지만 그것이 심하게 눈에 띄여서는 곤란하며, 나중에 생각했을때 그런게 있었던가? 라는 정도의 느낌으로, 감각적으로 느끼게끔 디자인되어야 합니다. 인터페이스는 무조건 눈에 띈다고 좋은 것이 아니며, 감각적인 엠비언트 인터페이스 - 예 : 아이폰의 관성 스크롤 - 가 많아질수록 좋은 인터페이스가 됩니다. </p>
+<ul>
+<li><strong>1번의 녹색 사각형은</strong> 파티나 대규모 전투시 자신의 캐릭터를 강조하기 위해 사용됩니다. 이 인터페이스는 꽤 눈에 띄는 편이어야 하며, 우리 팀과 일관성을 잃지 않아야 합니다. 사실은 다른 아군 캐릭터와 동질감을 느끼게 하기 위해 원형으로 제작하는 것도 땡겼으나, 삼국지 프로젝트 방식을 무단으로 도용해 보고 싶었습니다 (&hellip;미안)<br>
+이 박스는 하단 동영상처럼 캐릭터의 마우스 오버시, 선택시등을 쉽게 느낄 수 있게 해 줍니다. <br>
+또는, 행동이 끝났을 때 블렌딩을 바꾼다던가 (현재는 add 블렌딩) 채도를 떨어뜨리는 등의 방법으로도 표현할 수 있겠습니다.</li>
+</ul>
+<p><strong>- 2번의 이름표는,</strong> Z read를 하지 않고 Z write만 하는 빌보드로 제작되는,  대표적인 &ldquo;민폐&rdquo; 인터페이스입니다. 안보여서도 안되지만, 화면을 방해해서도 안되는 계륵같은 존재지요. 어쨌건 기존의 인터페이스처럼 커다랗고 위아래로 나눠진 이름과 에너지바는 화면을 가리는데 일등공신의 역할을 하였으며, 정보의 통합을 방해하는 요소로도 작동하였습니다.<br>
+또한 그렇다고 에너지바의 내용이 섬세하게 보일 필요까지는 없습니다. 어느 정도 감각적으로 볼 수 있는 인터페이스이며, 체력이 적어졌다면 깜빡거리는 등의 에니메이션으로 주의를 집중시켜줄 수 있는 여지가 많습니다. 그러므로 적절하게 데이터를 몰고, 사이즈를 가능한한 줄였습니다.<br>
+또한 이름의 색을 이용해서도 꽤 많은 정보를 표현할 수 있습니다. 버프 아이콘은 3개가지 표현될 수 있습니다.<br>
+주인공의 이름 외에 다른 것을 숨기는 것도 간단하지만, 일단 우리 캐릭터는 다 보여주고, 아군은 주인공만 보여주고, 적군은 다 보여주는 것을 해 보았습니다. 이 정도 데이터가 나와도 그렇게 어지럽다는 인상은 들지 않습니다.</p>
+<p><strong>- 3번의 바닥격자는</strong>, 역시 분명히 느껴지지만 인상에는 남지 말아야 합니다. 현재 TBS는 인상에 너무 선명하게 남아, 게임 후에는 캐릭터가 생각나지 않고 녹색 격자와 빨간색 동그라미들만 생각납니다 (&hellip;) 때문에 이 인터페이스의 장식은 최소한으로 줄여야 하며, 그래도 정보를 제대로 한눈에 구별할 수 있게 해 주어야 합니다. 역시 여기와 연결되는 것은 바닥 텍스쳐가 얼마나 차분하느냐 입니다.</p>
+<p><strong>- 카메라 각도와 FOV</strong> 는 일단 &lsquo;기본&rsquo; 카메라 각도를 잡아 보았습니다. 여기서는 일단 가장 보기 좋다고 생각되는 뷰인 쿼터뷰 (옆으로 45도 회전한 것을 쿼터뷰라 부릅니다. 흔히 상식적으로 아는 것처럼 세로로 45도 기울인 쿼터뷰 게임은 그다지 없으며, 보통 세로로는 30~35도 정도를 사용합니다 ) 이미지를 흉내내 보았습니다. 조작성과 화면의 품질등을 종합적으로 고려해본 결과, 세로는 약 50도 정도 , - 일반적인 RTS보다 좀 더 세운 각도입니다 - 카메라 렌즈는 35mm 정도(FOV 환산시 약 54deg) 로 결정해 보았습니다. <br>
+카메라는 50mm 를 기준으로 하였을때 35mm 는 일반적인 스냅카메라의 mm 수로, 어느 정도 원근감이 있으면서도 실제 사람의 시선에는 그다지 부담을 주지 않는, 매우 사람에게 익숙한 뷰 입니다. 카메라를 보통보다 좀 올린 이유는 선택의 유용성 문제와 함께 이름표가 가급적 캐릭터를 가리지 않는 방향으로 유도하고 싶었기 때문입니다. </p>
+<p><strong>- 카메라 제한</strong> 을 통하여 전투시에는 다양한 카메라뷰가 나오지 않게 진행하였으면 합니다. 실제 필드에서 돌아다닐 때에는 주변을 둘러보거나, 자신이 &lsquo;세계&rsquo; 에 속하고 있다는 느낌과 캐릭터는 &lsquo;자신&rsquo; 이라는 아바타적 느낌을 주기 위해 카메라를 자유롭게 회전하게 만듭니다만, 전략 시뮬레이션 게임과 같이 논리적인 생각과 목적이 있는 게임에서는 보통 카메라뷰를 제한하여 &lsquo;조작을 덜 신경쓸 수 있게 &rsquo; 만들어 주곤 합니다. 때문에 효과적인 카메라 뷰를 결정해 주는 것은 매우 중요합니다. 현재의 카메라뷰가 기본 카메라입니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100805_110119_c0055803_4c5a29a533218.jpg"
+    ></figure>
+<br>
+이번엔 카메라를 회전시켜 같은 각도에서의 세로 뷰를 확인해 보았습니다. 크게 다르거나 불편한 느낌은 없었지만, 멀리있는 영역이 잘 안보이는건 살짝 불만이라고 할 수 있을것 같았습니다.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100805_110119_c0055803_4c5a2b2b95458.jpg"
+    ></figure>
+그래서 카메라 뷰를 좀 더 기울여 봐서 (FOV를 수정한 것은 아닙니다) 원거리가 나오도록 조정해 보았습니다.<br>
+역시 세웠을때 보다 이름표가 캐릭터를 가리는 현상이 조금 더 증가했으므로, 최종적으로 이 각도는 어느 정도 나중에 추이를 보면서 조정해 보는 것이 좋을 듯 합니다. 일반적인 전략 시뮬레이션이라면 에너지바밖에 나오지 않으니 문제 없겠습니다만&hellip;.<br>
+현재 가정한 이름표의 피봇 위치는 캐릭터 메인 더미의 중심점입니다.<br>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100805_110119_c0055803_4c5a30ba6c7fe.jpg"
+    ></figure>
+<br>
+최대로 돌리 인 했을 경우의 화면입니다. 돌리 인 하면서 자연스럽게 카메라가 눕혀지는 전형적인 RTS 방식의 카메라로,<br>
+이대로라면 하늘이 보일 수 있기 때문에 하늘을 삭제하는 것은 곤란할 듯 합니다.<br>
+틸트는 되지 않습니다. FOV는 다소 넓어져서, 30mm 카메라 (FOV 62 deg에 해당) 가 됩니다. 24mm까지 넓히는 것도 고려할 수 있겠습니다만, 일단 표준적인 여친카메라인 30mm  로 지정해 보았습니다.<br>
+이런 경우, 상황에 따라서 이름표가 좀 확대되는 것도 고려해 보았습니다만 일률적인 확대를 적용하면 원거리에 있는 캐릭터에게는 이름표가 너무 커지게 되므로 카메라 Projection 메트릭스 연산을 통한 크기확대가 이루어져야 할 듯 합니다. 그래도 제일 작은 것은 지금 화면에 나온 정도로 제한해야겠지요. 더 작아지면 곤란.<br>
+현재 1024*768 화면에서의 설정이므로, 해상도가 커지면 작은 이름표가 부담이 될 수도 있겠습니다. 스타처럼 해상도가 커진다고 인터페이스가 작아지는게 아니라면 몰라도.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/assets/images/posts/20100805_110119_c0055803_4c5a3da9ca46f.jpg"
+    ></figure>
+- <strong>카메라를</strong> 최대 원거리로 돌리 아웃을 시켰을 때의 화면입니다. 당연히 카메라는 이 정도에서는 슈퍼 줌의 평면적 카메라에 가까워 지는 것이 좋&hellip; 겠지만 사람들이 흔히 보지 않는 뷰는 극적인 효과를 유발할 뿐 편안한 느낌은 가지고 오기 어렵기 때문에 50mm 카메라 (FOV 약40deg) 로 보수적 접근을 해 보았습니다. 이 정도에서는 사실상 약한 원근이 있지만 사람들은 잘 느끼지 못합니다.</p>
+<p><strong>- 이름표</strong>는 이 정도 떨어지게 허용한다면 이름표가 캐릭터를 완벽히 가릴 크기가 됩니다. 그걸 좀 더 과감하게 응용해서 이 정도 떨어지면 - 사실 표준 카메라에서 더 빼면 이 정도 뷰로 급격히 돌리 아웃 시킬 생각입니다만.. 중간은 필요 없으니까요 - 아예 이름표 뒤에 백그라운드를 두어 아군과 적군, 내 캐릭터들을 구분시키고 캐릭터를 완전히 제거해 버리는 아이디어를 생각해 보았습니다.<br>
+게임 중간에 카메라를 휙 빼면 미니맵과 같은 동작을 하는 뷰가 되는 것입니다. 미니맵과는 달리, 실제 게임 화면과의 일체감도 좋아지고 캐릭터 업데이트를 하지 않음으로써 화면 드로잉이 빨라지는 효과도 기대할 수 있습니다. 이것은 사실 독창적이라기 보단 슈프림 커멘더에서 얻은 아이디어입니다&hellip;<br>
+단지 캐릭터와 위치 선택시의 격자 선택이 조금 불편해 지는 단점이 있지만, 그것은 선택시 반투명이나 이름표의 플로팅 (..) 효과 등으로 해결하는 방향으로 접근할 수 있을 듯 합니다.</p>
+<p><a href="https://pds18.egloos.com/pds/201008/05/03/pmp122.avi"  target="_blank" rel="noreferrer">https://pds18.egloos.com/pds/201008/05/03/pmp122.avi</a>
+{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2010-08-04-%EB%AC%BC-%ED%9D%98%EB%9F%AC%EA%B0%80%EA%B8%B0-%EC%89%90%EC%9D%B4%EB%8D%94-%EC%A0%9C%EC%9E%91/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;물 흘러가기 쉐이더 제작...
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2010-08-04T17:48:44&#43;00:00">4 8월 2010</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2010-08-06-tonemapping-%ED%86%A4%EB%A7%A4%ED%95%91-%EA%B4%80%EB%A0%A8%EB%AC%B8%EC%84%9C/">
+              <span class="leading-6">
+                tonemapping (톤매핑) 관련문서&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2010-08-06T10:46:16&#43;00:00">6 8월 2010</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

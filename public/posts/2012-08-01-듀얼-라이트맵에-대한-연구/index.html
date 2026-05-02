@@ -1,0 +1,812 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>듀얼 라이트맵에 대한 연구 &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="듀얼 라이트맵에 대한 연구 &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2012-08-01-%EB%93%80%EC%96%BC-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%B0%EA%B5%AC/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2012-08-01-%EB%93%80%EC%96%BC-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%B0%EA%B5%AC/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="듀얼 라이트맵에 대한 연구">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2012-08-01T12:01:46+00:00">
+    <meta property="article:modified_time" content="2012-08-01T12:01:46+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="듀얼 라이트맵에 대한 연구">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "듀얼 라이트맵에 대한 연구",
+    "headline": "듀얼 라이트맵에 대한 연구",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2012-08-01-%EB%93%80%EC%96%BC-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%B0%EA%B5%AC/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2012",
+    "dateCreated": "2012-08-01T12:01:46\u002b00:00",
+    "datePublished": "2012-08-01T12:01:46\u002b00:00",
+    
+    "dateModified": "2012-08-01T12:01:46\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "796"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        듀얼 라이트맵에 대한 연구
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2012-08-01T12:01:46&#43;00:00">1 8월 2012</time><span class="px-2 text-primary-500">&middot;</span><span>796 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">4 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+<strong>1. 라이트맵이란? (Lightmap)</strong></p>
+<p>유니티에 라이트맵 기능은 이전부터 있어 왔습니다.</p>
+<p>라이트맵이란, 렌더링에서 가장 무거운 요소인 조명과 그림자 연산을 실시간으로 하지 않기 위해서 미리 조명과 그림자 연산을 특정한 텍스쳐로 만들어 (굽는다고 표현합니다 : Bake) 입힘으로써, 조명 연산을 피하고자 하는 꼼수라고 할 수 있습니다.</p>
+<p>참고로 유니티에는 가장 유명한 라이트맵 솔루션인 비스트 (Beast) 가 내장되어 있습니다.</p>
+<p>이전에 있던 라이트맵은 싱글 라이트맵 (single lightmap) 이라 불리는 것으로, 보다 단순한 구조를 가지고 있습니다.<br>
+싱글 라이트맵은 누구나 흔히 짐작할 수 있는 기술로, 라이트맵을 구워서 오브젝트 / 배경등 static (고정된) 오브젝트에 입혀 버리는 기술입니다.</p>
+<p>장점은 조명 계산을 하지 않아도 되므로 렌더링 부하가 줄어들고, 그래픽 카드나 각종 사양에 상대적으로 둔감하게 적용할 수 있다는 것입니다. 때문에 낮은 사양의 컴퓨터에서도 훌륭한 조명과 그림자 효과를 표현할 수 있습니다.</p>
+<p>단점은 맵 제작시에 전체 맵을 전부 구워(Bake) 해 버리는 작업이 필요하므로 작업효율이 떨어지며, 추가의 UV가 필요한 버텍스 버퍼와 추가의 텍스쳐 이용으로 인한 메모리 소비 등이 있을 수 있겠습니다. 아참, 또하나로 노말맵이나 스페큘러 등의 효과가 전부 무시되어 버리는 단점이 있습니다. 열심히 작업한 배경의 노말맵이 모두 사라져 버리면 실망스럽겠지요.</p>
+<p>(이래서 프로젝트에서 라이트맵을 사용하지 않았던 것입니다.)</p>
+<p>동적 오브젝트의 리얼타임 그림자만 섞어서 제작하는 것이 이 방식이었습니다</p>
+<p><strong>2. 듀얼 라이트맵이란? (Dual Lightmap)</strong></p>
+<p>듀얼 라이트맵이란. 이전에 가지고 있던 싱글 라이트맵의 단점을 개량해서 나온 새 기능으로,<br>
+유니티 3.4인가 3.5인가 잘 모르겠지만 (아마 3.5인듯?) 그때부터 나온 기능입니다.</p>
+<p>이 기능을 간단하게 정의하자면, <strong>&ldquo;리얼타임 라이트/셰도우와 구워진 라이트맵을 혼합해서 동시에 사용&rdquo;</strong> 한다는 것이 기존의 라이트 맵과 다른 기능입니다.</p>
+<p>즉 카메라의 Shadow distance (그림자 출현 거리) 옵션 값으로, <strong>카메라와 가까운 영역</strong>은 리얼타임 그림자와 리얼타임 라이트가 계산됩니다. 즉 노말맵이나 스페큘러가 모두 적용된, 말그대로 &lsquo;라이트맵을 사용하지 않는 실시간 상태&rsquo; 로 렌더링됩니다. (거기다가 기존의 라이트맵도 같이 섞여서 렌더링 됩니다)</p>
+<p>그렇지만 카메라의 shadow dstance 를 넘어간, <strong>카메라와 먼 영역</strong>이 되면 예전의 라이트맵 방식만 나타나게 됩니다.<br>
+즉 멀리 있는 동적 오브젝트 - 멀리있는 몬스터나 NPC- 등의 그림자는 안나오겠지만, 그 외에 고정된 오브젝트는 라이트맵이 충실하게 표현된다는 것입니다.</p>
+<p>이렇게 리얼타임 라이트/그림자와 , 라이트맵을 혼용해서 사용하면 다음과 같은 장단점이 있을 것으로 예상됩니다.</p>
+<p><strong>3. 듀얼 라이트맵의 장단점</strong></p>
+<p><strong>듀얼 라이트맵의 장점</strong></p>
+<p><strong>퀄리티가 올라갑니다. (호오? 퀄리티가 올라가는군요?)</strong></p>
+<p>라이트맵은 기본적으로 Indirect light (간접광) 을 계산해서 구현하는 것이기 때문에 분위기 잡기에는 좋습니다.<br>
+그렇지만 반대급부로 섬세한 노말맵 효과나 스페큘러를 표현할 수 없는 단점이 있는데, 가까운 거리에는 리얼타임 라이트/그림자와 혼합함으로써, 그림자의 해상도도 올라가게 되고 (가까운데만 고급으로 처리할 수 있으니까) 노말맵과 스페큘러도 쓸 수 있으므로 라이트맵의 장점과 실시간 라이팅/셰도잉의 장점을 동시에 살릴 수 있습니다.</p>
+<p><strong>저사양에서도 품질이 덜 떨어집니다.</strong><br>
+지금 게임을 돌릴 때 가장 무거운 것이 실시간 그림자입니다. (조명연산도 무시 못하지만)<br>
+그래서 옵션을 조금이라도 낮추었을때 프레임 향상을 위해서 가장 먼저 없애는 것이 그림자이고, 그 이유로 중급 이하부터는 퀄리티가 팍 떨어져 보이게 됩니다. 이 방식을 쓰면 이것을 방지할 수 있게 됩니다.</p>
+<p><strong>사양이 낮아집니다.</strong><br>
+최고 사양같은 경우에는 그림자 영역을 길게 잡을 수 밖에 없는데, 이 방법을 쓰면 최고 옵션에서도 그림자 거리를 낮게 잡을 수 있어서 사양이 내려가는 효과가 있습니다. 반대로 저사양은 살짝 올라갈 수도 있습니다만 (&hellip;)</p>
+<p>**간단한 수정이 쉬워져 보입니다.**테스트를 해 봐야 확실하겠지만, 이론적으로는 일단 조명 한두개 정도는 리얼타임으로 추가해도 라이트맵을 다시 굽지 않고도 사용가능해 보입니다. 리얼타임 라이트와 합성하는 거니까요.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile3.uf.tistory.com/image/1763794A501897084032C1"
+    ></figure>
+<p>&lt;사진: 듀얼 라이트맵의 효과를 보여주고 있습니다. &gt;</p>
+<ul>
+<li>멀리 있는 부분은 라이트맵이고 가까이 있는 부분은 리얼타임 라이팅이지만, 경계선이 잘 블렌딩 되어서 어디가 시작인지 알아볼 수 없습니다.</li>
+<li>멀리 있는 더미 병사에게는 그림자 (동적 그림자) 가 영향을 끼치지 못하고 있는 것을 알 수 있습니다.</li>
+<li>화면의 맨 오른쪽 위 부분은 가까이 있는 부분이지만, 라이트맵에서 받은 부드러운 간접광 효과도 같이 나오고 있는걸 알 수 있습니다.</li>
+</ul>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cfile8.uf.tistory.com/image/1610F047501897B519ED04"
+    ></figure>
+<ul>
+<li>가까이 있는 맨홀 뚜껑에는 노말과 스페큘러가 나타나고 있습니다.</li>
+<li>가까이 있는 드럼통은 폭발해야 할 동적 오브젝트입니다, 자연스럽게 동적 그림자를 드리우고 있습니다.</li>
+<li>라이트맵은 보통 그림자의 해상도가 좋지 못합니다. 넓은 면을 한 장의 그림자로 해결해야 하기 때문이죠.<br>
+하지만 이 방식을 쓰면 가까운 부분의 그림자 해상도가 좋아집니다.</li>
+</ul>
+<p><strong>듀얼 라이트맵의 단점</strong></p>
+<p><strong>제작이 귀찮습니다.</strong><br>
+라이트맵을 굽는(Baking) 작업의 시간이 꽤 걸립니다. 품질이 높은 대신 이런 단점이 있죠. 빠른 수정에 대처하기 힘듭니다. 부분만 굽는 기능이 개발되어 있습니다만, 어쨌거나 그냥 만들던 이전의 리얼타임 방식과의 차이는 큽니다.</p>
+<p>**메모리를 더 차지합니다.**라이트맵의 사이즈에 따라서 메모리를 더 차지할 수 밖에 없습니다. 저사양에서는 조금 부담이 될 수도 있겠습니다.</p>
+<p>**디퍼드 렌더링 모드에서만 사용가능합니다.**포워드 렌더러도 사용이 가능하긴 합니다. 대신 셰이더에서 수동으로 dualforward 라는 키워드를 이용하여 작동하게 할 수 있습니다.</p>
+<p>**4. 그럼 현실적인 사용 방법은?</p>
+<p>프로젝트에서 사용할 것인가?**</p>
+<p>4.0 에서는 라이트맵에서도 스페큘러와 노말맵이 사용 가능하게 된다는 정보가 있습니다. 잘만 되면 라이트맵 만으로도 전부 표현할 수 있다는 말이 되겠지요.</p>
+<p>이렇게 라이트맵의 발전이 예상되는 관계로 체크하지 않고 갈 수 없겠지요. 단점에 비해 장점이 많다면 당연히 채용합니다.</p>
+<p>그런 의미에서 다른건 괜찮지만, 제작 시간이 오래 걸린다는 것이 가장 큰 문제라고 할 수 있습니다.<br>
+메모리 차지야 사실 큰 문제는 아니고, 렌더링 모드는 디퍼드 모드를 사용하면 되는 것이니까요. 아이폰 게임도 아니고.<br>
+그렇지만 작업이 오래 걸린다면 효율에 큰 영향을 줄 것입니다.<br>
+그러므로 제안하고자 하는 절충안은 이 정도 입니다.</p>
+<p>**- 일단은 실시간 조명/그림자만 적용해서 게임을 제작한다.</p>
+<ul>
+<li>TA 가 음지에서 지속적으로 라이트맵 적용을 테스트 한다</li>
+<li>게임 제작 후반이 되어서 작업이 안정되고 변수가 적어질 때 작업에 들어가도 늦지 않을 듯.**</li>
+</ul>
+<p>이상 듀얼 라이트맵(Dual lightmap) 에 대한 이론적 기초 연구를 마칩니다.<br>
+쓸 지 안쓸지 좋을지 안좋을지는 TA 들이 지속적으로 테스트 해주실 겁니다 :)
+{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2012-07-30-%EC%95%84%EC%B9%98%EB%B0%94-%EC%9D%B4%EB%8F%99%ED%98%95-%EB%AA%A8%EB%8B%88%ED%84%B0-m9/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;아치바 이동형 모니터 M9
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2012-07-30T01:49:44&#43;00:00">30 7월 2012</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2012-08-08-%EB%A7%88%EB%88%8C%EB%8B%98%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-1%EB%B6%80--%EC%8B%9C%EB%84%A4-%EB%93%9C-%EC%85%B0%ED%94%84/">
+              <span class="leading-6">
+                마눌님을 위한 이벤트 1부 : 시네 드 셰프&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2012-08-08T01:55:22&#43;00:00">8 8월 2012</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

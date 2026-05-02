@@ -1,0 +1,20 @@
+---
+layout: post
+title: "[KGC2012]Multi Platform Full 3D MMORPG 만들기- '삼국지를 품다'의 테크니컬 아트"
+date: 2012-10-11 22:22:39
+categories: [이글루스 백업, "2012-10"]
+---
+
+{% raw %}
+**[multi plaform Full3D MMO 만들기 "삼국지를 품다"의 테크니컬 아트](https://www.slideshare.net/jpcorp/kgc2012-multi-plaformmmo "'multi")** from **[jpcorp](https://www.slideshare.net/jpcorp)**   
+  
+  
+PT 자료입니다...만 아이프레임이 지원 안되는군요 흐음.
+
+**[multi plaform Full3D MMO 만들기 "삼국지를 품다"의 테크니컬 아트](https://www.slideshare.net/jpcorp/kgc2012-multi-plaformmmo "'multi")** from **[jpcorp](https://www.slideshare.net/jpcorp)**
+
+[NuRi's Tools - iframe 변환기](https://nuridol.net/if_convert.html)
+
+NuRi님의 변환기로 변환했습니다. 짱 좋네요!!!!   
+감사합니다!!!
+{% endraw %}

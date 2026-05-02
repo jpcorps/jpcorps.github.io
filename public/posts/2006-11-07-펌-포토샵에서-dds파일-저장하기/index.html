@@ -1,0 +1,871 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="ko">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>[펌] 포토샵에서 DDS파일 저장하기 &middot; 대충 살아가는 게임개발자</title>
+    <meta name="title" content="[펌] 포토샵에서 DDS파일 저장하기 &middot; 대충 살아가는 게임개발자">
+  
+
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2006-11-07-%ED%8E%8C-%ED%8F%AC%ED%86%A0%EC%83%B5%EC%97%90%EC%84%9C-dds%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/">
+  
+  
+
+  
+  
+    <meta name="author" content="대충 살아가는 게임개발자">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jpcorps" rel="me">
+        
+      
+    
+      
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2006-11-07-%ED%8E%8C-%ED%8F%AC%ED%86%A0%EC%83%B5%EC%97%90%EC%84%9C-dds%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/">
+  <meta property="og:site_name" content="대충 살아가는 게임개발자">
+  <meta property="og:title" content="[펌] 포토샵에서 DDS파일 저장하기">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2006-11-07T23:56:34+00:00">
+    <meta property="article:modified_time" content="2006-11-07T23:56:34+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="[펌] 포토샵에서 DDS파일 저장하기">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.dce7671d2958483ec4d57a36d22b5dafb9de1e8e8d84ce5f670047dd2be5e39a162c15314cae48397674be56e20005e1d938af31132a143f91f35b5c68499db0.css"
+    integrity="sha512-3OdnHSlYSD7E1Xo20itdr7neHo6NhM5fZwBH3Svl45oWLBUxTK5IOXZ0vlbiAAXh2TivMRMqFD&#43;R81tcaEmdsA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.3ed5bdbb7594cb85ac13daad891a55d6fb7b4df572b9244bc182361d873926fe80e7ba13299806681eb5b68bbc84a65ec7214ca40ed361dc631a8b8af66e9446.js"
+      integrity="sha512-PtW9u3WUy4WsE9qtiRpV1vt7TfVyuSRLwYI2HYc5Jv6A57oTKZgGaB61tou8hKZexyFMpA7TYdxjGouK9m6URg=="
+      data-copy="복사"
+      data-copied="복사되었습니다"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "[펌] 포토샵에서 DDS파일 저장하기",
+    "headline": "[펌] 포토샵에서 DDS파일 저장하기",
+    
+    "inLanguage": "ko",
+    "url" : "http://localhost:1313/posts/2006-11-07-%ED%8E%8C-%ED%8F%AC%ED%86%A0%EC%83%B5%EC%97%90%EC%84%9C-dds%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/",
+    "author" : {
+      "@type": "Person",
+      "name": "대충 살아가는 게임개발자"
+    },
+    "copyrightYear": "2006",
+    "dateCreated": "2006-11-07T23:56:34\u002b00:00",
+    "datePublished": "2006-11-07T23:56:34\u002b00:00",
+    
+    "dateModified": "2006-11-07T23:56:34\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1484"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        본문으로 건너뛰기
+      </a>
+    </div>
+    
+    
+      <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      대충 살아가는 게임개발자
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="검색하기 (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        [펌] 포토샵에서 DDS파일 저장하기
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2006-11-07T23:56:34&#43;00:00">7 11월 2006</time><span class="px-2 text-primary-500">&middot;</span><span>1484 단어수</span><span class="px-2 text-primary-500">&middot;</span><span title="읽는 시간">7 분</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+      
+        
+        
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="대충 살아가는 게임개발자"
+        src="/profile_hu_6da01b4fa0f6cfe.png"
+        data-zoom-src="/profile_hu_ba5d56a5bb23f1a6.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        작성자
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        대충 살아가는 게임개발자
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">공부하고 있는 것들을 주로 올립니다</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jpcorps"
+          
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class="email-link hover:text-primary-700 dark:hover:text-primary-400"
+          href="#"
+          
+            data-email="bWFpbHRvOmpwY29ycEBoYW5tYWlsLm5ldA=="
+          
+          target="_blank"
+          aria-label="Email"
+          title="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>{% raw %}
+<a href="https://cafe.naver.com/ui.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=613"  target="_blank" rel="noreferrer">https://cafe.naver.com/ui.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=613</a></p>
+<p>DDS는 DirectX(이하 DX)의 Texture 포맷과 일대일로 대응하는 파일 포맷으로 손실압축방식이라 다른 포맷에 비해서 상대적으로 비디오메모리를 아낄 수 있고, 많은 갯수의 텍스쳐, 큰 크기의 텍스쳐를 적은 용량으로 해결할 수 있는데다 DDS포맷 용량 그대로 비디오메모리에 올릴 수 있어 높은 퀄리티의 화면을 높은 프레임으로 구현하기가 용이합니다. 현재는 DDS가 거의 모든 그래픽카드에서 가속을 지원한다고 합니다.</p>
+<p>DDS의 태생에 대해 잠깐 알아두자면, 처음에 S3TC포맷을 Savage사에서 개발하자, 3DFX에서 FXT1라는 포맷을 만들었다고 합니다. 그러자 S3사가 이 포맷을 NVIDIA, ATI에게 라이센스 해줌과 동시에 DX에서 공식적으로 지원하게 되었답니다.</p>
+<p>아래 Nvidia 사이트에 가면 포토샵에서 DDS를 컨트롤할 수 있는 플러그인을 다운받을 수 있습니다.</p>
+<p><a href="https://developer.nvidia.com/object/photoshop_dds_plugins.html"  target="_blank" rel="noreferrer">https://developer.nvidia.com/object/photoshop_dds_plugins.html</a></p>
+<p>굳이 이 프로그램을 설치하지 않더라도 이 글에 첨부한 파일(dds.8bi)을 포토샵이 설치된 폴더 아래에 있는 Plug-Ins/Import-Export 폴더에 넣어주시면 됩니다.</p>
+<p>자, 준비가 됐으면 시작해 보겠습니다.</p>
+<p>예제 이미지로 얼룩말 무늬 이미지를 갖고 설명을 드리겠습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cafefiles.naver.net/data10/2005/10/13/70/ZEBRA.jpg"
+    ></figure>
+<p>우선 포토샵에서 얼룩말 이미지를 dds로 저장해 보겠습니다.</p>
+<p>Save as 에서 파일포맷 dds(*.dds)를 선택하시면 아래와 같은 창이 나타납니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cafefiles.naver.net/data10/2005/10/13/113/dds01.gif"
+    ></figure>
+<p>창의 각 항목중 중요한 두가지 항목을 설명드리겠습니다.</p>
+<p><strong>Save Format</strong> : DDS의 픽셀포맷을 정하는 것입니다.</p>
+<p>DXT1, DXT2, DXT3, DXT5, 4:4:4:4 ARGB, 1:5:5:5 ARGB 등등 여러가지 포맷중 하나를 선택해야 합니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cafefiles.naver.net/data10/2005/10/13/147/dds02.gif"
+    ></figure>
+<p>각각의 선택기준은 상황에 따라 다릅니다만 DXTn 포맷만이 손실압축이고 그 외의 포맷은 비손실 압축이라 DXTn 포맷 외에는 쓸 일이 거의 없어 설명은 하지 않겠습니다.</p>
+<ol>
+<li>DXT1 RGB(No Alpha) : 알파채널이 없는 이미지일 경우 (칼라는 4단계로 보간)</li>
+<li>DXT1 ARGB(1bit alpha) : 알파채널이 있지만 alpha test의 용도로만 쓰는 경우(칼라가 3단계로 보간되므로 DXT1 RGB보다 약간 퀄리티가 떨어짐)</li>
+<li>DXT3 ARGB(Explicit Alpha) : 알파채널이 있는 이미지 (칼라는 4단계로 보간되고 알파는 4비트로 표현)</li>
+<li>DXT5 ARGB(Interpolated) : 알파채널이 그라데이션 스타일인 경우 DXT5를 쓴다. (칼라는 4단계로 보간되고 알파는 8단계로 보간되므로 품질이 가장 좋음)</li>
+</ol>
+<dl>
+<dt>==============================================================</dt>
+<dt>*** 바로 위 글에 대한 대충 살아가는 게임개발자 블로그 주인장의 추가 덧글</dt>
+<dd>위에 설명된 글에서 오해가 있을 가능성이 있습니다.<br>
+아니 오히려 표현이 좀 틀렸다고 할까요.</dd>
+</dl>
+<p>DXT1 같은 경우 RGB가 4:4:4  이므로, &lsquo;4단계로 보간&rsquo; 이라는 말은 사실 맞다고 볼 수 없습니다.<br>
+정확히는 채널당 &lsquo;4비트로 보간&rsquo; 이라고 할 수 있으며, 4비트는 2*2*2*2 = 16이므로</p>
+<p>&lsquo;칼라는 채널당 16단계로 보간&rsquo; 이라고 하는게 정확할 것입니다.<br>
+위에 글에서는 전부 칼라를 &lsquo;단계&rsquo; 라고만 표현하고 알파를 &lsquo;비트&rsquo; 라고 표현했는데,<br>
+사실은 알파도 칼라도 전부 &lsquo;비트&rsquo; 입니다.<br>
+=========================================================**</p>
+<p>그외의 포맷은 모르셔도 무방할것 같습니다. 어떤것이냐고 간단히 말씀드리면 4:4:4:4 ARGB는 ARGB(Alpha, Red, Green, Blue)의 심도가 각각 4bit란 얘기입니다. 1:5:5:5 는 Alpha=1bit(알파채널이 있다,없다만 표시), Red=5bit, Green=5bit, Blue=5bit 란 얘기지요.</p>
+<p>한가지 주의할 점은 DXTn 포맷으로 저장하려는 이미지의 사이즈는 2의 승수가 되어야 합니다(2, 4, 8, 16, 32, 64, 128, 256, 512, 1024&hellip;)</p>
+<p>2의 승수가 아니면 &lsquo;DXT is supported for power 2 only&rsquo; 란 멧세지가 나오면서 Save 버튼이 비활성화됩니다.</p>
+<p>UI 이미지 같은 경우는 DDS 포맷으로 쓰는것은 심각하게 고려해야 합니다. 앞서 설명드렸듯이 손실압축이라 이미지가 상당히 깨질 수 있기 때문입니다. (슈마에서 렌즈온라인 만들때 UI 이미지를 DDS로 변환했더니 이미지가 아주 작살이 나더군요;;)</p>
+<p>알파채널이 있는 UI 이미지는 PNG나 TGA를 쓰는것이 현명하다고 판단됩니다.</p>
+<p>픽셀포맷 지정옵션 밑에 있는것이 렌더링 방식을 지정하는 옵션인데요. 2D texture, Cube Map, Volume Texture 가 있습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cafefiles.naver.net/data10/2005/10/13/206/dds03.gif"
+    ></figure>
+<p>각각의 특성을 폴리곤에 맵핑하는 방법을 예로 들어 설명을 드리자면</p>
+<ol>
+<li>
+<p>2D Texture : 각 폴리곤들의 texture coordinate(UV)값을 이용해서 입히는 방식(현재 게임 모델링 데이터에 맵핑하는 방식)</p>
+</li>
+<li>
+<p>Cube Map : UV없이 폴리곤의 면적에 따라 맵핑하는 방식</p>
+</li>
+<li>
+<p>Volume Texture : 좀 더 복잡한 굴곡이 있는 폴리곤에 UV없이 면적에 맵핑하는 방식</p>
+</li>
+</ol>
+<p>현재 게임개발에선 2D Texture 외엔 쓰지 않는다고 하니 나머지는 중요치 않습니다.</p>
+<p><strong>MIPMap Generation</strong> : MIPMap의 생성갯수를 정합니다.(0~13)</p>
+<p>MIPMap 은 같은 그림인데 다른 사이즈를 같이 지닌 형태를 말합니다. 한 이미지 파일에 여러 사이즈를 만들어 놓고 맵핑하고자 하는 폴리곤에 가장 근사한 크기를 갖는 밉맵을 이용하여 텍스쳐맵핑을 수행하는 것을 MIP Mapping이라고 하는거죠.</p>
+<p>예를 들면 LOD 같은 것인데요, 게임배경으로 쓰인 돌이 멀리 있을때는 작은 사이즈의 이미지를 맵핑하고 가까이 왔을 때는 큰 이미지를 골라 맵핑하는 방법을 쓰는겁니다. 그렇게 되면 퀄리티의 큰 저하없이 좋은 퍼포먼스를 낼 수 있겠지요.</p>
+<p>MIPMap의 갯수를 6으로 하여 미리보기를 해 보겠습니다.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://cafefiles.naver.net/data10/2005/10/13/37/dds05.gif"
+    ></figure>
+<p>원래 사이즈에  1/4 씩 작아진 사이즈 5개가 생성된 것을 보실 수 있습니다.</p>
+<p>이 중 제일 작은 사이즈는 굉장히 멀리 있는 오브젝트에 적용되고 그 오브젝트가 가까이 다가올수록 그 거리에 따라 자동으로 적절한 사이즈의 이미지를 골라 맵핑시키는 방식을 쓰는 겁니다. MIPMap의 갯수가 적으면 멀리 있던 이미지가 가까이 올때 흐리던 이미지가 갑자기 팍 선명해져서 어색할 수 있으니 MIPMap의 갯수는 보통은 5~8개 정도로 합니다만 상황에 따라 적절히 선택하시면 되겠습니다.</p>
+<p>이정도에서 저장해 주시면 되겠습니다. 저장뿐 아니라 dds로 저장된 파일도 포토샵에서 불러와 편집이 됩니다.</p>
+<p>DDS에 대한 좋은 설명 요약</p>
+<p>chaen님의 DDS에 대한 의견.</p>
+<p>파일포맷과 픽셀포맷에 대한 구분이 좀 있었으면 합니다. TGA, JPG, DDS는 파일 포맷이고, A8R8G8B8, DXT1 같은 것은 픽셀 포맷입니다. 따라서 DDS == DXTn 은 아닙니다.</p>
+<p>DDS는 DirectX의 Texture 포맷과 일대일로 대응하는 &lsquo;파일 포맷&rsquo;일 뿐입니다.<br>
+DDS에서도 A8R8G8B8 로 저장할 수 있습니다. 그 내용은 TGA 32bpp와 거의 똑같다고합니다.<br>
+파일 사이즈 역시 거의 비슷하다고 합니다. R8G8B8, A8R8G8B, X1R5G5B5 같은 포맷은 TGA에서 지원하고, R8G8B8 같은 포맷은 JPG(어떻게 보면 압축된 R8G8B8), BMP같은 대부분의 일반적인 이미지 파일포맷들이 지원합니다. 다만, DXTn(DTXc,S3TC)을 저장할 마땅한 포맷이 없어서 DDS를 쓰다보니 DDS == DXTn 이라고 이야기들을 하시는 것같습니다.</p>
+<p>DDS는 밉맵의 각 레벨의 서피스를 묶어서 하나의 파일로 저장할 수도 있고, 심지어 Cube 텍스쳐나 Volume 텍스쳐로도 저장이 가능합니다. 이런 면들을 볼 때 DDS 포맷의 진짜 목적은 DirectX에서 쓰는 텍스쳐와 같은 포맷을 사용함으로써, 텍스쳐 생성 후 파일에서 로딩한 데이터를 텍스쳐의 서피스로 복사해서 넣을 때, 압축해제나 픽셀포맷 변환없이 바로 사용할 수 있다는 게 아닐까 생각됩니다. 예를 들어, TGA 24bpp 이미지는 R8G8B8( B8G8R8 ) 이지만 오늘날 대부분의 그래픽 카드에서는 DirectX에서 이에 해당하는 D3DFMT_R8G8B8 포맷을 잘 지원하지 않습니다.<br>
+대신 대부분 D3DFMT_X8R8G8B8 포맷을 지원하죠. 따라서, 알파 없는 TGA 파일을 사용한다면 항상 모든 픽셀에 대해서 포맷 변환 작업이 필요하게 됩니다. 이때 DDS로 X8R8G8B8 포맷을 만들어서 사용한다면 그런 변환 작업이 필요 없어집니다.</p>
+<p>그럼에도 불구하고 대부분의 개발자들이 JPG나 TGA 파일을 여전히 선호하는 결정적인 이유는 Preview(미리보기)가 가능하기 때문인 거 같습니다. ACDSee나 알씨 같은 이미지 뷰어에서 이미지를 미리 볼 수 없다는 것은 상당히 답답한 일이죠. ( Deep Exploration 같은 좋은 툴이 DDS 포맷을 지원하기는 합니다만.) 또, 포토샵 같은 그래픽툴에서 바로 쓸 수 없어 번거롭죠. (물론, 플러그인 등을 깔면 가능합니다.)</p>
+<p>PC 같이 다양한 하드웨어가 상존하는 플랫폼에서는 어쩌면 픽셀 포맷 변환이라는 것이 필수 불가결한 일 일지도 모릅니다. 적당한 픽셀 포맷을 미리 지정해서 DDS 포맷으로 저장했다고 하더라도, 이를 지원하지 않는 하드웨어를 가진 일부 사용자들은 결국 픽셀변환이 필요하기 때문이죠. 때로는 더 나은 성능을 위해서 32bpp나 24bpp 포맷을 16bpp 포맷으로 변환하는 작업이 필요할 때도 있습니다.</p>
+<p>DXT 포맷을 제외한 나머지 포맷들은 전혀 압축이 되지 않아서 전체 게임데이터 양을 크게 만든다는 단점도 있습니다. 이는 파일서버 여유공간이 부족한 개발사에겐 게임 개발 과정 중 데이터 유지관리에 부담이 될 수도 있으며, 게임 설치후 HDD를 차지하는 공간이 커져서 소비자에게 부담스러울 수도 있습니다. 물론, 퀘이크 시리즈처럼 게임 데이터들을 ZIP 파일로 한번 더 묶어 줌으로서 해결할 수 있는 문제이기도 합니다.</p>
+<p>간단히 추론하자면 적당한 환경이 갖춰진다면 모든 텍스쳐 포맷을 DDS로 쓰는 게 게임의 성능을 위해서 좋지만 현실적으로는 일반적인 이미지 포맷과 DDS를 섞어 쓰는 것도 나쁘지 않다고 생각합니다. 혹은 개발중에는 섞어 쓰다가 릴리즈용 리소스들을 묶어 주면서, 모든 텍스쳐를 DDS 포맷으로 자동으로 변환해 주는 배치 파일이나 툴을 만드는 것도 괜찮을 거 같습니다. 플랫폼과 일대일로 대응하는 포맷을 미리 리소스로 만드는 작업은 콘솔 플랫폼에서는 거의 필수적인 일입니다.</p>
+<p>etds님의 DDS사용에 대한 제안.</p>
+<ul>
+<li>DXTn을 썼을 때의 장점</li>
+</ul>
+<ol>
+<li>메모리를 꽤 적게 쓴다. (또 메모리 대역폭도 아낄 수 있다.)</li>
+<li>대부분의 비디오카드가 하드웨어 가속을 지원하므로 성능 저하가 없다.</li>
+<li>메모리를 적게 쓰는데 비해 퀄리티가 나쁘지 않다. 특히, 노이즈 같은 주파수가 높은 텍스쳐들에 효율적이다.<br>
+(반대로 그라데이션같은 느낌의 텍스쳐에서는 계단이 눈에 띄게 보인다. 그래서 편법을 쓰지 않으면 노말맵에 쓰기에도 별로 좋지 않다.)</li>
+</ol>
+<p>제가 사용하는 DXTn 사용시 가이드라인은,</p>
+<ol>
+<li>알파채널이 없는 경우 무조건 Opaque DXT1을 쓴다. (칼라는 4단계로 보간)</li>
+<li>알파채널이 있지만 alpha testing의 용도로 쓰는 경우 1bit alpha DXT1을 쓴다. (이 경우 칼라가 3단계로 보간되므로 Opaque DXT1보다 약간 퀄리티가 떨어져 보일 수 있다.)</li>
+<li>알파채널이 중요한 경우 DXT3을 쓴다. (칼라는 4단계로 보간되고 알파는 4비트로 표현)</li>
+<li>알파채널이 그라데이션 스타일인 경우 DXT5를 쓴다. (칼라는 4단계로 보간되고 알파는 8단계로 보간)</li>
+<li>그래픽 디자이너가 이상하다고 하는 경우나, GUI에 쓰이는 글씨 이미지 같은 경우 jpg 또는 tga를 그냥 쓴다.</li>
+</ol>
+<p>이분의 경우 소속된 회사에서 서비스하고 있는 온라인 게임에서 보통 3번째까지 적용하면 대부분 문제가 없었고, 이펙트 등에 쓰이는 알파가 중요하게 들어간 텍스쳐만 4번째까지 적용하곤 했다합니다. 그래픽 디자이너들과의 의견 조율 및 절충으로 5번까지 가는 경우는 생각보다 드물었다고 합니다.</p>
+<p>그외 DDS에 관한 참고가 될만한 이야기.</p>
+<p>비회원으로 로그인 하신분의 글.</p>
+<p>DDS 포맷의 태생은 S3사의 S3TC인데 당시 이 포맷이 나왔을 때에는 비디오메모리가 많이 부족한 시절(4M, 8M)이었고 S3 Savage에서는 S3TC 하드웨어 가속이 가능했었습니다. 또, 당시 DX에서는 지금처럼 기본 텍스춰 포맷으로 지원하지 않고 있었습니다. 당시 가장 좋은(?) 그래픽카드였던 Voodoo2의 경우에는 S3TC의 위력을 보여주기 위해 만든 데모와 같은 고 퀄리티의 화면을 높은 프레임으로 구현하기가 힘들었죠.. 아마도 현재는 이 기술이 모든 그래픽카드에서 가속을 지원한다고 추론해 보았을 때(실제 DDS포맷 용량 그대로 비디오메모리에 올릴 수 있습니다)</p>
+<p>DDS의 장점은 손실압축이지만, 일반 포맷에 비해 상대적으로 비디오메모리를 아낄 수 있고, 많은 개수의 텍스춰, 큰 크기의 텍스춰를 낮은 코스트로 사용할 수 있을 것..만 같습니다. 정확한건 벤치마킹을 해봐야 겠죠. DDS의 압축 특성상 사용해야 할 곳은 색들이 고르게 분포된 텍스춰일 것이고요.. 가장 좋은 예로는 지형 텍스춰들일 것이고, MMORPG의 경우 캐릭터들은 대부분 3인칭에서 보므로, 줌인시의 퀄리티가 HDTV처럼 땀구멍까지 보이게 할 필요도 없으므로 캐릭터 텍스춰에도 적절히 쓸 수 있을 것 같습니다. myevan님이 지적해 주신 UI같은 경우, 매번 줌인(?)되서 보이는 텍스춰 인데다가, DDS의 특성상 주위 픽셀에 따라 색이 많이 왜곡되고, width, height이 낮은 pixel의 텍스춰도 찍어야 되는 상황이 많으므로 DDS를 사용하지 않는 것이 좋겠네요..</p>
+<p>자료를 좀 더 찾아보니, 처음에 S3사가 S3TC포맷을 Savage사에서 개발하자, 3DFX에서 FXT1라는<br>
+포맷을 만들었다고 합니다. 그러자 S3사가 이 포맷을 NVIDIA, ATI에게 라이센스 해줌과 동시에 DX에서 공식적으로 지원하게 되었답니다. S3TC와 FXT1에 대한 URL이기는 하지만, 퀄리티가 어떻게 나빠지나에 대해 참고가 될 것 입니다.</p>
+<p><a href="https://www.digit-life.com/articles/reviews3tcfxt1/"  target="_blank" rel="noreferrer">https://www.digit-life.com/articles/reviews3tcfxt1/</a></p>
+<p>{% endraw %}</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2006-11-07-%ED%8E%8C-3dsmax-naong2---%EC%87%A0%EC%9E%AC%EC%A7%88-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;[펌] [3DSMAX] naOng2 - 쇠재질 표현하기
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2006-11-07T23:41:05&#43;00:00">7 11월 2006</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/2006-11-09-2006.-%EB%88%88-%EC%99%84%EC%84%B1/">
+              <span class="leading-6">
+                2006. 눈 완성&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2006-11-09T00:58:11&#43;00:00">9 11월 2006</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="맨 위로 스크롤"
+    title="맨 위로 스크롤">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          대충 살아가는 게임개발자
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 로 제공됨
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="검색"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="닫기 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>
