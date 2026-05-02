@@ -1,6 +1,6 @@
 baseURL = 'https://jpcorps.github.io/'
 title = 'My New Blog'
-theme = []
+theme = 'PaperMod'
 
 defaultContentLanguage = 'ko'
 
