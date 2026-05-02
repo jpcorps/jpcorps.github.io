@@ -1,4 +1,11 @@
 baseURL = 'https://jpcorps.github.io/'
-languageCode = 'ko-kr'
 title = 'My New Blog'
 theme = []
+
+defaultContentLanguage = 'ko'
+
+[languages]
+  [languages.ko]
+    languageCode = 'ko-kr'
+    languageName = 'Korean'
+    weight = 1
