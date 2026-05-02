@@ -1,17 +1,34 @@
-baseURL = 'https://jpcorps.github.io/'
-title = 'My New Blog'
-theme = 'PaperMod'
+baseURL = "https://jpcorps.github.io/"
+title = "대충 살아가는 게임개발자"
+theme = "hugo-theme-stack"
+defaultContentLanguage = "ko"
+hasCJKLanguage = true
 
-defaultContentLanguage = 'ko'
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
-[params]
-    env = 'production'
-    title = 'My New Blog'
-    [params.label]
-        text = "Home"
+[params.sidebar]
+  subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
+
+[params.sidebar.avatar]
+  enabled = true
+  local = false
+  src = "/profile.jpg"
 
 [languages]
-    [languages.ko]
-        languageCode = 'ko-kr'
-        languageName = 'Korean'
-        weight = 1
+  [languages.ko]
+    languageCode = "ko-kr"
+    languageName = "Korean"
+    weight = 1
+
+[[menu.main]]
+  identifier = "categories"
+  name = "카테고리"
+  url = "/categories/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "search"
+  name = "검색"
+  url = "/search/"
+  weight = 20
