@@ -1,0 +1,17 @@
+baseURL = 'https://jpcorps.github.io/'
+title = 'My New Blog'
+theme = 'PaperMod'
+
+defaultContentLanguage = 'ko'
+
+[params]
+    env = 'production'
+    title = 'My New Blog'
+    [params.label]
+        text = "Home"
+
+[languages]
+    [languages.ko]
+        languageCode = 'ko-kr'
+        languageName = 'Korean'
+        weight = 1
