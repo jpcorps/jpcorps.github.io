@@ -5,60 +5,89 @@ defaultContentLanguage = "ko"
 hasCJKLanguage = true
 
 [outputs]
-  home = ["html", "rss", "json"]
+home = ["html", "rss", "json"]
 
 [params]
-  mainSections = ["posts"]
+mainSections = ["posts"]
 
 # 에러를 뿜는 서비스 워커(PWA) 기능을 완전히 끕니다.
 [params.pwa]
-  enabled = false
+enabled = false
 
 [params.sidebar]
-  subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
-  avatar = "profile.png"
+subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
+avatar = "profile.png"
 
 [languages]
-  [languages.ko]
-    languageCode = "ko-kr"
-    languageName = "Korean"
-    weight = 1
+[languages.ko]
+languageCode = "ko-kr"
+languageName = "Korean"
+weight = 1
 
 [[menu.main]]
-    identifier = "categories"
-    name = "카테고리"
-    url = "/categories/"
-    weight = 10
+identifier = "categories"
+name = "카테고리"
+url = "/categories/"
+weight = 10
 
-# '카테고리' 밑에 들어갈 하위 메뉴
+# 현재 사용 중인 이글루스 백업 메뉴
 [[menu.main]]
-    parent = "categories"  # 위 categories의 identifier와 일치해야 합니다.
-    name = "이글루스 백업"
-    url = "/categories/이글루스-백업/"
-    weight = 1
+parent = "categories"
+identifier = "egloos-backup"
+name = " └ 이글루스 백업"
+url = "/categories/이글루스-백업/"
+weight = 11
+
+# ==========================================
+# 💡 [사이드바 카테고리 추가용 템플릿]
+# 나중에 새로운 카테고리를 사이드바에 바로가기로 빼고 싶을 때,
+# 아래 코드들의 맨 앞 주석 기호(#)를 지우고 내용만 바꿔서 사용하세요.
+# (참고: url 부분의 한글 띄어쓰기는 하이픈(-)으로 바꿔야 합니다)
+# ==========================================
+
+# [[menu.main]]
+#   parent = "categories"
+#   identifier = "game-review"           # 영문 소문자로 겹치지 않게 작성
+#   name = " └ 게임 리뷰"                  # 사이드바에 보여질 이름
+#   url = "/categories/게임-리뷰/"         # 실제 카테고리 주소
+#   weight = 12                          # 숫자가 클수록 아래에 배치됨
+
+# [[menu.main]]
+#   parent = "categories"
+#   identifier = "dev-log"
+#   name = " └ 개발 일지"
+#   url = "/categories/개발-일지/"
+#   weight = 13
+
+# [[menu.main]]
+#   parent = "categories"
+#   identifier = "daily-life"
+#   name = " └ 일상 끄적임"
+#   url = "/categories/일상-끄적임/"
+#   weight = 14
 
 [[menu.main]]
-  identifier = "search"
-  name = "검색"
-  url = "/search/"
-  weight = 20
+identifier = "search"
+name = "검색"
+url = "/search/"
+weight = 20
 
 # --- 댓글(Giscus) 설정 ---
 [params.comments]
-    enabled = true
-    provider = "giscus"
+enabled = true
+provider = "giscus"
 
 [params.comments.giscus]
-    repo = "jpcorps/jpcorps.github.io"
-    repoId = "R_kgDOSSJrIA"
-    category = "Announcements"
-    categoryId = "DIC_kwDOSSJrIM4C8P_5"
-    mapping = "pathname"
-    strict = "0"
-    reactionsEnabled = "1"
-    emitMetadata = "0"
-    inputPosition = "bottom"
-    lang = "ko"
-    # 테마의 자동 전환 기능을 위해 아래 두 줄을 반드시 넣어야 합니다!
-    lightTheme = "light"
-    darkTheme = "transparent_dark"
+repo = "jpcorps/jpcorps.github.io"
+repoId = "R_kgDOSSJrIA"
+category = "Announcements"
+categoryId = "DIC_kwDOSSJrIM4C8P_5"
+mapping = "pathname"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lang = "ko"
+# 테마가 제멋대로 결정하지 못하도록 두 가지 모드를 다 지정합니다.
+lightTheme = "light"
+darkTheme = "transparent_dark"
