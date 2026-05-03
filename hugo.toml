@@ -1,4 +1,4 @@
-baseURL = "https://jpcorps.github.io/"
+baseURL = "https://jpcorps.com"
 title = "대충 살아가는 게임개발자"
 theme = "hugo-theme-stack"
 defaultContentLanguage = "ko"
