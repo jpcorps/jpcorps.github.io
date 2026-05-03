@@ -10,6 +10,10 @@ hasCJKLanguage = true
 [params]
   mainSections = ["posts"]
 
+# 에러를 뿜는 서비스 워커(PWA) 기능을 완전히 끕니다.
+[params.pwa]
+  enabled = false
+
 [params.sidebar]
   subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
   avatar = "profile.png"
@@ -31,3 +35,21 @@ hasCJKLanguage = true
   name = "검색"
   url = "/search/"
   weight = 20
+
+# --- 댓글(Giscus) 설정 ---
+[params.comments]
+    enabled = true
+    provider = "giscus"
+
+[params.comments.giscus]
+    repo = "jpcorps/jpcorps.github.io"
+    repoId = "R_kgDOSSJrIA"
+    category = "Announcements"
+    categoryId = "DIC_kwDOSSJrIM4C8P_5"
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "ko"
