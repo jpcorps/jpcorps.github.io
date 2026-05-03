@@ -51,5 +51,7 @@ hasCJKLanguage = true
     reactionsEnabled = "1"
     emitMetadata = "0"
     inputPosition = "bottom"
-    theme = "transparent_dark"
     lang = "ko"
+    # 테마의 자동 전환 기능을 위해 아래 두 줄을 반드시 넣어야 합니다!
+    lightTheme = "light"
+    darkTheme = "transparent_dark"
