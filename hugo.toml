@@ -25,10 +25,17 @@ hasCJKLanguage = true
     weight = 1
 
 [[menu.main]]
-  identifier = "categories"
-  name = "카테고리"
-  url = "/categories/"
-  weight = 10
+    identifier = "categories"
+    name = "카테고리"
+    url = "/categories/"
+    weight = 10
+
+# '카테고리' 밑에 들어갈 하위 메뉴
+[[menu.main]]
+    parent = "categories"  # 위 categories의 identifier와 일치해야 합니다.
+    name = "이글루스 백업"
+    url = "/categories/이글루스-백업/"
+    weight = 1
 
 [[menu.main]]
   identifier = "search"
