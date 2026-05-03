@@ -32,7 +32,6 @@ weight = 10
 
 # 현재 사용 중인 이글루스 백업 메뉴
 [[menu.main]]
-parent = "categories"
 identifier = "egloos-backup"
 name = " └ 이글루스 백업"
 url = "/categories/이글루스-백업/"
@@ -46,21 +45,18 @@ weight = 11
 # ==========================================
 
 # [[menu.main]]
-#   parent = "categories"
 #   identifier = "game-review"           # 영문 소문자로 겹치지 않게 작성
 #   name = " └ 게임 리뷰"                  # 사이드바에 보여질 이름
 #   url = "/categories/게임-리뷰/"         # 실제 카테고리 주소
 #   weight = 12                          # 숫자가 클수록 아래에 배치됨
 
 # [[menu.main]]
-#   parent = "categories"
 #   identifier = "dev-log"
 #   name = " └ 개발 일지"
 #   url = "/categories/개발-일지/"
 #   weight = 13
 
 # [[menu.main]]
-#   parent = "categories"
 #   identifier = "daily-life"
 #   name = " └ 일상 끄적임"
 #   url = "/categories/일상-끄적임/"
