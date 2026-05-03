@@ -1,0 +1,31 @@
+/* =========================================
+   1. 사이드바 제목 폰트 크기 키우기
+========================================= */
+.site-name {
+    font-size: 1.8rem !important;
+    /* 기본값은 대략 1.5rem 입니다. 원하는 숫자로 조절하세요! */
+    font-weight: bold;
+}
+
+/* =========================================
+   2. 사이드바 디자인 (구분선 vs 박스)
+   원하는 스타일의 주석을 해제하고 사용하세요.
+========================================= */
+
+/* [옵션 A: 깔끔한 하단 구분선 긋기] */
+.site-info {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+/* [옵션 B: 배경색이 있는 박스로 감싸기] - 만약 이걸 쓰고 싶다면 위의 옵션 A를 지우거나 주석 처리하세요. */
+/*
+.site-info {
+    background-color: var(--card-background);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+*/
