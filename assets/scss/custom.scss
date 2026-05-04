@@ -1,17 +1,12 @@
-/* =========================================
-   1. 사이드바 제목 폰트 크기 키우기
-========================================= */
-.sidebar-profile-title {
+/* 1. 사이드바 제목 폰트 크기 키우기 */
+.site-name {
     font-size: 1.8rem !important;
-    /* 글씨가 안 커지면 2.0rem 등으로 올려보세요 */
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
-/* =========================================
-   2. 사이드바 프로필(소개글) 아래 구분선 긋기
-========================================= */
-.sidebar-header {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-    padding-bottom: 25px;
-    margin-bottom: 15px;
+/* 2. 사이드바 프로필 영역(header) 아래 구분선 긋기 */
+.sidebar header {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.5) !important;
+    padding-bottom: 25px !important;
+    margin-bottom: 15px !important;
 }
