@@ -87,3 +87,6 @@ lang = "ko"
 # 테마가 제멋대로 결정하지 못하도록 두 가지 모드를 다 지정합니다.
 lightTheme = "light"
 darkTheme = "transparent_dark"
+
+[params.article]
+editLink = { url = "https://github.com/jpcorps/jpcorps.github.io/edit/main/content", title = "이 페이지 수정하기" }
