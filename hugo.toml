@@ -9,7 +9,6 @@ home = ["html", "rss", "json"]
 
 [params]
 mainSections = ["posts"]
-customCSS = ["scss/custom.scss"] # 💡 우리가 만든 커스텀 디자인을 연결해주는 핵심 코드입니다!
 
 # 에러를 뿜는 서비스 워커(PWA) 기능을 완전히 끕니다.
 [params.pwa]
