@@ -41,4 +41,44 @@
         width: 130px !important;
         height: 130px !important;
     }
+
+    /* 포스트 카드 가로 배치 (썸네일 오른쪽) */
+    @media (min-width: 768px) {
+        .article-list article {
+            display: flex !important;
+            flex-direction: row-reverse !important;
+            /* 글 왼쪽, 이미지 오른쪽 */
+            justify-content: space-between !important;
+            align-items: stretch !important;
+            min-height: 180px !important;
+            overflow: hidden !important;
+        }
+
+        /* 이미지 영역 크기 고정 및 비율 조정 */
+        .article-image {
+            flex: 0 0 250px !important;
+            /* 썸네일 너비 고정 */
+            margin: 0 !important;
+        }
+
+        .article-image img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            /* 이미지 왜곡 방지 */
+            border-radius: 0 !important;
+            /* 모서리 각지게 (취향껏 조절) */
+        }
+
+        /* 텍스트 영역 padding 조절 */
+        .article-details {
+            flex: 1 !important;
+            padding: 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+    }
+
+    /* 모바일에서는 기본 형태 유지 (선택사항) */
 </style>
