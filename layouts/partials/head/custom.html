@@ -34,24 +34,26 @@
         height: 130px !important;
     }
 
-    /* 2. 포스트 카드 가로 배치 (썸네일 오른쪽) - 타겟 수정됨 */
+    /* 2. 포스트 카드 가로 배치 및 높이 고정 */
     @media (min-width: 768px) {
-
-        /* 핵심: article 대신 .article-header를 가로로 눕힙니다 */
         .article-header {
             display: flex !important;
             flex-direction: row-reverse !important;
             justify-content: space-between !important;
-            align-items: stretch !important;
-            min-height: 180px !important;
+            align-items: center !important;
+            height: 160px !important;
+            /* 카드 높이를 160px로 고정 */
             background-color: var(--card-background);
-            /* 카드 배경색 유지 */
             overflow: hidden !important;
+            /* 넘치는 이미지는 잘라냄 */
             border-radius: var(--card-border-radius);
         }
 
         .article-image {
             flex: 0 0 250px !important;
+            /* 썸네일 너비 고정 */
+            height: 100% !important;
+            /* 카드 높이에 맞춤 */
             margin: 0 !important;
         }
 
@@ -59,6 +61,8 @@
             width: 100% !important;
             height: 100% !important;
             object-fit: cover !important;
+            /* 중요: 비율을 유지하며 영역을 가득 채우고 자름 */
+            border-radius: 0 !important;
         }
 
         .article-details {
@@ -67,6 +71,15 @@
             display: flex !important;
             flex-direction: column !important;
             justify-content: center !important;
+            overflow: hidden !important;
+        }
+
+        /* 제목이 너무 길어질 경우 말줄임표 처리 (선택사항) */
+        .article-title {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     }
 </style>
