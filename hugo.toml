@@ -10,65 +10,16 @@ home = ["html", "rss", "json"]
 [params]
 mainSections = ["posts"]
 
-# 에러를 뿜는 서비스 워커(PWA) 기능을 완전히 끕니다.
+# 1. PWA (에러 방지를 위해 비활성화)
 [params.pwa]
 enabled = false
 
+# 2. 사이드바 설정
 [params.sidebar]
 subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
 avatar = "profile.png"
 
-[languages]
-[languages.ko]
-languageCode = "ko-kr"
-languageName = "Korean"
-weight = 1
-
-[[menu.main]]
-identifier = "categories"
-name = "카테고리"
-url = "/categories/"
-weight = 10
-
-# 현재 사용 중인 이글루스 백업 메뉴
-[[menu.main]]
-identifier = "egloos-backup"
-name = " └ 이글루스 백업"
-url = "/categories/이글루스-백업/"
-weight = 11
-
-# ==========================================
-# 💡 [사이드바 카테고리 추가용 템플릿]
-# 나중에 새로운 카테고리를 사이드바에 바로가기로 빼고 싶을 때,
-# 아래 코드들의 맨 앞 주석 기호(#)를 지우고 내용만 바꿔서 사용하세요.
-# (참고: url 부분의 한글 띄어쓰기는 하이픈(-)으로 바꿔야 합니다)
-# ==========================================
-
-# [[menu.main]]
-#   identifier = "game-review"           # 영문 소문자로 겹치지 않게 작성
-#   name = " └ 게임 리뷰"                  # 사이드바에 보여질 이름
-#   url = "/categories/게임-리뷰/"         # 실제 카테고리 주소
-#   weight = 12                          # 숫자가 클수록 아래에 배치됨
-
-# [[menu.main]]
-#   identifier = "dev-log"
-#   name = " └ 개발 일지"
-#   url = "/categories/개발-일지/"
-#   weight = 13
-
-# [[menu.main]]
-#   identifier = "daily-life"
-#   name = " └ 일상 끄적임"
-#   url = "/categories/일상-끄적임/"
-#   weight = 14
-
-[[menu.main]]
-identifier = "search"
-name = "검색"
-url = "/search/"
-weight = 20
-
-# --- 댓글(Giscus) 설정 ---
+# 3. 댓글(Giscus) 설정 - 다크모드 최적화
 [params.comments]
 enabled = true
 provider = "giscus"
@@ -84,12 +35,36 @@ reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom"
 lang = "ko"
-# 테마가 제멋대로 결정하지 못하도록 두 가지 모드를 다 지정합니다.
-lightTheme = "light"
-darkTheme = "transparent_dark"
+theme = "github-dark"               # 댓글창을 어둡게 고정
 
+# 4. 게시물 수정 버튼 설정
 [params.article]
-# 수정 버튼을 어디에 표시할지 설정 (true로 해야 보입니다)
-showEdit = true
-# 깃허브 연결 주소와 버튼 이름 설정
-editLink = { url = "https://github.com/jpcorps/jpcorps.github.io/edit/main/content", text = "이 페이지 수정하기" }
+# Stack 테마는 아래 url 설정이 있으면 자동으로 수정 버튼을 생성합니다.
+[params.article.editLink]
+url = "https://github.com/jpcorps/jpcorps.github.io/edit/main/content"
+
+# 5. 메뉴 설정
+[[menu.main]]
+identifier = "categories"
+name = "카테고리"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "egloos-backup"
+name = " └ 이글루스 백업"
+url = "/categories/이글루스-백업/"
+weight = 11
+
+[[menu.main]]
+identifier = "search"
+name = "검색"
+url = "/search/"
+weight = 20
+
+# 6. 언어 설정
+[languages]
+[languages.ko]
+languageCode = "ko-kr"
+languageName = "Korean"
+weight = 1
