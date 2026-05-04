@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  site_domain: polite-platypus-6dafcc.netlify.app
 
 media_folder: "static/images" # 이미지가 저장될 경로
 public_folder: "/images"
