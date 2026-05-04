@@ -4,20 +4,16 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        /* 가로 중앙 정렬 */
         text-align: center !important;
-        /* 텍스트 중앙 정렬 */
         border-bottom: 1px solid rgba(150, 150, 150, 0.5) !important;
         padding-bottom: 25px !important;
         margin-bottom: 20px !important;
     }
 
-    /* 2. 프로필 이미지 마진 조절 */
     .site-avatar {
         margin: 0 auto !important;
     }
 
-    /* 3. 제목 크기 및 여백 (조금 더 강조) */
     .site-name {
         font-size: 2.5rem !important;
         font-weight: bold !important;
@@ -25,39 +21,37 @@
         word-break: keep-all !important;
     }
 
-    /* 4. 소개글 정렬 */
     .site-description {
         text-align: center !important;
         margin-top: 8px !important;
         line-height: 1.5 !important;
         word-break: keep-all !important;
-        /* 단어가 중간에 잘리는 것을 방지 */
         max-width: 250px !important;
-        /* 줄바꿈이 더 예쁘게 되도록 너비 제한 (선택사항) */
     }
 
-    /* 5. 프로필 이미지 크기 조절 */
     .site-avatar img {
         width: 130px !important;
         height: 130px !important;
     }
 
-    /* 포스트 카드 가로 배치 (썸네일 오른쪽) */
+    /* 2. 포스트 카드 가로 배치 (썸네일 오른쪽) - 타겟 수정됨 */
     @media (min-width: 768px) {
-        .article-list article {
+
+        /* 핵심: article 대신 .article-header를 가로로 눕힙니다 */
+        .article-header {
             display: flex !important;
             flex-direction: row-reverse !important;
-            /* 글 왼쪽, 이미지 오른쪽 */
             justify-content: space-between !important;
             align-items: stretch !important;
             min-height: 180px !important;
+            background-color: var(--card-background);
+            /* 카드 배경색 유지 */
             overflow: hidden !important;
+            border-radius: var(--card-border-radius);
         }
 
-        /* 이미지 영역 크기 고정 및 비율 조정 */
         .article-image {
             flex: 0 0 250px !important;
-            /* 썸네일 너비 고정 */
             margin: 0 !important;
         }
 
@@ -65,12 +59,8 @@
             width: 100% !important;
             height: 100% !important;
             object-fit: cover !important;
-            /* 이미지 왜곡 방지 */
-            border-radius: 0 !important;
-            /* 모서리 각지게 (취향껏 조절) */
         }
 
-        /* 텍스트 영역 padding 조절 */
         .article-details {
             flex: 1 !important;
             padding: 20px !important;
@@ -79,6 +69,4 @@
             justify-content: center !important;
         }
     }
-
-    /* 모바일에서는 기본 형태 유지 (선택사항) */
 </style>
