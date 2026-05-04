@@ -1,14 +1,33 @@
 <style>
-    /* 1. 사이드바 제목 폰트 크기 키우기 */
-    .site-name {
-        font-size: 1.8rem !important;
-        font-weight: bold !important;
-    }
-
-    /* 2. 사이드바 프로필 영역(header) 아래 구분선 긋기 */
+    /* 1. 사이드바 헤더 전체 중앙 정렬 */
     .sidebar header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        /* 가로 중앙 정렬 */
+        text-align: center !important;
+        /* 텍스트 중앙 정렬 */
         border-bottom: 1px solid rgba(150, 150, 150, 0.5) !important;
         padding-bottom: 25px !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 2. 프로필 이미지 마진 조절 */
+    .site-avatar {
+        margin: 0 auto !important;
+    }
+
+    /* 3. 제목 크기 및 여백 (조금 더 강조) */
+    .site-name {
+        font-size: 2rem !important;
+        font-weight: bold !important;
+        margin-top: 15px !important;
+    }
+
+    /* 4. 소개글 정렬 */
+    .site-description {
+        text-align: center !important;
+        margin-top: 8px !important;
+        line-height: 1.5 !important;
     }
 </style>
