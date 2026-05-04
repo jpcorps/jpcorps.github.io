@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jpcorps/jpcorps.github.io # 본인의 레포지토리 경로
+  name: git-gateway
   branch: main
 
 media_folder: "static/images" # 이미지가 저장될 경로

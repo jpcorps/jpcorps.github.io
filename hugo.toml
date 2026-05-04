@@ -37,8 +37,10 @@ darkTheme = "transparent_dark"
 
 [params.article]
 [params.article.editLink]
-url = "https://github.com/jpcorps/jpcorps.github.io/edit/main/content"
-title = "이 페이지 수정하기"
+# 주소 맨 끝에 {filePath} 가 반드시 들어가야 합니다!
+url = "https://github.com/jpcorps/jpcorps.github.io/edit/main/content/{filePath}"
+# title이 아니라 text로 적어야 버튼이 보입니다.
+text = "📝 이 페이지 수정하기"
 
 [[menu.main]]
 identifier = "categories"
