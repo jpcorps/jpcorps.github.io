@@ -10,16 +10,13 @@ home = ["html", "rss", "json"]
 [params]
 mainSections = ["posts"]
 
-# 1. PWA (에러 방지를 위해 비활성화)
 [params.pwa]
 enabled = false
 
-# 2. 사이드바 설정
 [params.sidebar]
 subtitle = "이글루스와 티스토리를 거쳐 방황하다가 여기까지 대충 흘러왔습니다"
 avatar = "profile.png"
 
-# 3. 댓글(Giscus) 설정 - 다크모드 최적화
 [params.comments]
 enabled = true
 provider = "giscus"
@@ -35,15 +32,14 @@ reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom"
 lang = "ko"
-theme = "github-dark"               # 댓글창을 어둡게 고정
+lightTheme = "light"
+darkTheme = "transparent_dark"
 
-# 4. 게시물 수정 버튼 설정
 [params.article]
-# Stack 테마는 아래 url 설정이 있으면 자동으로 수정 버튼을 생성합니다.
 [params.article.editLink]
 url = "https://github.com/jpcorps/jpcorps.github.io/edit/main/content"
+title = "이 페이지 수정하기"
 
-# 5. 메뉴 설정
 [[menu.main]]
 identifier = "categories"
 name = "카테고리"
@@ -62,7 +58,6 @@ name = "검색"
 url = "/search/"
 weight = 20
 
-# 6. 언어 설정
 [languages]
 [languages.ko]
 languageCode = "ko-kr"
