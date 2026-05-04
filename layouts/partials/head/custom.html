@@ -5,13 +5,32 @@
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
+        width: 100% !important;
+        /* 사이드바 전체 폭 사용 */
         border-bottom: 1px solid rgba(150, 150, 150, 0.5) !important;
         padding-bottom: 25px !important;
         margin-bottom: 20px !important;
     }
 
+    /* 2. 프로필 이미지 감싸는 영역 (figure 태그 고집 꺾기) */
     .site-avatar {
+        margin: 0 !important;
+        /* 브라우저 기본 마진(40px 등)을 완전히 제거 */
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    /* 3. 프로필 이미지 자체 */
+    .site-avatar img {
+        width: 130px !important;
+        height: 130px !important;
+        display: block !important;
         margin: 0 auto !important;
+        /* 자가 정렬 */
+        border-radius: 50% !important;
+        /* 완벽한 원형 유지 */
     }
 
     .site-name {
