@@ -19,7 +19,7 @@
 
     /* 3. 제목 크기 및 여백 (조금 더 강조) */
     .site-name {
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
         font-weight: bold !important;
         margin-top: 15px !important;
     }
@@ -29,5 +29,9 @@
         text-align: center !important;
         margin-top: 8px !important;
         line-height: 1.5 !important;
+        word-break: keep-all !important;
+        /* 단어가 중간에 잘리는 것을 방지 */
+        max-width: 250px !important;
+        /* 줄바꿈이 더 예쁘게 되도록 너비 제한 (선택사항) */
     }
 </style>
