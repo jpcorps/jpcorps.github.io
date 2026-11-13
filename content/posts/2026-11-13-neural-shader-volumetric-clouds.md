@@ -132,5 +132,3 @@ void Layer13to16(float inV[13], out float h[16])
 
 - 원문: [Neural Shaders, Explained With Clouds](https://charlesgrassi.dev/blog/neural-volumetric-clouds/) — 구름이 빙글빙글 도는 비교 영상과 도표들이 훨씬 많으니 꼭 직접 보세요.
 - 엔비디아: [How to Get Started with Neural Shading for Your Game or Application](https://developer.nvidia.com/blog/how-to-get-started-with-neural-shading-for-your-game-or-application/) — 그래픽카드의 전용 장치를 쓰는 쪽 입문.
-
-*이 글은 Claude와 함께 원문을 읽고 정리했습니다.*
