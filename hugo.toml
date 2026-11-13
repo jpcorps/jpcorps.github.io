@@ -55,6 +55,12 @@ url = "/categories/이글루스-백업/"
 weight = 11
 
 [[menu.main]]
+identifier = "tech-art"
+name = " └ 테크니컬 아트"
+url = "/categories/테크니컬-아트/"
+weight = 12
+
+[[menu.main]]
 identifier = "search"
 name = "검색"
 url = "/search/"

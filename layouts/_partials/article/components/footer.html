@@ -1,0 +1,53 @@
+<footer class="article-meta article-footer">
+    {{ partial "article/components/tags" . }}
+
+    {{ with .Params.source_url }}
+    <section class="article-source inline-meta">
+        <span>원문: <a href="{{ . }}" target="_blank" rel="noopener">{{ default . $.Params.source_title }}</a>{{ with $.Params.source_author }} ({{ . }}){{ end }}</span>
+    </section>
+    {{ end }}
+
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
+    <section class="article-copyright inline-meta">
+        {{ partial "helper/icon" "copyright" }}
+        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+    </section>
+    {{ end }}
+
+    {{- if ne .Lastmod .Date -}}
+    <section class="article-lastmod inline-meta">
+        {{ partial "helper/icon" "clock" }}
+        <span>
+            {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format .Site.Params.dateFormat.lastUpdated }}
+        </span>
+    </section>
+    {{- end -}}
+
+    {{- /* 티스토리로 옮기기: 관리자(주소 끝에 ?admin=1 로 한 번 들어온 브라우저)에게만 보임.
+           누르면 GitHub 이슈가 만들어지고, 집 PC의 tistory_mirror.py 가 jpcorps 계정이 만든 이슈만 처리함 */ -}}
+    {{ if eq .Section "posts" }}
+    {{ $title := printf "[티스토리] %s" .Title }}
+    {{ $body := printf "path: content/%s\nurl: %s\n\n(이 이슈는 집 PC의 tistory_mirror.py 가 처리합니다. jpcorps 계정이 만든 이슈만 처리됩니다.)" .File.Path .Permalink }}
+    <section class="tistory-mirror" id="tistory-mirror" hidden>
+        <a class="tistory-mirror-btn" target="_blank" rel="noopener"
+           href="https://github.com/jpcorps/jpcorps.github.io/issues/new?labels=to-tistory&title={{ $title | urlquery }}&body={{ $body | urlquery }}">
+            📤 티스토리로 옮기기
+        </a>
+    </section>
+    <style>
+        .tistory-mirror { margin-top: 1em; }
+        .tistory-mirror-btn { display: inline-block; padding: .5em 1em; border-radius: 8px;
+            background: var(--accent-color); color: var(--accent-color-text) !important; font-size: 1.4rem; text-decoration: none; }
+    </style>
+    <script>
+        (function () {
+            try {
+                var q = new URLSearchParams(location.search);
+                if (q.get('admin') === '1') localStorage.setItem('jpAdmin', '1');
+                if (q.get('admin') === '0') localStorage.removeItem('jpAdmin');
+                if (localStorage.getItem('jpAdmin') === '1') document.getElementById('tistory-mirror').hidden = false;
+            } catch (e) {}
+        })();
+    </script>
+    {{ end }}
+</footer>
