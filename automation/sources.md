@@ -24,5 +24,5 @@
 
 ## 일본
 - 게임메이커즈 (ゲームメーカーズ) — https://gamemakers.jp/ (일본 게임 개발 기술 뉴스, 공개 자료 정리 기사)
-- CAPCOM R&D 슬라이드 (Docswell) — https://www.docswell.com/user/CAPCOM_RandD (CAPCOM オープンカンファレンス 발표 자료, 본문 글자 읽힘)
+- CAPCOM R&D 슬라이드 (Docswell) — https://www.docswell.com/c/68297c22-0f35-4b5e-ac5b-6602774b82f2 (RE:2026 발표 자료 모음, 본문 글자 읽힘)
 - CEDEC 아카이브 — 일본 최대 개발자 컨퍼런스 발표 자료
