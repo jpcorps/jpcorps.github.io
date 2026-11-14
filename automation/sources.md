@@ -21,3 +21,8 @@
 
 ## 유튜브 (영상은 자막·설명을 근거로 소개)
 - Ben Cloward (셰이더) / Simon Trümpler (VFX, Technical Artist) 등 — 검색해서 최신 영상 확인
+
+## 일본
+- 게임메이커즈 (ゲームメーカーズ) — https://gamemakers.jp/ (일본 게임 개발 기술 뉴스, 공개 자료 정리 기사)
+- CAPCOM R&D 슬라이드 (Docswell) — https://www.docswell.com/user/CAPCOM_RandD (CAPCOM オープンカンファレンス 발표 자료, 본문 글자 읽힘)
+- CEDEC 아카이브 — 일본 최대 개발자 컨퍼런스 발표 자료
