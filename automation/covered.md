@@ -4,3 +4,4 @@
 
 - 2026-11-13 | https://charlesgrassi.dev/blog/neural-volumetric-clouds/ | 2026-11-13-neural-shader-volumetric-clouds.md
 - 2026-11-14 | (요청 글) 중학생도 할 수 있는 신경망 셰이더 | 2026-11-14-neural-shader-heart-tutorial.md
+- 2026-11-15 | (요청 글) 카프콤 VORTEXEL 쉽게 읽기 (1) https://www.docswell.com/s/CAPCOM_RandD/KPRPE4-RE2026-EAST-7 | 2026-11-15-capcom-vortexel-1-geometry.md

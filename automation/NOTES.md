@@ -11,8 +11,18 @@
   - 그림·코드: `static/images/tech-art/neural-shader-heart-tutorial/` (그림 6장 + `heart_nn.py` + `NeuralHeart.shader`)
   - 내용: (u, v) → 뉴런 16 → 16 → 출력 1, 가중치 337개. numpy 로 64×64 정답 하트를 8000번 학습(Adam, seed 11), 출력한 `weights.hlsl` 을 유니티 언릿 셰이더(Built-in, CGPROGRAM)에 붙여 넣는다.
   - 이 글을 이어 쓸 때: 같은 코드로 원·별 모양 바꾸기, 뉴런 수 늘리기, 텍스처에 가중치 넣기 등이 자연스러운 후속 주제다.
+- 2026-11-15 카프콤 VORTEXEL 쉽게 읽기 (1) 게임이 지형을 '레고 블록'으로 읽는 법 (요청 연재 1/4)
+  - 파일: `content/posts/2026-11-15-capcom-vortexel-1-geometry.md`
+  - 그림: `static/images/tech-art/capcom-vortexel-1-geometry/` (직접 만든 2D 그림 4장 + `make_figures.py`). 원문 슬라이드 이미지는 못 씀(아래 참고).
+  - 2편 이후 쓸 때: 슬라이드 쪽 번호 — 개요 p.10-16, Geometry p.25-72, Turbulence 는 p.75 전후부터, 풀 태우기 동기 p.112, Physics 접촉 p.136-152, 메모리 p.176, AABB 지정 구축 p.183.
 
 ## 알게 된 것
+
+### 원문 페이지 읽기 (WebFetch 권한)
+- 스케줄 실행에서는 URL 을 WebFetch 로 바로 열면 "PROVENANCE_REQUIRED"(사용자 승인 대기)로 막힌다. **WebSearch 결과에 그 URL 이 먼저 나오게 한 뒤** WebFetch 하면 열린다.
+  - 예: docswell 슬라이드는 `"VORTEXEL" カプコン VFX ボクセル` 검색(extended)으로 나온 뒤 열렸다.
+- docswell 슬라이드 본문 글자는 WebFetch 로 쪽 번호와 함께 읽힌다. 하지만 쪽별 이미지 주소는 페이지에 없고, 표지 `bcdn.docswell.com/page/...jpg` 만 있는데 그것도 검색 결과에 안 나와 열어 확인할 수 없었다. 확인 못 한 주소는 안 쓴다 → 직접 만든 그림으로 대신.
+- gamemakers.jp 기사도 같은 이유로 못 열었다(검색 결과에 안 나옴).
 
 ### 날짜가 미래면 글이 안 뜬다
 - front matter 시각이 `07:30:00+09:00` 인데, Hugo 는 빌드 시점보다 미래인 글을 빼고 만든다(buildFuture 꺼짐).
