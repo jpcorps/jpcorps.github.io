@@ -16,6 +16,12 @@
   - 그림: `static/images/tech-art/capcom-vortexel-1-geometry/` (직접 만든 2D 그림 4장 + `make_figures.py`). 원문 슬라이드 이미지는 못 씀(아래 참고).
   - 2편 이후 쓸 때: 슬라이드 쪽 번호 — 개요 p.10-16, Geometry p.25-72, Turbulence 는 p.75 전후부터, 풀 태우기 동기 p.112, Physics 접촉 p.136-152, 메모리 p.176, AABB 지정 구축 p.183.
 
+- 2026-11-16 카프콤 VORTEXEL 쉽게 읽기 (2) 미리 굽지 않는 바람 — Turbulence (요청 연재 2/4)
+  - 파일: `content/posts/2026-11-16-capcom-vortexel-2-turbulence.md`
+  - 그림: `static/images/tech-art/capcom-vortexel-2-turbulence/` (직접 만든 그림 4장 + `make_figures.py`, 2D 안정 유체 흉내. 실행 약 10초)
+  - 3편 쓸 때: Thermal Conductor 는 슬라이드 p.102-111 (구형 발화점을 링크로 잇는 방식). 비용 p.176-177, 끄기 옵션 p.179-181.
+  - 슬라이드에는 유체 계산 알고리즘(이류·압력 반복 횟수, 격자 크기)이 안 나온다. 지어내지 말 것.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
@@ -52,3 +58,7 @@
 - 숨은 층 1개(16~32개)보다 2층(16×16)이 훨씬 낫다.
 - seed 마다 결과 모양이 꽤 다르다. 몇 개 돌려 보고 좋은 걸 고른다.
 - 학습률을 점점 줄이면(0.01 → 0.0005) 가장자리 잡티가 줄어든다.
+
+### 날짜 함정 (다시 확인)
+- 스케줄 실행은 KST 07시 조금 넘어 시작한다. 시스템 날짜(UTC)는 전날이니 파일 날짜는 반드시 `TZ=Asia/Seoul date` 로 정한다.
+- 로컬 Hugo 확인은 07:30 전이면 새 글이 빠지므로 `--buildFuture` 를 붙여 본다. push 는 07:30 이후에.
