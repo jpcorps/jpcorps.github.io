@@ -31,7 +31,7 @@
 ### 원문 페이지 읽기 (WebFetch 권한)
 - 스케줄 실행에서는 URL 을 WebFetch 로 바로 열면 "PROVENANCE_REQUIRED"(사용자 승인 대기)로 막힌다. **WebSearch 결과에 그 URL 이 먼저 나오게 한 뒤** WebFetch 하면 열린다.
   - 예: docswell 슬라이드는 `"VORTEXEL" カプコン VFX ボクセル` 검색(extended)으로 나온 뒤 열렸다.
-- docswell 슬라이드 본문 글자는 WebFetch 로 쪽 번호와 함께 읽힌다. 하지만 쪽별 이미지 주소는 페이지에 없고, 표지 `bcdn.docswell.com/page/...jpg` 만 있는데 그것도 검색 결과에 안 나와 열어 확인할 수 없었다. 확인 못 한 주소는 안 쓴다 → 직접 만든 그림으로 대신.
+- docswell 슬라이드 본문 글자는 WebFetch 로 쪽 번호와 함께 읽힌다. 쪽별 이미지 주소는 WebFetch 로는 안 나오지만, **브라우저로 임베드 페이지 `https://www.docswell.com/slide/<ID>/embed?mode=extend` 를 열면** 전 쪽의 `bcdn.docswell.com/page/<쪽ID>.jpg` 가 순서대로 들어 있다(VORTEXEL 은 191쪽). 이렇게 찾아 VORTEXEL 1·2편에 슬라이드 7장(27, 32, 42, 46, 84, 98, 100쪽)을 걸어 썼다. 출처 캡션 필수, 확인 못 한 주소는 안 쓴다.
 - gamemakers.jp 기사도 같은 이유로 못 열었다(검색 결과에 안 나옴).
 
 ### 날짜가 미래면 글이 안 뜬다
