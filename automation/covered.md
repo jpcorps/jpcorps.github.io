@@ -7,3 +7,4 @@
 - 2026-11-15 | (요청 글) 카프콤 VORTEXEL 쉽게 읽기 (1) https://www.docswell.com/s/CAPCOM_RandD/KPRPE4-RE2026-EAST-7 | 2026-11-15-capcom-vortexel-1-geometry.md
 - 2026-11-16 | (요청 글) 카프콤 VORTEXEL 쉽게 읽기 (2) https://www.docswell.com/s/CAPCOM_RandD/KPRPE4-RE2026-EAST-7 | 2026-11-16-capcom-vortexel-2-turbulence.md
 - 2026-11-16 | https://gamemakers.jp/article/2026_11_02_148754/ | 2026-11-16-cyberagent-mobile-graphics-2026.md
+- 2026-11-17 | (요청 글) 카프콤 VORTEXEL 쉽게 읽기 (3) https://www.docswell.com/s/CAPCOM_RandD/KPRPE4-RE2026-EAST-7 | 2026-11-17-capcom-vortexel-3-thermal.md
