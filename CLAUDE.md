@@ -5,5 +5,6 @@
 - `content/posts/` 의 글 대부분(2천여 편)은 이글루스 백업이다. 수정하거나 지우지 않는다.
 - 테크니컬 아트 소개글을 쓸 때는 `automation/WRITING_GUIDE.md` 를 먼저 읽고 그대로 따른다.
 - 작업 전에 `automation/NOTES.md`(세션 간 공유 작업 노트: 지금까지 올린 글, 알게 된 함정과 요령)를 읽는다. 새로 알게 된 것은 거기에 덧붙인다.
+- 이 블로그 글을 티스토리(chulin28ho.tistory.com)에도 올려 달라는 요청을 받으면 `automation/TISTORY_CROSSPOST.md` 를 먼저 읽고 그 방법대로 한다. 컴퓨터가 바뀌어도 같은 방식이다.
 - 테마는 서브모듈(`themes/hugo-theme-stack`)이다. 테마 파일을 직접 고치지 말고 `layouts/` 에서 덮어쓴다.
 - 이글루스 백업 글은 이미지 수천 장을 포함하므로 clone 은 `--depth 1` 로 한다.

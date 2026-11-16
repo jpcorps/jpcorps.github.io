@@ -62,3 +62,7 @@
 ### 날짜 함정 (다시 확인)
 - 스케줄 실행은 KST 07시 조금 넘어 시작한다. 시스템 날짜(UTC)는 전날이니 파일 날짜는 반드시 `TZ=Asia/Seoul date` 로 정한다.
 - 로컬 Hugo 확인은 07:30 전이면 새 글이 빠지므로 `--buildFuture` 를 붙여 본다. push 는 07:30 이후에.
+
+### 티스토리에도 올리기
+- 방법은 `TISTORY_CROSSPOST.md` 에 따로 적어 뒀다. (Claude in Chrome 으로 chulin28ho.tistory.com 에 HTML 모드로 넣는다.)
+- 티스토리에 올린 글: 2026-11-14 하트 튜토리얼 → /1007, 2026-11-15 VORTEXEL (1) → /1008. 이후 글은 JP 가 요청할 때만 올린다.
