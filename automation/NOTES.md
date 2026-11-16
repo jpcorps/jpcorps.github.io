@@ -17,6 +17,10 @@
   - 2편 이후 쓸 때: 슬라이드 쪽 번호 — 개요 p.10-16, Geometry p.25-72, Turbulence 는 p.75 전후부터, 풀 태우기 동기 p.112, Physics 접촉 p.136-152, 메모리 p.176, AABB 지정 구축 p.183.
 
 - 2026-11-16 카프콤 VORTEXEL 쉽게 읽기 (2) 미리 굽지 않는 바람 — Turbulence (요청 연재 2/4)
+- 2026-11-16 스마트폰에서 레일리 산란을요? — 사이버에이전트 그래픽스 엔지니어 2026 인터뷰 (JP 요청, gamemakers.jp 기사)
+  - 파일: `content/posts/2026-11-16-cyberagent-mobile-graphics-2026.md`
+  - 원문: https://gamemakers.jp/article/2026_11_02_148754/ (神山大輝, [PR] 기사)
+  - 내용: 24시간 라이팅(레일리·미 산란, QualiArts), 원거리 그림자 보완(베이크드 섀도맵+CSM, Sirius 패키지), 모바일 디퍼드 렌더링+Surface Cache GI, HLSL 단위 테스트(컴퓨트 셰이더), 그래픽스 회귀 테스트(스크린샷 히트맵, CI)
   - 파일: `content/posts/2026-11-16-capcom-vortexel-2-turbulence.md`
   - 그림: `static/images/tech-art/capcom-vortexel-2-turbulence/` (직접 만든 그림 4장 + `make_figures.py`, 2D 안정 유체 흉내. 실행 약 10초)
   - 3편 쓸 때: Thermal Conductor 는 슬라이드 p.102-111 (구형 발화점을 링크로 잇는 방식). 비용 p.176-177, 끄기 옵션 p.179-181.
