@@ -58,7 +58,7 @@ JP 가 "티스토리에 글 올려 줘" 처럼 글을 지정하지 않고 말하
 ## 함정과 요령
 
 - **HTML 모드 전환 확인 창.** 편집 모드를 HTML 로 바꿀 때 브라우저 확인 창이 떠서 Claude in Chrome 이 멈춘다(클릭이 30초 뒤 시간 초과). 모드 전환 **전에** 페이지에서 `window.confirm = () => true; window.alert = () => {}` 를 실행해 둔다. 모드 전환은 `기본모드` 드롭다운 → `HTML` 을 클릭한다.
-- **본문 입력은 TinyMCE 로.** HTML 모드의 입력창은 CodeMirror 인데, 거기에만 `setValue` 하면 미리보기의 본문이 비어 있다. `tinymce.get('editor-tistory').setContent(html)` 로 넣으면 CodeMirror 에도 같이 반영되고 미리보기도 나온다. 이때 코드 하이라이트용 `span`/`class` 는 정리되지만 글자와 줄바꿈은 그대로다. (넣은 뒤 글자 수와 `<pre>` 글자 수가 원본과 같은지 확인했다.)
+- **본문 입력은 TinyMCE 로.** HTML 모드의 입력창은 CodeMirror 인데, 거기에만 `setValue` 하면 미리보기의 본문이 비어 있다. `tinymce.get('editor-tistory').setContent(html)` 로 넣으면 CodeMirror 에도 같이 반영되고 미리보기도 나온다. 이때 코드 하이라이트용 `span`/`class` 는 정리되지만 글자와 줄바꿈은 그대로다. (넣은 뒤 글자 수와 `<pre>` 글자 수가 원본과 같은지 확인했다.) **`setContent` 뒤에 반드시 `editor.save()` 를 호출해야** 폼 필드에 동기화된다. 빠뜨리면 발행 후 본문이 비어 있다. (2026-11-16 에 겪음.)
 - **제목 입력.** `#post-title-inp` 는 textarea 다. 네이티브 `value` setter 로 값을 넣고 `input`, `change` 이벤트를 보낸다.
 - **태그 입력.** 화면 아래쪽 `태그입력` 칸을 `scroll_to` 로 찾아 클릭하고, 태그마다 **쉼표**를 붙여 입력한다. (`뉴럴 셰이더,신경망,...`)
 - **JS 도구는 await 를 기다려 주지 않는다.** 비동기 `fetch` 는 결과를 `window.__x` 같은 전역 변수에 저장하고, 다음 호출에서 읽는다.
