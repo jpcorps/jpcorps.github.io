@@ -44,6 +44,11 @@
   - 슬라이드 쪽(WebFetch 앵커 번호 기준. 위 노트의 136~152 같은 예전 추정과 다르다): Physics 119~165, Tiny Physics 반지름 0.5m 127, 대표 법선 141~143, 내접구 149~156, PS5 1만 개 0.06/0.03ms 158, 쓰인 곳 159~161, Wakeup Over Reaction 163, Click to Go 168~173, 고급 파라미터·질량 숨김 174, 메모리 176, 처리 시간 177, 끄기 옵션·실내 마스크 178~182, AABB 지정 구축 183~185, 엑스포 몬스터헌터 브리지 187~188.
   - 반발·마찰 계수는 슬라이드에 없다. 지어내지 말 것.
 
+- 2026-11-19 하늘이 예뻐지는 건 대단한 기술보다 작은 요령 덕분 — 항해 게임 개발 일지 '예쁜 하늘' 읽기 (원문 소개글, Thomas ten Cate / Frozen Fractal, Graphics Programming Weekly 462 에서 찾음)
+  - 파일: `content/posts/2026-11-19-pretty-sky-small-tricks.md`
+  - 그림: 원문 이미지 5장 + 직접 만든 그림 3장 `static/images/tech-art/pretty-sky/` (`make_figures.py`, 노멀 꺾기·레이마칭 순서·톤 매핑 장난감 계산. 실행 수 초)
+  - 같은 시리즈 33편(구름), 35편(항해)도 있다. 35편은 게임 디자인 쪽이라 TA 글감으로는 약함.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
@@ -51,6 +56,8 @@
   - 예: docswell 슬라이드는 `"VORTEXEL" カプコン VFX ボクセル` 검색(extended)으로 나온 뒤 열렸다.
 - docswell 슬라이드 본문 글자는 WebFetch 로 쪽 번호와 함께 읽힌다. 쪽별 이미지 주소는 WebFetch 로는 안 나오지만, **브라우저로 임베드 페이지 `https://www.docswell.com/slide/<ID>/embed?mode=extend` 를 열면** 전 쪽의 `bcdn.docswell.com/page/<쪽ID>.jpg` 가 순서대로 들어 있다(VORTEXEL 은 191쪽). 이렇게 찾아 VORTEXEL 1·2편에 슬라이드 7장(27, 32, 42, 46, 84, 98, 100쪽)을 걸어 썼다. 출처 캡션 필수, 확인 못 한 주소는 안 쓴다.
 - gamemakers.jp 기사도 같은 이유로 못 열었다(검색 결과에 안 나옴).
+- 원문 페이지는 WebFetch 로 읽혀도, 그 안의 이미지 주소를 WebFetch·curl 로 직접 여는 건 막힐 수 있다(frozenfractal.com: WebFetch 는 PROVENANCE_REQUIRED, curl 은 프록시 403). 이럴 땐 원문 페이지를 다시 WebFetch 해서 마크다운 이미지 주소를 그대로 받아 쓰고, '직접 열어 확인은 못 했다'고 보고한다.
+- covered.md 에 2026-11-18 안개 글 기록이 빠져 있어 2026-11-19 세션이 보충했다. 글을 올리면 covered.md 기록을 잊지 말 것.
 
 ### 날짜가 미래면 글이 안 뜬다
 - front matter 시각이 `07:30:00+09:00` 인데, Hugo 는 빌드 시점보다 미래인 글을 빼고 만든다(buildFuture 꺼짐).
