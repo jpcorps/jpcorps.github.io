@@ -27,6 +27,11 @@
   - 슬라이드에는 유체 계산 알고리즘(이류·압력 반복 횟수, 격자 크기)이 안 나온다. 지어내지 말 것.
 
 - 2026-11-17 카프콤 VORTEXEL 쉽게 읽기 (3) 불은 온도가 아니라 '시간'으로 번진다 — Thermal Conductor (요청 연재 3/4)
+- 2026-11-18 바닥을 기는 안개는 어떻게 만드나 — 높이 안개 셰이더 해부 (JP 요청, Three.js 포럼 red-reddington 2025-12)
+  - 파일: `content/posts/2026-11-18-ground-fog-shader.md`
+  - 그림: `static/images/tech-art/ground-fog-shader/` (직접 만든 그림 3장 + `make_figures.py`. 실행 수 초)
+  - 내용: 높이 기반 밀도(world Y 지수 감쇠), FBM 노이즈 8 옥타브로 흔들기, early exit, yomotsu 2D 유체 시뮬 데모 비교
+  - Three.js 포럼 URL: https://discourse.threejs.org/t/high-performance-ground-fog-for-games-three-js/88522
   - 파일: `content/posts/2026-11-17-capcom-vortexel-3-thermal.md`
   - 그림: `static/images/tech-art/capcom-vortexel-3-thermal/` (직접 만든 그림 4장 + `make_figures.py`, 점 80개 그래프에 1초 착화·2초 연소 규칙. 실행 2초)
   - 이번엔 슬라이드 이미지를 못 씀: 클라우드 프록시가 docswell.com·bcdn.docswell.com 을 403 으로 막아 Playwright 로 임베드 페이지를 못 열었다.
