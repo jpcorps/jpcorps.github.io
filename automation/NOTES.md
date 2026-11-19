@@ -49,6 +49,13 @@
   - 그림: 원문 이미지 5장 + 직접 만든 그림 3장 `static/images/tech-art/pretty-sky/` (`make_figures.py`, 노멀 꺾기·레이마칭 순서·톤 매핑 장난감 계산. 실행 수 초)
   - 같은 시리즈 33편(구름), 35편(항해)도 있다. 35편은 게임 디자인 쪽이라 TA 글감으로는 약함.
 
+- 2026-11-20 연기 스프라이트에 빛을 '나중에' 입히는 법 — 6방향 라이트맵과 신경망 (원문 소개글, arXiv 2604.03748 'Real-time Neural Six-way Lightmaps', LIGHTSPEED 등)
+  - 파일: `content/posts/2026-11-20-neural-six-way-lightmaps.md`
+  - 그림: 직접 만든 4장 `static/images/tech-art/neural-six-way/` (`make_figures.py`, 56^3 장난감 연기에 단일 산란 6방향 굽기·섞기·옆 시점 비교. 실행 약 12초) + Unity 블로그 GIF 1장.
+  - 논문 그림은 못 씀: WebFetch 가 arXiv HTML 을 마크다운으로 바꿔 줘서 진짜 img src 가 안 나오고, curl 은 arxiv.org·cdn.sanity.io 모두 프록시 403.
+  - 장난감에서 논문 식 5(성분 절댓값 가중치)를 그대로 쓰면 대각선 빛에서 1.4~1.6배 밝았다. 글에는 제곱 가중치(합 1)를 썼다고 밝혔다.
+  - 글감 찾기: GPW 463 의 LinkedIn 글(SSS albedo remapping)과 jacktollenaar.top(Split Radiance Cascades)은 검색 결과에 URL 이 안 나와 PROVENANCE_REQUIRED 로 못 열었다.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
