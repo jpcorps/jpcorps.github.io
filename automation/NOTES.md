@@ -56,6 +56,14 @@
   - 장난감에서 논문 식 5(성분 절댓값 가중치)를 그대로 쓰면 대각선 빛에서 1.4~1.6배 밝았다. 글에는 제곱 가중치(합 1)를 썼다고 밝혔다.
   - 글감 찾기: GPW 463 의 LinkedIn 글(SSS albedo remapping)과 jacktollenaar.top(Split Radiance Cascades)은 검색 결과에 URL 이 안 나와 PROVENANCE_REQUIRED 로 못 열었다.
 
+- 2026-11-21 빛을 '거리별 칸'에 나눠 담기 — 스플릿 래디언스 캐스케이드 구현기 읽기 (원문 소개글, jacktollenaar.top, GPW 463 에서 찾음. 바탕 논문 arXiv 2607.20384 Freeman·Sannikov·Pitt-Francis)
+  - 파일: `content/posts/2026-11-21-split-radiance-cascades.md`
+  - 그림: 직접 만든 3장 `static/images/tech-art/split-radiance-cascades/` (`make_figures.py`, 2D 방 두 칸에서 광선을 맞은 거리로 칸에 나누고 투과율 있/없이 합쳐 빛 샘 비교. 실행 1초) + 원문 그림 5장(SaintRC, ProbePos, blockedRay, BedPT, BedRC).
+  - 원문 본문에 필자 이름·날짜가 없다(도메인만). source_author 는 "jacktollenaar.top" 로 적었다. 홈페이지는 PROVENANCE_REQUIRED 로 못 열었다.
+  - jacktollenaar.top 도 처음엔 PROVENANCE_REQUIRED 였지만 `"Split Radiance Cascades" jacktollenaar` 검색(extended)에 나온 뒤 열렸다. 이미지 주소는 curl 프록시 403 이라 직접 열어 확인 못 함.
+  - 원문 코드의 방향 수(BaseDirections << Cascade 와 '4배' 설명)가 서로 안 맞는다. 글에서는 배수를 적지 않았다.
+  - 장난감 요령: 벽 위치가 프로브 칸 경계(0.5×2^c 의 배수)와 맞으면 빛 샘이 전혀 안 생겨 비교가 안 된다. 벽을 x=9.3 처럼 어긋나게 둘 것.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)

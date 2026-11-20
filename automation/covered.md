@@ -12,3 +12,4 @@
 - 2026-11-18 | (요청 글, 2026-11-19 세션이 빠진 기록 보충) https://discourse.threejs.org/t/high-performance-ground-fog-for-games-three-js/88522 | 2026-11-18-ground-fog-shader.md
 - 2026-11-19 | https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/ | 2026-11-19-pretty-sky-small-tricks.md
 - 2026-11-20 | https://arxiv.org/abs/2604.03748 | 2026-11-20-neural-six-way-lightmaps.md
+- 2026-11-21 | https://www.jacktollenaar.top/articles/split-rc.html | 2026-11-21-split-radiance-cascades.md
