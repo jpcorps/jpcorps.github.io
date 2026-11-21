@@ -64,6 +64,13 @@
   - 원문 코드의 방향 수(BaseDirections << Cascade 와 '4배' 설명)가 서로 안 맞는다. 글에서는 배수를 적지 않았다.
   - 장난감 요령: 벽 위치가 프로브 칸 경계(0.5×2^c 의 배수)와 맞으면 빛 샘이 전혀 안 생겨 비교가 안 된다. 벽을 x=9.3 처럼 어긋나게 둘 것.
 
+- 2026-11-22 숫자 열두 개로 색 팔레트 만들기 — 이니고 킬레스의 '코사인 팔레트' 읽기 (원문 소개글, 고전. iquilezles.org/articles/palettes)
+  - 파일: `content/posts/2026-11-22-cosine-color-palettes.md`
+  - 그림: 직접 만든 6장 `static/images/tech-art/cosine-palettes/` (`make_figures.py`, 원문 예시 숫자 7세트 그대로 띠로 그림. 실행 2초). HLSL 예시는 glslangValidator 컴파일만 확인.
+  - 원문 그림은 못 씀: WebFetch 결과에 상대 경로(gfx00.jpg 등)만 나오고 예시 표 이미지 src 는 비어 있었으며, curl 은 iquilezles.org 연결 자체가 안 됐다(000).
+  - 원문의 'c 를 0.5 의 정수배로 두면 0..1 에서 순환' 문장은 식으로 따져 보면 c=0.5 에서 끝과 처음 색이 달라 글에서는 뺐다(정수 c 만 소개).
+  - 글감 찾기: GPW 463/462 후보 중 NVIDIA 경로 추적 백서(github.com/NVIDIA-RTX/Whitepapers)는 README URL PROVENANCE_REQUIRED, tree URL robots_disallowed 로 못 읽음. LinkedIn SSS 글은 여전히 검색에 안 나옴. 'The Hidden Assumptions in Every Volume Renderer' 는 유튜브 영상이라 내용을 읽을 길이 없었다.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
