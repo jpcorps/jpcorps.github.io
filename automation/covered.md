@@ -14,3 +14,4 @@
 - 2026-11-20 | https://arxiv.org/abs/2604.03748 | 2026-11-20-neural-six-way-lightmaps.md
 - 2026-11-21 | https://www.jacktollenaar.top/articles/split-rc.html | 2026-11-21-split-radiance-cascades.md
 - 2026-11-22 | https://iquilezles.org/articles/palettes | 2026-11-22-cosine-color-palettes.md
+- 2026-11-23 | https://endfield-behind-the-frame.vinluo46.chatgpt.site/en | 2026-11-23-endfield-frame-character-forward.md

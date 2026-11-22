@@ -71,6 +71,14 @@
   - 원문의 'c 를 0.5 의 정수배로 두면 0..1 에서 순환' 문장은 식으로 따져 보면 c=0.5 에서 끝과 처음 색이 달라 글에서는 뺐다(정수 c 만 소개).
   - 글감 찾기: GPW 463/462 후보 중 NVIDIA 경로 추적 백서(github.com/NVIDIA-RTX/Whitepapers)는 README URL PROVENANCE_REQUIRED, tree URL robots_disallowed 로 못 읽음. LinkedIn SSS 글은 여전히 검색에 안 나옴. 'The Hidden Assumptions in Every Volume Renderer' 는 유튜브 영상이라 내용을 읽을 길이 없었다.
 
+- 2026-11-23 배경은 한꺼번에, 캐릭터는 따로 — '명일방주: 엔드필드' 한 프레임 해부 읽기 (원문 소개글, endfield-behind-the-frame.vinluo46.chatgpt.site/en, GPW 461 에서 찾음)
+  - 파일: `content/posts/2026-11-23-endfield-frame-character-forward.md`
+  - 그림: 직접 만든 4장 `static/images/tech-art/endfield-frame/` (`make_figures.py`, 프레임 순서·스텐실 장난감·얼굴 문턱값 지도 vs N·L·머리카락 2줄 하이라이트. 실행 1초) + 원문 그림 4장(f000 최종 화면, f044 캐릭터 스텐실, f171 얼굴 문턱값, f230 얼굴 외곽선).
+  - 원문은 필자 이름·날짜 없음, 중국어 원문의 기계 번역 영어판. 원문 이미지 주소는 `/img/fNNN.webp` 꼴이고, curl 은 연결 자체가 안 돼(000) 직접 열어 확인 못 함. f045·f048·f152 는 본문에 없음.
+  - 원문은 얼굴 그늘을 'SDF' 라고 부르지 않는다. 외곽선 부풀리는 방향·두께, 램프/LUT 에 들어가는 좌표, GI 갱신 방법은 원문에 없다. 지어내지 말 것.
+  - 다른 후보: GPW 461 의 gamedev.net 'Shadow Caster Volumes'(2006) 는 페이지에 robots `noai, noimageai` 메타가 있어 피했다. lisyarus 'Revisiting importance sampling' 은 아직 안 다룸(수학 위주).
+  - GPW 464 는 아직 안 나왔다(11-23 07시 기준, 최신 463).
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
