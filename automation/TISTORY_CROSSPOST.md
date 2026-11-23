@@ -69,6 +69,44 @@ JP 가 "티스토리에 글 올려 줘" 처럼 글을 지정하지 않고 말하
 - **로그인이 풀려 있을 때.** 글쓰기 주소가 `tistory.com/auth/login` 으로 넘어가면 로그인이 풀린 것이다. 티스토리 로그인 쿠키는 세션 쿠키라 Chrome 을 완전히 닫거나 재부팅하면 사라질 수 있다. 로그인은 JP 가 직접 한다. Claude 는 로그인 화면이 열린 Chrome 창을 띄워 주기만 한다. (Chrome 이 백그라운드에서만 돌면 창이 없으니 `Start-Process chrome <글쓰기 주소>` 로 연다.)
 - Chrome 설정을 "중단한 위치에서 계속하기"(`chrome://settings/onStartup`)로 바꾸면 로그인이 덜 풀린다. `chrome://` 화면은 Claude 가 못 열어서 JP 가 직접 바꿔야 한다.
 
+## 2026-11-23 에 /1016 을 올리며 확인한 보강 (처음부터 끝까지 그대로 된 순서)
+
+JP 가 글 경로·제목·태그를 다 줬을 때의 흐름이다. 다른 컴퓨터에서도 이대로 하면 된다.
+
+0. **글 파일이 없으면 `git pull`.** 글은 스케줄 작업이 원격에만 push 했을 수 있다. `git fetch` 후 `git status` 로 뒤처졌는지 보고 `git pull --ff-only`. 원본 주소가 열리는지(`curl -s -o /dev/null -w "%{http_code}" <원본주소>` → 200)도 본다. 안 열리면 배포 전이니 JP 에게 말한다.
+1. **도구 불러오기.** ToolSearch 로 `mcp__claude-in-chrome__*` (tabs_context_mcp, navigate, computer, javascript_tool, find, list_connected_browsers) 를 한 번에 불러온다. `list_connected_browsers` 에 브라우저가 둘 나올 수 있는데 `onThisComputer: true` / `inUse: true` 인 쪽이 이 PC 다. 따로 고르지 않아도 된다.
+2. **글쓰기 페이지 열기.** `tabs_context_mcp(createIfEmpty)` 로 탭을 얻고 `navigate` 로 `.../manage/newpost`. 주소가 `tistory.com/auth/login` 으로 넘어가면 로그인이 풀린 것이다. Claude 는 로그인하지 않고, `Start-Process chrome "<글쓰기 주소>"` 로 로그인 창을 띄운 뒤 JP 에게 부탁한다. "로그인 완료"를 받으면 같은 탭을 다시 `navigate` 한다.
+3. **페이지 이동 뒤 따로** JS 를 실행해 confirm 을 막고 원본을 가져온다. 아래 코드를 한 번에 넣고, 결과는 다음 호출에서 읽는다.
+   ```js
+   window.confirm = () => true; window.alert = () => {}; window.__x = null;
+   fetch('<원본 주소>').then(r=>r.text()).then(t=>{
+     const d = new DOMParser().parseFromString(t,'text/html');
+     const a = d.querySelector('.article-content');
+     a.querySelectorAll('[src],[href]').forEach(e=>['src','href'].forEach(k=>{
+       const v=e.getAttribute(k);
+       if(v && v.startsWith('/') && !v.startsWith('//')) e.setAttribute(k,'https://jpcorps.com'+v)}));
+     a.querySelectorAll('[srcset]').forEach(e=>e.removeAttribute('srcset'));
+     window.__x = {title:d.title, html:a.innerHTML, imgs:a.querySelectorAll('img').length, pre:a.querySelectorAll('pre').length};
+   });
+   ```
+   다음 호출에서 `__x.title`, `__x.imgs` 가 JP 가 말한 제목·그림 수와 맞는지 본다.
+4. **HTML 모드.** 스크린샷(1037x583 기준) 으로 `기본모드` 드롭다운(우상단, 약 865,34) → `HTML`(약 848,145) 을 클릭한다. 위치는 창 크기에 따라 다르니 스크린샷으로 확인한다.
+5. **제목·본문 넣기.** 한 번의 JS 로:
+   ```js
+   const t=document.querySelector('#post-title-inp');
+   Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set.call(t,__x.title);
+   t.dispatchEvent(new Event('input',{bubbles:true})); t.dispatchEvent(new Event('change',{bubbles:true}));
+   const ed=tinymce.get('editor-tistory'); ed.setContent(__x.html); ed.save();
+   ```
+   `ed.getBody().querySelectorAll('img').length` 가 원본 그림 수와 같은지 본다.
+6. **태그.** `find` 로 `태그입력` 칸의 ref 를 얻어 `scroll_to` → `left_click` → `type` 으로 `태그1,태그2,...,` 를 **마지막에도 쉼표를 붙여** 입력한다. JS 로 `.tag` 요소 텍스트를 읽어 태그가 다 들어갔는지 확인한다.
+7. **미리보기 확인.** `미리보기` 버튼(find 로 ref) 클릭 → 4초 기다림 → 페이지 안 iframe 중 **`id` 가 없는 것**이 미리보기다. 그 안의 `img` 를 `naturalWidth>0` 으로 센다. 목록에는 블로그 테마 아이콘(`daumcdn`, `new_ico_3.gif`)도 섞여 있으니, 주소로 본문 그림(`jpcorps.com`, 원문 출처 이미지)만 따져서 JP 가 말한 장수와 맞는지 본다. 확인 뒤 오른쪽 위 `X`(약 971,35)로 닫는다. 그림이 하나라도 안 뜨면 발행하지 않고 JP 에게 말한다.
+8. **발행.** 닫은 직후 JS 로 `tinymce.get('editor-tistory').save()` 를 한 번 더 호출하고, `완료` 버튼(find 로 ref) 클릭 → 발행 창에서 `공개`(약 167,243) 선택 → `공개 발행`(약 566,521). 기본값이 `비공개` 라 반드시 바꾼다.
+9. **발행 확인.** 발행되면 `/manage/posts/` 로 넘어간다. 거기서 `a[href*="chulin28ho.tistory.com/"]` 중 새 제목의 링크를 읽으면 번호가 나온다. 그리고 `fetch('/<번호>')` 로 받아 그림 수(`jpcorps`·원문 출처 이미지 `img`)와 `og:title` 을 확인하면 본문이 비지 않았다는 증거가 된다.
+10. **기록.** `automation/NOTES.md` 의 "티스토리에 올린 글" 목록에 `- 날짜 제목 → /번호` 줄을 **"이후 글은 JP 가 요청할 때만…" 줄 바로 위에** 덧붙이고 commit, push 한다. (`git pull --ff-only` 를 먼저 한다.)
+
+올린 기록: 2026-11-23 엔드필드 한 프레임 글 → /1016 (그림 8장, 위 순서 그대로 성공).
+
 ## 하지 않는 것
 
 - 매일 자동으로 올리는 예약 작업은 만들지 않았다. 필요하면 JP 가 따로 요청한다. 공개 글이 자동으로 나가는 설정이니 반드시 JP 의 확인을 받는다.
