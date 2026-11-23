@@ -79,6 +79,12 @@
   - 다른 후보: GPW 461 의 gamedev.net 'Shadow Caster Volumes'(2006) 는 페이지에 robots `noai, noimageai` 메타가 있어 피했다. lisyarus 'Revisiting importance sampling' 은 아직 안 다룸(수학 위주).
   - GPW 464 는 아직 안 나왔다(11-23 07시 기준, 최신 463).
 
+- 2026-11-24 게임 속 글자는 왜 흐려질까 — 비트맵, SDF, MSDF, 그리고 Slug 비교 읽기 (원문 소개글, AlphaPixel Chris Hanson 2026-09-23, 러시아 주간 게임개발 요약 suvitruf.ru #302 → Habr 번역판에서 찾음)
+  - 파일: `content/posts/2026-11-24-gpu-text-rendering-sdf-msdf-slug.md`
+  - 그림: 직접 만든 4장 `static/images/tech-art/gpu-text-rendering/` (`make_figures.py`, DejaVu Sans Bold 'A' 를 24px 비트맵/SDF(±3텍셀)/외곽선 광선 교차로 480px 비교, 와인딩 도식. 실행 1초) + 원문 그림 3장(01_glyph_outline, 05_sdf_vs_msdf, grazing-perspective).
+  - 원문은 Slughorn 을 파는 회사의 글이라 글에서 그 점을 밝혔다. alphapixeldev.com 은 curl 프록시 403 이라 이미지 주소를 직접 열어 확인 못 함.
+  - 글감 찾기: GPW 464 는 11-24 07시 기준 아직 없음. LinkedIn SSS albedo remapping 글은 정확한 제목 검색(extended)에도 안 나왔다. suvitruf.ru 주간 요약(러시아어)은 WebFetch 로 잘 읽히고 80.lv·언리얼 인터뷰 등 후보가 많다: Bluey's Happy Snaps(UE5 2D 스타일, SDF 평면 캐릭터), 타르코프 Terminal 렌즈 플레어 최적화, ZASTAVA 조명 등은 아직 안 다룸.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
@@ -86,6 +92,7 @@
   - 예: docswell 슬라이드는 `"VORTEXEL" カプコン VFX ボクセル` 검색(extended)으로 나온 뒤 열렸다.
 - docswell 슬라이드 본문 글자는 WebFetch 로 쪽 번호와 함께 읽힌다. 쪽별 이미지 주소는 WebFetch 로는 안 나오지만, **브라우저로 임베드 페이지 `https://www.docswell.com/slide/<ID>/embed?mode=extend` 를 열면** 전 쪽의 `bcdn.docswell.com/page/<쪽ID>.jpg` 가 순서대로 들어 있다(VORTEXEL 은 191쪽). 이렇게 찾아 VORTEXEL 1·2편에 슬라이드 7장(27, 32, 42, 46, 84, 98, 100쪽)을 걸어 썼다. 출처 캡션 필수, 확인 못 한 주소는 안 쓴다.
 - gamemakers.jp 기사도 같은 이유로 못 열었다(검색 결과에 안 나옴).
+- 러시아 주간 요약 https://suvitruf.ru/ (Недельный геймдев) 도 글감 찾기에 쓸 만하다. 검색 결과에 나오면 WebFetch 가 열린다.
 - 원문 페이지는 WebFetch 로 읽혀도, 그 안의 이미지 주소를 WebFetch·curl 로 직접 여는 건 막힐 수 있다(frozenfractal.com: WebFetch 는 PROVENANCE_REQUIRED, curl 은 프록시 403). 이럴 땐 원문 페이지를 다시 WebFetch 해서 마크다운 이미지 주소를 그대로 받아 쓰고, '직접 열어 확인은 못 했다'고 보고한다.
 - covered.md 에 2026-11-18 안개 글 기록이 빠져 있어 2026-11-19 세션이 보충했다. 글을 올리면 covered.md 기록을 잊지 말 것.
 
