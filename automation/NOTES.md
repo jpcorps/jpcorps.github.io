@@ -85,6 +85,13 @@
   - 원문은 Slughorn 을 파는 회사의 글이라 글에서 그 점을 밝혔다. alphapixeldev.com 은 curl 프록시 403 이라 이미지 주소를 직접 열어 확인 못 함.
   - 글감 찾기: GPW 464 는 11-24 07시 기준 아직 없음. LinkedIn SSS albedo remapping 글은 정확한 제목 검색(extended)에도 안 나왔다. suvitruf.ru 주간 요약(러시아어)은 WebFetch 로 잘 읽히고 80.lv·언리얼 인터뷰 등 후보가 많다: Bluey's Happy Snaps(UE5 2D 스타일, SDF 평면 캐릭터), 타르코프 Terminal 렌즈 플레어 최적화, ZASTAVA 조명 등은 아직 안 다룸.
 
+- 2026-11-25 80년대 셀 애니메이션을 언리얼로 흉내 내기 — 'Orbitals' 렌더링 이야기 읽기 (원문 소개글, 언리얼 테크 블로그 2026-09-03, Johannes Varmedal / Shapefarm)
+  - 파일: `content/posts/2026-11-25-orbitals-retro-anime-rendering.md`
+  - 그림: 직접 만든 4장 `static/images/tech-art/orbitals-retro-anime/` (`make_figures.py`, 구 두 개 장면으로 3단계 셀 색·면 번호+깊이 비교 선 뽑기·흐림/문턱값/노이즈 끊김·12fps 계단 그래프. 실행 2초). 원문 그림은 못 씀: WebFetch 가 텍스트만 돌려줘 img 주소가 없고, curl 은 unrealengine.com 연결 자체가 안 됐다(000).
+  - 원문에 성능 숫자·셰이더 수식 없음. '그늘 단계 하이라이트', '셀 겹침 그림자 흔적'은 방법이 안 나와 이름만 소개했다.
+  - 다른 후보(아직 안 다룸): 80.lv 'Bluey's Simple 2D Look...'(2026-10-23, Gameloft Brisbane 인터뷰, SDF 텍스처 캐릭터·8방향·역헐 외곽선. 본문 이미지 주소는 WebFetch 에 안 나옴). 언리얼 블로그 Bluey 인터뷰는 ?lang=ko 한국어판이 있다.
+  - GPW 464 는 검색에 안 나왔다(11-25).
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
