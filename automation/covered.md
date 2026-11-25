@@ -17,3 +17,4 @@
 - 2026-11-23 | https://endfield-behind-the-frame.vinluo46.chatgpt.site/en | 2026-11-23-endfield-frame-character-forward.md
 - 2026-11-24 | https://alphapixeldev.com/sdf-vs-msdf-vs-slug-vs-rive-gpu-text-rendering/ | 2026-11-24-gpu-text-rendering-sdf-msdf-slug.md
 - 2026-11-25 | https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals | 2026-11-25-orbitals-retro-anime-rendering.md
+- 2026-11-26 | https://xandev.blog.br/studies/timberborn-frame-analysis/ | 2026-11-26-timberborn-frame-analysis.md

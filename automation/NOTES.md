@@ -92,6 +92,13 @@
   - 다른 후보(아직 안 다룸): 80.lv 'Bluey's Simple 2D Look...'(2026-10-23, Gameloft Brisbane 인터뷰, SDF 텍스처 캐릭터·8방향·역헐 외곽선. 본문 이미지 주소는 WebFetch 에 안 나옴). 언리얼 블로그 Bluey 인터뷰는 ?lang=ko 한국어판이 있다.
   - GPW 464 는 검색에 안 나왔다(11-25).
 
+- 2026-11-26 멀리서 보면 왜 느려질까 — 비버 도시 'Timberborn' 한 프레임 뜯어보기 (원문 소개글, Alexandre Libório / Render Notes 2026-11-15, GPW 464 에서 찾음)
+  - 파일: `content/posts/2026-11-26-timberborn-frame-analysis.md`
+  - 그림: 직접 만든 3장 `static/images/tech-art/timberborn-frame/` (`make_figures.py`, 원문 측정값 막대 2장 + 드로우 콜/인스턴싱 장난감 시간표. 실행 1초) + 원문 그림 5장(FinalRender, ShadowMap, WaterMesh, RGPLowShadows, RGPNoShadows). 대표 이미지는 og:image Cover jpg.
+  - xandev.blog.br 은 처음 WebFetch 에서 PROVENANCE_REQUIRED, `"Timberborn Frame Analysis" xandev` 검색(extended) 뒤 열림. 이미지 주소는 curl 연결 안 됨(000)이라 직접 확인 못 함.
+  - 원문 표: 그림자 끔 6.5 / 낮음 13.4 / 울트라 14.5 ms. '끄면 불투명 단계가 약 2ms 빨라짐'은 그림자 단계 약 5ms 가 따로 빠지는 것과 합쳐 약 7ms 차이로 맞다. 인스턴싱 효과는 원문에서 측정 안 함.
+  - GPW 464 다른 후보(아직 안 다룸): 렌더 그래프 직접 만들기(ipotrick), Smolder 볼류메트릭(SIGGRAPH 2026 Advances, 유튜브), 복셀→SDF 브릭 렌더러(pptx, proton drive), lisyarus 'Ratio tracking, intuitively'.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
