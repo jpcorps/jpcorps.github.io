@@ -99,6 +99,15 @@
   - 원문 표: 그림자 끔 6.5 / 낮음 13.4 / 울트라 14.5 ms. '끄면 불투명 단계가 약 2ms 빨라짐'은 그림자 단계 약 5ms 가 따로 빠지는 것과 합쳐 약 7ms 차이로 맞다. 인스턴싱 효과는 원문에서 측정 안 함.
   - GPW 464 다른 후보(아직 안 다룸): 렌더 그래프 직접 만들기(ipotrick), Smolder 볼류메트릭(SIGGRAPH 2026 Advances, 유튜브), 복셀→SDF 브릭 렌더러(pptx, proton drive), lisyarus 'Ratio tracking, intuitively'.
 
+- 2026-11-27 만화처럼 납작한데 어디서 봐도 괜찮게 — '블루이' 게임이 2D 그림체를 3D 로 옮긴 방법 읽기 (원문 소개글, 80 Level 2026-10-23, Gameloft Brisbane 인터뷰, 진행 David Jagneaux)
+  - 파일: `content/posts/2026-11-27-bluey-2d-look-sdf-cards.md`
+  - 그림: 직접 만든 3장 `static/images/tech-art/bluey-2d-pipeline/` (`make_figures.py`, 64×64 RGBA SDF 나무 vs 비트맵 확대·8방향 고르기/겹친 판 어긋남·외곽선 두께 vs 거리. 실행 4초). 외곽선 HLSL(clip.w 곱하기 + 꼭짓점 색 두께)은 glslangValidator 컴파일 + 파이썬 동일 계산으로 3픽셀 일정 확인.
+  - 80.lv 는 WebFetch(web-fetch 에이전트)로 본문이 잘 읽히지만 본문 이미지 주소가 하나도 안 나온다(아이콘·유튜브 임베드뿐). og:image(cdn.80.lv/api/upload/meta/50699/...) 만 대표 이미지로 썼다. curl 은 cdn.80.lv 연결 안 됨(000).
+  - 블루이 캐릭터는 저작권 캐릭터라 직접 그림에 그리지 않았다(나무 같은 일반 모양만).
+  - 원문에 수치(텍스처 크기, 폴리곤, fps) 없음. 방향 사이 tweening·커스텀 셰이딩 모델 외곽선의 구체적 방법도 없음. 지어내지 말 것.
+  - 이번 세션엔 glslang-tools 가 없어서 `apt-get update` 후 설치해야 했다.
+  - 다른 후보(아직 안 다룸): GPW 464 의 ipotrick 렌더 그래프, lisyarus 'Ratio tracking, intuitively', 'Real Cameras are Radiometric'(arXiv 2611.25265). 언리얼 블로그의 같은 게임 인터뷰(?lang=ko)는 읽지 않고 더 보기 링크만 걸었다.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)
