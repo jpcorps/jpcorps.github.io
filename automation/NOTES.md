@@ -108,6 +108,14 @@
   - 이번 세션엔 glslang-tools 가 없어서 `apt-get update` 후 설치해야 했다.
   - 다른 후보(아직 안 다룸): GPW 464 의 ipotrick 렌더 그래프, lisyarus 'Ratio tracking, intuitively', 'Real Cameras are Radiometric'(arXiv 2611.25265). 언리얼 블로그의 같은 게임 인터뷰(?lang=ko)는 읽지 않고 더 보기 링크만 걸었다.
 
+- 2026-11-28 안개 너머로 빛이 얼마나 지나갈까 — '레이쇼 트래킹'을 처음부터 쉽게 읽기 (원문 소개글, lisyarus blog 2026-11-19, GPW 464 에서 찾음)
+  - 파일: `content/posts/2026-11-28-ratio-tracking-intuitively.md`
+  - 그림: 직접 만든 3장 `static/images/tech-art/ratio-tracking/` (`make_figures.py`, 1D 광선 한 번 추적·4096번 평균 vs 4걸음 레이마칭·96×96 연기 1/16회 평균. 실행 5초). 글 속 파이썬 함수는 상수+사인 밀도로 20만 번 평균 내 정답과 맞는지 확인.
+  - 원문은 수식 위주, WebFetch 결과에 본문 img 가 없었다(og:image cover.png 만). curl 은 lisyarus.github.io 연결 안 됨(000). 원문 그림은 안 씀.
+  - 원문에 저자 실명 없음(source_author 는 lisyarus). 델타 트래킹·레이마칭 비교, 레이쇼 트래킹 자체의 분산 분석은 원문에 없다 — 레이마칭 비교는 '제가 덧붙인 실험'이라고 밝혔다.
+  - jendrikillner.com 은 WebFetch 바로 열면 PROVENANCE_REQUIRED. `jendrikillner "Graphics Programming weekly - Issue 465"` 검색(extended)에 나온 https://www.jendrikillner.com/tags/weekly/ 는 열렸다. 11-28 07시 기준 최신 464, 465 아직 없음.
+  - 다른 후보(아직 안 다룸): GPW 464 의 ipotrick 렌더 그래프, 'Real Cameras are Radiometric'(arXiv 2611.25265). lisyarus 가 푸아송 과정과 볼륨 렌더링 관계 후속 글을 예고했다.
+
 ## 알게 된 것
 
 ### 원문 페이지 읽기 (WebFetch 권한)

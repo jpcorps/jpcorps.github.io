@@ -19,3 +19,4 @@
 - 2026-11-25 | https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals | 2026-11-25-orbitals-retro-anime-rendering.md
 - 2026-11-26 | https://xandev.blog.br/studies/timberborn-frame-analysis/ | 2026-11-26-timberborn-frame-analysis.md
 - 2026-11-27 | https://80.lv/articles/bluey-s-simple-2d-look-required-gameloft-s-most-technically-challenging-art-pipeline | 2026-11-27-bluey-2d-look-sdf-cards.md
+- 2026-11-28 | https://lisyarus.github.io/blog/posts/ratio-tracking-intuitively.html | 2026-11-28-ratio-tracking-intuitively.md
